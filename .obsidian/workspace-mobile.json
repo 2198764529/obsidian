@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "新建github 项目.md",
+                "file": "README.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "新建github 项目.md",
+            "file": "README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "新建github 项目.md",
+            "file": "README.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -127,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "新建github 项目.md"
+            "file": "README.md"
           }
         }
       }
@@ -146,10 +146,11 @@
   },
   "active": "7f6aec58fd8c90b7",
   "lastOpenFiles": [
+    "[.md",
+    "README.md",
     "新建github 项目.md",
     "IMG_20230919_191342_1.jpg",
     "IMG_20230919_191643_1.jpg",
-    "README.md",
     "Screenshot_20230919-190603_Via.png"
   ]
 }
