@@ -11,4 +11,5 @@ obsidian 记事本
 
 注册 GitHub 我就略过了，只要有一个邮箱和科学上网环境就行了。
 
-注册之后登录到该账号，接着创建一个 obsidian 项目，可参考 [新建GitHub项目]
+注册之后登录到该账号，接着创建一个 obsidian 项目，可参考 [新建GitHub项目][https://github.com/2198764529/obsidian/blob/matser/新建github 项目.md]
+。
