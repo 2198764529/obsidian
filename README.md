@@ -1,4 +1,3 @@
 obsidian 记事本
 
-第一次测试
-第二次测试
+这是基于 obsidian 所搭建的
