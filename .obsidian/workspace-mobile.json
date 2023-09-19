@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7f6aec58fd8c90b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "新建github 项目.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -72,7 +85,8 @@
           "state": {}
         }
       }
-    ]
+    ],
+    "currentTab": 0
   },
   "right": {
     "id": "07b69f1d363cc98c",
@@ -84,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "README.md",
+            "file": "新建github 项目.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -101,7 +115,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "README.md",
+            "file": "新建github 项目.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -113,7 +127,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "README.md"
+            "file": "新建github 项目.md"
           }
         }
       }
@@ -130,8 +144,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b99431d8a4673ff7",
+  "active": "7f6aec58fd8c90b7",
   "lastOpenFiles": [
+    "IMG_20230919_191342_1.jpg",
+    "README.md",
+    "新建github 项目.md",
     "Screenshot_20230919-190603_Via.png"
   ]
 }

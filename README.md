@@ -12,4 +12,3 @@ obsidian 记事本
 注册 GitHub 我就略过了，只要有一个邮箱和科学上网环境就行了。
 
 注册之后登录到该账号，接着创建一个 obsidian 项目。
-![[Screenshot_20230919-190603_Via.png]]
