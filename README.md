@@ -5,4 +5,5 @@ obsidian 记事本
 需要准备的东西如下
 - GitHub 账号
 - GitHub 的 obsidian 项目
-- GitHub 的 
+- GitHub 的 personl access token（PAT
+-）
