@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "65c19922883b7e03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "关于睡觉.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "346fa25616e7694a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "关于做事.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e7782db6ebe0c75d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "目标.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "目标.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "目标.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "目标.md"
               }
             }
           }
@@ -146,10 +183,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "956b34407017fb75",
+  "active": "e7782db6ebe0c75d",
   "lastOpenFiles": [
-    "[.md",
+    "关于做事.md",
+    "目标.md",
+    "目标",
+    "关于睡觉.md",
     "README.md",
+    "[.md",
     "新建github 项目.md",
     "IMG_20230919_191342_1.jpg",
     "IMG_20230919_191643_1.jpg",
