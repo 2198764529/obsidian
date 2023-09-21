@@ -8,79 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "956b34407017fb75",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "65c19922883b7e03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人/关于睡觉.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "346fa25616e7694a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人/关于做事.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e7782db6ebe0c75d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人/目标.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "989a84255854cf1c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "个人/目标.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8df3bdb1cc417073",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "工作 & 学习/计算机网络/总结/未命名.md",
+                "file": "工作 & 学习/计算机网络/总结/应用层.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作 & 学习/计算机网络/总结/未命名.md",
+                "file": "工作 & 学习/计算机网络/总结/应用层.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作 & 学习/计算机网络/总结/未命名.md",
+                "file": "工作 & 学习/计算机网络/总结/应用层.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作 & 学习/计算机网络/总结/未命名.md"
+                "file": "工作 & 学习/计算机网络/总结/应用层.md"
               }
             }
           }
@@ -210,7 +149,7 @@
   "active": "8df3bdb1cc417073",
   "lastOpenFiles": [
     "工作 & 学习/未命名.md",
-    "工作 & 学习/计算机网络/总结/未命名.md",
+    "工作 & 学习/计算机网络/总结/应用层.md",
     "工作 & 学习/计算机网络/总结",
     "工作 & 学习/计算机网络/自问自答/应用层.md",
     "工作 & 学习/计算机网络/自问自答/运输层.md",
