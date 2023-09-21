@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "个人/目标.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d2201f06427176e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "网站收藏.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "网站收藏.md"
               }
             }
           }
@@ -146,8 +159,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8df3bdb1cc417073",
+  "active": "d2201f06427176e1",
   "lastOpenFiles": [
+    "个人/目标.md",
+    "网站收藏.md",
+    "README.md",
     "工作 & 学习/计算机网络/总结/应用层.md",
     "工作 & 学习/未命名.md",
     "工作 & 学习/计算机网络/总结",
@@ -157,14 +173,12 @@
     "工作 & 学习/计算机网络/自问自答",
     "工作 & 学习/计算机网络",
     "个人/关于篮球.md",
-    "个人/目标.md",
     "个人/关于做事.md",
     "个人/关于睡觉.md",
     "工作 & 学习",
     "工作 & 学习.md",
     "个人",
     "目标",
-    "README.md",
     "[.md",
     "新建github 项目.md",
     "IMG_20230919_191342_1.jpg",
