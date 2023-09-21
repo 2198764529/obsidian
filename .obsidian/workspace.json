@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "工作 & 学习/未命名.md",
+                "file": "个人/目标.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "工作 & 学习/未命名.md",
+                "file": "个人/目标.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "工作 & 学习/未命名.md"
+                "file": "个人/目标.md"
               }
             }
           }
@@ -159,13 +158,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "173b388b5f5ef5e5",
+  "active": "8df3bdb1cc417073",
   "lastOpenFiles": [
+    "工作 & 学习/未命名.md",
     "网站收藏.md",
     "README.md",
     "工作 & 学习/计算机网络/总结/应用层.md",
     "个人/目标.md",
-    "工作 & 学习/未命名.md",
     "工作 & 学习/计算机网络/总结",
     "工作 & 学习/计算机网络/自问自答/应用层.md",
     "工作 & 学习/计算机网络/自问自答/运输层.md",
