@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "关于睡觉.md",
+                "file": "个人/关于睡觉.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "关于做事.md",
+                "file": "个人/关于做事.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +49,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "目标.md",
+                "file": "个人/目标.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "989a84255854cf1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "个人/目标.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8df3bdb1cc417073",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "工作 & 学习/计算机网络/运输层.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -122,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "目标.md",
+                "file": "工作 & 学习/计算机网络/运输层.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "目标.md",
+                "file": "工作 & 学习/计算机网络/运输层.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "目标.md"
+                "file": "工作 & 学习/计算机网络/运输层.md"
               }
             }
           }
@@ -183,12 +207,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e7782db6ebe0c75d",
+  "active": "173b388b5f5ef5e5",
   "lastOpenFiles": [
-    "关于做事.md",
-    "目标.md",
+    "工作 & 学习/计算机网络/未命名",
+    "工作 & 学习/计算机网络/应用层.md",
+    "工作 & 学习/计算机网络/运输层.md",
+    "工作 & 学习/未命名.md",
+    "工作 & 学习/计算机网络",
+    "个人/关于篮球.md",
+    "个人/目标.md",
+    "个人/关于做事.md",
+    "个人/关于睡觉.md",
+    "工作 & 学习",
+    "工作 & 学习.md",
+    "个人",
     "目标",
-    "关于睡觉.md",
     "README.md",
     "[.md",
     "新建github 项目.md",
