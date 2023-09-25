@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "修身/内在.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d672c032733af47e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "杂思/有书可读方案.md",
+                "file": "[.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "杂思/有书可读方案.md",
+                "file": "[.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "杂思/有书可读方案.md",
+                "file": "[.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "杂思/有书可读方案.md"
+                "file": "[.md"
               }
             }
           }
@@ -160,11 +147,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d672c032733af47e",
+  "active": "173b388b5f5ef5e5",
   "lastOpenFiles": [
     "修身/内在.md",
-    "杂思/有书可读方案.md",
+    "[.md",
+    "个人/目标/9.25 ~ 10.6.md",
     "修身/外在.md",
+    "个人/目标.md",
+    "个人/关于做事.md",
+    "个人/目标",
+    "杂思/有书可读方案.md",
+    "杂思/个人存储方案.md",
     "兴起/一言.md",
     "修身",
     "歌词/晚风.md",
@@ -174,9 +167,7 @@
     "网站收藏.md",
     "obsidian",
     "obsidian/图片",
-    "杂思/个人存储方案.md",
     "工作 & 学习/未命名.md",
-    "个人/目标.md",
     "杂思",
     "工作 & 学习/计算机网络/总结/应用层.md",
     "工作 & 学习/计算机网络/总结",
@@ -186,11 +177,8 @@
     "工作 & 学习/计算机网络/自问自答",
     "工作 & 学习/计算机网络",
     "个人/关于篮球.md",
-    "个人/关于做事.md",
     "个人/关于睡觉.md",
-    "工作 & 学习",
     "工作 & 学习.md",
-    "[.md",
     "新建github 项目.md",
     "IMG_20230919_191342_1.jpg",
     "IMG_20230919_191643_1.jpg",
