@@ -1,5 +1,9 @@
 {
   "accentColor": "",
   "theme": "system",
-  "baseFontSize": 15
+  "baseFontSize": 15,
+  "interfaceFontFamily": "",
+  "textFontFamily": "Cascadia Code",
+  "translucency": false,
+  "nativeMenus": true
 }
