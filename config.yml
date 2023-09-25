@@ -5,9 +5,10 @@ theme: 'book'
 port: 80
 frontmatter:
   lastmod:
-    - :datetimeUpdate
+    - datetimeUpdate
     - :git
     - lastmod
+
 markup:
   goldmark:
     renderer:
