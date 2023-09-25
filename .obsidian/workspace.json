@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "个人/目标/9.25 ~ 10.6.md",
+                "file": "网站收藏.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "个人/目标/9.25 ~ 10.6.md",
+                "file": "网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "个人/目标/9.25 ~ 10.6.md",
+                "file": "网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "个人/目标/9.25 ~ 10.6.md"
+                "file": "网站收藏.md"
               }
             }
           }
@@ -147,43 +147,55 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "173b388b5f5ef5e5",
+  "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "config.yml",
-    "[].md",
-    "个人/目标/9.25 ~ 10.6.md",
-    "个人/目标.md",
-    "修身/内在.md",
-    "[.md",
-    "修身/外在.md",
-    "个人/关于做事.md",
-    "个人/目标",
-    "杂思/有书可读方案.md",
-    "杂思/个人存储方案.md",
-    "兴起/一言.md",
-    "修身",
-    "歌词/晚风.md",
-    "兴起",
     "README.md",
-    "歌词",
-    "网站收藏.md",
-    "obsidian",
-    "obsidian/图片",
-    "工作 & 学习/未命名.md",
-    "杂思",
-    "工作 & 学习/计算机网络/总结/应用层.md",
-    "工作 & 学习/计算机网络/总结",
-    "工作 & 学习/计算机网络/自问自答/应用层.md",
-    "工作 & 学习/计算机网络/自问自答/运输层.md",
-    "工作 & 学习/计算机网络/自问自答/未命名.canvas",
-    "工作 & 学习/计算机网络/自问自答",
-    "工作 & 学习/计算机网络",
-    "个人/关于篮球.md",
-    "个人/关于睡觉.md",
-    "工作 & 学习.md",
-    "新建github 项目.md",
-    "IMG_20230919_191342_1.jpg",
-    "IMG_20230919_191643_1.jpg",
-    "Screenshot_20230919-190603_Via.png"
+    "个人/目标/9.25 ~ 10.6.md",
+    "content/posts/修身/内在.md",
+    "content/posts/修身/外在.md",
+    "content/posts/修身",
+    "content/posts/兴起/一言.md",
+    "content/posts/兴起",
+    "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
+    "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
+    "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
+    "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
+    "content/posts/工作 & 学习/计算机网络/自问自答",
+    "content/posts/工作 & 学习/计算机网络/总结",
+    "content/posts/工作 & 学习/未命名.md",
+    "content/posts/工作 & 学习/计算机网络",
+    "content/posts/工作 & 学习",
+    "content/posts/个人/目标/9.25 ~ 10.6.md",
+    "content/posts/个人/目标.md",
+    "content/posts/个人/关于睡觉.md",
+    "content/posts/个人/关于篮球.md",
+    "content/posts/个人/关于做事.md",
+    "content/posts/个人/目标",
+    "content/posts/个人",
+    "content/posts/歌词/晚风.md",
+    "content/posts/歌词",
+    "content/posts/杂思/个人存储方案.md",
+    "content/posts/杂思/有书可读方案.md",
+    "content/posts/杂思",
+    "public/svg/translate.svg",
+    "public/svg/toc.svg",
+    "public/svg/menu.svg",
+    "public/svg/edit.svg",
+    "public/svg/calendar.svg",
+    "public/favicon.svg",
+    "public/favicon.png",
+    "content/posts/生活记录/篮球投篮自测.md",
+    "content/posts/生活记录/思想收藏.md",
+    "content/posts/生活记录/当前问题清单.md",
+    "content/posts/生活记录/一些网站密码.md",
+    "content/posts/生活记录/hello-world.md",
+    "content/posts/生活记录/_index.md",
+    "content/posts/生活记录/22年过年运动记账.md",
+    "content/posts/生活记录/22年去深圳计划.md",
+    "content/posts/小技术/网站收藏.md",
+    "assert/img/MinimalistScenery04 1.jpg",
+    "assert/img/IMG_20230128_162005.jpg",
+    "assert/img/IMG_20230128_162005 1.jpg",
+    "工作 & 学习/计算机网络/自问自答/未命名.canvas"
   ]
 }

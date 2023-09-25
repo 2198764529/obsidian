@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>写作 on ltao_Blog2</title>
+    <link>http://example.org/tags/%E5%86%99%E4%BD%9C/</link>
+    <description>Recent content in 写作 on ltao_Blog2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us&#39;</language><atom:link href="http://example.org/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdown基础语法</title>
+      <link>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
+      <description>markdown基本语法 # 字体样式 # markdown 内容 输出效果 # 一级标题 一级标题 ## 二级标题 二级标题 ### 三级标题 三级标题 #### 四级标题 一级标题 ** 粗体 ** 粗体 * 斜体 * 斜体 ~~ 删除线 .~~ 删除线 . 段落样式 # 引用段落 # &amp;gt; 引用段落
+引用段落
+代码段落 # ``` { &amp;ldquo;firstName&amp;rdquo;: &amp;ldquo;John&amp;rdquo;, &amp;ldquo;lastName&amp;rdquo;: &amp;ldquo;Smith&amp;rdquo;, &amp;ldquo;age&amp;rdquo;: 25 } ```
+{&amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;,&amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;,&amp;#34;age&amp;#34;: 25} 列表 # 有序列表 # 第一名 第二名 第三名 无序列表 # - 猪 - 狗 - 牛</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ltao_Blog2</title>
+    <link>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content on ltao_Blog2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us&#39;</language>
+    <lastBuildDate>Tue, 17 Jan 2023 19:18:35 +0000</lastBuildDate><atom:link href="http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网站收藏</title>
+      <link>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <pubDate>Tue, 17 Jan 2023 19:18:35 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <description>设计学习：
+设计不错网站的 # https://www.natfrp.com/ hexo 建站相关： # hexo 官方文档：https://hexo.io/zh-cn/docs/ hexo 插件库：https://hexo.io/plugins/ hexo 主题库：https://hexo.io/themes/ ejs 模板： https://ejs.bootcss.com/ github: https://github.com/ </description>
+    </item>
+    
+    <item>
+      <title>hexo 部署发布</title>
+      <link>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/hexo-%E9%83%A8%E7%BD%B2%E5%8F%91%E5%B8%83/</guid>
+      <description>hexo clean &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d </description>
+    </item>
+    
+    <item>
+      <title>hexo网站装修</title>
+      <link>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/hexo-%E7%BD%91%E7%AB%99%E8%A3%85%E4%BF%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/hexo-%E7%BD%91%E7%AB%99%E8%A3%85%E4%BF%AE/</guid>
+      <description> 目的：为了明确 hexo 网站更常用、更易用、更好用。 # 将主要工作内容，细化分为以下模块。
+主题装修，要适配移动端的阅读，要形成一套整体的主题思想，要更快的服务速度 模板主题确定为onePaper，在此基础上做修改 内容管理 文章快速编写，手机上可快速创建文章，支持上传图片和视频等文件 文章日常备份，每天将内容备份至云端（具体云服务商自己选） 分类模块展示，标签模块展示 主要的几个原则 不要过分注重主题样式，前期要把内容建设作为工作中心。 设计简洁，访问快速 已经完成的东西 # hexo 网站搭建 找到一个极简风的主题 One-paper 找到一个适配手机端的后台插件 hexo 分类导航栏完成 网站域名购买： ltao.cc ，ltao.fun，购买网站： namesilo 部署到github, 参考教程 </description>
+    </item>
+    
+    <item>
+      <title>markdown基础语法</title>
+      <link>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E5%B0%8F%E6%8A%80%E6%9C%AF/markdown%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
+      <description>markdown基本语法 # 字体样式 # markdown 内容 输出效果 # 一级标题 一级标题 ## 二级标题 二级标题 ### 三级标题 三级标题 #### 四级标题 一级标题 ** 粗体 ** 粗体 * 斜体 * 斜体 ~~ 删除线 .~~ 删除线 . 段落样式 # 引用段落 # &amp;gt; 引用段落
+引用段落
+代码段落 # ``` { &amp;ldquo;firstName&amp;rdquo;: &amp;ldquo;John&amp;rdquo;, &amp;ldquo;lastName&amp;rdquo;: &amp;ldquo;Smith&amp;rdquo;, &amp;ldquo;age&amp;rdquo;: 25 } ```
+{&amp;#34;firstName&amp;#34;: &amp;#34;John&amp;#34;,&amp;#34;lastName&amp;#34;: &amp;#34;Smith&amp;#34;,&amp;#34;age&amp;#34;: 25} 列表 # 有序列表 # 第一名 第二名 第三名 无序列表 # - 猪 - 狗 - 牛</description>
+    </item>
+    
+  </channel>
+</rss>

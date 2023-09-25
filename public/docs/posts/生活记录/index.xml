@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ltao_Blog2</title>
+    <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/</link>
+    <description>Recent content on ltao_Blog2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us&#39;</language>
+    <lastBuildDate>Mon, 16 Jan 2023 20:37:55 +0000</lastBuildDate><atom:link href="http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>篮球投篮自测</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</link>
+      <pubDate>Mon, 16 Jan 2023 20:37:55 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E7%AF%AE%E7%90%83%E6%8A%95%E7%AF%AE%E8%87%AA%E6%B5%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>22年过年运动记账</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/22%E5%B9%B4%E8%BF%87%E5%B9%B4%E8%BF%90%E5%8A%A8%E8%AE%B0%E8%B4%A6/</guid>
+      <description> 1月4号 25
+1月5号 40
+1月6号 43 已结
+1月7号 40
+1月8号 35
+1月9号 60 已结
+1月10号 30
+1月11号 25
+1月13号 45 已结
+1月14号 40 （第十天）
+1月17号 30
+1月18号 2 已结
+1月19号 53
+1月20号 57
+1月21号 59 已结（剩下54元）
+320 = 140+65+53+57+5 已结清
+项目规则：
+跑步，一圈5元，每天最多跑4圈 深蹲，50个15元，每天最多做100个 羽毛球，20个4元，40个7元，60个10元，每天最多60个 </description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start # Create a new post # $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
+Run server # hexo server hexo server More info: Server
+Generate static files # $ hexo generate More info: Generating</description>
+    </item>
+    
+    <item>
+      <title>一些网站密码</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E4%B8%80%E4%BA%9B%E7%BD%91%E7%AB%99%E5%AF%86%E7%A0%81/</guid>
+      <description>nameSilo：
+2198764529@qq.com
+2198764529@QQ.com</description>
+    </item>
+    
+    <item>
+      <title>当前问题清单</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E5%BD%93%E5%89%8D%E9%97%AE%E9%A2%98%E6%B8%85%E5%8D%95/</guid>
+      <description> 紧急重要 # 面试技术准备
+去深圳的计划准备,包括租房、要带哪些东西去深圳、坐什么车去深圳、什么时候去深圳
+找个手机版的 typora软件，集成 vdior 到后台
+https://b3log.org/vditor/
+https://vditor.vercel.app/
+网站搭建,
+视频插入
+暂时考虑 发视频到 b站把，后面再优化
+手机端发布到github.io上,直接用内网穿透,方便手机在后台写文章
+页面加载动画，包括网站预加载动画，图片懒加载动画
+时间链接
+解决方案：https://github.com/liuyib/hexo-theme-stun/issues/150
+#还得更改39~40行左右的代码，改完是这样的// const date = post.date; const date = post.updated;
+- [x] 置顶文章解决方案：- 不需要了，直接用updated字段排序就行了- [x] 响应速度优化解决方案：- jsdelivr 文件加速 [教程地址](https://cloud.tencent.com/developer/article/1875306)- vercel 托管加速： [官网地址](https://cloud.tencent.com/developer/article/1875306) 紧急不重要 # 重要不紧急 # 配一台新的台式电脑, 并安装上黑苹果系统 不重要不紧急 # AI 自定义计划 </description>
+    </item>
+    
+    <item>
+      <title>思想收藏</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E6%80%9D%E6%83%B3%E6%94%B6%E8%97%8F/</guid>
+      <description>关于说话：
+祸从口出，不要轻易说出口 关于睡觉
+睡不着可以去试试听听新闻或视频 关于饮食
+多喝水，多吃水果，少吃外卖 </description>
+    </item>
+    
+    <item>
+      <title>问题处理完成日志</title>
+      <link>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/posts/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E5%AE%8C%E6%88%90%E6%97%A5%E5%BF%97/</guid>
+      <description>1月19日
+hexo 博客部署到 github 中 找到 markdown 编辑器 https://www.effie.co/ 清理 小米max3 和 小米9的手机桌面 1月20日
+家里的热水器要能两头出水(喷头和下面的水龙头),热水温度不能太高
+解决措施，从省钱的角度出发，主要有以下两点
+去家里阀门那，把阀门转向左边，将水压调低，从而减慢水流速度，进而降低水流最高温度 洗完澡调整喷头到门口的方向 出掉 小米max3（320 ）</description>
+    </item>
+    
+  </channel>
+</rss>
