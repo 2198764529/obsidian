@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/生活记录/你好.md",
+                "file": "content/posts/生活记录/你好啊.md",
                 "mode": "source",
                 "source": true
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/生活记录/你好.md",
+                "file": "content/posts/生活记录/你好啊.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/生活记录/你好.md",
+                "file": "content/posts/生活记录/你好啊.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/生活记录/你好.md"
+                "file": "content/posts/生活记录/你好啊.md"
               }
             }
           }
@@ -163,7 +163,7 @@
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
     "content/Templater/post.md",
-    "content/posts/生活记录/你好.md",
+    "content/posts/生活记录/你好啊.md",
     "content/posts/生活记录/22年过年运动记账.md",
     "content/posts/生活记录/_index.md",
     "content/posts/小技术/网站收藏.md",
