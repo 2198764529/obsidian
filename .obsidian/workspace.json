@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "兴起/一言.md",
+                "file": "修身/内在.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "兴起/一言.md",
+                "file": "修身/内在.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "兴起/一言.md",
+                "file": "修身/内在.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "兴起/一言.md"
+                "file": "修身/内在.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "歌词/晚风.md",
     "兴起/一言.md",
+    "修身/内在.md",
+    "修身",
+    "歌词/晚风.md",
     "兴起",
     "README.md",
     "歌词",
@@ -173,7 +175,6 @@
     "个人/关于睡觉.md",
     "工作 & 学习",
     "工作 & 学习.md",
-    "个人",
     "[.md",
     "新建github 项目.md",
     "IMG_20230919_191342_1.jpg",
