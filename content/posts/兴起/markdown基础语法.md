@@ -1,11 +1,14 @@
 ---
-title: markdown基础语法
 categories:
-- 小技术
+  - 小技术
 tags:
-- markdown
-- 写作
+  - markdown
+  - 写作
 PublishDate: 2023-02-02 20:30:04
+title: markdown基础语法
+id: 4d83e0b009
+datetimeCreate: 2023-09-25 14:40:52
+datetimeUpdate: 2023-09-25 16:56:29
 ---
 
 # markdown基本语法

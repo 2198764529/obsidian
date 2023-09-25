@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/歌词/晚风.md",
+                "file": "content/posts/生活记录/hello-world.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/歌词/晚风.md",
+                "file": "content/posts/生活记录/hello-world.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/歌词/晚风.md",
+                "file": "content/posts/生活记录/hello-world.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/歌词/晚风.md"
+                "file": "content/posts/生活记录/hello-world.md"
               }
             }
           }
@@ -162,12 +162,30 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "content/posts/生活记录/22年去深圳计划.md",
-    "content/posts/生活记录/你好啊.md",
-    "content/Templater/post.md",
     "content/posts/生活记录/一些网站密码.md",
     "content/posts/生活记录/思想收藏.md",
     "content/posts/生活记录/篮球投篮自测.md",
+    "content/posts/生活记录/你好啊.md",
+    "content/posts/生活记录/当前问题清单.md",
+    "content/posts/生活记录/22年去深圳计划.md",
+    "content/posts/生活记录/22年过年运动记账.md",
+    "content/posts/生活记录/_index.md",
+    "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
+    "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
+    "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
+    "content/posts/工作 & 学习/未命名.md",
+    "content/posts/个人/目标.md",
+    "content/posts/个人/关于做事.md",
+    "content/posts/个人/关于睡觉.md",
+    "content/posts/个人/关于篮球.md",
+    "content/posts/个人/目标/9.25 ~ 10.6.md",
+    "网站收藏.md",
+    "content/posts/兴起/hexo 部署发布.md",
+    "content/posts/兴起/一言.md",
+    "content/posts/兴起/网站收藏.md",
+    "content/posts/兴起/_index.md",
+    "content/posts/歌词/晚风.md",
+    "content/Templater/post.md",
     "themes/book/images/screenshot.png",
     "themes/book/images/tn.png",
     "themes/book/images",
@@ -180,17 +198,7 @@
     "themes/book/i18n/ru.yaml",
     "themes/book/i18n/pt.yaml",
     "themes/book/i18n/jp.yaml",
-    "content/posts/生活记录/22年过年运动记账.md",
-    "content/posts/生活记录/_index.md",
-    "content/posts/小技术/网站收藏.md",
-    "content/posts/生活记录/当前问题清单.md",
-    "content/posts/个人/目标/9.25 ~ 10.6.md",
-    "content/posts/个人/关于篮球.md",
-    "content/posts/个人/关于睡觉.md",
     "未命名.md",
-    "content/posts/个人/关于做事.md",
-    "content/posts/个人/目标.md",
-    "网站收藏.md",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/toc.svg",
     "themes/book/static/svg/menu.svg",
@@ -199,14 +207,6 @@
     "themes/book/static/favicon.svg",
     "themes/book/static/favicon.png",
     "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/4th-level.md",
-    "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/_index.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/section/second-page.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/section/_index.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/section/first-page.md",
-    "themes/book/exampleSite/content.en/docs/example/table-of-contents/_index.md",
-    "themes/book/exampleSite/content.en/docs/example/table-of-contents/without-toc.md",
-    "themes/book/exampleSite/content.en/docs/example/table-of-contents/with-toc.md",
-    "themes/book/exampleSite/content.en/docs/example/collapsed/_index.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "public/svg/translate.svg",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
