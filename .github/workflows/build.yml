@@ -1,40 +1,32 @@
-name: deploy
+name: github pages
 
 on:
-    push:
-    workflow_dispatch:
-    schedule:
-        # Runs everyday at 8:00 AM
-        - cron: "0 0 * * *"
+  push:
+    branches:
+      - master  # 每次推送到 main 分支都会触发部署任务
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Install Hugo CLI
-              run: |
-                wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
-                && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-                
-            - uses: actions/checkout@v2
-              with:
-                submodules: true
-                fetch-depth: 0
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-            - name: Setup Hugo
-              uses: peaceiris/actions-hugo@v2
-              with:
-                hugo-version: '0.100.2'
-                extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.79.1'
+          extended: true
 
-            - name: Build Hugo
-              run: hugo --minify --verbose
+      - name: Build
+        run: hugo --minify
 
-            - name: Deploy Web
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-                  EXTERNAL_REPOSITORY: 2198764529/2198764529.github.io
-                  PUBLISH_BRANCH: master
-                  PUBLISH_DIR: ./public
-                  commit_message: ${{ github.event.head_commit.message }}
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: <USERNAME>/<USERNAME>.github.io  # 替换成上文所创建的个人主页仓库
+          publish_branch: main
+          publish_dir: ./public
