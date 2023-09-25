@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "file": "content/Templater/post.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "file": "content/Templater/post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "file": "content/Templater/post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md"
+                "file": "content/Templater/post.md"
               }
             }
           }
@@ -150,10 +150,12 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
+    "content/posts/生活记录/22年过年运动记账.md",
+    "content/Templater/post.md",
+    "content/Templater",
     "content/posts/生活记录/当前问题清单.md",
     "content/posts/生活记录/篮球投篮自测.md",
     "content/posts/生活记录/22年去深圳计划.md",
-    "content/posts/生活记录/22年过年运动记账.md",
     "content/posts/生活记录/_index.md",
     "content/posts/个人/目标/9.25 ~ 10.6.md",
     "content/posts/个人/关于篮球.md",
@@ -171,7 +173,6 @@
     "themes/book/static/katex/fonts/KaTeX_Size4-Regular.ttf",
     "themes/book/static/katex/fonts/KaTeX_Size3-Regular.woff2",
     "themes/book/static/katex/fonts/KaTeX_Size3-Regular.woff",
-    "themes/book/static/katex/fonts/KaTeX_Size3-Regular.ttf",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/toc.svg",
     "themes/book/static/svg/menu.svg",
@@ -192,7 +193,6 @@
     "themes/book/exampleSite/content.en/docs/shortcodes/_index.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/mermaid.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/katex.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/expand.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "public/svg/translate.svg",
     "public/svg/toc.svg",
