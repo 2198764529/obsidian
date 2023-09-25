@@ -13,9 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4f96726d7ab8350b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "content/Templater/post.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Templater/post.md",
+                "file": "content/posts/生活记录/22年过年运动记账.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Templater/post.md",
+                "file": "content/posts/生活记录/22年过年运动记账.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Templater/post.md"
+                "file": "content/posts/生活记录/22年过年运动记账.md"
               }
             }
           }
@@ -150,8 +162,9 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "content/posts/生活记录/22年过年运动记账.md",
+    "content/posts/小技术/网站收藏.md",
     "content/Templater/post.md",
+    "content/posts/生活记录/22年过年运动记账.md",
     "content/Templater",
     "content/posts/生活记录/当前问题清单.md",
     "content/posts/生活记录/篮球投篮自测.md",
@@ -192,7 +205,6 @@
     "themes/book/exampleSite/content.en/docs/shortcodes/tabs.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/_index.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/mermaid.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/katex.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "public/svg/translate.svg",
     "public/svg/toc.svg",
