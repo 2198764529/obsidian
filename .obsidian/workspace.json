@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "歌词/晚风.md",
+                "file": "兴起/一言.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "歌词/晚风.md",
+                "file": "兴起/一言.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "歌词/晚风.md",
+                "file": "兴起/一言.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "歌词/晚风.md"
+                "file": "兴起/一言.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "README.md",
     "歌词/晚风.md",
+    "兴起/一言.md",
+    "兴起",
+    "README.md",
     "歌词",
     "网站收藏.md",
     "obsidian",
@@ -172,7 +174,6 @@
     "工作 & 学习",
     "工作 & 学习.md",
     "个人",
-    "目标",
     "[.md",
     "新建github 项目.md",
     "IMG_20230919_191342_1.jpg",
