@@ -5,7 +5,7 @@ theme: 'book'
 port: 80
 frontmatter:
   lastmod:
-    - :fileModTime
+    - :datetimeUpdate
     - :git
     - lastmod
 markup:
