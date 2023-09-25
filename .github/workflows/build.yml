@@ -29,8 +29,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
             PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-            external_repository: 2198764529/2198764529.github.io  # Page 仓库 
+            EXTERNAL_REPOSITORY: 2198764529/2198764529.github.io
             PUBLISH_BRANCH: master
             PUBLISH_DIR: ./public
-            keep_files: false # remove existing files
             commit_message: ${{ github.event.head_commit.message }}
