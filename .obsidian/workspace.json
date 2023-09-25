@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "[.md",
+                "file": "个人/目标/9.25 ~ 10.6.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "[.md",
+                "file": "个人/目标/9.25 ~ 10.6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "[.md",
+                "file": "个人/目标/9.25 ~ 10.6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "[.md"
+                "file": "个人/目标/9.25 ~ 10.6.md"
               }
             }
           }
@@ -147,13 +147,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "173b388b5f5ef5e5",
+  "active": "d2201f06427176e1",
   "lastOpenFiles": [
+    "[].md",
+    "个人/目标/9.25 ~ 10.6.md",
+    "个人/目标.md",
     "修身/内在.md",
     "[.md",
-    "个人/目标/9.25 ~ 10.6.md",
     "修身/外在.md",
-    "个人/目标.md",
     "个人/关于做事.md",
     "个人/目标",
     "杂思/有书可读方案.md",
