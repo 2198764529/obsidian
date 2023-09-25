@@ -1,5 +1,6 @@
 [
   "obsidian-git",
   "table-editor-obsidian",
-  "templater-obsidian"
+  "templater-obsidian",
+  "auto-front-matter"
 ]

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/生活记录/你好啊.md",
-                "mode": "preview",
+                "file": "content/posts/歌词/晚风.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/生活记录/你好啊.md",
+                "file": "content/posts/歌词/晚风.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/生活记录/你好啊.md",
+                "file": "content/posts/歌词/晚风.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/生活记录/你好啊.md"
+                "file": "content/posts/歌词/晚风.md"
               }
             }
           }
@@ -162,8 +162,9 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "content/Templater/post.md",
+    "content/posts/生活记录/22年去深圳计划.md",
     "content/posts/生活记录/你好啊.md",
+    "content/Templater/post.md",
     "content/posts/生活记录/一些网站密码.md",
     "content/posts/生活记录/思想收藏.md",
     "content/posts/生活记录/篮球投篮自测.md",
@@ -183,7 +184,6 @@
     "content/posts/生活记录/_index.md",
     "content/posts/小技术/网站收藏.md",
     "content/posts/生活记录/当前问题清单.md",
-    "content/posts/生活记录/22年去深圳计划.md",
     "content/posts/个人/目标/9.25 ~ 10.6.md",
     "content/posts/个人/关于篮球.md",
     "content/posts/个人/关于睡觉.md",
