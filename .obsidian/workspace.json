@@ -6,7 +6,6 @@
       {
         "id": "1cee9cd2b45393ed",
         "type": "tabs",
-        "dimension": 53.497164461247635,
         "children": [
           {
             "id": "d2201f06427176e1",
@@ -18,21 +17,6 @@
                 "mode": "source",
                 "source": false
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "6ccef95a49878002",
-        "type": "tabs",
-        "dimension": 46.502835538752365,
-        "children": [
-          {
-            "id": "1b3c37a835862a8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown-table-editor-view",
-              "state": {}
             }
           }
         ]
@@ -160,7 +144,7 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "markdown-table-editor:Open Markdown Table Editor": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "d2201f06427176e1",
