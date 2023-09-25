@@ -1,5 +1,5 @@
 {
-  "auto": true,
+  "auto": false,
   "isReorderRequired": true,
   "isTitleRequired": false,
   "isIdRequired": true,
