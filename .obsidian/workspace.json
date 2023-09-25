@@ -6,6 +6,7 @@
       {
         "id": "1cee9cd2b45393ed",
         "type": "tabs",
+        "dimension": 53.497164461247635,
         "children": [
           {
             "id": "d2201f06427176e1",
@@ -24,6 +25,7 @@
       {
         "id": "6ccef95a49878002",
         "type": "tabs",
+        "dimension": 46.502835538752365,
         "children": [
           {
             "id": "1b3c37a835862a8c",
@@ -161,7 +163,7 @@
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "1b3c37a835862a8c",
+  "active": "d2201f06427176e1",
   "lastOpenFiles": [
     "工作 & 学习/未命名.md",
     "杂思/个人存储方案.md",
