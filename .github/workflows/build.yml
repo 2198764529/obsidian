@@ -1,4 +1,4 @@
-name: github pages
+name: deploy
 
 on:
     push:
@@ -8,28 +8,28 @@ on:
         - cron: "0 0 * * *"
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                submodules: true
+                fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.100.2'
-          extended: true
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                hugo-version: '0.100.2'
+                extended: true
 
-      - name: Build
-        run: hugo
+            - name: Build Hugo
+              run: hugo -b "https://lucumt.info/" -e "production"
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-            PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-            EXTERNAL_REPOSITORY: 2198764529/2198764529.github.io
-            PUBLISH_BRANCH: master
-            PUBLISH_DIR: ./public
-            commit_message: ${{ github.event.head_commit.message }}
+            - name: Deploy Web
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+                  EXTERNAL_REPOSITORY: 2198764529/2198764529.github.io
+                  PUBLISH_BRANCH: master
+                  PUBLISH_DIR: ./public
+                  commit_message: ${{ github.event.head_commit.message }}
