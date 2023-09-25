@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/个人/关于做事.md",
+                "file": "content/posts/个人/目标/9.25 ~ 10.6.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/个人/关于做事.md",
+                "file": "content/posts/个人/目标/9.25 ~ 10.6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/个人/关于做事.md",
+                "file": "content/posts/个人/目标/9.25 ~ 10.6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/个人/关于做事.md"
+                "file": "content/posts/个人/目标/9.25 ~ 10.6.md"
               }
             }
           }
@@ -149,9 +149,13 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
+    "未命名.md",
+    "content/posts/个人/目标/9.25 ~ 10.6.md",
+    "content/posts/个人/关于篮球.md",
+    "content/posts/个人/关于做事.md",
+    "content/posts/个人/目标.md",
     "content/posts/生活记录/22年过年运动记账.md",
     "content/posts/生活记录/22年去深圳计划.md",
-    "content/posts/个人/关于篮球.md",
     "网站收藏.md",
     "themes/book/theme.toml",
     "themes/book/static/katex/fonts/KaTeX_Typewriter-Regular.woff2",
@@ -188,10 +192,6 @@
     "themes/book/exampleSite/content.en/docs/shortcodes/hints.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/columns.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/buttons.md",
-    "themes/book/exampleSite/content.en/docs/example/_index.md",
-    "themes/book/exampleSite/content.en/docs/example/hidden.md",
-    "themes/book/exampleSite/content.en/posts/_index.md",
-    "themes/book/exampleSite/content.en/posts/migrate-from-jekyll.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "public/svg/translate.svg",
     "public/svg/toc.svg",
