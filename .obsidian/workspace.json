@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "歌词/晚风.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "c89a9b37a04869d1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "歌词/晚风.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "歌词/晚风.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "歌词/晚风.md"
               }
             }
           }
@@ -147,12 +158,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d2201f06427176e1",
+  "active": "c89a9b37a04869d1",
   "lastOpenFiles": [
+    "README.md",
+    "歌词/晚风.md",
+    "歌词",
     "网站收藏.md",
     "obsidian",
     "obsidian/图片",
-    "README.md",
     "杂思/个人存储方案.md",
     "工作 & 学习/未命名.md",
     "个人/目标.md",
