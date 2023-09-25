@@ -15,7 +15,7 @@
               "state": {
                 "file": "content/posts/生活记录/你好啊.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -162,10 +162,11 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
+    "content/Templater/post.md",
+    "content/posts/生活记录/你好啊.md",
+    "content/posts/生活记录/一些网站密码.md",
     "content/posts/生活记录/思想收藏.md",
     "content/posts/生活记录/篮球投篮自测.md",
-    "content/posts/生活记录/你好啊.md",
-    "content/Templater/post.md",
     "themes/book/images/screenshot.png",
     "themes/book/images/tn.png",
     "themes/book/images",
@@ -206,7 +207,6 @@
     "themes/book/exampleSite/content.en/docs/example/table-of-contents/without-toc.md",
     "themes/book/exampleSite/content.en/docs/example/table-of-contents/with-toc.md",
     "themes/book/exampleSite/content.en/docs/example/collapsed/_index.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/tabs.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "public/svg/translate.svg",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
