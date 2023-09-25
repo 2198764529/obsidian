@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/个人/目标/_index.md",
+                "file": "content/posts/生活记录/22年过年运动记账.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/个人/目标/_index.md",
+                "file": "content/posts/生活记录/22年过年运动记账.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/个人/目标/_index.md",
+                "file": "content/posts/生活记录/22年过年运动记账.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/个人/目标/_index.md"
+                "file": "content/posts/生活记录/22年过年运动记账.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "content/posts/个人/目标/9.25 ~ 10.6.md",
     "content/posts/个人/目标/_index.md",
+    "content/posts/个人/目标/9.25 ~ 10.6.md",
     "content/posts/个人/关于篮球.md",
     "content/posts/歌词/_index.md",
     "content/posts/生活记录/_index.md",
