@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 261.5,
+    "collapsed": true
   },
   "right": {
     "id": "21e211a9d164c2bb",
@@ -149,7 +150,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "34a92fe47740ec7e",
+  "active": "64d3d5930105b87b",
   "lastOpenFiles": [
     "content/posts/杂思/有书可读方案.md",
     "content/posts/杂思/个人存储方案.md",
