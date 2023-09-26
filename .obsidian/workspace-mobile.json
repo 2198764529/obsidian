@@ -11,8 +11,12 @@
             "id": "7fbfd7601e8d165c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/个人/关于做事.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
+            "file": "content/posts/个人/关于做事.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
+            "file": "content/posts/个人/关于做事.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +113,9 @@
         "type": "leaf",
         "state": {
           "type": "outline",
-          "state": {}
+          "state": {
+            "file": "content/posts/个人/关于做事.md"
+          }
         }
       }
     ],
@@ -127,6 +135,7 @@
   },
   "active": "7fbfd7601e8d165c",
   "lastOpenFiles": [
+    "content/posts/个人/关于篮球.md",
     "个人/关于睡觉.md",
     "个人/关于做事.md",
     "个人/目标.md",
