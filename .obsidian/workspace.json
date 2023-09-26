@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/posts/个人/目标/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/posts/个人/目标/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/posts/个人/目标/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/posts/个人/目标/_index.md"
               }
             }
           }
@@ -151,8 +151,11 @@
   },
   "active": "34a92fe47740ec7e",
   "lastOpenFiles": [
-    "content/posts/_index.md",
+    "content/posts/个人/目标/9.25 ~ 10.6.md",
+    "content/posts/个人/目标.md",
+    "content/posts/个人/目标/_index.md",
     "content/_index.md",
+    "content/posts/_index.md",
     "content/posts/日记本",
     "public/favicon.png",
     "2023-09-26.md",
