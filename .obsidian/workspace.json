@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/个人/目标/9.25 ~ 10.6.md",
+                "file": "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/个人/目标/9.25 ~ 10.6.md",
+                "file": "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/个人/目标/9.25 ~ 10.6.md",
+                "file": "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/个人/目标/9.25 ~ 10.6.md"
+                "file": "content/posts/工作 & 学习/计算机网络/自问自答/_index.md"
               }
             }
           }
@@ -162,9 +162,18 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
-    "content/posts/个人/目标/_index.md",
-    "content/posts/个人/_index.md",
+    "content/posts/工作 & 学习/计算机网络/总结/_index.md",
+    "content/posts/工作 & 学习/计算机网络/_index.md",
+    "content/posts/工作 & 学习/_index.md",
+    "content/posts/杂思/_index.md",
+    "content/posts/杂思/有书可读方案.md",
+    "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
+    "content/posts/杂思/个人存储方案.md",
     "content/posts/兴起/_index.md",
+    "content/posts/_index.md",
+    "content/posts/个人/目标/_index.md",
+    "content/posts/个人/目标/9.25 ~ 10.6.md",
+    "content/posts/个人/_index.md",
     "themes/book/images/tn.png",
     "themes/book/images/screenshot.png",
     "themes/book/images",
@@ -191,14 +200,6 @@
     "themes/book/exampleSite/content.en/docs/example/collapsed/_index.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/section/first-page.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/section/second-page.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/section/_index.md",
-    "themes/book/exampleSite/content.en/docs/example/hidden.md",
-    "themes/book/exampleSite/content.en/docs/example/_index.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/_index.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/katex.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/tabs.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/hints.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/mermaid.md",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/menu.svg",
     "themes/book/static/svg/toc.svg",
