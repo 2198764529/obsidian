@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/歌词/_index.md",
+                "file": "content/posts/个人/目标/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/歌词/_index.md",
+                "file": "content/posts/个人/目标/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/歌词/_index.md",
+                "file": "content/posts/个人/目标/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/歌词/_index.md"
+                "file": "content/posts/个人/目标/_index.md"
               }
             }
           }
@@ -163,6 +163,9 @@
   },
   "active": "68ae83a8b5b79a22",
   "lastOpenFiles": [
+    "content/posts/个人/_index.md",
+    "content/posts/兴起/_index.md",
+    "content/posts/歌词/_index.md",
     "content/posts/生活记录/_index.md",
     "content/posts/修身/_index.md",
     "content/posts/_index.md",
@@ -184,7 +187,6 @@
     "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
     "content/posts/工作 & 学习/计算机网络/总结/_index.md",
     "content/posts/杂思/_index.md",
-    "content/posts/歌词/_index.md",
     "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
@@ -192,10 +194,8 @@
     "assert/img/MinimalistScenery04 1.jpg",
     "assert/img/IMG_20230128_162005.jpg",
     "assert/img/IMG_20230128_162005 1.jpg",
-    "content/posts/兴起/_index.md",
     "content/posts/个人/目标/_index.md",
     "content/posts/个人/目标/9.25 ~ 10.6.md",
-    "content/posts/个人/_index.md",
     "themes/book/images/tn.png",
     "themes/book/images/screenshot.png",
     "themes/book/images",
