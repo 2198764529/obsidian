@@ -1,10 +1,10 @@
 ---
 weight: 4
-bookFlatSection: true
+bookCollapseSection: true
 title: 总结
 id: e6e6379ea0
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2023-09-26 14:25:53
+datetimeUpdate: 2023-09-26 14:35:09
 ---
 写，就是为了记住。
 

@@ -1,10 +1,10 @@
 ---
 weight: 4
-bookFlatSection: true
+bookCollapseSection: true
 title: 自问自答
 id: e6e6379ea0
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2023-09-26 14:25:56
+datetimeUpdate: 2023-09-26 14:35:13
 ---
 写，就是为了记住。
 
