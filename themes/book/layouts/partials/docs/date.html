@@ -1,6 +1,7 @@
-<!--
-  Returns formatted date.
-  Usage: partial "docs/date" (dict "Date" .Date "Format" .Site.Params.BookDateFormat)
--->
-{{- $format := default "January 2, 2006" .Format -}}
-<!-- {{- return (.Date.Format $format) -}} -->
+<!-- {{ if .PublishDate }}
+    <h5>{{ .PublishDate.Format $.Site.Params.BookDateFormat }}</h5>
+{{ end }} -->
+
+{{ if .Lastmod }}
+    <h6>{{ .Lastmod.Format $.Site.Params.BookDateFormat }}</h6>
+{{ end }}

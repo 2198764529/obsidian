@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "file": "content/posts/修身/_index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68ae83a8b5b79a22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/歌词/_index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "file": "content/posts/歌词/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md",
+                "file": "content/posts/歌词/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/生活记录/22年过年运动记账.md"
+                "file": "content/posts/歌词/_index.md"
               }
             }
           }
@@ -148,8 +161,18 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4f96726d7ab8350b",
+  "active": "68ae83a8b5b79a22",
   "lastOpenFiles": [
+    "content/posts/生活记录/_index.md",
+    "content/posts/修身/_index.md",
+    "content/posts/_index.md",
+    "content/_index.md",
+    "content/posts/杂思/个人存储方案.md",
+    "themes/book/static/favicon.png",
+    "themes/book/static/favicon.ico",
+    "themes/book/static/image.png",
+    "content/posts/生活记录/hello-world.md",
+    "content/posts/生活记录/22年过年运动记账.md",
     "content/posts/工作 & 学习/_index.md",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
@@ -160,16 +183,12 @@
     "content/posts/工作 & 学习/计算机网络/_index.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
     "content/posts/工作 & 学习/计算机网络/总结/_index.md",
-    "content/posts/修身/_index.md",
     "content/posts/杂思/_index.md",
     "content/posts/歌词/_index.md",
-    "content/posts/生活记录/_index.md",
-    "content/posts/_index.md",
     "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
     "content/posts/杂思/有书可读方案.md",
-    "content/posts/杂思/个人存储方案.md",
     "assert/img/MinimalistScenery04 1.jpg",
     "assert/img/IMG_20230128_162005.jpg",
     "assert/img/IMG_20230128_162005 1.jpg",
@@ -184,17 +203,12 @@
     "themes/book/archetypes/posts.md",
     "themes/book/archetypes",
     "content/posts/兴起/_index 1.md",
-    "content/posts/生活记录/22年过年运动记账.md",
     "themes/book/go.mod",
-    "themes/book/theme.toml",
     "themes/book/README.md",
     "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/4th-level.md",
-    "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/_index.md",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/menu.svg",
     "themes/book/static/svg/toc.svg",
-    "themes/book/static/svg/edit.svg",
-    "themes/book/static/svg/calendar.svg",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
   ]

@@ -1,10 +1,10 @@
 ---
 weight: 1
 bookFlatSection: true
-title: posts
+title: 笔记列表
 id: e6e6379ea0
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2023-09-26 14:19:11
+datetimeUpdate: 2023-09-26 17:29:47
 ---
 写，就是为了记住。
 

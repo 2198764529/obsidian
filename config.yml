@@ -1,14 +1,14 @@
 baseURL: http://example.org/
 languageCode: en-us'
-title: 'ltao_Blog'
+title: '李枫的地'
 theme: 'book'
 port: 80
 frontmatter:
+  publishDate:
+    - datetimeCreate
   lastmod:
     - datetimeUpdate
-    - :git
-    - lastmod
-
+  
 
 markup:
   goldmark:
@@ -38,7 +38,7 @@ params:
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
   # For backward compatibility you can set '*' to render all sections to menu. Acts same as '/'
-  BookSection: "*"
+  BookSection: "/"
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
@@ -54,12 +54,12 @@ params:
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath: edit/master/
+  # BookEditPath: edit/master/
 
   # Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat: "2017-03-03"
+  BookDateFormat: "2006年01月02日 15时04分"
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
