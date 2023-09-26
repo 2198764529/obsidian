@@ -1,10 +1,10 @@
 ---
 weight: 3
 bookCollapseSection: true
-title: 计算机网络
+title: 自问自答
 id: e6e6379ea0
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2023-09-26 14:35:19
+datetimeUpdate: 2023-09-26 23:23:47
 ---
 写，就是为了记住。
 
