@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/计算机网络/_index.md",
+                "file": "content/posts/网站收藏.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/计算机网络/_index.md",
+                "file": "content/posts/网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/计算机网络/_index.md",
+                "file": "content/posts/网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/计算机网络/_index.md"
+                "file": "content/posts/网站收藏.md"
               }
             }
           }
@@ -149,26 +149,27 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "34a92fe47740ec7e",
+  "active": "64d3d5930105b87b",
   "lastOpenFiles": [
+    "content/posts/_index.md",
+    "content/posts/网站收藏.md",
+    "content/_index.md",
+    "README.md",
+    "content/posts/计算机网络/_index.md",
     "content/posts/计算机网络/自问自答/_index.md",
     "content/posts/计算机网络/总结/_index.md",
     "content/posts/工作 & 学习/_index.md",
-    "content/posts/计算机网络/_index.md",
     "content/posts/歌词/_index.md",
     "content/posts/歌词/晚风.md",
     "content/posts/目标/_index.md",
     "content/posts/杂思/个人存储方案.md",
     "content/posts/目标/9.25 ~ 10.6.md",
     "content/posts/个人/目标.md",
-    "content/_index.md",
-    "content/posts/_index.md",
     "content/posts/日记本",
     "public/favicon.png",
     "2023-09-26.md",
     "public/favicon.svg",
     "archetypes/default.md",
-    "网站收藏.md",
     "未命名.md"
   ]
 }
