@@ -1,52 +1,35 @@
 {
   "main": {
-    "id": "298fec00941f3c3f",
+    "id": "131a399e9c491871",
     "type": "split",
     "children": [
       {
-        "id": "1cee9cd2b45393ed",
+        "id": "39c70e829171b0e4",
         "type": "tabs",
         "children": [
           {
-            "id": "4f96726d7ab8350b",
+            "id": "a8a1da95814e868f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/修身/_index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "68ae83a8b5b79a22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/个人/目标/_index.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f832ca8e34110253",
+    "id": "681d4ae1369a4872",
     "type": "split",
     "children": [
       {
-        "id": "b8fafa73453f455c",
+        "id": "6f6e3f9b133a3ca5",
         "type": "tabs",
         "children": [
           {
-            "id": "173b388b5f5ef5e5",
+            "id": "64d3d5930105b87b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +39,7 @@
             }
           },
           {
-            "id": "abc51f3040424b5a",
+            "id": "639900be4c388f57",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,7 +54,7 @@
             }
           },
           {
-            "id": "6cf9b059cc95f8a3",
+            "id": "5ec57237ea9dc430",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -82,23 +65,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 261.5
   },
   "right": {
-    "id": "666a01d16d7a6872",
+    "id": "21e211a9d164c2bb",
     "type": "split",
     "children": [
       {
-        "id": "9b8d2370574d53e7",
+        "id": "647b9c8a39180982",
         "type": "tabs",
         "children": [
           {
-            "id": "eccb13a085bc4c3d",
+            "id": "6a2c7d1bf07fbcd8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/个人/目标/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,19 +92,18 @@
             }
           },
           {
-            "id": "61247047c6a85ca3",
+            "id": "e630d3866124e8a5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/个人/目标/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "61cf67cadec41fcf",
+            "id": "2d70c47bf428a11c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,13 +114,11 @@
             }
           },
           {
-            "id": "9ae23946fd3a66b2",
+            "id": "e257f572dda370dc",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "content/posts/个人/目标/_index.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -151,65 +130,16 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "68ae83a8b5b79a22",
-  "lastOpenFiles": [
-    "content/posts/个人/_index.md",
-    "content/posts/兴起/_index.md",
-    "content/posts/歌词/_index.md",
-    "content/posts/生活记录/_index.md",
-    "content/posts/修身/_index.md",
-    "content/posts/_index.md",
-    "content/_index.md",
-    "content/posts/杂思/个人存储方案.md",
-    "themes/book/static/favicon.png",
-    "themes/book/static/favicon.ico",
-    "themes/book/static/image.png",
-    "content/posts/生活记录/hello-world.md",
-    "content/posts/生活记录/22年过年运动记账.md",
-    "content/posts/工作 & 学习/_index.md",
-    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
-    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
-    "resources/_gen/assets/scss",
-    "resources/_gen/assets",
-    "resources/_gen",
-    "resources",
-    "content/posts/工作 & 学习/计算机网络/_index.md",
-    "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
-    "content/posts/工作 & 学习/计算机网络/总结/_index.md",
-    "content/posts/杂思/_index.md",
-    "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
-    "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
-    "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
-    "content/posts/杂思/有书可读方案.md",
-    "assert/img/MinimalistScenery04 1.jpg",
-    "assert/img/IMG_20230128_162005.jpg",
-    "assert/img/IMG_20230128_162005 1.jpg",
-    "content/posts/个人/目标/_index.md",
-    "content/posts/个人/目标/9.25 ~ 10.6.md",
-    "themes/book/images/tn.png",
-    "themes/book/images/screenshot.png",
-    "themes/book/images",
-    "themes/book/archetypes/docs.md",
-    "themes/book/archetypes/posts.md",
-    "themes/book/archetypes",
-    "content/posts/兴起/_index 1.md",
-    "themes/book/go.mod",
-    "themes/book/README.md",
-    "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/4th-level.md",
-    "themes/book/static/svg/translate.svg",
-    "themes/book/static/svg/menu.svg",
-    "themes/book/static/svg/toc.svg",
-    "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
-    "工作 & 学习/计算机网络/自问自答/未命名.canvas"
-  ]
+  "active": "a8a1da95814e868f",
+  "lastOpenFiles": []
 }
