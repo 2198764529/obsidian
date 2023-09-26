@@ -11,8 +11,12 @@
             "id": "a8a1da95814e868f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "网站收藏.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "网站收藏.md"
+              }
             }
           }
         ]
@@ -141,5 +149,8 @@
     }
   },
   "active": "a8a1da95814e868f",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "未命名.md",
+    "网站收藏.md"
+  ]
 }
