@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "39c70e829171b0e4",
+        "id": "95600a358681c655",
         "type": "tabs",
         "children": [
           {
-            "id": "a8a1da95814e868f",
+            "id": "34a92fe47740ec7e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "网站收藏.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "网站收藏.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "网站收藏.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "网站收藏.md"
+                "file": "content/_index.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -148,9 +149,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a8a1da95814e868f",
+  "active": "34a92fe47740ec7e",
   "lastOpenFiles": [
-    "未命名.md",
-    "网站收藏.md"
+    "content/posts/_index.md",
+    "content/posts/日记本",
+    "public/favicon.png",
+    "2023-09-26.md",
+    "public/favicon.svg",
+    "archetypes/default.md",
+    "网站收藏.md",
+    "未命名.md"
   ]
 }
