@@ -1,9 +1,4 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/theNewDynamic/gohugo-theme-ananke
-[submodule "themes/hugo-book"]
-	path = themes/hugo-book
-	url = https://github.com/alex-shpak/hugo-book
+
 [submodule "themes/book"]
 	path = themes/book
 	url = https://github.com/alex-shpak/hugo-book
