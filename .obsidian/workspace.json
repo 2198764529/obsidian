@@ -162,6 +162,8 @@
   },
   "active": "d2201f06427176e1",
   "lastOpenFiles": [
+    "hugo-book",
+    "themes/hugo-book",
     "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/_index.md",
     "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/4th-level.md",
     "themes/book/exampleSite/resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
@@ -195,9 +197,7 @@
     "themes/book/exampleSite/content.en/posts/creating-a-new-theme.md",
     "themes/book/exampleSite/content.en/posts/goisforlovers.md",
     "themes/book/exampleSite/content.en/posts/hugoisforlovers.md",
-    "themes/book/exampleSite/content.en/menu/index.md",
     "themes/book/exampleSite/content.en/docs/shortcodes",
-    "themes/book/exampleSite/content.en/docs/example",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/toc.svg",
     "themes/book/static/svg/edit.svg",
