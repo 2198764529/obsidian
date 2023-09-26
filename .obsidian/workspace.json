@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/工作 & 学习/计算机网络/_index.md",
+                "file": "content/posts/工作 & 学习/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/工作 & 学习/计算机网络/_index.md",
+                "file": "content/posts/工作 & 学习/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/工作 & 学习/计算机网络/_index.md",
+                "file": "content/posts/工作 & 学习/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/工作 & 学习/计算机网络/_index.md"
+                "file": "content/posts/工作 & 学习/_index.md"
               }
             }
           }
@@ -150,6 +150,8 @@
   },
   "active": "4f96726d7ab8350b",
   "lastOpenFiles": [
+    "content/posts/工作 & 学习/计算机网络/_index.md",
+    "content/posts/工作 & 学习/_index.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
     "content/posts/工作 & 学习/计算机网络/总结/_index.md",
     "content/posts/修身/_index.md",
@@ -157,9 +159,7 @@
     "content/posts/歌词/_index.md",
     "content/posts/生活记录/_index.md",
     "content/posts/_index.md",
-    "content/posts/工作 & 学习/计算机网络/_index.md",
     "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
-    "content/posts/工作 & 学习/_index.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
     "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
     "content/posts/杂思/有书可读方案.md",
