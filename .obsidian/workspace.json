@@ -160,8 +160,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d2201f06427176e1",
+  "active": "173b388b5f5ef5e5",
   "lastOpenFiles": [
+    "themes/book/images/tn.png",
+    "themes/book/images/screenshot.png",
+    "themes/book/images",
+    "themes/book/archetypes/docs.md",
+    "themes/book/archetypes/posts.md",
+    "themes/book/archetypes",
     "content/posts/兴起/_index 1.md",
     "content/posts/兴起/_index.md",
     "content/posts/个人/_index.md",
@@ -177,8 +183,6 @@
     "themes/book/layouts/partials/docs/inject/head.html",
     "themes/book/layouts/partials/docs/inject/menu-after.html",
     "themes/book/layouts/partials/docs/inject/menu-before.html",
-    "themes/book/layouts/partials/docs/inject/body.html",
-    "themes/book/layouts/partials/docs/inject/content-before.html",
     "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/4th-level.md",
     "themes/book/exampleSite/content.en/docs/example/collapsed/3rd-level/_index.md",
     "themes/book/exampleSite/content.en/docs/example/table-of-contents/_index.md",
@@ -195,9 +199,6 @@
     "themes/book/exampleSite/content.en/docs/shortcodes/tabs.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/hints.md",
     "themes/book/exampleSite/content.en/docs/shortcodes/mermaid.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/buttons.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/expand.md",
-    "themes/book/exampleSite/content.en/docs/shortcodes/details.md",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/menu.svg",
     "themes/book/static/svg/toc.svg",
@@ -205,8 +206,6 @@
     "themes/book/static/svg/calendar.svg",
     "themes/book/static/favicon.svg",
     "themes/book/static/favicon.png",
-    "themes/book/images/screenshot.png",
-    "themes/book/images/tn.png",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "public/svg/translate.svg",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
