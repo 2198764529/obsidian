@@ -59,7 +59,7 @@ params:
   # Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat: "2006年6月6日"
+  BookDateFormat: "2017-03-03"
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
