@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/个人/关于做事.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "content/posts/个人/关于做事.md",
+            "file": "README.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "content/posts/个人/关于做事.md",
+            "file": "README.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "content/posts/个人/关于做事.md"
+            "file": "README.md"
           }
         }
       }
@@ -133,8 +133,9 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f44437a64c1987cf",
+  "active": "7fbfd7601e8d165c",
   "lastOpenFiles": [
+    "content/posts/个人/关于做事.md",
     "content/posts/计算机网络/自问自答/运输层.md",
     "content/posts/计算机网络/自问自答/应用层.md",
     "content/posts/计算机网络/自问自答/_index.md",
@@ -163,7 +164,6 @@
     "/content/posts/计算机网络",
     "/content/posts/目标",
     "content/posts/兴起/_index.md",
-    "content/posts/个人/关于做事.md",
     "content/posts/个人/关于篮球.md",
     "个人/关于睡觉.md",
     "个人/关于做事.md",
