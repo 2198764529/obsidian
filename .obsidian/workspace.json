@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术/markDown 语法.md",
+                "file": "content/posts/技术/正则表达式2 2.md",
                 "mode": "source",
                 "source": true
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术/markDown 语法.md",
+                "file": "content/posts/网站收藏 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/_index.md",
+                "file": "content/posts/技术/正则表达式2.md",
                 "mode": "source",
-                "source": false
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4f302cdc5d1e8a9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/兴起/一言.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/技术/markDown 语法.md",
+                "file": "content/posts/技术/正则表达式2 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/技术/markDown 语法.md",
+                "file": "content/posts/技术/正则表达式2 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/技术/markDown 语法.md"
+                "file": "content/posts/技术/正则表达式2 2.md"
               }
             }
           }
@@ -175,8 +186,21 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "173b388b5f5ef5e5",
+  "active": "4f96726d7ab8350b",
   "lastOpenFiles": [
+    "content/posts/技术/正则表达式2.md",
+    "content/posts/技术/正则表达式2 2.md",
+    "content/posts/技术/正则表达式2 1.md",
+    "content/posts/技术/正则表达式.md",
+    "content/posts/技术/markDown 语法.md",
+    "content/posts/技术/未命名.md",
+    "content/posts/技术/_index.md",
+    "content/posts/兴起/自醒.md",
+    "content/posts/兴起/一言.md",
+    "content/posts/兴起/_index.md",
+    "content/posts/_index.md",
+    "content/posts/网站收藏 1.md",
+    "content/_index.md",
     "public/svg/translate.svg",
     "public/svg/menu.svg",
     "public/svg/calendar.svg",
@@ -193,12 +217,8 @@
     "public/tags/出发/page/1/index.html",
     "public/tags/博客/page/1/index.html",
     "public/favicon.png",
-    "content/posts/技术/正则表达式.md",
-    "content/posts/技术/markDown 语法.md",
     "content/posts/网站收藏.md",
-    "content/posts/技术/_index.md",
     "content/posts/计算机网络/_index.md",
-    "content/posts/兴起/一言.md",
     "content/posts/杂思/有书可读方案.md",
     "content/posts/个人/关于篮球.md",
     "content/posts/个人/关于睡觉.md",
@@ -206,23 +226,14 @@
     "content/posts/个人/目标.md",
     "content/posts/歌词/晚风.md",
     "content/posts/修身/_index.md",
-    "content/posts/_index.md",
     "conflict-files-obsidian-git.md",
-    "content/posts/兴起/自醒.md",
     "content/posts/计算机网络/自问自答/运输层.md",
     "content/posts/计算机网络/自问自答/应用层.md",
     "content/posts/计算机网络/自问自答/_index.md",
-    "content/posts/计算机网络/总结/应用层.md",
-    "content/posts/计算机网络/总结/_index.md",
-    "content/posts/目标/9.25 ~ 10.6.md",
-    "content/posts/目标/_index.md",
-    "content/posts/生活记录/hexo 部署发布.md",
-    "content/posts/生活记录/一些网站密码.md",
     "themes/book/static/favicon.png",
     "themes/book/static/image.png",
     "assert/img/MinimalistScenery04 1.jpg",
     "assert/img/IMG_20230128_162005.jpg",
-    "assert/img/IMG_20230128_162005 1.jpg",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
   ]

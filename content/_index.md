@@ -2,8 +2,12 @@
 title: 好记性不如烂笔头
 id: aa02b25fa5
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2023-09-28 12:36:56
+datetimeUpdate: 2023-09-28 18:30:43
 ---
+## 9-29
+1. 增加字数统计 countWords(同 word 字数)
+2. 
+
 
 ### 9-27
 1. 花 2800 买了一个realme gt neo5 16g 1T
