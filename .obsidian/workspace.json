@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/修身/_index.md",
+                "file": "content/posts/网站收藏.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/兴起/一言.md",
+                "file": "content/posts/_index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/兴起/一言.md",
+                "file": "content/posts/网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/兴起/一言.md",
+                "file": "content/posts/网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/兴起/一言.md"
+                "file": "content/posts/网站收藏.md"
               }
             }
           }
@@ -161,10 +160,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "173b388b5f5ef5e5",
+  "active": "4f96726d7ab8350b",
   "lastOpenFiles": [
-    "themes/book/layouts/custom/data.htm",
-    "themes/book/layouts/custom",
+    "content/posts/修身/_index.md",
+    "content/posts/_index.md",
+    "content/posts/网站收藏.md",
+    "content/posts/兴起/一言.md",
+    "themes/book/scripts/__pycache__/file.cpython-39.pyc",
+    "themes/book/scripts/__pycache__/datetime.cpython-39.pyc",
+    "themes/book/scripts/__pycache__/walk.cpython-39.pyc",
+    "themes/book/scripts/__pycache__/frontMatter.cpython-39.pyc",
+    "themes/book/scripts/walk.py",
+    "themes/book/scripts/main.py",
+    "themes/book/scripts/__pycache__",
+    "themes/book/scripts/frontMatter.py",
+    "themes/book/scripts/datetime.py",
+    "themes/book/scripts/file.py",
     "conflict-files-obsidian-git.md",
     "content/posts/兴起/自醒.md",
     "content/posts/计算机网络/自问自答/运输层.md",
@@ -173,14 +184,8 @@
     "content/posts/计算机网络/总结/应用层.md",
     "content/posts/计算机网络/总结/_index.md",
     "content/posts/计算机网络/_index.md",
-    "content/posts/计算机网络/自问自答",
-    "content/posts/计算机网络/总结",
-    "content/posts/计算机网络",
-    "content/posts/网站收藏.md",
     "content/posts/目标/9.25 ~ 10.6.md",
     "content/posts/目标/_index.md",
-    "content/posts/目标",
-    "content/posts/兴起/一言.md",
     "content/posts/生活记录/hexo 部署发布.md",
     "content/posts/生活记录/一些网站密码.md",
     "content/posts/生活记录/markdown基础语法.md",
@@ -190,17 +195,10 @@
     "content/posts/兴起/_index.md",
     "content/posts/歌词/_index.md",
     "content/posts/生活记录/_index.md",
-    "content/posts/修身/_index.md",
-    "content/posts/_index.md",
     "content/_index.md",
     "content/posts/杂思/个人存储方案.md",
     "themes/book/static/favicon.png",
-    "themes/book/static/favicon.ico",
     "themes/book/static/image.png",
-    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
-    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
-    "resources/_gen/assets/scss",
-    "resources/_gen/assets",
     "assert/img/MinimalistScenery04 1.jpg",
     "assert/img/IMG_20230128_162005.jpg",
     "assert/img/IMG_20230128_162005 1.jpg",
