@@ -4,6 +4,6 @@
     <img src="{{ . | relURL }}" alt="Logo" />
     {{- end -}}
     <span>{{ .Site.Title }}</span>
-    <span>{{ .PageNumber }}</span>
+    <span>{{ .Paginator.Last }}</span>
   </a>
 </h2>
