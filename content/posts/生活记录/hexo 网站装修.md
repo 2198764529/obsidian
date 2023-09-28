@@ -10,7 +10,7 @@ PublishDate: 2023-02-02 20:30:04
 title: hexo 网站装修
 id: bf2c506718
 datetimeCreate: 2023-09-25 14:40:52
-datetimeUpdate: 2023-09-25 16:56:29
+datetimeUpdate: 2023-09-28 12:32:22
 ---
 #### 目的：为了明确 hexo 网站更常用、更易用、更好用。	
 将主要工作内容，细化分为以下模块。
