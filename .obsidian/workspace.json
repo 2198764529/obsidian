@@ -161,8 +161,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "68ae83a8b5b79a22",
+  "active": "173b388b5f5ef5e5",
   "lastOpenFiles": [
+    "themes/book/layouts/custom/data.htm",
+    "themes/book/layouts/custom",
     "conflict-files-obsidian-git.md",
     "content/posts/兴起/自醒.md",
     "content/posts/计算机网络/自问自答/运输层.md",
@@ -195,12 +197,10 @@
     "themes/book/static/favicon.png",
     "themes/book/static/favicon.ico",
     "themes/book/static/image.png",
-    "content/posts/生活记录/hello-world.md",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
     "resources/_gen/assets/scss",
     "resources/_gen/assets",
-    "resources/_gen",
     "assert/img/MinimalistScenery04 1.jpg",
     "assert/img/IMG_20230128_162005.jpg",
     "assert/img/IMG_20230128_162005 1.jpg",
