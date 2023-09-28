@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1d594b8abf8f8817",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/兴起/自醒.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/兴起/自醒.md",
+                "file": "content/posts/兴起/一言.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/兴起/自醒.md",
+                "file": "content/posts/兴起/一言.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/兴起/自醒.md"
+                "file": "content/posts/兴起/一言.md"
               }
             }
           }
@@ -173,10 +161,24 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1d594b8abf8f8817",
+  "active": "68ae83a8b5b79a22",
   "lastOpenFiles": [
-    "content/posts/兴起/一言.md",
+    "conflict-files-obsidian-git.md",
     "content/posts/兴起/自醒.md",
+    "content/posts/计算机网络/自问自答/运输层.md",
+    "content/posts/计算机网络/自问自答/应用层.md",
+    "content/posts/计算机网络/自问自答/_index.md",
+    "content/posts/计算机网络/总结/应用层.md",
+    "content/posts/计算机网络/总结/_index.md",
+    "content/posts/计算机网络/_index.md",
+    "content/posts/计算机网络/自问自答",
+    "content/posts/计算机网络/总结",
+    "content/posts/计算机网络",
+    "content/posts/网站收藏.md",
+    "content/posts/目标/9.25 ~ 10.6.md",
+    "content/posts/目标/_index.md",
+    "content/posts/目标",
+    "content/posts/兴起/一言.md",
     "content/posts/生活记录/hexo 部署发布.md",
     "content/posts/生活记录/一些网站密码.md",
     "content/posts/生活记录/markdown基础语法.md",
@@ -194,30 +196,16 @@
     "themes/book/static/favicon.ico",
     "themes/book/static/image.png",
     "content/posts/生活记录/hello-world.md",
-    "content/posts/生活记录/22年过年运动记账.md",
-    "content/posts/工作 & 学习/_index.md",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
     "resources/_gen/assets/scss",
     "resources/_gen/assets",
     "resources/_gen",
-    "resources",
-    "content/posts/工作 & 学习/计算机网络/_index.md",
-    "content/posts/工作 & 学习/计算机网络/自问自答/_index.md",
-    "content/posts/工作 & 学习/计算机网络/总结/_index.md",
-    "content/posts/杂思/_index.md",
-    "content/posts/工作 & 学习/计算机网络/总结/应用层.md",
-    "content/posts/工作 & 学习/计算机网络/自问自答/应用层.md",
-    "content/posts/工作 & 学习/计算机网络/自问自答/运输层.md",
-    "content/posts/杂思/有书可读方案.md",
     "assert/img/MinimalistScenery04 1.jpg",
     "assert/img/IMG_20230128_162005.jpg",
     "assert/img/IMG_20230128_162005 1.jpg",
     "themes/book/images/tn.png",
     "themes/book/images/screenshot.png",
-    "themes/book/images",
-    "themes/book/archetypes",
-    "themes/book/go.mod",
     "themes/book/static/svg/translate.svg",
     "themes/book/static/svg/menu.svg",
     "themes/book/static/svg/toc.svg",
