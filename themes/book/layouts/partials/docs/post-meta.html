@@ -1,12 +1,13 @@
 <div>
-  {{ with .Lastmod }}
+  {{ if .Lastmod }}
   <h6>
     <span>
       {{ .Lastmod.Format $.Site.Params.BookDateFormat }}
     </span>
     /
     <span>
-      {{ .WordCount }}字
+      {{ .Content |  countwords}}字
+
     </span>
   </h6>
   {{ end }}
