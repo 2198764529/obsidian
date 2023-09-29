@@ -2,11 +2,12 @@
 title: 好记性不如烂笔头
 id: aa02b25fa5
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2023-09-28 18:30:43
+datetimeUpdate: 2023-09-28 22:01:34
 ---
 ## 9-29
 1. 增加字数统计 countWords(同 word 字数)
-2. 
+2. 安装插件接入chatGPT
+3. 创建时间太晚，显示不出来
 
 
 ### 9-27
