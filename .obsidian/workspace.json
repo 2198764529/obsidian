@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "95600a358681c655",
+        "id": "9580e520a9928bd0",
         "type": "tabs",
         "children": [
           {
-            "id": "34a92fe47740ec7e",
+            "id": "82732c536e8804f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术/markDown 语法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c08a1b89f8f792b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/技术/git操作.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "9a46c3705ebf8d86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/技术/git操作.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4a658cac411af218",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/技术/git操作.md",
+                "file": "content/posts/修身/外在.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/技术/git操作.md",
+                "file": "content/posts/修身/外在.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/技术/git操作.md",
+                "file": "content/posts/修身/外在.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,12 +125,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/技术/git操作.md"
+                "file": "content/posts/修身/外在.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,41 +145,43 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-textgenerator-plugin:Generate Text!": false,
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "4a658cac411af218",
+  "active": "82732c536e8804f7",
   "lastOpenFiles": [
-    "content/posts/技术/未命名.md",
+    "content/posts/修身/内在.md",
+    "content/posts/目标/9.25 ~ 10.6.md",
+    "content/posts/生活记录/22年去深圳计划.md",
+    "content/posts/生活记录/22年过年运动记账.md",
+    "content/posts/生活记录/当前问题清单.md",
+    "content/posts/生活记录/篮球投篮自测.md",
+    "content/posts/生活记录/思想收藏.md",
+    "content/posts/网站收藏.md",
+    "content/posts/生活记录/网站收藏.md",
+    "content/posts/_index.md",
+    "content/posts/生活记录/hexo 网站装修.md",
+    "content/posts/生活记录/hexo 部署发布.md",
+    "content/posts/生活记录/一些网站密码.md",
+    "content/posts/修身/外在.md",
+    "content/posts/生活记录/hello-world.md",
+    "content/_index.md",
+    "content/posts/生活记录/markdown基础语法.md",
     "content/posts/技术/git操作.md",
-    "content/posts/技术/git 操作.md",
-    "content/posts/技术/正则表达式.md",
-    "content/posts/技术/_index.md",
     "content/posts/技术/markDown 语法.md",
+    "content/posts/技术/_index.md",
+    "content/posts/技术/正则表达式.md",
+    "content/posts/技术/未命名.md",
+    "content/posts/技术/git 操作.md",
     "content/posts/技术/正则表达式2 3.md",
     "content/posts/技术/正则表达式2.md",
     "content/posts/技术/正则表达式2 2.md",
-    "content/posts/技术/正则表达式2 1.md",
-    "content/_index.md",
     "resources/_gen/images",
-    "content/posts/_index.md",
-    "content/posts/个人/关于篮球.md",
     "themes/book/layouts/custom/data.htm",
     "themes/book/layouts/custom",
     "content/posts/技术",
-    "content/posts/兴起/自醒.md",
-    "content/posts/杂思/有书可读方案.md",
-    "content/posts/杂思/个人存储方案.md",
-    "content/posts/网站收藏.md",
-    "README.md",
-    "content/posts/计算机网络/_index.md",
-    "content/posts/计算机网络/自问自答/_index.md",
-    "content/posts/计算机网络/总结/_index.md",
-    "content/posts/工作 & 学习/_index.md",
-    "content/posts/歌词/_index.md",
-    "content/posts/歌词/晚风.md",
-    "content/posts/目标/_index.md",
-    "content/posts/目标/9.25 ~ 10.6.md",
     "content/posts/日记本",
     "public/favicon.png",
     "public/favicon.svg"
