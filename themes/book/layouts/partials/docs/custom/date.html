@@ -4,11 +4,8 @@
 
 -->
 {{ $time := sub now.Unix .Date.Unix }}
-{{ if lt $time  3600 }}
-  {{ (time $time).Format .format.minute }}
-{{ else if lt $time 86400 }}
-  {{ (time $time).Format .format.hour }}
-{{ else if lt $time 2592000 }}
+
+{{ if lt $time 2592000 }}
   {{ (time $time).Format .format.month }}  
 {{ else if lt $time  31536000 }}
   {{ (time $time).Format .format.year }}  
