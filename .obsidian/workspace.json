@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4f96726d7ab8350b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/修身/外在.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "2220a57e6edaa007",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/posts/日志.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "68ae83a8b5b79a22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/_index.md",
-                "mode": "source",
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/posts/日志.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/posts/日志.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md"
+                "file": "content/posts/日志.md"
               }
             }
           }
@@ -175,49 +150,49 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "68ae83a8b5b79a22",
+  "active": "2220a57e6edaa007",
   "lastOpenFiles": [
-    "content/posts/网站收藏.md",
-    "content/posts/个人/关于做事.md",
-    "content/_index.md",
-    "content/posts/个人/关于睡觉.md",
-    "content/posts/日志.md",
+    "content/posts/修身/内在.md",
     "content/posts/_index.md",
     "content/posts/技术记录.md",
-    "content/posts/技术/正则表达式.md",
-    "content/posts/转载记录/关于蓝牙音量不正常.md",
-    "content/posts/转载记录/git设置和取消代理.md",
-    "content/posts/转载记录/_index.md",
-    "content/posts/转载记录/关于蓝牙音量不正常 1.md",
-    "content/posts/杂思/_index.md",
-    "content/posts/生活记录/_index.md",
-    "content/posts/技术/未命名.md",
-    "content/posts/转载记录",
-    "content/posts/兴起/一言.md",
-    "content/posts/修身/外在.md",
+    "content/posts/日志.md",
+    "content/posts/目标/9.25 ~ 10.6.md",
+    "content/posts/目标/_index.md",
+    "content/posts/生活记录/22年过年运动记账.md",
+    "content/posts/生活记录/22年去深圳计划.md",
     "content/posts/技术/git操作.md",
-    "content/posts/网站收藏 1.md",
-    "content/posts/技术/正则表达式2 2.md",
-    "content/posts/技术/正则表达式2.md",
-    "content/posts/技术/正则表达式2 1.md",
-    "content/posts/技术/markDown 语法.md",
+    "themes/book/layouts/partials/docs/custom/date.html",
+    "themes/book/layouts/partials/docs/custom",
+    "themes/book/layouts/custom/date.html",
+    "themes/book/layouts/custom/data.html",
+    "themes/book/layouts/_default/index.html",
+    "themes/book/layouts/index.html",
+    "themes/book/layouts/index.htm",
+    "content/日志.md",
+    "content/posts/计算机网络/自问自答/运输层.md",
+    "content/posts/计算机网络/自问自答/应用层.md",
+    "content/posts/计算机网络/自问自答/_index.md",
+    "content/posts/计算机网络/总结/应用层.md",
+    "content/posts/计算机网络/总结/_index.md",
+    "content/posts/计算机网络/_index.md",
+    "content/posts/生活记录/_index.md",
+    "content/posts/计算机网络/自问自答",
+    "content/posts/计算机网络/总结",
+    "content/posts/歌词/_index.md",
+    "content/posts/歌词/晚风.md",
+    "content/posts/杂思/有书可读方案.md",
+    "content/posts/杂思/个人存储方案.md",
+    "content/posts/杂思/_index.md",
+    "content/posts/技术/正则表达式.md",
     "content/posts/技术/_index.md",
+    "content/posts/技术/markDown 语法.md",
     "content/posts/兴起/自醒.md",
-    "content/posts/兴起/_index.md",
+    "content/posts/计算机网络",
     "public/svg/translate.svg",
     "public/svg/menu.svg",
     "public/svg/calendar.svg",
     "public/svg/toc.svg",
     "public/svg/edit.svg",
-    "public/svg",
-    "public/mermaid.min.js",
-    "public/tags/运动/page/1/index.html",
-    "public/tags/问题/page/1/index.html",
-    "public/tags/计划/page/1/index.html",
-    "public/tags/记账/page/1/index.html",
-    "public/tags/网站/page/1/index.html",
-    "public/tags/篮球/page/1/index.html",
-    "public/tags/出发/page/1/index.html",
     "public/favicon.png",
     "themes/book/static/favicon.png",
     "themes/book/static/image.png",

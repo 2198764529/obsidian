@@ -1,5 +1,5 @@
 baseURL: http://example.org/
-languageCode: en-us'
+languageCode: zh-cn'
 title: '李枫的地'
 theme: 'book'
 port: 80
@@ -59,7 +59,9 @@ params:
   # Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat: "2006年01月02日 15时04分"
+  BookDateFormat: {"minute":"4分钟前","hour":'3小时前',"month":'1-2',"year":"2006-01-02 15:05"}
+  
+  # BookDateFormat: "2006-01-02 15:04"
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.

@@ -1,16 +1,17 @@
+
 <div>
-  {{ if .Lastmod }}
   <h6>
+
     <span>
-      {{ .Lastmod.Format $.Site.Params.BookDateFormat }}
+      {{ partial "docs/custom/date.html" (dict "Date" .Lastmod "format" .Site.Params.BookDateFormat ) }}
     </span>
-    /
+/
     <span>
       {{ .Content |  countwords}}字
 
     </span>
   </h6>
-  {{ end }}
+  
   <h6>
     {{ range $taxonomy, $_ := .Site.Taxonomies }}
     {{ with $terms := $.GetTerms $taxonomy }}
