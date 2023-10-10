@@ -37,26 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术/正则表达式.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "source": true
               }
             }
-          },
-          {
-            "id": "4f302cdc5d1e8a9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/转载记录/git 设置和取消代理.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/转载记录/git 设置和取消代理.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/转载记录/git 设置和取消代理.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/转载记录/git 设置和取消代理.md"
+                "file": "content/_index.md"
               }
             }
           }
@@ -187,17 +175,25 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "4f302cdc5d1e8a9d",
+  "active": "68ae83a8b5b79a22",
   "lastOpenFiles": [
-    "content/posts/转载记录/关于蓝牙音量不正常.md",
-    "content/posts/转载记录/git 设置和取消代理.md",
-    "content/_index.md",
-    "content/posts/技术/未命名.md",
     "content/posts/网站收藏.md",
+    "content/posts/个人/关于做事.md",
+    "content/_index.md",
+    "content/posts/个人/关于睡觉.md",
+    "content/posts/日志.md",
     "content/posts/_index.md",
+    "content/posts/技术记录.md",
+    "content/posts/技术/正则表达式.md",
+    "content/posts/转载记录/关于蓝牙音量不正常.md",
+    "content/posts/转载记录/git设置和取消代理.md",
+    "content/posts/转载记录/_index.md",
+    "content/posts/转载记录/关于蓝牙音量不正常 1.md",
+    "content/posts/杂思/_index.md",
+    "content/posts/生活记录/_index.md",
+    "content/posts/技术/未命名.md",
     "content/posts/转载记录",
     "content/posts/兴起/一言.md",
-    "content/posts/技术/正则表达式.md",
     "content/posts/修身/外在.md",
     "content/posts/技术/git操作.md",
     "content/posts/网站收藏 1.md",
@@ -223,14 +219,6 @@
     "public/tags/篮球/page/1/index.html",
     "public/tags/出发/page/1/index.html",
     "public/favicon.png",
-    "content/posts/计算机网络/_index.md",
-    "content/posts/杂思/有书可读方案.md",
-    "content/posts/个人/关于篮球.md",
-    "content/posts/个人/关于睡觉.md",
-    "content/posts/个人/关于做事.md",
-    "content/posts/个人/目标.md",
-    "content/posts/歌词/晚风.md",
-    "content/posts/修身/_index.md",
     "themes/book/static/favicon.png",
     "themes/book/static/image.png",
     "assert/img/MinimalistScenery04 1.jpg",

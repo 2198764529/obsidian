@@ -4,8 +4,8 @@ title: '李枫的地'
 theme: 'book'
 port: 80
 frontmatter:
-  publishDate:
-    - datetimeCreate
+  # publishDate:
+  #   - datetimeCreate
   lastmod:
     - datetimeUpdate
   
