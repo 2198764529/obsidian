@@ -1,5 +1,10 @@
 {{ define "main" }}
-  <main aria-role="main">
-     <h4>上次在 {{ partial "docs/custom/date.html" (dict "Date" .Site.LastChange "format" .Site.Params.BookDateFormat ) }} </h4>
-  </main>
+<main aria-role="main">
+  <h4>
+      上次在 
+      {{ partial "docs/custom/date.html" (dict "Date" .Site.LastChange "format" .Site.Params.BookDateFormat ) }}
+      编辑
+    </h4>
+
+</main>
 {{ end }}

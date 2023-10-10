@@ -6,9 +6,9 @@
 {{ $time := sub now.Unix .Date.Unix }}
 
 {{ if lt $time 2592000 }}
-  {{ (time $time).Format .format.month }}  
+  {{ .Date.Format .format.month }}  
 {{ else if lt $time  31536000 }}
-  {{ (time $time).Format .format.year }}  
+  {{ .Date.Format .format.year }}  
 {{ else }}
   {{ "时间不详" }}
 {{ end}}
