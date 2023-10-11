@@ -4,6 +4,7 @@ timeZone: "Asia/Shanghai"
 title: '李枫的地'
 theme: 'book'
 port: 80
+enableGitInfo: true
 frontmatter:
   # publishDate:
   #   - datetimeCreate

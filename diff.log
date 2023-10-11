@@ -1,0 +1,120 @@
+diff --git a/.obsidian/workspace.json b/.obsidian/workspace.json
+index e1d67df..2cbe3dd 100644
+--- a/.obsidian/workspace.json
++++ b/.obsidian/workspace.json
+@@ -13,7 +13,7 @@
+             "state": {
+               "type": "markdown",
+               "state": {
+-                "file": "content/posts/日志.md",
++                "file": "content/posts/兴起/首页美化计划.md",
+                 "mode": "source",
+                 "source": false
+               }
+@@ -85,7 +85,7 @@
+             "state": {
+               "type": "backlink",
+               "state": {
+-                "file": "content/posts/日志.md",
++                "file": "content/posts/兴起/首页美化计划.md",
+                 "collapseAll": false,
+                 "extraContext": false,
+                 "sortOrder": "alphabetical",
+@@ -102,7 +102,7 @@
+             "state": {
+               "type": "outgoing-link",
+               "state": {
+-                "file": "content/posts/日志.md",
++                "file": "content/posts/兴起/首页美化计划.md",
+                 "linksCollapsed": false,
+                 "unlinkedCollapsed": true
+               }
+@@ -125,7 +125,7 @@
+             "state": {
+               "type": "outline",
+               "state": {
+-                "file": "content/posts/日志.md"
++                "file": "content/posts/兴起/首页美化计划.md"
+               }
+             }
+           }
+@@ -152,8 +152,15 @@
+   },
+   "active": "2220a57e6edaa007",
+   "lastOpenFiles": [
+-    "content/posts/技术记录.md",
++    "commit.log",
++    "scripts/get_Git_index.bat",
++    "scripts/get_Git_index.txt",
++    "scripts/新建 文本文档.txt",
++    "scripts",
++    "新建文件夹",
+     "content/posts/日志.md",
++    "content/posts/兴起/首页美化计划.md",
++    "content/posts/技术记录.md",
+     "content/_index.md",
+     "content/posts/兴起/万物皆有定数.md",
+     "themes/book/static/js/function.js",
+@@ -168,11 +175,6 @@
+     "content/posts/生活记录/22年去深圳计划.md",
+     "content/posts/技术/git操作.md",
+     "themes/book/layouts/partials/docs/custom/date.html",
+-    "themes/book/layouts/partials/docs/custom",
+-    "themes/book/layouts/custom/date.html",
+-    "themes/book/layouts/custom/data.html",
+-    "themes/book/layouts/_default/index.html",
+-    "themes/book/layouts/index.html",
+     "content/日志.md",
+     "content/posts/计算机网络/自问自答/运输层.md",
+     "content/posts/计算机网络/自问自答/应用层.md",
+@@ -186,8 +188,6 @@
+     "content/posts/杂思/有书可读方案.md",
+     "content/posts/杂思/个人存储方案.md",
+     "content/posts/杂思/_index.md",
+-    "content/posts/技术/正则表达式.md",
+-    "content/posts/技术/_index.md",
+     "public/svg/translate.svg",
+     "public/svg/menu.svg",
+     "public/svg/calendar.svg",
+diff --git a/config.yml b/config.yml
+index 9558681..6fb86cd 100644
+--- a/config.yml
++++ b/config.yml
+@@ -4,6 +4,7 @@ timeZone: "Asia/Shanghai"
+ title: '李枫的地'
+ theme: 'book'
+ port: 80
++enableGitInfo: true
+ frontmatter:
+   # publishDate:
+   #   - datetimeCreate
+diff --git a/themes/book/layouts/_default/index.html b/themes/book/layouts/_default/index.html
+index 91e72f1..47bfa8b 100644
+--- a/themes/book/layouts/_default/index.html
++++ b/themes/book/layouts/_default/index.html
+@@ -1,14 +1,22 @@
+ {{ define "main" }}
+ <main aria-role="main">
+   <h4>
+-    上次在
+-    <span id="LastChange" data-unix="{{ .Site.LastChange.Unix }}"> </span>
+-    编辑
++    {{ $allPosts := sort .Site.RegularPages "Lastmod" "desc" }} {{ with index
++    $allPosts 0 }} 上次在
++    <span id="LastChange" data-unix="{{ .Lastmod.Unix }}"> </span>
++
++    编辑了
++    <a href="{{ .Permalink }}"> {{ .Title }} </a>
++   
++    {{ end }}
++    {{ .GitInfo }}
+   </h4>
++
+   <script>
+     // 在页面加载时执行的 JavaScript 代码
+     window.onload = function () {
+       updateElementDateTime("LastChange");
++      updateElementDateTime("AuthorDate");
+     };
+   </script>
+ </main>
