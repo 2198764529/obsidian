@@ -2,47 +2,66 @@
 title: git操作
 id: 063576171e
 datetimeCreate: 2023-09-28 22:06:37
-datetimeUpdate: 2023-10-10 17:51:59
+datetimeUpdate: 2023-10-11 17:44:11
 ---
 #### Git 所有操作及命令
 Git 是一个分布式版本控制系统，常用于管理代码的版本和协作开发。以下是 Git 的一些常用操作和命令：
 
-1. 初始化仓库：
-   -  init` - 在当前目录初始化一个新的 Git 仓库
+```
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
 
-2. 添加文件：
-   - git add <file>` - 将文件添加到暂存区
-   - `git add .` - 将所有修改过的文件添加到暂存区
+These are common Git commands used in various situations:
 
-3. 提交更改：
-   - `git commit -m "<message>"` - 将暂存区的更改提交到本地仓库，并附带一条描述信息
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
 
-4. 查看状态：
-   - `git status` - 显示工作区和暂存区的状态
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
 
-5. 查看历史记录：
-   - `git log` - 显示提交历史记录
-   - `git log --oneline` - 以简洁方式显示提交历史记录
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
 
-6. 回退版本：
-   - `git checkout <commit>` - 切换到指定的提交版本
-   - `git revert <commit>`- 撤销指定的提交，并创建一个新的提交
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
 
-7. 分支操作：
-   - `git branch`- 列出所有分支
-   - `git branch <branchname>`- 创建新分支
-   - `git checkout <branchname>`- 切换到指定分支
-   - `git merge <branchname>`- 合并指定分支到当前分支
-   - `git branch –d <branchname>`- 删除指定分支
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+```
 
-8. 远程操作：
-   - `git clone <url>`- 克隆远程仓库到本地
-   - `git push origin <branchname>`- 推送本地分支到远程仓库
-   - `git pull origin <branchname>`- 拉取远程分支到本地
-   - `git remote add origin <url>`- 添加远程仓库的 URL
+### Git diff
+在默认的 Git diff 输出中，您通常会看到以下内容：
 
-9. 撤销操作：
-   - `git reset <commit>`- 将 HEAD 指针移动到指定的提交
-   - `git checkout -- <file>`- 撤销对文件的修改，恢复到最近一次提交的状态
+- `-` 行：表示被删除的行。
+- `+` 行：表示被添加的行。
+- `@@ -1,14 +1,22 @@`：表示文件的上下文（context），以及行号的范围。
 
-这些只是 Git 的一些基本操作和常用命令，还有很多其他的功能和参数可以进一步探索和使用。
+具体来说：
+
+- `@@` 标志表示一个差异块的开始。
+- `-1,14` 表示在原文件中，从第 1 行开始的 14 行代码。
+- `+1,22` 表示在修改后的文件中，从第 1 行开始的 22 行代码。
+
+这个输出告诉您在两个版本之间的文件中，原始文件的第 1 行到第 14 行与修改后的文件的第 1 行到第 22 行之间有差异。
+
+通常，`-` 行下面的内容表示原文件的内容，`+` 行下面的内容表示修改后的文件的内容。这使您可以轻松比较文件的变化。如果要了解更多关于 Git diff 的信息，您可以使用 `git help diff` 命令来查看 Git 的官方文档。

@@ -9,14 +9,12 @@
     <a href="{{ .Permalink }}"> {{ .Title }} </a>
    
     {{ end }}
-    {{ .GitInfo }}
   </h4>
 
   <script>
     // 在页面加载时执行的 JavaScript 代码
     window.onload = function () {
       updateElementDateTime("LastChange");
-      updateElementDateTime("AuthorDate");
     };
   </script>
 </main>
