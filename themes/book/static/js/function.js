@@ -1,14 +1,17 @@
-function updateTimestampEveryMinute(elementId) {
+function updateElementDateTime(elementId) {
     // 定义更新函数
     function updateTimestamp() {
       const element = document.getElementById(elementId);
       if (element) {
-        const targetTimestamp = parseInt(element.dataset.unix); // 从元素中获取时间戳
+        const targetTimestamp = parseInt(element.dataset.unix); // 从元素中获取时间字符串,转时间戳
         const currentTimestamp = Math.floor(Date.now() / 1000); // 当前时间戳，单位为秒
         const timestampDifference = currentTimestamp - targetTimestamp;
-        console.log(element,targetTimestamp,timestampDifference);
-  
-        if (timestampDifference < 3600) {
+        console.log(element,currentTimestamp,targetTimestamp,timestampDifference);
+        if (timestampDifference < 60) {
+            // 不到1分钟，显示秒数
+            const minutes = timestampDifference;
+            element.textContent = `${minutes} 秒前`;
+        } else if (timestampDifference < 3600) {
           // 不到1小时，显示分钟数
           const minutes = Math.floor(timestampDifference / 60);
           element.textContent = `${minutes} 分钟前`;
@@ -37,7 +40,6 @@ function updateTimestampEveryMinute(elementId) {
   
     // 初始页面加载时调用一次
     updateTimestamp();
-  
-    // 设置每分钟刷新一次时间
-    setInterval(updateTimestamp, 60000); // 60000 毫秒等于 1 分钟
+    
+
   }

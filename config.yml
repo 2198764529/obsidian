@@ -1,5 +1,6 @@
 baseURL: http://example.org/
-languageCode: zh-cn'
+languageCode: 'zh-cn'
+timeZone: "Asia/Shanghai"
 title: '李枫的地'
 theme: 'book'
 port: 80

@@ -1,18 +1,15 @@
 {{ define "main" }}
 <main aria-role="main">
-  <h4 >
-      上次在 
-      <span id="LastChange" data-unix="{{ .Site.LastChange.Unix }}">
-        
-      </span>
-      编辑
-    </h4>
-    <script>
-      // 在页面加载时执行的 JavaScript 代码
-      window.onload = function () {
-        updateTimestampEveryMinute("LastChange")
-      }
-
-    </script>
+  <h4>
+    上次在
+    <span id="LastChange" data-unix="{{ .Site.LastChange.Unix }}"> </span>
+    编辑
+  </h4>
+  <script>
+    // 在页面加载时执行的 JavaScript 代码
+    window.onload = function () {
+      updateElementDateTime("LastChange");
+    };
+  </script>
 </main>
 {{ end }}
