@@ -1,17 +1,22 @@
-
 <div>
   <h6>
 
-    <span>
-      {{ partial "docs/custom/date.html" (dict "Date" .Lastmod "format" .Site.Params.BookDateFormat ) }}
+    <span id="Lastmod" data-unix="{{ .Lastmod.Unix }}">
     </span>
-/
+    <script>
+      // 在页面加载时执行的 JavaScript 代码
+      window.onload = function () {
+        updateTimestampEveryMinute("Lastmod")
+      }
+
+    </script>
+    /
     <span>
-      {{ .Content |  countwords}}字
+      {{ .Content | countwords}}字
 
     </span>
   </h6>
-  
+
   <h6>
     {{ range $taxonomy, $_ := .Site.Taxonomies }}
     {{ with $terms := $.GetTerms $taxonomy }}
