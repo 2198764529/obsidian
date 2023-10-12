@@ -1,0 +1,10 @@
+{{ $totalWordCount := 0 }}
+
+{{ range .Site.RegularPages }}
+  {{ with .Content }}
+    {{ $wordCount := printf "%s" . | len }}
+    {{ $totalWordCount = add $totalWordCount $wordCount }}
+  {{ end }}
+{{ end }}
+
+Total Word Count: {{ $totalWordCount }}

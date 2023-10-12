@@ -1,20 +1,50 @@
 {{ define "main" }}
 <main aria-role="main">
   <h4>
-    {{ $allPosts := sort .Site.RegularPages "Lastmod" "desc" }} {{ with index
-    $allPosts 0 }} 上次在
-    <span id="LastChange" data-unix="{{ .Lastmod.Unix }}"> </span>
-
+     <span class="nowDate" data-unix="{{ now.Unix }}">  </span>
+  </h4>
+  <h4>
+    <!-- 列出最新编辑的前三篇文章 -->
+    {{ range first 3 (sort .Site.RegularPages "Lastmod" "desc") }}
+    <!-- 显示最后编辑时间戳 -->
+    <span class="LastChange" data-unix="{{ .Lastmod.Unix }}"> </span>
     编辑了
     <a href="{{ .Permalink }}"> {{ .Title }} </a>
-   
-    {{ end }}
-  </h4>
+    / {{ end }}
 
+  </h4>
+  <h4>
+    {{ $totalWordCount := 0 }}
+
+    {{ range .Site.RegularPages }}
+      {{ with .Content }}
+        {{ $wordCount := printf "%s" . | len }}
+        {{ $totalWordCount = add $totalWordCount $wordCount }}
+      {{ end }}
+    {{ end }}
+    博客共 {{ .Site.RegularPages | len }} 个文章, 共计 <span>{{ $totalWordCount }}</span> 字
+  </h4>
+  <h4>
+
+    {{ if .Site.LastChange.After .GitInfo.AuthorDate }}
+    <!-- 如果站点的最后更改时间晚于作者的最后提交日期，显示提醒消息 -->
+    上次提交在
+    <span class="AuthorDate" data-unix="{{ .GitInfo.AuthorDate.Unix }}"> </span>
+    , 请勿忘记提交
+    {{ end }}
+
+
+
+  </h4>
   <script>
     // 在页面加载时执行的 JavaScript 代码
     window.onload = function () {
-      updateElementDateTime("LastChange");
+      // 更新具有 "LastChange" 类名的元素的时间戳
+      updateDateTimeByElementClass("LastChange");
+      // 更新具有 "AuthorDate" 类名的元素的时间戳
+      updateDateTimeByElementClass("AuthorDate");
+      // 更新具有 "now" 类名的元素的时间戳
+      updateDateTimeByElementClass("nowDate");
     };
   </script>
 </main>

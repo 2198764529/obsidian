@@ -87,7 +87,10 @@
       background: none;
     }
   }
-
+  pre:focus,pre:active {
+    outline: none;
+    border: 1px solid transparent;
+  }
   p {
     word-wrap: break-word;
   }
@@ -96,7 +99,7 @@
     margin: $padding-16 0;
     padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); //to keep total left space 16dp
 
-    border-inline-start: $padding-4 solid var(--gray-200);
+    // border-inline-start: $padding-4 solid var(--gray-200);
     border-radius: $border-radius;
 
     :first-child {
