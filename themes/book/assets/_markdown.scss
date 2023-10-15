@@ -18,13 +18,13 @@
     line-height: 1;
     margin-top: 1.5em;
     margin-bottom: $padding-16;
-
     a.anchor {
       opacity: 0;
       font-size: 0.75em;
       vertical-align: middle;
       text-decoration: none;
-    }
+      color: var(--color-light);
+  }
 
     &:hover a.anchor,
     a.anchor:focus {
@@ -59,7 +59,7 @@
       text-decoration: underline;
     }
     &:visited {
-      color: var(--color-visited-link);
+      color: var(--color-light);
     }
   }
 
@@ -71,25 +71,37 @@
 
   code {
     padding: 0 $padding-4;
-    background: var(--gray-200);
     border-radius: $border-radius;
-    font-size: 0.875em;
+    background-color: var(--color-light);
+    color: white;
+    font-size: 0.85em;
+    
+    .hljs-keyword,.hljs-strong{
+      color: var(--color-light);
+
+    }
   }
 
   pre {
     padding: $padding-16;
-    background: var(--gray-100);
+    // border: 1px solid #ddd; /* 代码块边框 */
+
     border-radius: $border-radius;
     overflow-x: auto;
-
+    white-space: pre-wrap;
     code {
-      padding: 0;
-      background: none;
-    }
+      background: black;
+      font-size: 0.55em;
+      padding: 1em;
+      span{
+    word-wrap: break-word;
+
+      }
+  }
   }
   pre:focus,pre:active {
     outline: none;
-    border: 1px solid transparent;
+    // border: 1px solid transparent;
   }
   p {
     word-wrap: break-word;

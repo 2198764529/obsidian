@@ -1,21 +1,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ default .Summary .Description }}">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark">
+<!-- <meta name="description" content="{{ default .Summary .Description }}"> -->
+<!-- <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40"> -->
+<!-- <meta name="color-scheme" content="light dark"> -->
 
 {{- with .Page.Params.BookHref -}}
   <meta http-equiv="Refresh" content="0; url='{{ . }}'" />
 {{- end -}}
 
-{{- template "_internal/opengraph.html" . -}}
+<!-- {{- template "_internal/opengraph.html" . -}} -->
 
 <title>{{ partial "docs/html-head-title" . }}</title>
 
 {{- $manifest := resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">
-<link rel="icon" href="{{ .Params.BookFavicon | default "favicon.png" | relURL }}" >
+<link rel="icon" href="{{ .Params.BookFavicon | default `favicon.png` | relURL }}" >
 
 {{- range .Translations }}
   <link rel="alternate" hreflang="{{ default .Language.Lang .Site.LanguageCode }}" href="{{ .Permalink }}" title="{{ partial "docs/title" . }}">
@@ -54,5 +54,10 @@ https://github.com/alex-shpak/hugo-book
   {{- end -}}
 {{- end -}}
 
+<!-- 引入 function.js -->
 <script src="{{ "js/function.js" | absURL }}" defer></script>
 
+<!-- 引入 highlight -->
+<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

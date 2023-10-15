@@ -17,10 +17,9 @@ function updateDateTimeByElementClass(elementClass) {
       const hour = date.getHours();
       const minutes = date.getMinutes();
       const period = getTimePeriod(hour);
-      const workStatus = checkWorkStatus(date)
-      const currentDayOfWeek = date.getDay();
-      // 计算还有多少天剩余在本周
-      const daysUntilEndOfWeek = 6 - currentDayOfWeek;
+      let workStatus = checkWorkStatus(date)
+      const currentDayOfWeek = date.getDay() + 1;
+
 
       const lastDayOfMonth = new Date(date.getFullYear(), month + 1, 0);
 
@@ -36,7 +35,9 @@ function updateDateTimeByElementClass(elementClass) {
         "周六到了,日子过得怎么样",
         "周日到了,出去晒晒太阳吧",
       ];
-      let textContent = `${period}好!  现在 ${hour}时${minutes}分 ${workStatus}  本周剩 ${daysUntilEndOfWeek} 天,本月剩 ${daysUntilEndOfMonth} 天`;
+      if (currentDayOfWeek<2)
+        workStatus = ""
+      let textContent = `${period}好!  现在 ${hour}时${minutes}分 ${workStatus} 本周剩 ${currentDayOfWeek} 天,本月剩 ${daysUntilEndOfMonth} 天`;
 
       element.textContent = textContent;
     } else if (timestampDifference < 60) {

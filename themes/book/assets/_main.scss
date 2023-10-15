@@ -31,8 +31,9 @@ h5 {
 
 a {
   text-decoration: none;
-  color: var(--color-link);
-}
+  color: var(--color-light);
+}    
+
 
 img {
   vertical-align: baseline;
@@ -116,7 +117,7 @@ ul.pagination {
   }
 
   a.active {
-    color: var(--color-link);
+    color: var(--color-light);
   }
 
   input.toggle + label + ul {
