@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "131a399e9c491871",
+    "id": "298fec00941f3c3f",
     "type": "split",
     "children": [
       {
-        "id": "9580e520a9928bd0",
+        "id": "1cee9cd2b45393ed",
         "type": "tabs",
         "children": [
           {
-            "id": "82732c536e8804f7",
+            "id": "cfd8ca53b21f4ed2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "681d4ae1369a4872",
+    "id": "f832ca8e34110253",
     "type": "split",
     "children": [
       {
-        "id": "6f6e3f9b133a3ca5",
+        "id": "b8fafa73453f455c",
         "type": "tabs",
         "children": [
           {
-            "id": "64d3d5930105b87b",
+            "id": "173b388b5f5ef5e5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "639900be4c388f57",
+            "id": "abc51f3040424b5a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "5ec57237ea9dc430",
+            "id": "6cf9b059cc95f8a3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,18 +69,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 200
   },
   "right": {
-    "id": "21e211a9d164c2bb",
+    "id": "666a01d16d7a6872",
     "type": "split",
     "children": [
       {
-        "id": "647b9c8a39180982",
+        "id": "9b8d2370574d53e7",
         "type": "tabs",
         "children": [
           {
-            "id": "6a2c7d1bf07fbcd8",
+            "id": "eccb13a085bc4c3d",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -97,7 +97,7 @@
             }
           },
           {
-            "id": "e630d3866124e8a5",
+            "id": "61247047c6a85ca3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -109,7 +109,7 @@
             }
           },
           {
-            "id": "2d70c47bf428a11c",
+            "id": "61cf67cadec41fcf",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,7 +120,7 @@
             }
           },
           {
-            "id": "e257f572dda370dc",
+            "id": "9ae23946fd3a66b2",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -138,56 +138,67 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "82732c536e8804f7",
+  "active": "cfd8ca53b21f4ed2",
   "lastOpenFiles": [
+    "themes/book/static/plugs/element-ui.css",
+    "themes/book/static/plugs/element-ui.js",
+    "themes/book/static/plugs/highlight.min.js",
+    "themes/book/static/plugs/vue.js",
+    "themes/book/static/plugs",
+    "themes/book/static/p",
+    "themes/book/static/新建文件夹",
     "content/posts/技术记录.md",
-    "public",
     "content/posts/日志.md",
-    "content/posts/_index.md",
+    "content/posts/兴起/万物皆有定数.md",
+    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
+    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
+    "resources/_gen/assets/scss",
     "content/posts/网站收藏.md",
-    "content/_index.md",
+    "content/posts/_index.md",
+    "content/posts/_index2.md",
     "content/posts/修身/外在.md",
-    "themes/book/layouts/partials/docs/custom/date.html",
-    "themes/book/layouts/partials/docs/custom",
-    "scripts/get_Git_index.bat",
-    "scripts",
-    "themes/book/static/js/function.js",
-    "themes/book/static/js",
-    "themes/book/static/fonts/PingFang-SC-Regular.ttf",
-    "commit.log",
     "content/posts/修身/内在.md",
-    "content/posts/目标/9.25 ~ 10.6.md",
-    "content/posts/生活记录/22年去深圳计划.md",
-    "content/posts/生活记录/22年过年运动记账.md",
-    "content/posts/生活记录/当前问题清单.md",
-    "content/posts/生活记录/篮球投篮自测.md",
-    "content/posts/生活记录/思想收藏.md",
-    "content/posts/生活记录/网站收藏.md",
-    "content/posts/生活记录/hexo 网站装修.md",
-    "content/posts/生活记录/hexo 部署发布.md",
-    "content/posts/生活记录/一些网站密码.md",
-    "content/posts/生活记录/hello-world.md",
-    "content/posts/生活记录/markdown基础语法.md",
+    "content/posts/每天必做.md",
+    "themes/book/static/fonts/PingFang-SC-Regular.ttf",
     "content/posts/技术/git操作.md",
-    "content/posts/技术/markDown 语法.md",
-    "content/posts/技术/_index.md",
     "content/posts/技术/正则表达式.md",
-    "content/posts/技术/未命名.md",
-    "content/posts/技术/git 操作.md",
-    "resources/_gen/images",
+    "content/posts/兴起/首页美化计划.md",
+    "content/_index.md",
+    "content/posts/目标/9.25 ~ 10.6.md",
+    "content/posts/目标/_index.md",
+    "content/posts/生活记录/22年过年运动记账.md",
+    "content/posts/生活记录/22年去深圳计划.md",
+    "content/日志.md",
+    "content/posts/计算机网络/自问自答/运输层.md",
+    "content/posts/计算机网络/自问自答/应用层.md",
+    "content/posts/计算机网络/自问自答/_index.md",
+    "content/posts/计算机网络/总结/应用层.md",
+    "content/posts/计算机网络/总结/_index.md",
+    "content/posts/计算机网络/_index.md",
+    "content/posts/生活记录/_index.md",
+    "public/svg/translate.svg",
+    "public/svg/menu.svg",
+    "public/svg/calendar.svg",
+    "public/svg/toc.svg",
+    "public/svg/edit.svg",
     "public/favicon.png",
-    "public/favicon.svg"
+    "themes/book/static/favicon.png",
+    "themes/book/static/image.png",
+    "assert/img/MinimalistScenery04 1.jpg",
+    "assert/img/IMG_20230128_162005.jpg",
+    "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
+    "工作 & 学习/计算机网络/自问自答/未命名.canvas"
   ]
 }

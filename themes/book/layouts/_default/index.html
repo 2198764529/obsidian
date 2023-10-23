@@ -1,5 +1,102 @@
 {{ define "main" }}
 <main aria-role="main">
+
+  <div id="app">
+    <el-calendar v-model="today">
+
+      <template
+      slot="dateCell"
+      slot-scope="{date, data}"
+      
+      >
+      <span> ${data.day.split('-')[2]}} </span>
+      <div  v-if="jsonData[data.day]" @click="sendCustomNotification(data.day,jsonData[data.day],'info')"
+      >
+      ${jsonData[data.day].length}}
+         <span v-for="item in jsonData[data.day]"> ${item.task}} </span>
+      </div>
+   
+  
+    </template>
+    </el-calendar>
+  </div>
+  <script>
+    function parseMarkdownToJSON(markdownContent) {
+      const result = {};
+      const lines = markdownContent.split('\n');
+
+      let currentYear = new Date().getFullYear();
+      let currentDate = null;
+      let currentTasks = [];
+
+      const dateRegex = /^###\s+(\d+\.\d+)/;
+      const completedTaskRegex = /^- \[x\]\s+(.+)/;
+      const incompleteTaskRegex = /^- \[ \]\s+(.+)/;
+
+      for (const line of lines) {
+        const dateMatch = line.match(dateRegex);
+        const completedTaskMatch = line.match(completedTaskRegex);
+        const incompleteTaskMatch = line.match(incompleteTaskRegex);
+
+        if (dateMatch) {
+          if (currentDate !== null) {
+            result[currentDate] = currentTasks;
+          }
+          const dateString = dateMatch[1];
+          const [month, day] = dateString.split('.').map(Number);
+          currentDate = `${currentYear}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+          currentTasks = [];
+        } else if (completedTaskMatch) {
+          currentTasks.push({
+            task: completedTaskMatch[1],
+            completed: true,
+          });
+        } else if (incompleteTaskMatch) {
+          currentTasks.push({
+            task: incompleteTaskMatch[1],
+            completed: false,
+          });
+        }
+      }
+
+      if (currentDate !== null) {
+        result[currentDate] = currentTasks;
+      }
+
+      return result;
+    }
+
+
+
+    let content = "{{ $page := .Site.GetPage `/posts/日志.md` }}{{ $page.RawContent }}";
+    const jsonData = parseMarkdownToJSON(content);
+    var app = new Vue({
+      delimiters: ['${', '}}'], // 修改插值分隔符为[[]]
+      data() {
+        return {
+          today: new Date(),
+          jsonData: jsonData
+        }
+      },
+      methods: {
+        sendCustomNotification(title,message,type) {
+          console.log(title)
+          // 在按钮点击时触发通知，并传递消息
+          this.$notify({
+            title: title,
+            message: message,
+            type: type // 可以根据需要更改通知类型
+          });
+        }
+      }
+    });
+    // 在运行时使用$mount挂载到元素
+    app.$mount('#app');
+    console.log(jsonData)
+  </script>
+
+
+
   <h4>
      <span class="nowDate" data-unix="{{ now.Unix }}">  </span>
   </h4>
@@ -42,9 +139,11 @@
       updateDateTimeByElementClass("LastChange");
       // 更新具有 "AuthorDate" 类名的元素的时间戳
       updateDateTimeByElementClass("AuthorDate");
-      // 更新具有 "now" 类名的元素的时间戳
+      // 更新具有 "nowDate" 类名的元素的时间戳
       updateDateTimeByElementClass("nowDate");
     };
   </script>
+
+  
 </main>
 {{ end }}

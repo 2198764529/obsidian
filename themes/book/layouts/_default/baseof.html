@@ -11,7 +11,11 @@
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
+        {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+        {{ template "toc" . }}
+        {{ end }}
       </div>
+
     </aside>
 
     <div class="book-page">
@@ -33,13 +37,13 @@
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <aside class="book-toc">
+    <!-- {{ if default true (default .Site.Params.BookToC .Params.BookToC) }} -->
+    <!-- <aside class="book-toc">
       <div class="book-toc-content">
-        {{ template "toc" . }} <!-- Table of Contents -->
-      </div>
-    </aside>
-    {{ end }}
+        {{ template "toc" . }} -->
+      <!-- </div>
+    </aside> -->
+    <!-- {{ end }} -->
   </main>
 
   {{ partial "docs/inject/body" . }}

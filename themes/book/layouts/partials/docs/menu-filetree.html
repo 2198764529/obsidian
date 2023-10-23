@@ -21,7 +21,10 @@
         </li>
       {{ end }}
     {{ end }}
+   
+
   </ul>
+
 {{ end }}
 
 {{ define "book-page-link" }}{{/* (dict "Page" .Page "CurrentPage" .CurrentPage) */}}
@@ -46,4 +49,8 @@
   {{ else }}
     <span>{{- partial "docs/title" .Page -}}</span>
   {{ end }}
+{{ end }}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
 {{ end }}

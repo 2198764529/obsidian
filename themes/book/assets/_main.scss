@@ -1,48 +1,53 @@
+/* 设置全局 HTML 和 Body 样式 */
 html {
-  font-size: $font-size-base;
-  scroll-behavior: smooth;
-  touch-action: manipulation;
+  font-size: $font-size-base; /* 设置字体大小 */
+  scroll-behavior: smooth; /* 平滑滚动 */
+  touch-action: manipulation; /* 触摸行为 */
 }
 
 body {
-  min-width: $body-min-width;
-  color: var(--body-font-color);
-  background: var(--body-background);
+  min-width: $body-min-width; /* 最小宽度 */
+  color: var(--body-font-color); /* 文本颜色 */
+  background: var(--body-background); /* 背景颜色 */
 
-  letter-spacing: 0.33px;
-  font-weight: $body-font-weight;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.33px; /* 字母间距 */
+  font-weight: $body-font-weight; /* 字体粗细 */
+  text-rendering: optimizeLegibility; /* 文本渲染优化 */
+  -webkit-font-smoothing: antialiased; /* Webkit字体平滑 */
+  -moz-osx-font-smoothing: grayscale; /* 操作系统 X 字体平滑 */
 
   box-sizing: border-box;
   * {
-    box-sizing: inherit;
+    box-sizing: inherit; /* 继承盒模型 */
   }
 }
 
+/* 设置标题样式 */
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-weight: $body-font-weight;
+  font-weight: $body-font-weight; /* 字体粗细 */
 }
 
+/* 设置链接样式 */
 a {
-  text-decoration: none;
-  color: var(--color-light);
-}    
+  text-decoration: none; /* 去掉下划线 */
+  color: var(--color-light); /* 链接文本颜色 */
+}
 
-
+/* 设置图片样式 */
 img {
-  vertical-align: baseline;
+  vertical-align: baseline; /* 垂直对齐方式 */
 }
 
+/* 设置焦点样式 */
 :focus {
-  @include outline;
+  @include outline; /* 添加轮廓样式 */
 }
 
+/* 设置侧边栏菜单样式 */
 aside nav ul {
   padding: 0;
   margin: 0;
@@ -62,10 +67,11 @@ aside nav ul {
   }
 
   ul {
-    padding-inline-start: $padding-16;
+    padding-inline-start: $padding-16; /* 缩进 */
   }
 }
 
+/* 设置分页样式 */
 ul.pagination {
   display: flex;
   justify-content: center;
@@ -77,15 +83,18 @@ ul.pagination {
   }
 }
 
+/* 设置容器样式 */
 .container {
-  max-width: $container-max-width;
-  margin: 0 auto;
+  max-width: $container-max-width; /* 最大宽度 */
+  margin: 0 auto; /* 水平居中 */
 }
 
+/* 设置图标样式 */
 .book-icon {
   filter: var(--icon-filter);
 }
 
+/* 设置品牌标识样式 */
 .book-brand {
   margin-top: 0;
   margin-bottom: $padding-16;
@@ -97,8 +106,9 @@ ul.pagination {
   }
 }
 
+/* 设置侧边栏菜单样式 */
 .book-menu {
-  flex: 0 0 $menu-width;
+  flex: 0 0 $menu-width; /* 不扩展，固定宽度 */
   font-size: $font-size-14;
 
   .book-menu-content {
@@ -106,7 +116,7 @@ ul.pagination {
     padding: $padding-16;
     background: var(--body-background);
 
-    @include fixed;
+    @include fixed; /* 固定定位 */
   }
 
   a,
@@ -117,7 +127,7 @@ ul.pagination {
   }
 
   a.active {
-    color: var(--color-light);
+    color: var(--color-light); /* 活动链接文本颜色 */
   }
 
   input.toggle + label + ul {
@@ -137,7 +147,7 @@ ul.pagination {
   }
 }
 
-// for RTL support
+/* 右至左语言支持样式 */
 body[dir="rtl"] .book-menu {
   input.toggle + label::after {
     content: "◂";
@@ -148,6 +158,7 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+/* 设置页面部分样式 */
 .book-section-flat {
   margin: $padding-16 * 2 0;
 
@@ -162,16 +173,19 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+/* 设置页面样式 */
 .book-page {
   min-width: $body-min-width;
   flex-grow: 1;
   padding: $padding-16;
 }
 
+/* 设置文章样式 */
 .book-post {
   margin-bottom: $padding-16 * 3;
 }
 
+/* 设置页头样式 */
 .book-header {
   display: none;
   margin-bottom: $padding-16;
@@ -186,6 +200,7 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+/* 设置搜索样式 */
 .book-search {
   position: relative;
   margin: $padding-16 0;
@@ -227,15 +242,16 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+/* 设置目录样式 */
 .book-toc {
-  flex: 0 0 $toc-width;
+  flex: 0 0 $toc-width; /* 不扩展，固定宽度 */
   font-size: $font-size-12;
 
   .book-toc-content {
     width: $toc-width;
     padding: $padding-16;
 
-    @include fixed;
+    @include fixed; /* 固定定位 */
   }
 
   img {
@@ -248,6 +264,7 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+/* 设置页脚样式 */
 .book-footer {
   padding-top: $padding-16;
   font-size: $font-size-14;
@@ -259,10 +276,12 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+/* 设置评论样式 */
 .book-comments {
   margin-top: $padding-16;
 }
 
+/* 设置语言选择样式 */
 .book-languages {
   margin-block-end: $padding-16 * 2;
 
@@ -277,7 +296,7 @@ body[dir="rtl"] .book-menu {
   }
 }
 
-// Responsive styles
+/* 设置响应式样式 */
 .book-menu-content,
 .book-toc-content,
 .book-page,
@@ -288,6 +307,7 @@ body[dir="rtl"] .book-menu {
   will-change: transform, margin, opacity;
 }
 
+/* 设置小屏幕下的响应式样式 */
 @media screen and (max-width: $mobile-breakpoint) {
   #menu-control,
   #toc-control {
@@ -299,6 +319,9 @@ body[dir="rtl"] .book-menu {
     margin-inline-start: -$menu-width;
     font-size: $font-size-base;
     z-index: 1;
+    nav#TableOfContents {
+      display: none;
+    }
   }
 
   .book-toc {
@@ -309,10 +332,12 @@ body[dir="rtl"] .book-menu {
     display: block;
   }
 
+  /* 设置菜单开关获得焦点时的轮廓样式 */
   #menu-control:focus ~ main label[for="menu-control"] {
     @include outline;
   }
 
+  /* 设置菜单开关被选中时的样式 */
   #menu-control:checked ~ main {
     .book-menu {
       visibility: initial;
@@ -321,6 +346,7 @@ body[dir="rtl"] .book-menu {
     .book-menu .book-menu-content {
       transform: translateX($menu-width);
       box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
+      
     }
 
     .book-page {
@@ -337,17 +363,19 @@ body[dir="rtl"] .book-menu {
     }
   }
 
+  /* 设置目录开关获得焦点时的轮廓样式 */
   #toc-control:focus ~ main label[for="toc-control"] {
     @include outline;
   }
 
+  /* 设置目录开关被选中时的样式 */
   #toc-control:checked ~ main {
     .book-header aside {
       display: block;
     }
   }
 
-  // for RTL support
+  /* 右至左语言支持下的样式 */
   body[dir="rtl"] #menu-control:checked ~ main {
     .book-menu .book-menu-content {
       transform: translateX(-$menu-width);
@@ -355,11 +383,17 @@ body[dir="rtl"] .book-menu {
   }
 }
 
-// Extra space for big screens
+/* 大屏幕下的样式 */
 @media screen and (min-width: $container-max-width) {
   .book-page,
   .book-menu .book-menu-content,
   .book-toc .book-toc-content {
     padding: $padding-16 * 2 $padding-16;
+
+  }
+  nav#TableOfContents ul{
+    padding-inline-start: None;
   }
 }
+
+

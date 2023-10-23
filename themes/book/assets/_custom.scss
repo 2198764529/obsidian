@@ -1,3 +1,32 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+// 渐变
+@keyframes gradientText {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .gradient-text {
+    font-weight: bold;
+    background: linear-gradient(90deg, black,#fff);
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: gradientText 5s linear infinite;
+  }
+
+  #TableOfContents a:active {
+    color: red;
+    .book-menu-overlay {
+      display: none;
+    }
+  }

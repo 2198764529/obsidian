@@ -1,4 +1,4 @@
-function updateDateTimeByElementClass(elementClass) {
+async function updateDateTimeByElementClass(elementClass) {
   // 定义更新函数
   function updateTimestamp(element) {
     if (!element) {
@@ -138,5 +138,7 @@ function updateDateTimeByElementClass(elementClass) {
   }
 
   // 初始页面加载时调用一次
-  main();
+  await main();
+  console.log("加载");
+
 }
