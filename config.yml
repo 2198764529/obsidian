@@ -22,8 +22,8 @@ markup:
     renderer:
       unsafe: true
       hardWraps: true
-  tableOfContents:
-    startLevel: 1    
+  # tableOfContents:
+  #   startLevel: 1    
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.

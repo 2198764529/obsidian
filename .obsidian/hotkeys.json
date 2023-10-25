@@ -16,20 +16,20 @@
       "key": "C"
     }
   ],
-  "obsidian-git:push2": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "P"
-    }
-  ],
   "obsidian-textgenerator-plugin:generate-text": [
     {
       "modifiers": [
         "Alt"
       ],
       "key": "A"
+    }
+  ],
+  "obsidian-git:push2": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
     }
   ]
 }

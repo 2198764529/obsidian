@@ -141,4 +141,52 @@ async function updateDateTimeByElementClass(elementClass) {
   await main();
   console.log("加载");
 
+};
+
+function parseMarkdownToJSON(markdownContent) {
+  const result = [];
+  const lines = markdownContent.split('\n');
+
+  let currentYear = new Date().getFullYear();
+  let currentDate = null;
+  let currentTasks = [];
+
+  const dateRegex = /^###\s+(\d+\.\d+)/;
+  const completedTaskRegex = /^- \[x\]\s+(.+)/;
+  const incompleteTaskRegex = /^- \[ \]\s+(.+)/;
+
+  for (const line of lines) {
+    const dateMatch = line.match(dateRegex);
+    const completedTaskMatch = line.match(completedTaskRegex);
+    const incompleteTaskMatch = line.match(incompleteTaskRegex);
+
+    if (dateMatch) {
+      if (currentDate !== null) {
+        result[currentDate] = currentTasks;
+      }
+      const dateString = dateMatch[1];
+      const [month, day] = dateString.split('.').map(Number);
+      currentDate = `${currentYear}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+      currentTasks = [];
+    } else if (completedTaskMatch) {
+      result.push({
+        title: completedTaskMatch[1],
+        start: currentDate,
+        completed: true,
+        
+      });
+    } else if (incompleteTaskMatch) {
+      result.push({
+        title: incompleteTaskMatch[1],
+        start: currentDate,
+        completed: false,
+        
+      });
+    
+    }
+  }
+
+
+
+  return result;
 }

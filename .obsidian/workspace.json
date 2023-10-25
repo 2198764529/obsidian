@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/日志.md",
+                "file": "content/posts/计算机网络/应用层-总结.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "c36a5b3795f66ac0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/技术记录.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/日志.md",
+                "file": "content/posts/技术记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/日志.md",
+                "file": "content/posts/技术记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/日志.md"
+                "file": "content/posts/技术记录.md"
               }
             }
           }
@@ -150,8 +163,20 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "cfd8ca53b21f4ed2",
+  "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
+    "content/posts/_index.md",
+    "themes/book/static/plugs/fullcalendar-zh-cn.js",
+    "content/posts/日志.md",
+    "content/posts/技术记录.md",
+    "themes/book/static/plugs/fullcalendar.js",
+    "content/posts/杂思/22年去深圳计划.md",
+    "content/posts/杂思/22年过年运动记账.md",
+    "content/posts/计算机网络/应用层-Q&A.md",
+    "content/posts/计算机网络/运输层-Q&A.md",
+    "content/posts/计算机网络/应用层-总结.md",
+    "content/posts/计算机网络/运输层-总结.md",
+    "content/posts/杂思/一带一路.md",
     "themes/book/static/plugs/element-ui.css",
     "themes/book/static/plugs/element-ui.js",
     "themes/book/static/plugs/highlight.min.js",
@@ -159,35 +184,21 @@
     "themes/book/static/plugs",
     "themes/book/static/p",
     "themes/book/static/新建文件夹",
-    "content/posts/技术记录.md",
-    "content/posts/日志.md",
     "content/posts/兴起/万物皆有定数.md",
     "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
-    "resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
-    "resources/_gen/assets/scss",
     "content/posts/网站收藏.md",
-    "content/posts/_index.md",
-    "content/posts/_index2.md",
     "content/posts/修身/外在.md",
     "content/posts/修身/内在.md",
     "content/posts/每天必做.md",
-    "themes/book/static/fonts/PingFang-SC-Regular.ttf",
     "content/posts/技术/git操作.md",
     "content/posts/技术/正则表达式.md",
     "content/posts/兴起/首页美化计划.md",
     "content/_index.md",
     "content/posts/目标/9.25 ~ 10.6.md",
     "content/posts/目标/_index.md",
-    "content/posts/生活记录/22年过年运动记账.md",
-    "content/posts/生活记录/22年去深圳计划.md",
     "content/日志.md",
-    "content/posts/计算机网络/自问自答/运输层.md",
-    "content/posts/计算机网络/自问自答/应用层.md",
     "content/posts/计算机网络/自问自答/_index.md",
-    "content/posts/计算机网络/总结/应用层.md",
     "content/posts/计算机网络/总结/_index.md",
-    "content/posts/计算机网络/_index.md",
-    "content/posts/生活记录/_index.md",
     "public/svg/translate.svg",
     "public/svg/menu.svg",
     "public/svg/calendar.svg",

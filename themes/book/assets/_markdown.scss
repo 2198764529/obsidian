@@ -1,11 +1,10 @@
 @import "variables";
 
 .markdown {
-  line-height: 1.6;
+  line-height: 1.6; // 设置行高
 
-  // remove padding at the beginning of page
   > :first-child {
-    margin-top: 0;
+    margin-top: 0; // 移除页面开头的顶部间距
   }
 
   h1,
@@ -14,158 +13,153 @@
   h4,
   h5,
   h6 {
-    font-weight: normal;
-    line-height: 1;
-    margin-top: 1.5em;
-    margin-bottom: $padding-16;
+    font-weight: normal; // 设置标题字体粗细
+    line-height: 1; // 设置标题行高
+    margin-top: 1.5em; // 设置标题顶部间距
+    margin-bottom: $padding-16; // 设置标题底部间距
     a.anchor {
-      opacity: 0;
-      font-size: 0.75em;
-      vertical-align: middle;
-      text-decoration: none;
-      color: var(--color-light);
-  }
+      opacity: 0; // 设置锚链接透明度
+      font-size: 0.75em; // 设置锚链接字体大小
+      vertical-align: middle; // 垂直居中
+      text-decoration: none; // 移除文本装饰
+      color: var(--color-light); // 设置颜色
+    }
 
     &:hover a.anchor,
     a.anchor:focus {
-      opacity: initial;
+      opacity: initial; // 设置锚链接悬停时的透明度
     }
   }
 
   h4,
   h5,
   h6 {
-    font-weight: bolder;
+    font-weight: bolder; // 设置更加粗细的字体
   }
 
   h5 {
-    font-size: 0.875em;
+    font-size: 0.875em; // 设置字体大小
   }
 
   h6 {
-    font-size: 0.75em;
+    font-size: 0.75em; // 设置字体大小
   }
 
   b,
   optgroup,
   strong {
-    font-weight: bolder;
+    font-weight: bolder; // 设置更加粗细的字体
   }
 
   a {
-    text-decoration: none;
+    text-decoration: none; // 移除文本装饰
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: underline; // 鼠标悬停时添加下划线
     }
     &:visited {
-      color: var(--color-light);
+      color: var(--color-light); // 设置访问过的链接颜色
     }
   }
 
   img {
-    max-width: 65%;
-    margin: 5% 16%;
-    height: auto;
+    max-width: 65%; // 图像最大宽度
+    margin: 5% 16%; // 外边距
+    height: auto; // 图像高度自适应
   }
 
   code {
-    padding: 0 $padding-4;
-    border-radius: $border-radius;
-    background-color: var(--color-light);
-    color: white;
-    font-size: 0.85em;
-    
+    padding: 0 $padding-4; // 代码块内边距
+    border-radius: $border-radius; // 边框圆角
+    background-color: var(--color-light); // 背景颜色
+    color: white; // 字体颜色
+    font-size: 0.85em; // 字体大小
+
     .hljs-keyword,.hljs-strong{
-      color: var(--color-light);
+      color: var(--color-light); // 设置关键词和强调字体颜色
 
     }
   }
 
   pre {
-    padding: $padding-16;
-    // border: 1px solid #ddd; /* 代码块边框 */
+    padding: $padding-16; // 代码块内边距
+    border-radius: $border-radius; // 边框圆角
+    overflow-x: auto; // 横向滚动
+    white-space: pre-wrap; // 换行
+    background: black; // 背景色
 
-    border-radius: $border-radius;
-    overflow-x: auto;
-    white-space: pre-wrap;
     code {
-      background: black;
-      font-size: 0.55em;
-      padding: 1em;
+      background: black; // 代码块背景色
+      padding:0;
+      font-size: 0.55em; // 字体大小
       span{
-    word-wrap: break-word;
+        word-wrap: break-word; // 单词折行
 
       }
-  }
+    }
   }
   pre:focus,pre:active {
-    outline: none;
-    // border: 1px solid transparent;
+    outline: none; // 移除焦点时的外框
   }
   p {
-    word-wrap: break-word;
+    word-wrap: break-word; // 段落文字折行
   }
 
   blockquote {
-    margin: $padding-16 0;
-    padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); //to keep total left space 16dp
-
-    // border-inline-start: $padding-4 solid var(--gray-200);
-    border-radius: $border-radius;
+    margin: $padding-16 0; // 设置块引用外边距
+    padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); // 块引用内边距
 
     :first-child {
-      margin-top: 0;
+      margin-top: 0; // 移除第一个块引用的顶部间距
     }
     :last-child {
-      margin-bottom: 0;
+      margin-bottom: 0; // 移除最后一个块引用的底部间距
     }
   }
 
   table {
-    overflow: auto;
-    display: block;
-    border-spacing: 0;
-    border-collapse: collapse;
-    margin-top: $padding-16;
-    margin-bottom: $padding-16;
+    overflow: auto; // 横向滚动
+    display: block; // 块级元素
+    border-spacing: 0; // 表格间距
+    border-collapse: collapse; // 合并边框
+    margin-top: $padding-16; // 表格顶部间距
+    margin-bottom: $padding-16; // 表格底部间距
 
     tr th,
     tr td {
-      padding: $padding-8 $padding-16;
-      border: $padding-1 solid var(--gray-200);
+      padding: $padding-8 $padding-16; // 单元格内边距
+      border: $padding-1 solid var(--gray-200); // 单元格边框
     }
 
     tr:nth-child(2n) {
-      background: var(--gray-100);
+      background: var(--gray-100); // 奇数行背景色
     }
   }
 
   hr {
-    height: $padding-1;
-    border: none;
-    background: var(--gray-200);
+    height: $padding-1; // 水平线高度
+    border: none; // 移除边框
+    background: var(--gray-200); // 背景颜色
   }
 
   ul,
   ol {
-    padding-inline-start: $padding-16 * 2;
-    word-wrap: break-word;
+    padding-inline-start: $padding-16 * 2; // 列表内边距
+    word-wrap: break-word; // 列表文字折行
   }
 
   dl {
     dt {
-      font-weight: bolder;
-      margin-top: $padding-16;
+      font-weight: bolder; // 设置更加粗细的字体
+      margin-top: $padding-16; // 标题顶部间距
     }
 
     dd {
-      margin-inline-start: 0;
-      margin-bottom: $padding-16;
+      margin-inline-start: 0; // 段落内边距
+      margin-bottom: $padding-16; // 段落底部间距
     }
   }
 
-  // Special case for highlighted code with line numbers
   .highlight table tr {
     td:nth-child(1) pre {
       margin: 0;
@@ -178,36 +172,35 @@
   }
 
   details {
-    padding: $padding-16;
-    border: $padding-1 solid var(--gray-200);
-    border-radius: $border-radius;
+    padding: $padding-16; // 内容块内边距
+    border: $padding-1 solid var(--gray-200); // 内容块边框
+    border-radius: $border-radius; // 边框圆角
 
     summary {
-      line-height: 1;
-      padding: $padding-16;
-      margin: -$padding-16;
-      cursor: pointer;
+      line-height: 1; // 摘要行高
+      padding: $padding-16; // 摘要内边距
+      margin: -$padding-16; // 移除摘要顶部间距
+      cursor: pointer; // 设置鼠标指针为手型
     }
 
     &[open] summary {
-      margin-bottom: 0;
+      margin-bottom: 0; // 打开状态下移除底部间距
     }
   }
 
   figure {
-    margin: $padding-16 0;
+    margin: $padding-16 0; // 图片块外边距
     figcaption p {
-      margin-top: 0;
+      margin-top: 0; // 移除顶部间距
     }
   }
 }
 
 .markdown-inner {
-  // Util class to remove extra margin in nested markdown content
   > :first-child {
-    margin-top: 0;
+    margin-top: 0; // 移除内部Markdown内容顶部间距
   }
   > :last-child {
-    margin-bottom: 0;
+    margin-bottom: 0; // 移除内部Markdown内容底部间距
   }
 }

@@ -3,30 +3,52 @@
 // @import "plugins/numbered";
 // 渐变
 @keyframes gradientText {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, black, #fff);
+  background-size: 200% 200%;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: gradientText 5s linear infinite;
+}
+
+#TableOfContents a:active {
+  color: red;
+  .book-menu-overlay {
+    display: none;
+  }
+}
+#calendar {
+  .fc-h-event {
+    background-color: var(--color-light);
+    border: none;
+    .fc-event-title {
+      font-size: 10pt;
+      white-space: normal; /* 允许文本自动换行 */
     }
   }
-  
-  .gradient-text {
-    font-weight: bold;
-    background: linear-gradient(90deg, black,#fff);
-    background-size: 200% 200%;
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    animation: gradientText 5s linear infinite;
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+  }
+  td,
+  th {
+    border: none;
   }
 
-  #TableOfContents a:active {
-    color: red;
-    .book-menu-overlay {
-      display: none;
-    }
-  }
+
+
+}

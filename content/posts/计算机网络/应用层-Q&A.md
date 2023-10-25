@@ -1,8 +1,8 @@
 ---
-title: 应用层
+title: 应用层-Q&A
 id: b04ee8336e
 datetimeCreate: 2023-09-21 14:55:31
-datetimeUpdate: 2023-09-28 18:14:38
+datetimeUpdate: 2023-10-25 15:11:42
 ---
 
 应用层是指电脑上各种应用软件进程通过何种应用层协议来使用网络提供的通信服务
