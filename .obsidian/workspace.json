@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术记录.md",
+                "file": "content/posts/日志.md",
                 "mode": "source",
                 "source": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/技术记录.md",
+                "file": "content/posts/日志.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/技术记录.md",
+                "file": "content/posts/日志.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/技术记录.md"
+                "file": "content/posts/日志.md"
               }
             }
           }
@@ -165,10 +165,12 @@
   },
   "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
+    "themes/book/static/js/fullCalendar.js",
+    "content/posts/技术记录.md",
+    "content/posts/歌词/晚风.md",
     "content/posts/_index.md",
     "themes/book/static/plugs/fullcalendar-zh-cn.js",
     "content/posts/日志.md",
-    "content/posts/技术记录.md",
     "themes/book/static/plugs/fullcalendar.js",
     "content/posts/杂思/22年去深圳计划.md",
     "content/posts/杂思/22年过年运动记账.md",

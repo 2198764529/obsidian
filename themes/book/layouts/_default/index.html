@@ -27,57 +27,13 @@
       </template>
       </el-calendar>
     </div>
-  
+  <!-- 引入 fullCalendar.js -->
+  <script src="js/fullCalendar.js" ></script>
   <script>
-    
-      document.addEventListener('DOMContentLoaded', function() {
-        let content = "{{ $page := .Site.GetPage `/posts/日志.md` }}{{ $page.RawContent }}";
-
-        var calendarEl = document.getElementById('calendar');
-        const jsonData = parseMarkdownToJSON(content);
-        console.log(jsonData);
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-          locale: 'zh-cn',
-
-          events:jsonData,
-          headerToolbar: {
-            right: 'prev,next today', // 左侧按钮，包括前一个、后一个和今天
-      // center: 'title',        // 中间标题
-      left:"title"
-      // right: 'dayGridMonth,timeGridWeek,timeGridDay' // 右侧切换视图的按钮
-    },
-        });
-        calendar.render();
-      });
-
-
-    
-    // var app = new Vue({
-    //   delimiters: ['${', '}}'], // 修改插值分隔符为[[]]
-    //   data() {
-    //     return {
-    //       today: new Date(),
-    //       jsonData: jsonData
-    //     }
-    //   },
-    //   methods: {
-    //     sendCustomNotification(title,message,type) {
-    //       console.log(title)
-    //       // 在按钮点击时触发通知，并传递消息
-    //       this.$notify({
-    //         title: title,
-    //         message: message,
-    //         type: type // 可以根据需要更改通知类型
-    //       });
-    //     }
-    //   }
-    // });
-    // // 在运行时使用$mount挂载到元素
-    // app.$mount('#app');
-    // console.log(jsonData)
+    var content = "{{ $page := .Site.GetPage `/posts/日志.md` }}{{ $page.RawContent }}";
+    calendarRender(content);
   </script>
-
+ 
 
 
   <h4>
