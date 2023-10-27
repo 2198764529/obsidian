@@ -152,14 +152,12 @@ function parseMarkdownToJSON(markdownContent) {
   let currentTasks = [];
 
   const dateRegex = /^###\s+(\d+\.\d+)/;
-  const completedTaskRegex = /^- \[x\]\s+(.+)/;
-  const incompleteTaskRegex = /^- \[ \]\s+(.+)/;
+  const TaskRegex = /^-\s+(.+)/;
+
 
   for (const line of lines) {
     const dateMatch = line.match(dateRegex);
-    const completedTaskMatch = line.match(completedTaskRegex);
-    const incompleteTaskMatch = line.match(incompleteTaskRegex);
-
+    const TaskMatch = line.match(TaskRegex);
     if (dateMatch) {
       if (currentDate !== null) {
         result[currentDate] = currentTasks;
@@ -168,22 +166,14 @@ function parseMarkdownToJSON(markdownContent) {
       const [month, day] = dateString.split('.').map(Number);
       currentDate = `${currentYear}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
       currentTasks = [];
-    } else if (completedTaskMatch) {
+    } else if (TaskMatch) {
       result.push({
-        title: completedTaskMatch[1],
+        title: TaskMatch[1],
         start: currentDate,
         completed: true,
         
       });
-    } else if (incompleteTaskMatch) {
-      result.push({
-        title: incompleteTaskMatch[1],
-        start: currentDate,
-        completed: false,
-        
-      });
-    
-    }
+    } 
   }
 
 

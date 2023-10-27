@@ -24,13 +24,14 @@
   animation: gradientText 5s linear infinite;
 }
 
-#TableOfContents a:active {
-  color: red;
-  .book-menu-overlay {
-    display: none;
-  }
-}
+
 #calendar {
+  .fc-daygrid-day-number{
+    color: #fff;
+  }
+  .fc-day-today .fc-daygrid-day-number{
+    color: var(--color-light);
+  }
   .fc-h-event {
     background-color: var(--color-light);
     border: none;
