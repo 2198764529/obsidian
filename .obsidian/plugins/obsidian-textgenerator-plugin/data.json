@@ -44,7 +44,7 @@
     "stop-stream": false
   },
   "autoSuggestOptions": {
-    "isEnabled": false,
+    "isEnabled": true,
     "delay": 300,
     "numberOfSuggestions": 5,
     "triggerPhrase": "  ",

@@ -1,3 +1,8 @@
+---
+id: 9c03e105ac
+datetimeCreate: 2023-09-25 20:47:24
+datetimeUpdate: 2023-11-01 16:49:46
+---
 obsidian 记事本
 
 这是基于 obsidian 所搭建的记录方案，下面我来详细分享一下搭建过程。
