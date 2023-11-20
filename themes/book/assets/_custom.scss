@@ -14,15 +14,7 @@
   }
 }
 
-.gradient-text {
-  font-weight: bold;
-  background: linear-gradient(90deg, black, #fff);
-  background-size: 200% 200%;
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  animation: gradientText 5s linear infinite;
-}
+
 
 
 #calendar {

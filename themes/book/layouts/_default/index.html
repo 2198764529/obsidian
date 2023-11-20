@@ -83,6 +83,7 @@
     };
   </script>
 
-  
+  {{ partial "docs/timeline" (dict "messageData" .Site.RegularPages "groupByKey" "Lastmod") }}
+
 </main>
 {{ end }}

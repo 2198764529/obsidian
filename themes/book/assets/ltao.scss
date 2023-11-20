@@ -1,0 +1,53 @@
+.ios_boder{
+	border-radius: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	box-shadow: 0 4px 1280px rgba(0, 0, 0, 0.1);
+}
+// 仿ios 卡片 
+.ios_card {
+    border-radius: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	box-shadow: 0 4px 1280px rgba(0, 0, 0, 0.1);
+    background: var(--color-light);
+    a,span {
+        color: #fff;
+
+    }
+}
+// 正在输入效果
+
+.typing {
+    width: 15em;
+    white-space: nowrap;
+    border-right: 2px solid transparent;
+    animation: typing 3.5s steps(15, end), blink-caret .75s step-end infinite;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15em; }
+}
+// /* 光标闪啊闪 */
+// @keyframes blink-caret {
+//   from, to { box-shadow: 1px 0 0 0 transparent; }
+//   50% { box-shadow: 1px 0 0 0; }
+// }
+// 渐变字体颜色
+.gradient-text {
+    font-weight: bold;
+    background: linear-gradient(90deg, black, #fff);
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: gradientText 5s linear infinite;
+  }
+// 分散两端对齐
+.justify_startAndEnd{
+    text-align-last:justify;
+	text-align:justify;
+	text-justify:distribute-all-lines; // 这行必加，兼容ie浏览器
+}

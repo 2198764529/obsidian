@@ -1,0 +1,165 @@
+$primary: #3F51B5;
+$dark-primary: #303F9F;
+$light-primary: #C5CAE9;
+$text: #FFFFFF;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent: #FF4081;
+
+
+.hero-table { 
+  margin-left: 10%;
+  margin-right: 10%;
+}
+  
+
+ 
+
+
+
+
+.timeline {
+
+	position: relative;
+
+	&::before {
+		content: '';
+		background: $light-primary;
+		width: 5px;
+		height: 95%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.timeline-item {
+	width: 100%;
+	margin-bottom: 70px;
+	&:nth-child(even) {
+		padding-left: 52%;
+
+
+	}
+	&:nth-child(odd) {
+		padding-right: 52%;
+
+	}
+}
+
+
+.timeline-content {
+	// position: relative;
+	width: auto;
+	padding: 5px 10px;
+	margin: 0;
+	
+	padding:5px;
+	background-color: white;
+
+
+}
+
+.timeline-img {
+	width: 30px;
+	height: 30px;
+	background: var(--color-light);
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-top: 25px;
+	margin-left: -15px;
+	div{
+		text-align: center;
+		line-height: 30px;
+	}
+}
+
+
+
+.timeline-card {
+	padding: 0!important;
+
+	p {
+		padding: 0 20px;
+	}
+
+	a {
+		margin-left: 20px;
+	}
+}
+
+.timeline-item {
+  .timeline-img-header {
+			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
+			background-size: cover;
+		}
+}
+
+.timeline-img-header {
+
+	height: 200px;
+	position: relative;
+	margin-bottom: 20px;
+
+	h2 {
+		color: $text;
+		position: absolute;
+		bottom: 5px;
+		left: 20px;
+	}
+}
+
+blockquote {
+	margin-top: 30px;
+	color: $secondary-text;
+	border-left-color: $primary;
+	padding: 0 20px;
+}
+
+.Tag {
+	background: $accent;
+	display: inline-block;
+	color: $text;
+	padding: 5px;
+	// position: absolute;
+	// top: 0;
+	// right: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+	.timeline {
+
+		&::before {
+			left: 50px;
+		}
+
+		.timeline-img {
+			left: 50px;
+		}
+
+		.timeline-content {
+			max-width: 100%;
+			width: auto;
+			margin-left: 70px;
+		}
+
+		.timeline-item {
+
+			&:nth-child(even) {
+				padding-right: 52%;
+				padding-left: 0%;
+				.timeline-content {
+					float: none;
+					margin-left: 70px;
+					
+				}
+			}
+
+			
+		}
+	}
+	
+}
+
