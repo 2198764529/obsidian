@@ -82,8 +82,42 @@
       updateDateTimeByElementClass("nowDate");
     };
   </script>
+  {{ $csvPath := "content/data/myData.csv" }}
+  {{ $csvContent := getCSV "," "content/data/" "myData.csv"}}
+  {{ $data := newScratch }}
+  {{ range $i,$v :=$csvContent }}
+    {{$IS_NONE :=delimit $v ","  | strings.Count ",,,,,,,"}}
+    {{$IS_FISRT := eq $i 0}}
+    {{ if or $IS_NONE $IS_FISRT}}
+            {{ continue }}
+    {{ end }}
+    {{ $date := replace (index $v 0) "/" "-"}}
+    {{$events := slice}}
+    {{range $i2,$v2 :=$v}}
+        {{if ne ($v2 | strings.Count "") 1}}
+          {{if in $v2 ";;;"}}
+              {{$v2 = split $v2 ";;;"}}
+          {{end}}
+          {{$events = $events |append $v2}}
+        {{end}}
+  
 
-  {{ partial "docs/timeline" (dict "messageData" .Site.RegularPages "groupByKey" "Lastmod") }}
+    {{end}}
+    {{ $data.Add $date ($events) }}
+  {{end}}
+  {{ range .Site.RegularPages.GroupByParamDate "Lastmod" "2006-1-2" }}
+    {{ $date := .Key }}
+    {{$events := slice}}
+    {{range .Pages}}
+        {{$events = $events |append .Title}}
+    {{ end }}
+    {{ $data.Add $date ($events) }}
+
+  {{ end }}
+
+
+
+  {{ partial "docs/timeline" (dict "messageData" $data) }}
 
 </main>
 {{ end }}

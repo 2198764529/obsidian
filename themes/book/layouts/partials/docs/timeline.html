@@ -1,55 +1,42 @@
-
 <div class="timeline">
-
-
-
-<section class="timeline">
+    <section class="timeline">
       <div class="container" style="text-align: left!important">
-        
-{{ $groupByKey := .groupByKey }}
-{{ $messageData := .messageData }}
-{{ $Params := .Params}}
-        {{ range $i, $v := $messageData.GroupByParamDate  $groupByKey  "02"}} 
+        {{ $messageData := .messageData }}
+        {{ $messageDataIndex := slice }}
+        {{ range $i,$v := $messageData.Values}}
+            {{ $messageDataIndex = $messageDataIndex | append $i }}
 
-        <div class="timeline-item card-container">
+        {{ end }}
+        {{$messageDataIndex = sort $messageDataIndex "value" "desc"}}
+        {{$messageDataIndex}}
 
+        {{ range  $messageDataIndex }}
+       
+          <div class="timeline-item card-container">
             <div class="timeline-img">
-                <div>{{ .Key   }}</div>
+              <div>
+                {{index (split . "-") 2}}
+              </div>
             </div>
-            {{ range $i2, $v2 :=.Pages  }}
-
-                <div class="timeline-content js--fadeInLeft ios_card" 
-                style="margin-top: {{ mul (add $i2 1) 5 }}px;"
-                >
-                    
-                    
-                    <h4>
-                        <a href="{{.Permalink}}"><span>{{.Title}}</span></a>
-                        
-                    </h4>
-    
-                    <p>
-                        {{ $Date := index $v2.Params $groupByKey }}
-
-                        <span class="{{ $groupByKey }}"  data-unix="{{ $Date.Unix }}"></span>
-                        <span>/ {{ .Content | countwords}}字</span>
-                        <!-- <span>/ {{ .Content | countwords}}字</span> -->
-                    </p> 
-                </div>
-
+ 
+            {{ range $i2, $v2 := $messageData.Get . }}
+              <div class="timeline-content js--fadeInLeft ios_card" 
+              style="margin-top: {{ mul (add $i2 1) 5 }}px;"
+              >
+                <h4>
+                    <span>{{ $v2 }}</span>
+                  
+                </h4>
+                <p>
+                    <span class="" data-unix=""></span>
+                 
+                </p>
+              </div>
             {{ end }}
-
-        </div>  
-        {{ end }}   
-    </div>
-</section>
-
-<script>
-    // 在页面加载时执行的 JavaScript 代码
-    window.onload = function () {
-      updateDateTimeByElementClass({{$groupByKey}})
-    }
-
-  </script>
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  
 
 </div>
