@@ -84,40 +84,69 @@
   </script>
   {{ $csvPath := "content/data/myData.csv" }}
   {{ $csvContent := getCSV "," "content/data/" "myData.csv"}}
-  {{ $data := newScratch }}
+  {{ $csvKeys := index $csvContent 0}}
+  {{$pages :=.Site.RegularPages.GroupByLastmod "2006-01-02"}}
+  {{ $pagesDict := dict }}
+  {{ range $pages }}
+    {{ $pagesDict = $pagesDict | merge (dict .Key .) }}
+  {{ end }}
+  {{ $data := slice }}
   {{ range $i,$v :=$csvContent }}
-    {{$IS_NONE :=delimit $v ","  | strings.Count ",,,,,,,"}}
+    {{$IS_NONE :=delimit $v ","  | strings.Count ",,,,,,"}}
     {{$IS_FISRT := eq $i 0}}
     {{ if or $IS_NONE $IS_FISRT}}
-            {{ continue }}
+        
+        {{ continue }}
     {{ end }}
+
+
     {{ $date := replace (index $v 0) "/" "-"}}
-    {{$events := slice}}
+    {{$sub_data := dict}}
     {{range $i2,$v2 :=$v}}
         {{if ne ($v2 | strings.Count "") 1}}
-          {{if in $v2 ";;;"}}
-              {{$v2 = split $v2 ";;;"}}
+          {{$type := index $csvKeys $i2}}
+          {{if lt $i2 6}}
+              {{$text:=$v2}}
+              
+             
+
+              {{$sub_data = merge $sub_data (dict "count" (dict $type $text))}}
+
+          {{else if eq $i2 6}}
+              {{$sub_data = merge $sub_data (dict $type (split $v2 ";;;"))}}
+        
           {{end}}
-          {{$events = $events |append $v2}}
+
+          
         {{end}}
-  
 
     {{end}}
-    {{ $data.Add $date ($events) }}
+
+  
+    {{with index $pagesDict $date}}
+        {{$ls := slice}}
+        {{range (index $pagesDict $date).Pages}}
+            {{$ls = $ls |append (dict "type" "md"  "date" .Lastmod.Unix "title" .Title)}}
+
+        {{end}}
+        {{$sub_data = merge $sub_data (dict "md" $ls)}}
+    {{end}}
+
+    {{ $data =  $data | append slice ($sub_data) }}
   {{end}}
-  {{ range .Site.RegularPages.GroupByParamDate "Lastmod" "2006-1-2" }}
-    {{ $date := .Key }}
-    {{$events := slice}}
-    {{range .Pages}}
-        {{$events = $events |append .Title}}
-    {{ end }}
-    {{ $data.Add $date ($events) }}
+  {{ $data = $data | uniq  }}
+  {{$data = last (sub (len $data) 1) $data}}
+  <!-- {{$csvKeys}} -->
 
-  {{ end }}
+  {{range $data}}  
 
-
-
+  {{.}}
+  <br>
+  <br>
+  {{end}}
   {{ partial "docs/timeline" (dict "messageData" $data) }}
+
+
 
 </main>
 {{ end }}

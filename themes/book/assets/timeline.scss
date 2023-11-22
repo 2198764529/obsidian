@@ -37,7 +37,7 @@ $accent: #FF4081;
 	width: 100%;
 	margin-bottom: 70px;
 	&:nth-child(even) {
-		padding-left: 52%;
+		padding-left: 58%;
 
 
 	}
@@ -49,11 +49,10 @@ $accent: #FF4081;
 
 
 .timeline-content {
-	// position: relative;
-	width: auto;
+	
 	padding: 5px 10px;
 	margin: 0;
-	
+	display: inline-block;
 	padding:5px;
 	background-color: white;
 
@@ -61,17 +60,17 @@ $accent: #FF4081;
 }
 
 .timeline-img {
-	width: 30px;
-	height: 30px;
+	width: 50px;
+	height: 50px;
 	background: var(--color-light);
 	border-radius: 50%;
 	position: absolute;
 	left: 50%;
 	margin-top: 25px;
-	margin-left: -15px;
+	margin-left: -25px;
 	div{
 		text-align: center;
-		line-height: 30px;
+		line-height: 50px;
 	}
 }
 
@@ -106,7 +105,7 @@ $accent: #FF4081;
 		color: $text;
 		position: absolute;
 		bottom: 5px;
-		left: 20px;
+		left: 25px;
 	}
 }
 
@@ -142,21 +141,16 @@ blockquote {
 		.timeline-content {
 			max-width: 100%;
 			width: auto;
-			margin-left: 70px;
+			margin-left: 10%;
 		}
 
 		.timeline-item {
+			padding-left: 10%;
+			
+			&:nth-child(odd){
+				padding-right: 0;
 
-			&:nth-child(even) {
-				padding-right: 52%;
-				padding-left: 0%;
-				.timeline-content {
-					float: none;
-					margin-left: 70px;
-					
-				}
 			}
-
 			
 		}
 	}
