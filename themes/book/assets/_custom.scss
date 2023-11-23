@@ -19,10 +19,14 @@
 
 #calendar {
   .fc-daygrid-day-number{
-    color: #fff;
+    color: var(--body-font-color);
   }
-  .fc-day-today .fc-daygrid-day-number{
-    color: var(--color-light);
+  .fc-day-today  {
+    background-color: var(--body-background);
+    a{
+      color: var(--color-light);
+
+    }
   }
   .fc-h-event {
     background-color: var(--color-light);
@@ -30,6 +34,9 @@
     .fc-event-title {
       font-size: 10pt;
       white-space: normal; /* 允许文本自动换行 */
+    }
+    .fc-button{
+      background: var(--body-background);
     }
   }
   table {

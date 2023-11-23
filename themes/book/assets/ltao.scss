@@ -7,14 +7,10 @@
 // 仿ios 卡片 
 .ios_card {
     border-radius: 12px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
 	overflow: hidden;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background: var(--color-light);
-    a,span {
-        color: #fff;
-
-    }
+	box-shadow: 0 1px 5px var(--body-font-color);
+    background: none;
+  
 }
 // 正在输入效果
 

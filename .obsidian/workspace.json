@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/技术记录.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/技术记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/技术记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/网站收藏.md"
+                "file": "content/posts/技术记录.md"
               }
             }
           }
@@ -152,6 +152,7 @@
   },
   "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
+    "content/posts/网站收藏.md",
     "content/data/FCB55D40",
     "content/data/E9455D40",
     "content/data/FD036C40",
@@ -162,7 +163,6 @@
     "content/data/新建 Microsoft Excel 工作表.xlsx",
     "content/data/F7D2E640",
     "content/data/28C1E640",
-    "content/data/41C1E640",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
     "themes/timeline/exampleSite/content/timeline/Sapien_faucibus.md",

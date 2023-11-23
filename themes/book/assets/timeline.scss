@@ -24,9 +24,9 @@ $accent: #FF4081;
 
 	&::before {
 		content: '';
-		background: $light-primary;
-		width: 5px;
-		height: 95%;
+		background: black;
+		width: 2px;
+		height: 100%;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -54,7 +54,6 @@ $accent: #FF4081;
 	margin: 0;
 	display: inline-block;
 	padding:5px;
-	background-color: white;
 
 
 }
@@ -62,9 +61,8 @@ $accent: #FF4081;
 .timeline-img {
 	width: 50px;
 	height: 50px;
-	background: var(--color-light);
-	border-radius: 50%;
-	position: absolute;
+ 	position: absolute;
+	background-color: var(--body-background);
 	left: 50%;
 	margin-top: 25px;
 	margin-left: -25px;
@@ -119,7 +117,6 @@ blockquote {
 .Tag {
 	background: $accent;
 	display: inline-block;
-	color: $text;
 	padding: 5px;
 	// position: absolute;
 	// top: 0;
