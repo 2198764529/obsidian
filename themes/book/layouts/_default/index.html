@@ -31,7 +31,7 @@
   <script src="js/fullCalendar.js" ></script>
   <script>
     var content = "{{ $page := .Site.GetPage `/posts/日志.md` }}{{ $page.RawContent }}";
-    calendarRender(content);
+    calendarRender(content); 
   </script>
  
 
@@ -64,63 +64,10 @@
 
   </h4>
  
-  {{ $csvPath := "content/data/myData.csv" }}
-  {{ $csvContent := getCSV "," "content/data/" "myData.csv"}}
-  {{ $csvKeys := index $csvContent 0}}
-  {{$pages :=.Site.RegularPages.GroupByLastmod "2006-01-02"}}
-  {{ $pagesDict := dict }}
-  {{ range $pages }}
-    {{ $pagesDict = $pagesDict | merge (dict .Key .) }}
-  {{ end }}
-  {{ $data := slice }}
-  {{ range $i,$v :=$csvContent }}
-    {{$IS_NONE :=delimit $v ","  | strings.Count ",,,,,,"}}
-    {{$IS_FISRT := eq $i 0}}
-    {{ if or $IS_NONE $IS_FISRT}}
-        
-        {{ continue }}
-    {{ end }}
-
-
-    {{ $date := replace (index $v 0) "/" "-"}}
-    {{$sub_data := dict}}
-    {{range $i2,$v2 :=$v}}
-        {{if ne ($v2 | strings.Count "") 1}}
-          {{$type := index $csvKeys $i2}}
-          {{if lt $i2 6}}
-              {{$text:=$v2}}
-              
-             
-
-              {{$sub_data = merge $sub_data (dict "count" (dict $type $text))}}
-
-          {{else if eq $i2 6}}
-              {{$sub_data = merge $sub_data (dict $type (split $v2 ";;;"))}}
-        
-          {{end}}
-
-          
-        {{end}}
-
-    {{end}}
-
-  
-    {{with index $pagesDict $date}}
-        {{$ls := slice}}
-        {{range (index $pagesDict $date).Pages}}
-            {{$ls = $ls |append (dict "type" "md"  "date" .Lastmod.Unix "title" .Title)}}
-
-        {{end}}
-        {{$sub_data = merge $sub_data (dict "md" $ls)}}
-    {{end}}
-
-    {{ $data =  $data | append slice ($sub_data) }}
-  {{end}}
-  {{ $data = $data | uniq  }}
-  {{$data = last (sub (len $data) 1) $data}}
+  {{$data := partial "docs/inject/timelineData.html" . }}
  
   {{ partial "docs/timeline" (dict "messageData" $data) }}
-
+ 
 
   <script>
     // 在页面加载时执行的 JavaScript 代码

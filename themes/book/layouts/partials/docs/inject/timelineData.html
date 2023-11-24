@@ -1,0 +1,69 @@
+<!-- layouts/shortcodes/timelineData.html -->
+{{/*
+    Hugo 短代码：自定义数据
+
+    该短代码处理 CSV 数据并与 Hugo 页面数据合并。
+
+    变量：
+    - $csvPath: CSV 文件的路径
+    - $csvContent: CSV 文件的内容
+    - $csvKeys: CSV 表头关键字
+    - $pages: 按最后修改日期分组的 Hugo 页面
+    - $pagesDict: 按日期索引的 Hugo 页面字典
+    - $data: 用于存储最终数据的切片
+
+    该短代码处理 CSV 数据，执行一些条件检查，并将其与 Hugo 页面数据合并。最终处理的数据存储在 $data 变量中。
+
+    用法：
+    {{ partial "timelineData.html" .}}
+*/}}
+{{ $csvPath := "content/data/myData.csv" }}
+{{ $csvContent := getCSV "," "content/data/" "myData.csv"}}
+{{ $csvKeys := index $csvContent 0}}
+{{$pages :=.Site.RegularPages.GroupByLastmod "2006-01-02"}}
+{{ $pagesDict := dict }}
+{{ range $pages }}
+    {{ $pagesDict = $pagesDict | merge (dict .Key .) }}
+{{ end }}
+{{ $data := slice }}
+{{ range $i, $v := $csvContent }}
+    {{ $IS_NONE := delimit $v "," | strings.Count ",,,,,,"}}
+    {{ $IS_FIRST := eq $i 0}}
+    {{ if or $IS_NONE $IS_FIRST}}
+        {{/* 跳过空行或 CSV 的第一行 */}}
+        {{ continue }}
+    {{ end }}
+
+    {{ $date := replace (index $v 0) "/" "-"}}
+    {{$sub_data := dict}}
+    {{ range $i2, $v2 := $v }}
+        {{ if ne ($v2 | strings.Count "") 1 }}
+            {{$type := index $csvKeys $i2}}
+            {{ if lt $i2 6 }}
+                {{$text := $v2}}
+                {{/* 处理第 1-6 列的数据 */}}
+                {{$sub_data = merge $sub_data (dict "count" (dict $type $text))}}
+            {{ else if eq $i2 6 }}
+                {{/* 处理第 6 列的数据 */}}
+                {{$sub_data = merge $sub_data (dict $type (split $v2 ";;;"))}}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ with index $pagesDict $date }}
+        {{$ls := slice}}
+        {{ range (index $pagesDict $date).Pages }}
+            {{/* 处理 Hugo 页面的数据 */}}
+            {{$ls = $ls | append (dict "type" "md"  "date" .Lastmod.Unix "title" .Title)}}
+        {{ end }}
+        {{$sub_data = merge $sub_data (dict "md" $ls)}}
+    {{ end }}
+
+    {{/* 将处理后的数据追加到最终数据切片中 */}}
+    {{ $data =  $data | append slice ($sub_data) }}
+{{ end }}
+
+{{/* 删除重复条目并获取最后一个元素 */}}
+{{ $data = $data | uniq  }}
+{{ $data = last (sub (len $data) 1) $data}}
+{{ return $data}}
