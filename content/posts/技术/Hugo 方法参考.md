@@ -1,8 +1,8 @@
 ---
-title: Hugo Function
+title: Hugo 方法参考
 id: a01b727778
 datetimeCreate: 2023-11-27 11:04:45
-datetimeUpdate: 2023-11-27 16:44:24
+datetimeUpdate: 2023-11-27 18:01:19
 ---
 
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术/Python 方法参考.md",
+                "file": "content/posts/技术/Hugo 方法参考.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/技术/Python 方法参考.md",
+                "file": "content/posts/技术/Hugo 方法参考.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/技术/Python 方法参考.md",
+                "file": "content/posts/技术/Hugo 方法参考.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/技术/Python 方法参考.md"
+                "file": "content/posts/技术/Hugo 方法参考.md"
               }
             }
           }
@@ -152,8 +152,8 @@
   },
   "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
-    "content/posts/技术/Hugo Function.md",
     "content/posts/技术/Python 方法参考.md",
+    "content/posts/技术/Hugo 方法参考.md",
     "content/posts/技术/markDown 语法.md",
     "content/posts/技术/git操作.md",
     "content/posts/技术/正则表达式.md",
