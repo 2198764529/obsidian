@@ -12,7 +12,7 @@ frontmatter:
   #   - datetimeCreate
   lastmod:
     - datetimeUpdate
-  
+ 
 markup:
   defaultMarkdownHandler: "goldmark"
 
@@ -22,10 +22,12 @@ markup:
     renderer:
       unsafe: true
       hardWraps: true
-  # tableOfContents:
-  #   startLevel: 1    
+  tableOfContents:
+    startLevel: 1
+    endLevel: 6
 
 params:
+  BookToCMax: 4
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
   BookTheme: "auto"
