@@ -13,9 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/技术/Hugo 方法参考.md",
+                "file": "content/posts/理论知识/计算机网络.md",
                 "mode": "source",
                 "source": true
+              }
+            }
+          },
+          {
+            "id": "40e97ea703acda99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/个人/兴起.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/技术/Hugo 方法参考.md",
+                "file": "content/posts/理论知识/计算机网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/技术/Hugo 方法参考.md",
+                "file": "content/posts/理论知识/计算机网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/技术/Hugo 方法参考.md"
+                "file": "content/posts/理论知识/计算机网络.md"
               }
             }
           }
@@ -145,22 +157,38 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
-    "content/posts/技术/Python 方法参考.md",
-    "content/posts/技术/Hugo 方法参考.md",
-    "content/posts/技术/markDown 语法.md",
-    "content/posts/技术/git操作.md",
-    "content/posts/技术/正则表达式.md",
+    "content/posts/理论知识/应用层-总结.md",
+    "content/posts/理论知识/计算机网络.md",
+    "content/posts/理论知识/运输层-Q&A.md",
+    "content/posts/理论知识/数据结构和算法.md",
+    "content/posts/理论知识/_index.md",
+    "content/posts/工具技术/markDown 语法.md",
+    "content/posts/数据结构",
+    "content/posts/理论知识/应用层-Q&A.md",
+    "content/posts/个人/兴起.md",
+    "content/posts/个人/修身.md",
+    "content/posts/个人/清单.md",
+    "content/posts/杂思/个人存储方案.md",
+    "content/posts/杂思/一带一路.md",
+    "content/posts/杂思/有书可读方案.md",
+    "content/posts/修身/外在.md",
+    "content/posts/修身/内在.md",
+    "content/posts/修身/_index.md",
     "content/posts/技术记录.md",
+    "content/posts/兴起/万物皆有定数.md",
+    "content/posts/兴起/一言.md",
+    "content/posts/兴起/首页美化计划.md",
+    "content/posts/_index.md",
+    "content/posts/工具技术/Python 方法参考.md",
+    "content/posts/工具技术/Hugo 方法参考.md",
+    "content/posts/工具技术/正则表达式.md",
+    "content/posts/工具技术/git操作.md",
     "content/posts/日志.md",
-    "content/_index.md",
-    "content/posts/网站收藏.md",
     "themes/book/layouts/partials/docs/inject/timelineData.html",
     "themes/book/layouts/shortcodes/timelineData.html",
     "content/data/myData copy.csv",
@@ -170,26 +198,8 @@
     "content/data/myData21.csv",
     "content/data/~$myData2.csv",
     "content/data/389AF640",
-    "content/data/myData2.csv",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
-    "themes/timeline/exampleSite/content/timeline/Sapien_faucibus.md",
-    "themes/timeline/exampleSite/content/timeline/Lorem_Ipsum_Dolor.md",
-    "themes/timeline/exampleSite/content/timeline/Amet_Mauris.md",
-    "themes/timeline/exampleSite/content/timeline/Lorem_Ipsum.md",
-    "themes/timeline/exampleSite/archetypes/default.md",
-    "themes/timeline/archetypes/posts.md",
-    "themes/timeline/archetypes/default.md",
-    "themes/timeline/README.md",
-    "content/posts/个人/关于篮球.md",
-    "content/posts/个人/关于做事.md",
-    "content/posts/计算机网络/应用层-Q&A.md",
-    "content/posts/计算机网络/应用层-总结.md",
-    "content/posts/计算机网络/运输层-总结.md",
-    "content/posts/计算机网络/运输层-Q&A.md",
-    "content/posts/个人/关于睡觉.md",
-    "content/posts/个人/目标.md",
-    "content/posts/歌词/晚风.md",
     "content/posts/计算机网络/画图.canvas",
     "public/svg/translate.svg",
     "public/svg/menu.svg",
