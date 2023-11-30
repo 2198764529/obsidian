@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "mode": "source",
                 "source": true
               }
@@ -26,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "content/posts/个人/兴起.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6100c773dbdcc9a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/个人/清单.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md"
+                "file": "content/posts/理论知识/数据结构和算法.md"
               }
             }
           }
@@ -162,33 +174,33 @@
   },
   "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
-    "content/posts/理论知识/应用层-总结.md",
-    "content/posts/理论知识/计算机网络.md",
-    "content/posts/理论知识/运输层-Q&A.md",
-    "content/posts/理论知识/数据结构和算法.md",
-    "content/posts/理论知识/_index.md",
-    "content/posts/工具技术/markDown 语法.md",
-    "content/posts/数据结构",
     "content/posts/理论知识/应用层-Q&A.md",
+    "content/posts/理论知识/数据结构和算法.md",
+    "content/posts/理论知识/计算机网络.md",
+    "content/posts/工具技术/正则表达式.md",
+    "content/posts/工具技术/维基百科.md",
+    "content/posts/杂思/信息参考.md",
+    "content/posts/个人/关于做事.md",
     "content/posts/个人/兴起.md",
-    "content/posts/个人/修身.md",
     "content/posts/个人/清单.md",
     "content/posts/杂思/个人存储方案.md",
+    "content/posts/个人/目标.md",
+    "content/posts/个人/关于睡觉.md",
+    "content/posts/技术记录.md",
+    "content/posts/工具技术/git操作.md",
+    "content/posts/工具技术/Hugo 方法参考.md",
+    "content/posts/工具技术/Python 方法参考.md",
+    "content/posts/工具技术/markDown 语法.md",
+    "content/posts/_index.md",
+    "content/posts/理论知识/应用层-总结.md",
+    "content/posts/理论知识/运输层-Q&A.md",
+    "content/posts/理论知识/_index.md",
+    "content/posts/数据结构",
+    "content/posts/个人/修身.md",
     "content/posts/杂思/一带一路.md",
     "content/posts/杂思/有书可读方案.md",
     "content/posts/修身/外在.md",
     "content/posts/修身/内在.md",
-    "content/posts/修身/_index.md",
-    "content/posts/技术记录.md",
-    "content/posts/兴起/万物皆有定数.md",
-    "content/posts/兴起/一言.md",
-    "content/posts/兴起/首页美化计划.md",
-    "content/posts/_index.md",
-    "content/posts/工具技术/Python 方法参考.md",
-    "content/posts/工具技术/Hugo 方法参考.md",
-    "content/posts/工具技术/正则表达式.md",
-    "content/posts/工具技术/git操作.md",
-    "content/posts/日志.md",
     "themes/book/layouts/partials/docs/inject/timelineData.html",
     "themes/book/layouts/shortcodes/timelineData.html",
     "content/data/myData copy.csv",
