@@ -1,32 +1,9 @@
 {{ define "main" }}
 <main aria-role="main">
-    <div id='calendar'></div>
+    <div id='calendar' class="ios_card"></div>
 
 
-    <div id="app">
-      <el-calendar v-model="today">
-  
-        <template
-        slot="dateCell"
-        slot-scope="{date, data}"
-        
-        >
-        ${data.day.split('-')[2]}} 
-          <div  
-          class="calendarTask"
-          v-if="jsonData[data.day]" 
-          v-for="item in jsonData[data.day]"
-           @click="sendCustomNotification(data.day,jsonData[data.day],'info')">
-           <i class="el-icon-delete"></i>
-  
-             <el-tag type="success">${item.task}} </el-tag>
-  
-          </div>
-       
     
-      </template>
-      </el-calendar>
-    </div>
   <!-- 引入 fullCalendar.js -->
   <script src="js/fullCalendar.js" ></script>
   <script>

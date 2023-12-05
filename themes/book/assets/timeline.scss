@@ -19,35 +19,41 @@ $accent: #FF4081;
 
 
 .timeline {
-	border-left: 1px solid #FF4081;
-
+	padding: 2px 10px;
+	.container{
+		border-left: 2px solid #FF4081;
+	}
 }
 
 .timeline-item {
+	
 	width: 100%;
-	padding: 10px;
+	padding: 0 10px;
+	
 	.timeline-title::before {
 		position: absolute;
 		content: '';
-		left: 11px;
+		left: 21px;
 		width: 6px;
 		height: 6px;
 		border: 3px solid #FF4081;
 		border-radius: 50%;
 		background-color: white;
 	}
-}
-
-
-.timeline-content {
+	.timeline-content {
+		background-color: var(--card-bg2);
+		
+		margin: 5px;
+		padding:10px;
+		h4{
+			margin: 0;
+		}
 	
-	margin: 5px;
-	padding:10px;
-	h4{
-		margin: 0;
 	}
-
 }
+
+
+
 
 
 

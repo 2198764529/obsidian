@@ -1,0 +1,39 @@
+
+
+#calendar {
+    .fc-col-header-cell-cushion{
+        color: var(--body-font-color);
+    }
+    padding: 10px;
+    .fc-daygrid-day-number{
+      color: var(--body-font-color);
+      font-size: large;
+      margin: auto;
+    }
+    .fc-day-today  {
+      background-color: var(--color-light);
+    }
+    .fc-h-event {
+      border: none;
+      .fc-event-title {
+        font-size: 10pt;
+        white-space: normal; /* 允许文本自动换行 */
+      }
+      .fc-button{
+        background: var(--body-background);
+      }
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: none;
+    }
+    td,
+    th {
+      border: none;
+    }
+  
+  
+  
+  }
+  
