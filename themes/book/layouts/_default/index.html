@@ -18,6 +18,7 @@
   </h4>
 
   <h4>
+    📄{{ .Site.RegularPages | len }} 
     {{ $totalWordCount := 0 }}
 
     {{ range .Site.RegularPages }}
@@ -26,7 +27,7 @@
         {{ $totalWordCount = add $totalWordCount $wordCount }}
       {{ end }}
     {{ end }}
-    博客共 {{ .Site.RegularPages | len }} 个文章, 共计 <span>{{ $totalWordCount }}</span> 字
+    🔤{{ $totalWordCount}}
   </h4>
   <h4>
 
@@ -45,7 +46,50 @@
  
   {{ partial "docs/timeline" (dict "messageData" $data) }}
  
+<script>
+  var touchElement = document.getElementById('calendar');
+  var touchStartX, touchStartY;
 
+  touchElement.addEventListener('touchstart', function (e) {
+    // 记录触摸起始位置
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  });
+
+  touchElement.addEventListener('touchmove', function (e) {
+    // 阻止默认滚动
+    e.preventDefault();
+
+    // 获取当前触摸位置
+    var touchCurrentX = e.touches[0].clientX;
+    var touchCurrentY = e.touches[0].clientY;
+
+    // 计算触摸偏移
+    var deltaX = touchCurrentX - touchStartX;
+    var deltaY = touchCurrentY - touchStartY;
+
+    // 判断滑动方向，这里以水平方向为例
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      // 根据需要执行滑动触发的动作
+      if (deltaX > 50) {
+        // 向右滑动超过50px时触发动作
+        touchElement.style.backgroundColor = 'lightgreen';
+      } else if (deltaX < -50) {
+        // 向左滑动超过50px时触发动作
+        touchElement.style.backgroundColor = 'lightcoral';
+      }
+    }
+
+    // 更新触摸起始位置
+    touchStartX = touchCurrentX;
+    touchStartY = touchCurrentY;
+  });
+
+  touchElement.addEventListener('touchend', function () {
+    // 清除背景色
+    touchElement.style.backgroundColor = 'lightblue';
+  });
+</script>
   <script>
     // 在页面加载时执行的 JavaScript 代码
     window.onload = function () {

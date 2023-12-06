@@ -3,12 +3,22 @@
 #calendar {
     .fc-col-header-cell-cushion{
         color: var(--body-font-color);
+        opacity: 0.3;
+        font-size: 12px;
     }
     padding: 10px;
     .fc-daygrid-day-number{
       color: var(--body-font-color);
       font-size: large;
-      margin: auto;
+      margin-right: auto;
+      small{
+        opacity: 0.3;
+        font-size: 12px;
+      }
+      small.festivals{
+        color: var(--color-light);
+        opacity: 1;
+      }
     }
     .fc-day-today  {
       background-color: var(--color-light);
@@ -31,6 +41,7 @@
     td,
     th {
       border: none;
+      text-align: left;
     }
   
   

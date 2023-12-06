@@ -11,7 +11,7 @@
                  
               <h4>
                 <span>
-                  {{ dateFormat  "01-02" .count.date}} 
+                  {{ dateFormat  "01月02日" .count.date}} 
                 </span>
                 {{with .count.drinkWater}} 
                     <span>
@@ -53,12 +53,13 @@
             {{end}}
             {{end}}
             {{with .md}}
-            
               <div class="timeline-content js--fadeInLeft ios_card" >
                 <h4>
                   更新了
                   {{range .}}
-                    {{.title}}.MD ||
+                     <a class="MDtitle" href="{{.RelPermalink}}">
+                      {{.title}}
+                     </a>
 
                   {{end}}
 

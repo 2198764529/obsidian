@@ -33,8 +33,10 @@ h5 {
 
 /* 设置链接样式 */
 a {
-  text-decoration: none; /* 去掉下划线 */
-  color: var(--color-light); /* 链接文本颜色 */
+  text-decoration:none; /* 去掉下划线 */
+  color: var(--color-light);
+  padding: 1px 0.6em;  // 代码块内边距
+  border-radius: $border-radius; // 边框圆角
 }
 
 /* 设置图片样式 */

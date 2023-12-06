@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/技术记录.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/技术记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/技术记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/网站收藏.md"
+                "file": "content/posts/技术记录.md"
               }
             }
           }
@@ -175,6 +175,9 @@
   },
   "active": "6100c773dbdcc9a6",
   "lastOpenFiles": [
+    "content/posts/网站收藏.md",
+    "content/data/colors.json",
+    "content/data/未确认 348260.crdownload",
     "content/posts/个人/清单.md",
     "themes/book/assets/calendar.scss",
     "content/posts/个人/兴起.md",
@@ -208,8 +211,6 @@
     "content/data/FCB55D40",
     "content/data/E9455D40",
     "content/data/FD036C40",
-    "content/data/myData21.csv",
-    "content/data/~$myData2.csv",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
     "content/posts/计算机网络/画图.canvas",

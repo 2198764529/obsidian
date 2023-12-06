@@ -23,12 +23,14 @@
       vertical-align: middle; // 垂直居中
       text-decoration: none; // 移除文本装饰
       color: var(--color-light); // 设置颜色
-    }
+  }
 
     &:hover a.anchor,
     a.anchor:focus {
       opacity: initial; // 设置锚链接悬停时的透明度
     }
+    
+
   }
 
   h4,
@@ -51,16 +53,6 @@
     font-weight: bolder; // 设置更加粗细的字体
   }
 
-  a {
-    text-decoration: none; // 移除文本装饰
-
-    &:hover {
-      text-decoration: underline; // 鼠标悬停时添加下划线
-    }
-    &:visited {
-      color: var(--color-light); // 设置访问过的链接颜色
-    }
-  }
 
   img {
     max-width: 65%; // 图像最大宽度
@@ -69,10 +61,9 @@
   }
 
   code {
-    padding: 0 $padding-4; // 代码块内边距
+    padding: 2px $padding-8; // 代码块内边距
     border-radius: $border-radius; // 边框圆角
-    background-color: var(--color-light); // 背景颜色
-    color: white; // 字体颜色
+    background-color: var(--card-bg2); // 背景颜色
     font-size: 0.85em; // 字体大小
 
     .hljs-keyword,.hljs-strong{
@@ -146,8 +137,27 @@
   ol {
     padding-inline-start: $padding-16 * 2; // 列表内边距
     word-wrap: break-word; // 列表文字折行
+    counter-reset: custom-counter; /* 重置计数器 */
+    list-style-type: none; /* 去除默认的有序列表样式 */
   }
-
+  ol>li{
+    list-style: none;
+    counter-increment: custom-counter; /* 计数器递增 */
+    position: relative;
+    padding-left: 1.75rem;
+    &::before{
+      content:counter(custom-counter);
+      border-radius: 45%;
+      background-color: var(--card-bg2);
+      height: 1.45em;
+      width: 1.45em;
+      font-size:0.85em;
+      text-align:center;
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  }
   dl {
     dt {
       font-weight: bolder; // 设置更加粗细的字体

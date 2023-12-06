@@ -11,9 +11,7 @@
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
-        {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
         {{ template "toc" . }}
-        {{ end }}
       </div>
 
     </aside>
