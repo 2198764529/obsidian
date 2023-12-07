@@ -10,11 +10,11 @@
               <div>
                  
               <h4>
-                <span>
-                  {{ dateFormat  "01月02日" .count.date}} 
+                <span class="date" data-unix="{{ (time.AsTime .count.date).Unix }} ">
+                  
                 </span>
                 {{with .count.drinkWater}} 
-                    <span>
+                <span>
                       {{.}}L
                     </span>  
                 {{end}}
@@ -58,7 +58,7 @@
                   更新了
                   {{range .}}
                      <a class="MDtitle" href="{{.RelPermalink}}">
-                      {{.title}}
+                      📄{{.title}}
                      </a>
 
                   {{end}}

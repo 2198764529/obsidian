@@ -9,6 +9,7 @@ async function updateDateTimeByElementClass(elementClass) {
     const targetTimestamp = parseInt(element.dataset.unix); // 从元素中获取时间字符串,转时间戳
     const currentTimestamp = Math.floor(Date.now() / 1000); // 当前时间戳，单位为秒
     const timestampDifference = currentTimestamp - targetTimestamp;
+    console.log(element,timestampDifference)
     if (elementClass == "nowDate") {
       // 现在, month月day日 period
       const date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
@@ -50,7 +51,14 @@ async function updateDateTimeByElementClass(elementClass) {
     } else if (timestampDifference < 86400) {
       // 不到24小时，显示 hours 小时前
       const hours = Math.floor(timestampDifference / 3600);
-      element.textContent = `${hours} 小时前`;
+      const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
+      const hour = date.getHours();
+      
+
+
+      element.textContent = `${hour} 小时前`;
+      if (hour==0)
+          element.textContent = `今天`;
     } else if (timestampDifference < 31536000) {
       // 不到1年，显示month-day period
       const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
@@ -58,7 +66,13 @@ async function updateDateTimeByElementClass(elementClass) {
       const day = date.getDate();
       const hour = date.getHours();
       const period = getTimePeriod(hour);
-      element.textContent = `${month}-${day} ${period}`;
+      element.textContent = `${month}月${day}日${period}`;
+      if (timestampDifference<86400*2)
+      {
+        element.textContent = `昨天`;
+        if (hour!=0)
+            element.textContent += `${period}`;
+      }
     } else {
       // 大于1年，显示year-month-day period
       const date = new Date(targetTimestamp * 1000);
@@ -68,7 +82,7 @@ async function updateDateTimeByElementClass(elementClass) {
       const hour = date.getHours();
       const period = getTimePeriod(hour);
 
-      element.textContent = `${year}-${month}-${day} ${period}`;
+      element.textContent = `${year}年${month}月${day}日${period}`;
     }
   }
 

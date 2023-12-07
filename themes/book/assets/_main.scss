@@ -21,7 +21,7 @@ body {
     box-sizing: inherit; /* 继承盒模型 */
   }
   &::-webkit-scrollbar {
-    width: 1px; /* 调整滚动条宽度 */
+    width: 5px; /* 调整滚动条宽度 */
     color: #f1f1f1; /* 背景颜色 */
   }
   &::-webkit-scrollbar-thumb {
@@ -125,8 +125,7 @@ ul.pagination {
     padding: $padding-16;
     background: var(--body-background);
     &::-webkit-scrollbar {
-      width: 1px; /* 调整滚动条宽度 */
-      color: #f1f1f1; /* 背景颜色 */
+      width: 5px; /* 调整滚动条宽度 */
     }
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-light); /* 滚动条颜色 */

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/杂思/emjoy.md",
+                "file": "content/posts/杂思/Data.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/杂思/emjoy.md",
+                "file": "content/posts/杂思/Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/杂思/emjoy.md",
+                "file": "content/posts/杂思/Data.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/杂思/emjoy.md"
+                "file": "content/posts/杂思/Data.md"
               }
             }
           }
@@ -175,11 +175,21 @@
   },
   "active": "6100c773dbdcc9a6",
   "lastOpenFiles": [
+    "data/csv/myData.csv",
+    "data/csv",
+    "data/myData.csv",
+    "themes/book/layouts/shortcodes/data.html",
+    "data/colors.json",
+    "data",
+    "content/posts/杂思/emjoy.md",
+    "content/posts/杂思/Data.md",
+    "themes/book/layouts/shortcodes/json.html",
+    "content/posts/个人/修身.md",
+    "content/posts/个人/兴起.md",
     "content/posts/杂思/有书可读方案.md",
     "content/posts/理论知识/应用层-Q&A.md",
     "content/posts/理论知识/数据结构和算法.md",
     "content/posts/理论知识/计算机网络.md",
-    "content/posts/杂思/emjoy.md",
     "content/posts/杂思/22年去深圳计划.md",
     "content/posts/杂思/_index.md",
     "content/posts/杂思/信息参考.md",
@@ -189,9 +199,7 @@
     "content/data/未确认 348260.crdownload",
     "content/posts/个人/清单.md",
     "themes/book/assets/calendar.scss",
-    "content/posts/个人/兴起.md",
     "content/posts/个人/关于做事.md",
-    "content/posts/个人/修身.md",
     "content/posts/理论知识/运输层-Q&A.md",
     "content/posts/杂思/22年过年运动记账.md",
     "content/posts/杂思/个人存储方案.md",
@@ -202,15 +210,7 @@
     "content/posts/个人/关于睡觉.md",
     "content/posts/工具技术/git操作.md",
     "content/posts/工具技术/Hugo 方法参考.md",
-    "content/posts/工具技术/Python 方法参考.md",
-    "content/posts/工具技术/markDown 语法.md",
     "content/posts/数据结构",
-    "themes/book/layouts/partials/docs/inject/timelineData.html",
-    "themes/book/layouts/shortcodes/timelineData.html",
-    "content/data/myData copy.csv",
-    "content/data/FCB55D40",
-    "content/data/E9455D40",
-    "content/data/FD036C40",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
     "content/posts/计算机网络/画图.canvas",

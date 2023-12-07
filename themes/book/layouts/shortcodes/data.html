@@ -1,0 +1,27 @@
+{{$fName := .Get `fName`}}
+{{$fNameData := split $fName "." }}
+{{$f := ""}}
+{{if in $fNameData "json"}}
+  {{ $f = index $.Site.Data (index $fNameData 0)}}
+{{else if in $fNameData "csv"}}
+    {{ $f = getCSV "," "content/data/" $fName}}
+{{end}}
+{{ $firstOne := first 1 $f}}
+
+<table>
+    {{ with index $firstOne 0 }}
+    <tr>
+      {{ range $k, $v := . }}
+        <td>{{ $k }}</td>
+      {{ end }}
+    </tr>
+  {{ end }}
+    {{range $k,$v :=$f}}
+        <tr>
+            {{range $k2,$v2 := $v}}
+                <td>{{$v2}}</td>
+            {{end}}
+        </tr>
+    {{end}}
+    
+</table>
