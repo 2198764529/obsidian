@@ -14,7 +14,6 @@
   h5,
   h6 {
     font-weight: normal; // 设置标题字体粗细
-    line-height: 1; // 设置标题行高
     margin-top: 1.5em; // 设置标题顶部间距
     margin-bottom: $padding-16; // 设置标题底部间距
     a.anchor {
@@ -28,6 +27,9 @@
     &:hover a.anchor,
     a.anchor:focus {
       opacity: initial; // 设置锚链接悬停时的透明度
+    }
+    code{
+      color: white;
     }
     
 
@@ -64,6 +66,7 @@
     padding: 2px $padding-8; // 代码块内边距
     border-radius: $border-radius; // 边框圆角
     background-color: var(--card-bg2); // 背景颜色
+    color:white;
     font-size: 0.85em; // 字体大小
 
     .hljs-keyword,.hljs-strong{

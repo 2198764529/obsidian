@@ -20,6 +20,13 @@ body {
   * {
     box-sizing: inherit; /* 继承盒模型 */
   }
+  &::-webkit-scrollbar {
+    width: 1px; /* 调整滚动条宽度 */
+    color: #f1f1f1; /* 背景颜色 */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-light); /* 滚动条颜色 */
+  }
 }
 
 /* 设置标题样式 */
@@ -117,7 +124,14 @@ ul.pagination {
     width: $menu-width;
     padding: $padding-16;
     background: var(--body-background);
-
+    &::-webkit-scrollbar {
+      width: 1px; /* 调整滚动条宽度 */
+      color: #f1f1f1; /* 背景颜色 */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-light); /* 滚动条颜色 */
+    }
+  
     @include fixed; /* 固定定位 */
   }
 
@@ -357,6 +371,7 @@ body[dir="rtl"] .book-menu {
 
     .book-menu-overlay {
       display: block;
+      height:100vh;
       position: absolute;
       top: 0;
       bottom: 0;
