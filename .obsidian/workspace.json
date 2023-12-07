@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/杂思/Data.md",
+                "file": "content/posts/个人/修身.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/杂思/Data.md",
+                "file": "content/posts/个人/修身.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/杂思/Data.md",
+                "file": "content/posts/个人/修身.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/杂思/Data.md"
+                "file": "content/posts/个人/修身.md"
               }
             }
           }
@@ -175,6 +175,7 @@
   },
   "active": "6100c773dbdcc9a6",
   "lastOpenFiles": [
+    "content/posts/杂思/Data.md",
     "data/csv/myData.csv",
     "data/csv",
     "data/myData.csv",
@@ -182,7 +183,6 @@
     "data/colors.json",
     "data",
     "content/posts/杂思/emjoy.md",
-    "content/posts/杂思/Data.md",
     "themes/book/layouts/shortcodes/json.html",
     "content/posts/个人/修身.md",
     "content/posts/个人/兴起.md",
@@ -210,7 +210,6 @@
     "content/posts/个人/关于睡觉.md",
     "content/posts/工具技术/git操作.md",
     "content/posts/工具技术/Hugo 方法参考.md",
-    "content/posts/数据结构",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
     "content/posts/计算机网络/画图.canvas",
