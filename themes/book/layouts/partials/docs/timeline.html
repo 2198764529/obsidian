@@ -52,7 +52,7 @@
             
             {{end}}
             {{end}}
-            {{with .md}}
+            {{with .md_update}}
               <div class="timeline-content js--fadeInLeft ios_card" >
                 <h4>
                   更新了
@@ -63,11 +63,25 @@
 
                   {{end}}
 
-
                 </h4>
             </div>
             
             {{end}}
+            {{with .md_create}}
+            <div class="timeline-content js--fadeInLeft ios_card" >
+              <h4>
+                创建了
+                {{range .}}
+                   <a class="MDtitle" href="{{.RelPermalink}}">
+                    📄{{.title}}
+                   </a>
+
+                {{end}}
+
+              </h4>
+          </div>
+          
+          {{end}}
           </div>
           
         {{ end }}

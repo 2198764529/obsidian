@@ -4,15 +4,15 @@ timeZone: "Asia/Shanghai"
 languageCode: 'zh-cn'
 defaultContentLanguage: 'zh-cn'
 defaultContentLang: 'zh-cn'
-title: '李枫的地'
+title: '了头'
 theme: 'book'
 port: 80
 enableGitInfo: true
 # disableKinds:
 #   - "section"
 frontmatter:
-  # publishDate:
-  #   - datetimeCreate
+  publishDate:
+    - datetimeCreate
   lastmod:
     - datetimeUpdate
  

@@ -20,21 +20,34 @@
 {{ $csvPath := "content/data/myData.csv" }}
 {{ $csvContent := getCSV "," "content/data/" "myData.csv"}}
 {{ $csvKeys := index $csvContent 0}}
-{{$pages :=.Site.RegularPages.GroupByLastmod "2006-01-02"}}
-{{ $pagesDict := dict }}
-{{ range $pages }}
-    {{ $pagesDict = $pagesDict | merge (dict .Key .) }}
+{{$pagesByLastmod :=.Site.RegularPages.GroupByLastmod "2006-01-02"}}
+{{ $pagesDictByLastmod := dict }}
+{{ range $pagesByLastmod }}
+    {{ $pagesDictByLastmod = $pagesDictByLastmod | merge (dict .Key .) }}
+{{ end }}
+{{$pagesByPublishDate :=.Site.RegularPages.GroupByPublishDate "2006-01-02"}}
+{{ $pagesDictByPublishDate := dict }}
+{{ range $pagesByPublishDate }}
+    {{ $pagesDictByPublishDate = $pagesDictByPublishDate | merge (dict .Key .) }}
 {{ end }}
 {{ $data := slice }}
 {{ range $i, $v := $csvContent }}
     {{ $IS_NONE := delimit $v "," | strings.Count ",,,,,,"}}
     {{ $IS_FIRST := eq $i 0}}
-    {{ if or $IS_NONE $IS_FIRST}}
-        {{/* 跳过空行或 CSV 的第一行 */}}
+
+    {{ $date := replace (index $v 0) "/" "-"}}
+    {{ $indexPagesDictByLastmod := index $pagesDictByLastmod $date}}
+    {{ $indexPagesDictByPublishDate := index $pagesDictByPublishDate $date}}
+    {{printf "%s" $indexPagesDictByLastmod}}
+    {{$flag1 := $IS_NONE}} {{/* 跳过空行或 CSV 的第一行 */}}
+    {{$flag2 := or $indexPagesDictByLastmod $indexPagesDictByPublishDate}} {{/* 当天有创建时间或更新时间 */}}
+    {{ if $IS_FIRST}}
+        {{ continue }}
+    {{ end }}
+    {{ if and (not $flag2) $flag1}}
         {{ continue }}
     {{ end }}
 
-    {{ $date := replace (index $v 0) "/" "-"}}
     {{$sub_data := dict}}
     {{ range $i2, $v2 := $v }}
         {{ if ne ($v2 | strings.Count "") 1 }}
@@ -50,16 +63,25 @@
         {{ end }}
     {{ end }}
 
-    {{ with index $pagesDict $date }}
+    {{ with $indexPagesDictByLastmod}}
         {{$ls := slice}}
-        {{ range (index $pagesDict $date).Pages }}
+        {{ range $indexPagesDictByLastmod.Pages }}
             
             {{/* 处理 Hugo 页面的数据 */}}
-            {{$ls = $ls | append (dict "type" "md"  "date" .Lastmod.Unix "title" .Title "RelPermalink" .RelPermalink)}}
+            {{$ls = $ls | append (dict "type" "md_update"  "date" .Lastmod.Unix "title" .Title "RelPermalink" .RelPermalink "PublishDate" .PublishDate)}}
         {{ end }}
-        {{$sub_data = merge $sub_data (dict "md" $ls)}}
+        {{$sub_data = merge $sub_data (dict "md_update" $ls)}}
     {{ end }}
 
+    {{ with $indexPagesDictByPublishDate }}
+        {{$ls := slice}}
+        {{ range $indexPagesDictByPublishDate.Pages }}
+            
+            {{/* 处理 Hugo 页面的数据 */}}
+            {{$ls = $ls | append (dict "type" "md_create"  "date" .Lastmod.Unix "title" .Title "RelPermalink" .RelPermalink "PublishDate" .PublishDate)}}
+        {{ end }}
+        {{$sub_data = merge $sub_data (dict "md_create" $ls)}}
+    {{ end }}
     {{/* 将处理后的数据追加到最终数据切片中 */}}
     {{ $data =  $data | append slice ($sub_data) }}
 {{ end }}

@@ -66,13 +66,14 @@ async function updateDateTimeByElementClass(elementClass) {
       const day = date.getDate();
       const hour = date.getHours();
       const period = getTimePeriod(hour);
-      element.textContent = `${month}月${day}日${period}`;
+      element.textContent = `${month}月${day}日`;
       if (timestampDifference<86400*2)
       {
         element.textContent = `昨天`;
-        if (hour!=0)
-            element.textContent += `${period}`;
       }
+      console.log(hour,hour!=0);
+      if (hour!=0)
+            element.textContent += `${period}`;
     } else {
       // 大于1年，显示year-month-day period
       const date = new Date(targetTimestamp * 1000);
