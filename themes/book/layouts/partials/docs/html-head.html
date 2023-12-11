@@ -43,7 +43,10 @@
 {{- with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
-
+{{ "<!--" | safeHTML }}
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+{{ "-->" | safeHTML }}
 
 {{- define "integrity" -}}
   {{- if (urls.Parse .Permalink).Host -}}
@@ -69,6 +72,16 @@
 <script src="/plugs/fullcalendar.js" ></script>
 <!-- 引入 FullCalendar 的中文语言包 -->
 <script src="/plugs/fullcalendar-zh-cn.js"></script>
+<!-- 引入 elementUI -->
+<link rel="stylesheet" href="/plugs/element-ui.css">
 
+	<!-- 在引入 ElementUI 之前引入 Vue，会注入全局变量 Vue  -->
+  <script src="/plugs/vue.js" ></script>
 
-  
+  <!-- 引入 ElementUI 组件库，会注入全局变量 -->
+  <!-- <script src="/plugs/element-ui.js" ></script> -->
+
+  {{ if (.Params.mermaid) }}
+  <!-- MermaidJS support -->
+  <script async src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  {{ end }}
