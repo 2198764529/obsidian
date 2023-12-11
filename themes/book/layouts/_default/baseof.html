@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default " ltr"
+  .Site.Language.LanguageDirection }}">
+
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
 </head>
-<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+
+<body dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
@@ -39,47 +42,48 @@
     <!-- <aside class="book-toc">
       <div class="book-toc-content">
         {{ template "toc" . }} -->
-      <!-- </div>
+    <!-- </div>
     </aside> -->
     <!-- {{ end }} -->
   </main>
 
   {{ partial "docs/inject/body" . }}
 </body>
+
 </html>
 
 {{ define "menu" }}
-  {{ partial "docs/menu" . }}
+{{ partial "docs/menu" . }}
 {{ end }}
 
 {{ define "header" }}
-  {{ partial "docs/header" . }}
+{{ partial "docs/header" . }}
 
-  {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-  <aside class="hidden clearfix">
-    {{ template "toc" . }}
-  </aside>
-  {{ end }}
+{{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+<aside class="hidden clearfix">
+  {{ template "toc" . }}
+</aside>
+{{ end }}
 {{ end }}
 
+
+
+{{ define "main" }}
+<article class="markdown">
+  {{- .Content -}}
+</article>
+{{ end }}
 {{ define "footer" }}
-  {{ partial "docs/footer" . }}
+{{ partial "docs/footer" . }}
 {{ end }}
 
 {{ define "comments" }}
-  {{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
-  <div class="book-comments">
-    {{- partial "docs/comments" . -}}
-  </div>
-  {{ end }}
+{{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
+<div class="book-comments">
+  {{- partial "docs/comments" . -}}
+</div>
 {{ end }}
-
-{{ define "main" }}
-  <article class="markdown">
-    {{- .Content -}}
-  </article>
 {{ end }}
-
 {{ define "toc" }}
-  {{ partial "docs/toc" . }}
+{{ partial "docs/toc" . }}
 {{ end }}

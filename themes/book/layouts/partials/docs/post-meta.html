@@ -1,21 +1,16 @@
 <div>
-  <h6>
-    <span class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}">
-    </span>
-    <script>
-      // 在页面加载时执行的 JavaScript 代码
-      window.onload = function () {
-        updateDateTimeByElementClass("Lastmod")
-      }
 
-    </script>
-    /
-    <span class="ios_boder">
+  <h3>
+    {{partial "docs/title.html" .}} 
+
+    <small class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}">
+    </small>
+
+    <small class="ios_boder">
       {{ .Content | countwords}}字
-     字
 
-    </span>
-  </h6>
+    </small>
+  </h3>
 
   <h6>
     {{ range $taxonomy, $_ := .Site.Taxonomies }}

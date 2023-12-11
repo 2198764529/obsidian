@@ -1,99 +1,69 @@
+{{$messageData := partial "docs/inject/timelineData.html" . }}
 <div class="timeline ios_card">
-    <section>
-      <div class="container" style="text-align: left!important">
-        {{ $messageData := .messageData }}
-    
-
-        {{ range  $messageData }}
-          <div class="timeline-item card-container">
-            <div class="timeline-title">
-              <div>
-                 
-              <h4>
-                <span class="date" data-unix="{{ (time.AsTime .count.date).Unix }} ">
-                  
-                </span>
-                {{with .count.drinkWater}} 
-                <span>
-                      {{.}}L
-                    </span>  
-                {{end}}
-                <span>
-
-                {{with .count.sleepTime}}
-                {{$ls := (split . ";")}}
-                {{$start := index $ls 0}}
-                {{$end := index $ls 1}}
-                {{if lt ($start) 18}}
-                    {{$start = printf "凌晨%s" $start}}
-                {{end}}
-                {{$start}}点睡,{{$end}}点起 
-            {{end}}
-          </span>  
-          {{with .count.bikeToHome}}
-          <span>保持骑行,开始骑行时间{{.}} </span> 
-      {{end}}
-
-              </h4>
-                 
-              </div>
-            </div>
-          
-
-        
-            {{with .events}}
-            {{range .}}
-              <div class="timeline-content js--fadeInLeft ios_card" >
-                <h4>
-                                  {{.}}
-
-                </h4>
-            </div>
-            
-            {{end}}
-            {{end}}
-            {{with .md_update}}
-              <div class="timeline-content js--fadeInLeft ios_card" >
-                <h4>
-                  更新了
-                  {{range .}}
-                     <a class="MDtitle" href="{{.RelPermalink}}">
-                      📄{{.title}}
-                     </a>
-
-                  {{end}}
-
-                </h4>
-            </div>
-            
-            {{end}}
-            {{with .md_create}}
-            <div class="timeline-content js--fadeInLeft ios_card" >
-              <h4>
-                创建了
-                {{range .}}
-                   <a class="MDtitle" href="{{.RelPermalink}}">
-                    📄{{.title}}
-                   </a>
-
-                {{end}}
-
-              </h4>
+  <section>
+    <div class="container" style="text-align: left !important">
+      {{ range $messageData }}
+      <div class="timeline-item card-container">
+        <div class="timeline-title">
+          <div>
+            <h4>
+              <span
+                class="date"
+                data-unix="{{ (time.AsTime .count.date).Unix }} "
+              >
+              </span>
+              {{with .count.drinkWater}}
+              <span> {{.}}L </span>
+              {{end}}
+              <span>
+                {{with .count.sleepTime}} {{$ls := (split . ";")}} {{$start :=
+                index $ls 0}} {{$end := index $ls 1}} {{if lt ($start) 18}}
+                {{$start = printf "凌晨%s" $start}} {{end}}
+                {{$start}}点睡,{{$end}}点起 {{end}}
+              </span>
+              {{with .count.bikeToHome}}
+              <span>保持骑行,开始骑行时间{{.}} </span>
+              {{end}}
+            </h4>
           </div>
-          
-          {{end}}
-          </div>
-          
-        {{ end }}
+        </div>
+
+        {{with .events}} {{range .}}
+        <div class="timeline-content js--fadeInLeft ios_card">
+          <h4>{{.}}</h4>
+        </div>
+
+        {{end}} {{end}} {{with .md_update}}
+        <div class="timeline-content js--fadeInLeft ios_card">
+          <h4>
+            更新了 {{range .}}
+            <a class="MDtitle" href="{{.RelPermalink}}"> 📄{{.title}} </a>
+
+            {{end}}
+          </h4>
+        </div>
+
+        {{end}} {{with .md_create}}
+        <div class="timeline-content js--fadeInLeft ios_card">
+          <h4>
+            创建了 {{range .}}
+            <a class="MDtitle" href="{{.RelPermalink}}"> 📄{{.title}} </a>
+
+            {{end}}
+          </h4>
+        </div>
+
+        {{end}}
       </div>
-    </section>
-    <script>
-        // 在页面加载时执行的 JavaScript 代码
-        window.onload = function () {
-          // 更新具有 "LastChange" 类名的元素的时间戳
-          updateDateTimeByElementClass("date");
-      
-        };
-      </script>
 
+      {{ end }}
+    </div>
+  </section>
+  <script>
+    // 在页面加载时执行的 JavaScript 代码
+    window.onload = function () {
+      // 更新具有 "LastChange" 类名的元素的时间戳
+      updateDateTimeByElementClass("date");
+    };
+  </script>
 </div>

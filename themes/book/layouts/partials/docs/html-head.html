@@ -63,8 +63,12 @@ https://github.com/alex-shpak/hugo-book
 
 <!-- <script>hljs.initHighlightingOnLoad();</script> -->
 
-<!-- 引入 fullcalendar.io  -->
 <!-- <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script> -->
+
+<!-- lunar 插件 -->
+<script src="/plugs/lunar.min.js"></script>
+<!-- 引入 fullcalendar.io  -->
+
 <script src="/plugs/fullcalendar.js" ></script>
 <!-- 引入 FullCalendar 的中文语言包 -->
 <script src="/plugs/fullcalendar-zh-cn.js"></script>
@@ -75,12 +79,11 @@ https://github.com/alex-shpak/hugo-book
   <script src="/plugs/vue.js" ></script>
 
   <!-- 引入 ElementUI 组件库，会注入全局变量 -->
-  <script src="/plugs/element-ui.js" ></script>
+  <!-- <script src="/plugs/element-ui.js" ></script> -->
 
   {{ if (.Params.mermaid) }}
   <!-- MermaidJS support -->
   <script async src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   {{ end }}
-  <!-- lunar 插件 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.7/lunar.min.js"></script>
+
   

@@ -2,35 +2,10 @@
   
 
 
-    <p>
 
-      <a href="{{ .RelPermalink }}">{{ partial "docs/title" . }}</a>
-
-  
-   
-      {{if and .IsPage .File}}
-      <small>
-        <span class="Lastmod" data-unix="{{ .Lastmod.Unix }}">
-        </span>
-        <span>
-          {{ .Content | countwords}}字
-          </span>
-          <script>
-            // 在页面加载时执行的 JavaScript 代码
-            window.onload = function () {
-              updateDateTimeByElementClass("Lastmod")
-            }
-      
-          </script>
-  
-      </small>
-    
-       
-      {{end}}
-    </p>
   
  
-  
+ {{partial "docs/post-meta.html" .}} 
 
     <label for="menu-control">
       <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />

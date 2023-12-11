@@ -55,7 +55,6 @@ function calendarRender(content) {
       // },
      
     });
-    console.log(HolidayUtil.getHoliday(2020, 5, 2) + '');
 
     calendar.render();
   });

@@ -9,7 +9,6 @@ async function updateDateTimeByElementClass(elementClass) {
     const targetTimestamp = parseInt(element.dataset.unix); // 从元素中获取时间字符串,转时间戳
     const currentTimestamp = Math.floor(Date.now() / 1000); // 当前时间戳，单位为秒
     const timestampDifference = currentTimestamp - targetTimestamp;
-    console.log(element,timestampDifference)
     if (elementClass == "nowDate") {
       // 现在, month月day日 period
       const date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
@@ -71,7 +70,6 @@ async function updateDateTimeByElementClass(elementClass) {
       {
         element.textContent = `昨天`;
       }
-      console.log(hour,hour!=0);
       if (hour!=0)
             element.textContent += `${period}`;
     } else {
