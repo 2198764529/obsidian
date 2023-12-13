@@ -21,7 +21,7 @@ $accent: #FF4081;
 .timeline {
 	padding: 2px 10px;
 	.container{
-		border-left: 2px solid #FF4081;
+		border-left: 3px solid var(--color-light);
 	}
 }
 
@@ -36,7 +36,7 @@ $accent: #FF4081;
 		left: 21px;
 		width: 6px;
 		height: 6px;
-		border: 3px solid #FF4081;
+		border: 3px solid var(--color-light);
 		border-radius: 50%;
 		background-color: white;
 	}

@@ -125,7 +125,7 @@ ul.pagination {
     padding: $padding-16;
     background: var(--body-background);
     &::-webkit-scrollbar {
-      width: 5px; /* 调整滚动条宽度 */
+      width: 2px; /* 调整滚动条宽度 */
     }
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-light); /* 滚动条颜色 */
@@ -212,6 +212,9 @@ body[dir="rtl"] .book-menu {
   img.book-icon {
     height: 1.5em;
     width: 1.5em;
+  }
+  small{
+    opacity: 0.3;
   }
 }
 

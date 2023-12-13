@@ -1,7 +1,9 @@
 <div>
 
   <h3>
-    {{partial "docs/title.html" .}} 
+    <a href="{{.RelPermalink}}">
+      {{partial "docs/title.html" .}} 
+    </a>
 
     <small class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}">
     </small>

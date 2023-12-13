@@ -69,6 +69,8 @@
 
 
 {{ define "main" }}
+ 
+{{partial "docs/post-meta.html" .}} 
 <article class="markdown">
   {{- .Content -}}
 </article>

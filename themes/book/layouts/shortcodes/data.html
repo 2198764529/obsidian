@@ -19,7 +19,12 @@
     {{range $k,$v :=$f}}
         <tr>
             {{range $k2,$v2 := $v}}
-                <td>{{$v2}}</td>
+                <td>
+                  <small>
+                    {{$v2}}
+
+                  </small>
+                </td>
             {{end}}
         </tr>
     {{end}}
