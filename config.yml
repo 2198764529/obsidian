@@ -4,7 +4,7 @@ timeZone: "Asia/Shanghai"
 languageCode: 'zh-cn'
 defaultContentLanguage: 'zh-cn'
 defaultContentLang: 'zh-cn'
-title: '了头'
+title: '李枫的地'
 theme: 'book'
 port: 80
 enableGitInfo: true

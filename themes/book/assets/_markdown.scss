@@ -1,7 +1,6 @@
 @import "variables";
 
 .markdown {
-  line-height: 1.6; // 设置行高
 
   > :first-child {
     margin-top: 0; // 移除页面开头的顶部间距
@@ -33,25 +32,15 @@
     }
     a{
       font-size: 1em;
+      
     }
 
   }
 
-  h4,
-  h5,
-  h6 {
-    font-weight: bolder; // 设置更加粗细的字体
-  }
-
-  h5 {
-    font-size: 0.875em; // 设置字体大小
-  }
-
-  h6 {
-    font-size: 0.75em; // 设置字体大小
-  }
+ 
   a{
-    font-size: 0.85em;
+    font-size: 0.65em;
+ 
   }
   b,
   optgroup,
@@ -89,7 +78,9 @@
     code {
       background: black; // 代码块背景色
       padding:0;
-      font-size: 0.55em; // 字体大小
+      font-size: 0.75em; // 字体大小
+      font-family: 'Courier New', Courier, monospace;
+
       span{
         word-wrap: break-word; // 单词折行
 
@@ -104,6 +95,9 @@
   }
 
   blockquote {
+    background-color: var(--card-bg);
+    color: var(--color-light);
+    border-radius: $border-radius;
     margin: $padding-16 0; // 设置块引用外边距
     padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); // 块引用内边距
 
@@ -150,19 +144,12 @@
   ol>li{
     list-style: none;
     counter-increment: custom-counter; /* 计数器递增 */
-    position: relative;
-    padding-left: 1.75rem;
     &::before{
-      content:counter(custom-counter);
-      border-radius: 45%;
-      background-color: var(--card-bg2);
-      height: 1.45em;
-      width: 1.45em;
-      font-size:0.85em;
+      content:counter(custom-counter)".";
+      border-radius: 50%;
       text-align:center;
-      position: absolute;
-      top:0;
-      left:0;
+      float: left;
+      padding-right: 5px;
     }
   }
   dl {

@@ -3,7 +3,7 @@
   <article class="markdown book-post">
     <h2>
       <a href="{{ .RelPermalink }}">{{ partial "docs/title.html" . }}</a>
-    </h2>
+  </h2>
     {{ partial "docs/post-meta" . }}
     <!-- <p>
       {{- .Summary -}}
@@ -17,6 +17,4 @@
   {{ template "_internal/pagination.html" . }}
 {{ end }}
 
-{{ define "toc" }}
-  {{ partial "docs/taxonomy" . }}
-{{ end }}
+

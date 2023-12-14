@@ -21,7 +21,8 @@
       }
     }
     .fc-day-today  {
-      background-color: var(--color-light);
+      color: aliceblue;
+      
     }
     .fc-h-event {
       border: none;
@@ -42,6 +43,12 @@
     th {
       border: none;
       text-align: left;
+    }
+    button{
+      border: none;
+      background: none;
+      color: var(--body-font-color);
+      opacity: 0.3;
     }
   
   

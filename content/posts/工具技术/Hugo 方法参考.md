@@ -2,7 +2,7 @@
 title: Hugo 方法参考
 id: a01b727778
 datetimeCreate: 2023-11-27 11:04:45
-datetimeUpdate: 2023-11-27 18:01:19
+datetimeUpdate: 2023-12-13 18:27:58
 ---
 
 
@@ -795,3 +795,277 @@ datetimeUpdate: 2023-11-27 18:01:19
 | 上午还是下午 | "PM" |
 | 时区 | "-0700" "-07:00" "-07" "-070000" "-07:00:00" |
 
+# Page:页面
+
+##### **Aliases:**
+当前页面的别名。
+
+```go
+{{ .Aliases }}
+```
+
+##### **AllTranslations:**
+当前页面的所有翻译版本。
+
+```go
+{{ .AllTranslations }}
+```
+
+##### **AlternativeOutputFormats:**
+当前页面的替代输出格式。
+
+```go
+{{ .AlternativeOutputFormats }}
+```
+
+##### **Ancestors:**
+当前页面的祖先页面。
+
+```go
+{{ .Ancestors }}
+```
+
+##### **BundleType:**
+内容包的类型。
+
+```go
+{{ .BundleType }}
+```
+
+##### **CodeOwners:**
+从仓库根目录获取 CODEOWNERS 文件。
+
+```go
+{{ .CodeOwners }}
+```
+
+##### **Content:**
+当前页面的原始内容。
+
+```go
+{{ .Content }}
+```
+
+##### **CurrentSection:**
+当前页面所属的部分。
+
+```go
+{{ .CurrentSection }}
+```
+
+##### **Data:**
+从 `data` 目录获取数据文件。
+
+```go
+{{ .Data }}
+```
+
+##### **Date:**
+当前页面的日期。
+
+```go
+{{ .Date }}
+```
+
+##### **Description:**
+当前页面的描述。
+
+```go
+{{ .Description }}
+```
+
+##### **Draft:**
+检查当前页面是否是草稿。
+
+```go
+{{ .Draft }}
+```
+
+##### **Eq:**
+检查两个值是否相等。
+
+```go
+{{ if eq .Variable1 .Variable2 }}
+
+{{ end }}
+```
+
+##### **ExpiryDate:**当前页面的过期日期。
+
+```go
+{{ .ExpiryDate }}
+```
+
+##### **File:**当前内容文件的信息。
+
+```go
+{{ .File }}
+```
+
+##### **FirstSection:**当前页面所属的第一个部分。
+
+```go
+{{ .FirstSection }}
+```
+
+##### **Fragments:**当前内容的片段。
+
+```go
+{{ .Fragments }}
+```
+
+##### **FuzzyWordCount:**当前页面的模糊字数统计。
+
+```go
+{{ .FuzzyWordCount }}
+```
+
+##### **GetPage:**获取指定页面。
+
+```go
+{{ getPage "path/to/page" }}
+```
+
+##### **GetTerms:**获取给定分类法的术语。
+
+```go
+{{ getTerms "categories" }}
+```
+
+##### **GitInfo:**获取有关 Git 仓库的信息。
+
+```go
+{{ .GitInfo }}
+```
+
+##### **HasMenuCurrent:**检查菜单项是否当前选定。
+
+```go
+{{ if .HasMenuCurrent }}
+  <!-- do something -->
+{{ end }}
+```
+
+##### **HasShortcode:**检查当前内容是否包含指定的 shortcode。
+
+```go
+{{ if .HasShortcode "shortcodeName" }}
+  <!-- do something -->
+{{ end }}
+```
+
+##### **HeadingsFiltered:**返回过滤后的当前内容标题。
+
+```go
+{{ .HeadingsFiltered "h2|h3" }}
+```
+
+##### **InSection:**检查当前内容是否在指定部分中。
+
+```go
+{{ inSection "sectionName" }}
+```
+
+##### **IsAncestor:**检查页面是否为指定页面的祖先。
+
+```go
+{{ .IsAncestor "path/to/ancestor" }}
+```
+
+##### **IsDescendant:**检查页面是否为指定页面的后代。
+
+```go
+{{ .IsDescendant "path/to/descendant" }}
+```
+
+##### **IsHome:**检查当前内容是否为首页。
+
+```go
+{{ .IsHome }}
+```
+
+##### **IsMenuCurrent:**检查菜单项是否是当前页面。
+
+```go
+{{ .IsMenuCurrent }}
+```
+
+##### **IsNode:**检查变量是否为节点。
+
+```go
+{{ .IsNode .Variable }}
+```
+
+##### **IsPage:**检查变量是否为页面。
+
+```go
+{{ .IsPage .Variable }}
+```
+
+##### **IsSection:**检查变量是否为部分。
+
+```go
+{{ .IsSection .Variable }}
+```
+
+##### **IsTranslated:**检查当前页面是否有翻译。
+
+```go
+{{ .IsTranslated }}
+```
+
+##### **Keywords:**当前页面的关键字。
+
+```go
+{{ .Keywords }}
+```
+
+##### **Kind:**当前内容的种类（例如，"page" 或 "section"）。
+
+```go
+{{ .Kind }}
+```
+
+##### **Language:**当前页面的语言。
+
+```go
+{{ .Language }}
+```
+
+##### **Lastmod:**当前页面的最后修改时间。
+
+```go
+{{ .Lastmod }}
+```
+
+##### **Layout:**当前内容的布局。
+
+```go
+{{ .Layout }}
+```
+
+##### **Len:**返回切片、映射或字符串的长度。
+
+```go
+{{ len .Variable }}
+```
+
+##### **LinkTitle:**当前页面的链接标题。
+
+```go
+{{ .LinkTitle }}
+```
+
+##### **Next:**返回下一个同级页面。
+
+```go
+{{ .Next }}
+```
+
+##### **NextInSection:**返回同一部分中的下一个页面。
+
+```go
+{{ .NextInSection }}
+```
+
+##### **OutputFormats:**当前页面的输出

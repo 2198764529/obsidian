@@ -9,13 +9,12 @@ $font-size-12: 0.75rem !default;
 $font-size-14: 0.875rem !default;
 $font-size-16: 1rem !default;
 
-$border-radius: $padding-4 !default;
 
 $body-font-weight: normal !default;
 
 $body-min-width: 20rem !default;
 $container-max-width: 80rem !default;
-
+$border-radius: 18px;
 $header-height: 3.5rem !default;
 $menu-width: 16rem !default;
 $toc-width: 16rem !default;
@@ -29,7 +28,7 @@ $hint-colors: (
   danger: #f66,
   
 ) !default;
-
+$bg-gray:#f5f5f7;
 // Themes
 @mixin theme-light {
   --gray-100: #f8f9fa;
@@ -40,9 +39,10 @@ $hint-colors: (
   --color-visited-link: #8440f1;
 
   --color-light: #15559a      ;
-  --card-bg: #b0d5df   ;
+  --card-bg: white   ;
   --card-bg2: #d0dfe6 ;
-  --body-background: #fffefa    ;
+  --body-background: #f5f5f7    ;
+  --bg-book-menu:white;
   --body-font-color: #141e1b ;
 
   --icon-filter: none;
@@ -60,9 +60,9 @@ $hint-colors: (
   --color-link: #84b2ff;
   --color-visited-link: #b88dff;
 
-  --color-light: #2775b6 ;
-  --card-bg: #5e616d;
-  --card-bg2: #baccd9 ;
+  --color-light: #e2d849  ;
+  --card-bg: black;
+  --card-bg2: #293c4a ;
   --body-background: #343a40;
   --body-font-color: #e9ecef;
 
@@ -71,4 +71,5 @@ $hint-colors: (
   --hint-color-info: #6bf;
   --hint-color-warning: #fd6;
   --hint-color-danger: #f66;
+  --link-code:"💫";
 }

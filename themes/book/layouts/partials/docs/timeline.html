@@ -29,12 +29,12 @@
         </div>
 
         {{with .events}} {{range .}}
-        <div class="timeline-content js--fadeInLeft ios_card">
+        <div class="timeline-content events">
           <h4>{{.}}</h4>
         </div>
 
         {{end}} {{end}} {{with .md_update}}
-        <div class="timeline-content js--fadeInLeft ios_card">
+        <div class="timeline-content md_update">
           <h4>
             更新了 {{range .}}
             <a class="MDtitle" href="{{.RelPermalink}}"> 📄{{.title}} </a>
@@ -44,7 +44,7 @@
         </div>
 
         {{end}} {{with .md_create}}
-        <div class="timeline-content js--fadeInLeft ios_card">
+        <div class="timeline-content md_create">
           <h4>
             创建了 {{range .}}
             <a class="MDtitle" href="{{.RelPermalink}}"> 📄{{.title}} </a>

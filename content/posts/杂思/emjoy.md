@@ -1,8 +1,9 @@
 ---
+type: emjoy
 title: 表情
 id: 83624d1e42
 datetimeCreate: 2023-12-07 11:56:41
-datetimeUpdate: 2023-12-07 14:20:24
+datetimeUpdate: 2023-12-13 18:36:29
 ---
 ### 笑脸与人
 

@@ -6,10 +6,10 @@
     font-style: normal; /* 字体的风格 */
   }
   
-  /* 应用苹方字体到文本 */
-  body {
-    font-family: 'PingFang', sans-serif; /* 使用 PingFang 字体，如果不可用则回退到 sans-serif 字体 */
-  }
+/* 应用苹方字体到文本 */
+body {
+  font-family: 'PingFang'
+}
   
 /* roboto-700 - latin */
 // @font-face {
@@ -37,7 +37,4 @@
 //   font-family: 'Roboto', sans-serif;
 // }
 
-code {
-  font-family: "黑体";
 
-}

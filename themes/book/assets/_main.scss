@@ -42,8 +42,6 @@ h5 {
 a {
   text-decoration:none; /* 去掉下划线 */
   color: var(--color-light);
-  padding: 1px 0.6em;  // 代码块内边距
-  border-radius: $border-radius; // 边框圆角
 }
 
 /* 设置图片样式 */
@@ -119,13 +117,12 @@ ul.pagination {
 .book-menu {
   flex: 0 0 $menu-width; /* 不扩展，固定宽度 */
   font-size: $font-size-14;
-
   .book-menu-content {
+    background: var(--card-bg);
     width: $menu-width;
-    padding: $padding-16;
-    background: var(--body-background);
+    padding: 30px;
     &::-webkit-scrollbar {
-      width: 2px; /* 调整滚动条宽度 */
+      width: 0px; /* 调整滚动条宽度 */
     }
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-light); /* 滚动条颜色 */
@@ -190,6 +187,7 @@ body[dir="rtl"] .book-menu {
 
 /* 设置页面样式 */
 .book-page {
+
   min-width: $body-min-width;
   flex-grow: 1;
   padding: $padding-16;
@@ -197,7 +195,7 @@ body[dir="rtl"] .book-menu {
 
 /* 设置文章样式 */
 .book-post {
-  margin-bottom: $padding-16 * 3;
+  margin-bottom: $padding-8;
 }
 
 /* 设置页头样式 */
