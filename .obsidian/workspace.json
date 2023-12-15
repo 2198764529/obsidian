@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/杂思/丁仲礼与柴静【碳排放】.md",
+                "file": "content/posts/个人/清单.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/杂思/丁仲礼与柴静【碳排放】.md",
+                "file": "content/posts/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/杂思/丁仲礼与柴静【碳排放】.md",
+                "file": "content/posts/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/杂思/丁仲礼与柴静【碳排放】.md"
+                "file": "content/posts/个人/清单.md"
               }
             }
           }
@@ -150,11 +150,14 @@
   },
   "active": "c36a5b3795f66ac0",
   "lastOpenFiles": [
+    "content/posts/工具技术/正则表达式.md",
+    "content/posts/工具技术/markDown 语法.md",
+    "content/posts/工具技术/git操作.md",
+    "content/posts/杂思/丁仲礼与柴静【碳排放】.md",
     "themes/book/assets/chat.scss",
     "content/posts/杂思/_index.md",
     "content/posts/理论知识/_index.md",
     "content/posts/工具技术/_index.md",
-    "content/posts/杂思/丁仲礼与柴静【碳排放】.md",
     "themes/book/layouts/chat/single.html",
     "themes/book/layouts/chat",
     "content/posts/杂思/emjoy.md",
@@ -164,7 +167,6 @@
     "content/posts/工具技术/Hugo 方法参考.md",
     "content/posts/聊天记录",
     "content/posts/网站收藏.md",
-    "content/posts/工具技术/markDown 语法.md",
     "content/posts/个人/关于我.md",
     "content/posts/个人/清单.md",
     "content/posts/理论知识/应用层-Q&A.md",
@@ -182,10 +184,8 @@
     "themes/book/layouts/shortcodes/data_colors.html",
     "content/posts/杂思/22年过年运动记账.md",
     "content/posts/杂思/个人存储方案.md",
-    "content/posts/杂思/有书可读方案.md",
     "data/csv/myData.csv",
     "data/csv",
-    "data/myData.csv",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
     "content/posts/计算机网络/画图.canvas",
