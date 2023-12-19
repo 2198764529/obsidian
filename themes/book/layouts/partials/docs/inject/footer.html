@@ -1,16 +1,31 @@
-
 <script>
-    // 在页面加载时执行的 JavaScript 代码
-    window.onload = function () {
-      // 更新具有 "LastChange" 类名的元素的时间戳
-      updateDateTimeByElementClass("LastChange");
-      // 更新具有 "AuthorDate" 类名的元素的时间戳
-      updateDateTimeByElementClass("AuthorDate");
-      // 更新具有 "nowDate" 类名的元素的时间戳
-      updateDateTimeByElementClass("nowDate");
-      // 更新具有 "date" 类名的元素的时间戳
-      updateDateTimeByElementClass("date");
-        // 更新具有 "date" 类名的元素的时间戳
-        updateDateTimeByElementClass("Lastmod");
-    }; 
-  </script>
+  // 在页面加载时执行的 JavaScript 代码
+  window.onload = function () {
+    // 更新具有 "LastChange" 类名的元素的时间戳
+    updateDateTimeByElementClass("LastChange");
+    // 更新具有 "AuthorDate" 类名的元素的时间戳
+    updateDateTimeByElementClass("AuthorDate");
+    // 更新具有 "nowDate" 类名的元素的时间戳
+    updateDateTimeByElementClass("nowDate");
+    // 更新具有 "date" 类名的元素的时间戳
+    updateDateTimeByElementClass("date");
+    // 更新具有 "date" 类名的元素的时间戳
+    updateDateTimeByElementClass("Lastmod");
+  }; 
+</script>
+{{ if (.Params.mermaid) }}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({
+    securityLevel: 'loose',
+    theme: 'dark',
+  });
+  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
+    (el) => {
+      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
+    }
+  );
+</script>
+
+
+{{ end }}

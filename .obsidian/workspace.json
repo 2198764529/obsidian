@@ -4,22 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "1cee9cd2b45393ed",
+        "id": "27188fee445bd240",
         "type": "tabs",
         "children": [
           {
-            "id": "c36a5b3795f66ac0",
+            "id": "b55ca62f4698a14b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "d87b74a88a90bd12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/个人/清单.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/个人/清单.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/个人/清单.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/个人/清单.md"
+                "file": "content/posts/理论知识/数据结构和算法.md"
               }
             }
           }
@@ -148,8 +157,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c36a5b3795f66ac0",
+  "active": "d87b74a88a90bd12",
   "lastOpenFiles": [
+    "content/posts/理论知识/应用层-Q&A.md",
+    "content/posts/理论知识/数据结构和算法.md",
+    "themes/book/static/plugs/mermaid.min.js",
+    "themes/book/assets/plugins/mermaid.min.js",
+    "content/posts/杂思/数据展示.md",
+    "content/posts/技术记录.md",
+    "themes/book/layouts/partials/docs/mermaid.html",
+    "content/posts/理论知识/运输层-Q&A.md",
+    "content/posts/个人/清单.md",
     "content/posts/工具技术/正则表达式.md",
     "content/posts/工具技术/markDown 语法.md",
     "content/posts/工具技术/git操作.md",
@@ -168,24 +186,14 @@
     "content/posts/聊天记录",
     "content/posts/网站收藏.md",
     "content/posts/个人/关于我.md",
-    "content/posts/个人/清单.md",
-    "content/posts/理论知识/应用层-Q&A.md",
     "content/posts/工具技术/维基百科.md",
     "content/posts/个人/关于做事.md",
     "content/posts/个人/关于睡觉.md",
     "content/posts/个人/关于篮球.md",
     "content/posts/杂思/颜色板.md",
-    "content/posts/杂思/信息参考.md",
-    "content/posts/杂思/数据展示.md",
     "themes/book/layouts/shortcodes/dataColors.html",
-    "content/posts/杂思/23年去深圳计划.md",
     "themes/book/static/plugs/lunar.min.js",
     "themes/book/assets/plugins/lunar.min.js",
-    "themes/book/layouts/shortcodes/data_colors.html",
-    "content/posts/杂思/22年过年运动记账.md",
-    "content/posts/杂思/个人存储方案.md",
-    "data/csv/myData.csv",
-    "data/csv",
     "themes/timeline/images/tn.png",
     "themes/timeline/images/screenshot.png",
     "content/posts/计算机网络/画图.canvas",
