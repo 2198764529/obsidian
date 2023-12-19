@@ -11,16 +11,18 @@
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
-    <aside class="book-menu">
-      <div class="book-menu-content">
+    <aside class="book-menu ">
+      <div class="book-menu-content ios_card">
         {{ template "menu" . }} <!-- Left menu Content -->
+        
         {{ template "toc" . }}
+
       </div>
 
     </aside>
 
     <div class="book-page">
-      <header class="book-header">
+      <header class="book-header ios_card">
         {{ template "header" . }} <!-- Mobile layout header -->
       </header>
 
@@ -38,13 +40,13 @@
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
-    <!-- {{ if default true (default .Site.Params.BookToC .Params.BookToC) }} -->
-    <!-- <aside class="book-toc">
+    <!-- {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
+    <aside class="book-toc">
       <div class="book-toc-content">
-        {{ template "toc" . }} -->
-    <!-- </div>
-    </aside> -->
-    <!-- {{ end }} -->
+        {{ template "toc" . }}
+    </div>
+    </aside>
+    {{ end }} -->
   </main>
 
   {{ partial "docs/inject/body" . }}
@@ -70,11 +72,11 @@
 
 {{ define "main" }}
  
-{{partial "docs/post-meta.html" .}} 
-<article class="markdown">
+<article class="markdown ios_card">
   {{- .Content -}}
 </article>
 {{ end }}
+
 {{ define "footer" }}
 {{ partial "docs/footer" . }}
 {{ end }}

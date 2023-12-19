@@ -1,0 +1,9 @@
+<div id="calendar" class="ios_card"></div>
+
+<!-- 引入 fullCalendar.js -->
+<script src="js/fullCalendar.js"></script>
+<script>
+  var content =
+    "{{ $page := .Site.GetPage `/posts/日志.md` }}{{ $page.RawContent }}";
+  calendarRender(content);
+</script>

@@ -19,8 +19,7 @@ $accent: #FF4081;
 
 
 .timeline {
-	padding: 1px 10px;
-	.container{
+	.timeline-container{
 		border-left: 2px solid #e4f3fd;
 		
 	}
@@ -29,12 +28,12 @@ $accent: #FF4081;
 .timeline-item {
 	
 	width: 100%;
-	padding: 0 10px;
+	padding: 0 20px;
 	
 	.timeline-title::before {
 		position: absolute;
 		content: '';
-		left: 21px;
+		left: 15px;
 		width: 6px;
 		height: 6px;
 		border: 3px solid var(--color-light);

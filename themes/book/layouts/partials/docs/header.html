@@ -1,17 +1,36 @@
 <div class="flex align-center justify-between">
+
+
+  <h3>
+    <a href="{{.RelPermalink}}">
+      {{partial "docs/title.html" .}}
+    </a>
+    {{ if .IsHome }}
+   
   
+    <span>
+      📄{{ .Site.RegularPages | len }} {{ $totalWordCount := 0 }} {{ range
+      .Site.RegularPages }} {{ with .Content }} {{ $wordCount := printf "%s" . |
+      len }} {{ $totalWordCount = add $totalWordCount $wordCount }} {{ end }} {{
+      end }} 🔤{{ $totalWordCount}}
+    </span>
+    {{ else }}
+    <small class="Lastmod" data-unix="{{ .Lastmod.Unix }}">
+    </small>
+
+    <small>
+      {{ .Content | countwords}}字
+
+    </small>
+    {{ end }}
+
+  </h3>
 
 
 
-  
-  <a href="{{.RelPermalink}}">
-    {{partial "docs/title.html" .}} 
-  </a>
-    {{partial "docs/post-meta.html" .}} 
-
-    <label for="menu-control">
-      <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
-    </label>
+  <label for="menu-control">
+    <img src="{{ " svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
+  </label>
   <!-- <label for="toc-control">
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
     <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />

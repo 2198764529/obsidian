@@ -93,7 +93,7 @@ ul.pagination {
 /* 设置容器样式 */
 .container {
   max-width: $container-max-width; /* 最大宽度 */
-  margin: 0 auto; /* 水平居中 */
+  margin: $magin; /* 水平居中 */
 }
 
 /* 设置图标样式 */
@@ -117,10 +117,14 @@ ul.pagination {
 .book-menu {
   flex: 0 0 $menu-width; /* 不扩展，固定宽度 */
   font-size: $font-size-14;
+  margin: $magin;
+
   .book-menu-content {
-    background: var(--card-bg);
+    margin: $magin 0;
+
+   
     width: $menu-width;
-    padding: 30px;
+    padding: 20px;
     &::-webkit-scrollbar {
       width: 0px; /* 调整滚动条宽度 */
     }
@@ -189,8 +193,12 @@ body[dir="rtl"] .book-menu {
 .book-page {
 
   min-width: $body-min-width;
+  
+  
   flex-grow: 1;
-  padding: $padding-16;
+  .ios_card{
+    margin-bottom: 20px;
+  }
 }
 
 /* 设置文章样式 */
@@ -200,11 +208,12 @@ body[dir="rtl"] .book-menu {
 
 /* 设置页头样式 */
 .book-header {
-  display: none;
+  
   margin-bottom: $padding-16;
 
   label {
     line-height: 0;
+    display: none;
   }
 
   img.book-icon {
@@ -260,6 +269,7 @@ body[dir="rtl"] .book-menu {
 
 /* 设置目录样式 */
 .book-toc {
+  display: none;
   flex: 0 0 $toc-width; /* 不扩展，固定宽度 */
   font-size: $font-size-12;
 
@@ -345,14 +355,16 @@ body[dir="rtl"] .book-menu {
   }
 
   .book-header {
-    display: block;
+    background-color: inherit !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    label{
+      display: block;
+
+    }
   }
 
-  /* 设置菜单开关获得焦点时的轮廓样式 */
-  #menu-control:focus ~ main label[for="menu-control"] {
-    @include outline;
-  }
-
+  
   /* 设置菜单开关被选中时的样式 */
   #menu-control:checked ~ main {
     .book-menu {
@@ -378,6 +390,7 @@ body[dir="rtl"] .book-menu {
       left: 0;
       right: 0;
     }
+    
   }
 
   /* 设置目录开关获得焦点时的轮廓样式 */
@@ -387,8 +400,12 @@ body[dir="rtl"] .book-menu {
 
   /* 设置目录开关被选中时的样式 */
   #toc-control:checked ~ main {
-    .book-header aside {
-      display: block;
+    .book-header {
+      
+      aside,label{
+        display: block;
+
+      }
     }
   }
 
@@ -402,7 +419,6 @@ body[dir="rtl"] .book-menu {
 
 /* 大屏幕下的样式 */
 @media screen and (min-width: $container-max-width) {
-  .book-page,
   .book-menu .book-menu-content,
   .book-toc .book-toc-content {
     padding: $padding-16 * 2 $padding-16;

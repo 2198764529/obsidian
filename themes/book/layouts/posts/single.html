@@ -1,11 +1,6 @@
 {{ define "main" }}
-<article class="markdown">
-  <h1 id="title">{{ .Title }}</h1>
+<article class="markdown ios_card">
 
   {{- .Content -}}
 </article>
-{{ end }}
-
-{{ define "toc" }}
-  {{ partial "docs/toc" . }}
 {{ end }}

@@ -5,6 +5,7 @@
 
 {{ with .Site.GetPage $bookSection }}
   {{ template "book-section-children" (dict "Section" . "CurrentPage" $) }}
+
 {{ end }}
 
 {{ define "book-section-children" }}{{/* (dict "Section" .Section "CurrentPage" .CurrentPage) */}}
@@ -21,7 +22,6 @@
         </li>
       {{ end }}
     {{ end }}
-   
 
   </ul>
 
@@ -51,6 +51,7 @@
   {{ else }}
     <span>{{- partial "docs/title" .Page -}}</span>
   {{ end }}
+ 
 {{ end }}
 
 

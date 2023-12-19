@@ -1,0 +1,19 @@
+<div class="ios_card">
+    <h4>
+        <span class="nowDate" data-unix="{{ now.Unix }}"> </span>
+      </h4>
+    
+      <h4>
+        📄{{ .Site.RegularPages | len }} {{ $totalWordCount := 0 }} {{ range
+        .Site.RegularPages }} {{ with .Content }} {{ $wordCount := printf "%s" . |
+        len }} {{ $totalWordCount = add $totalWordCount $wordCount }} {{ end }} {{
+        end }} 🔤{{ $totalWordCount}}
+      </h4>
+      <h4>
+        {{ if .Site.LastChange.After .GitInfo.AuthorDate }}
+        <!-- 如果站点的最后更改时间晚于作者的最后提交日期，显示提醒消息 -->
+        上次提交在
+        <span class="AuthorDate" data-unix="{{ .GitInfo.AuthorDate.Unix }}"> </span>
+        , 请勿忘记提交 {{ end }}
+      </h4>
+</div>

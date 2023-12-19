@@ -1,13 +1,17 @@
 
   
-<div>
-  <small class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}">
-  </small>
-
-  <small class="ios_boder">
-    {{ .Content | countwords}}字
-
-  </small>
+<div class="post-meta">
+  <a href="{{.RelPermalink}}">
+    {{partial "docs/title.html" .}} 
+  </a>
+    <small class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}">
+    </small>
+  
+    <small class="ios_boder">
+      {{ .Content | countwords}}字
+  
+    </small>
+  
 </div>
 
 

@@ -56,12 +56,8 @@
   }
 
   code {
-    padding: 2px $padding-8; // 代码块内边距
-    border-radius: $border-radius; // 边框圆角
-    background-color: var(--card-bg2); // 背景颜色
-    color:white;
-    font-size: 0.85em; // 字体大小
-
+    font-size: 1.2em; // 字体大小
+    color: var(--color-light); // 设置关键词和强调字体颜色
     .hljs-keyword,.hljs-strong{
       color: var(--color-light); // 设置关键词和强调字体颜色
 
@@ -70,17 +66,16 @@
 
   pre {
     padding: $padding-16; // 代码块内边距
-    border-radius: $border-radius; // 边框圆角
+    border-radius: 5px; // 边框圆角
     overflow-x: auto; // 横向滚动
     white-space: pre-wrap; // 换行
-    background: black; // 背景色
+    background: var(--code-bg); // 背景色
 
     code {
-      background: black; // 代码块背景色
       padding:0;
       font-size: 0.75em; // 字体大小
       font-family: 'Courier New', Courier, monospace;
-
+      color: white;
       span{
         word-wrap: break-word; // 单词折行
 

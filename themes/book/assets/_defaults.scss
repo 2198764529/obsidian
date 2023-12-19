@@ -11,12 +11,13 @@ $font-size-16: 1rem !default;
 
 
 $body-font-weight: normal !default;
-
+$padding:20px;
+$magin:15px;
 $body-min-width: 20rem !default;
 $container-max-width: 80rem !default;
 $border-radius: 18px;
 $header-height: 3.5rem !default;
-$menu-width: 16rem !default;
+$menu-width: 14rem !default;
 $toc-width: 16rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
@@ -44,7 +45,7 @@ $bg-gray:#f5f5f7;
   --body-background: #f5f5f7    ;
   --bg-book-menu:white;
   --body-font-color: #141e1b ;
-
+  --code-bg:#141e1b;
   --icon-filter: none;
 
   --hint-color-info: #6bf;
@@ -63,6 +64,7 @@ $bg-gray:#f5f5f7;
   --color-light: #e2d849  ;
   --card-bg: black;
   --card-bg2: #293c4a ;
+  --code-bg: #272822;
   --body-background: #343a40;
   --body-font-color: #e9ecef;
 
