@@ -1,4 +1,4 @@
-function calendarRender(content) {
+function calendarRender() {
   document.addEventListener("DOMContentLoaded", function () {
     // let content = "{{ $page := .Site.GetPage `/posts/日志.md` }}{{ $page.RawContent }}";
     const specificDateTime = new Date(); // 月份是从 0 开始的，所以 11 表示12月
@@ -10,13 +10,11 @@ function calendarRender(content) {
     
     const dateTimeString = `⏰${year}年${month}月${day}日 ${hours}时${minutes}分`;
     var calendarEl = document.getElementById("calendar");
-    const jsonData = parseMarkdownToJSON(content);
     var calendar = new FullCalendar.Calendar(calendarEl, {
         contentHeight: 'auto',
 
       initialView: "dayGridMonth",
       locale: "zh-cn",
-      events: jsonData,
       headerToolbar: {
         right: "", // 左侧按钮，包括前一个、后一个和今天
         left: "prev,today,next",
