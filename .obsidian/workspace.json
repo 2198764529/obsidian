@@ -15,24 +15,11 @@
               "state": {
                 "file": "content/posts/理论知识/数据结构和算法.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d87b74a88a90bd12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
-                "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/理论知识/数据结构和算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md"
+                "file": "content/posts/理论知识/数据结构和算法.md"
               }
             }
           }
@@ -161,13 +148,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d87b74a88a90bd12",
+  "active": "b55ca62f4698a14b",
   "lastOpenFiles": [
-    "themes/book/assets/mermaid.scss",
+    "content/posts/个人/清单.md",
+    "content/posts/技术记录.md",
     "content/posts/理论知识/数据结构和算法.md",
     "content/posts/理论知识/计算机网络.md",
+    "themes/book/assets/mermaid.scss",
     "content/posts/理论知识/应用层-Q&A.md",
-    "content/posts/技术记录.md",
     "content/data/myData.json",
     "data/myData.json",
     "themes/book/layouts/partials/docs/custom/myData.html",
@@ -177,10 +165,8 @@
     "themes/book/layouts/partials/docs/custom",
     "CNAME",
     "themes/book/static/plugs/mermaid.min.js",
-    "themes/book/assets/plugins/mermaid.min.js",
     "content/posts/杂思/数据展示.md",
     "content/posts/理论知识/运输层-Q&A.md",
-    "content/posts/个人/清单.md",
     "content/posts/工具技术/正则表达式.md",
     "content/posts/工具技术/markDown 语法.md",
     "content/posts/工具技术/git操作.md",
