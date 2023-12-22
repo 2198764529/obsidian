@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md",
+                "file": "content/posts/杂思/数据展示.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md",
+                "file": "content/posts/杂思/数据展示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md",
+                "file": "content/posts/杂思/数据展示.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md"
+                "file": "content/posts/杂思/数据展示.md"
               }
             }
           }
@@ -150,9 +150,12 @@
   },
   "active": "b55ca62f4698a14b",
   "lastOpenFiles": [
-    "content/posts/个人/清单.md",
     "content/posts/技术记录.md",
     "content/posts/理论知识/数据结构和算法.md",
+    "themes/book/layouts/partials/docs/custom/timelineData.html",
+    "log.json",
+    "gitlog.json",
+    "content/posts/个人/清单.md",
     "content/posts/理论知识/计算机网络.md",
     "themes/book/assets/mermaid.scss",
     "content/posts/理论知识/应用层-Q&A.md",
@@ -162,9 +165,6 @@
     "themes/book/layouts/partials/docs/custom/calendar.html",
     "themes/book/layouts/partials/docs/custom/alendar",
     "themes/book/layouts/partials/docs/custom/timeline.html",
-    "themes/book/layouts/partials/docs/custom",
-    "CNAME",
-    "themes/book/static/plugs/mermaid.min.js",
     "content/posts/杂思/数据展示.md",
     "content/posts/理论知识/运输层-Q&A.md",
     "content/posts/工具技术/正则表达式.md",

@@ -3,6 +3,8 @@
 {{$f := ""}}
 {{if in $fNameData "json"}}
   {{ $f = index $.Site.Data (index $fNameData 0)}}
+{{else if in $fName "http"}}
+  {{ $f = getJSON $fName}}
 {{else if in $fNameData "csv"}}
     {{ $f = getCSV "," "content/data/" $fName}}
 {{end}}
