@@ -1,14 +1,32 @@
 #github {
-    tr td{
-        width: 10px!important;
-        height: 10px;
-        background-color: #161b22;
-        border-radius: 2px;
+  tbody td {
+    width: 10px;
+    height: 10px;
+  }
+  span {
+    font-size: 12px;
+  }
+  thead{
+    position: relative;
+    span{
+        position: absolute;
+        bottom:  10px;
     }
-    thead td span{
-        width: 10px;
-        height: 10px;
-        float: left;
-        margin-bottom: 10px;
-    }
+  }
+ 
+}
+.contributions-bg-0 {
+  background-color: #161b22;
+}
+.contributions-bg-1 {
+  background-color: #0e4429;
+}
+.contributions-bg-2 {
+  background-color: #006d32;
+}
+.contributions-bg-3 {
+  background-color: #26a641;
+}
+.contributions-bg-4 {
+  background-color: #39d353;
 }

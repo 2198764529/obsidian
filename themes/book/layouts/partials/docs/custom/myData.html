@@ -1,6 +1,5 @@
-
-
 {{ $JSON := getJSON "https://api.github.com/repos/2198764529/obsidian/commits?per_page=2000" }}
+{{ $JSON2 := getJSON "https://skyline.github.com/2198764529/2023.json" }}
 {{$LastItem := index $JSON 0}}
 {{$LastItemTime :=(time.AsTime $LastItem.commit.author.date)}}
 <div class="ios_card">
@@ -16,7 +15,6 @@
     </h4>
     <h4>
         {{ $latestLastMod:=time.Now}}
-
         {{ range .Site.RegularPages }}
         {{ if .Lastmod.After $latestLastMod }}
         {{ $latestLastMod = .Lastmod }}
@@ -30,51 +28,7 @@
         , 请勿忘记提交 {{ end }}
     </h4>
     <div>
-        <table id="github">
-
-        </table>
+       
 
     </div>
 </div>
-
-<script>
-
-    const Json = "{{ $JSON | jsonify }}";
-    var jsObject = JSON.parse(Json);
-
-    console.log(jsObject);
-
-    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const xcategories = ["Jan", "", "", "", "Feb", "", "", "", "Mar", "", "", "", "Apr", "", "", "", "May", "", "", "", "Jun", "", "", "", "Jul", "", "", "", "Aug", "", "", "", "Sep", "", "", "", "Oct", "", "", "", "Nov", "", "", "", "Dec", "", "", ""];
-    const ycategories = weekdays;
-    // 创建一个 x * y 的二维数组，每个元素的值为 [x, y, 0]
-    var table = document.getElementById("github")
-    var tr = document.createElement('thead');
-    for (var j = -1; j < xcategories.length; j++) {
-        var td = document.createElement('td');
-        var span =  document.createElement('span');
-        span.textContent = xcategories[j];
-        td.append(span);
-        tr.append(td);
-    }
-    table.append(tr);
-
-    for (var i = 0; i < ycategories.length; i++) {
-        var yItem = ycategories[i];
-        var tr = document.createElement('tr');
-        var span = document.createElement('span');
-        span.textContent = yItem;
-        tr.append(span);
-        for (var j = 0; j < xcategories.length; j++) {
-            if (xcategories[j].length!="")
-                var xItem = xcategories[j];
-            console.log(yItem,xItem);
-            var td = document.createElement('td');
-            tr.append(td);
-        }    
-        table.append(tr);
-
-    }    
-
-</script>
