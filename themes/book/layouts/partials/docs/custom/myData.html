@@ -28,7 +28,75 @@
         , 请勿忘记提交 {{ end }}
     </h4>
     <div>
-       
+        <table id="github">
+            {{$xData := slice "Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"}}
+            {{$yData := slice "Sun" "Mon" "Tue" "Wed" "Thu" "Fri" "Sat"}}
+            <thead>
+                <tr>
+                    <td>
+                    </td>
+
+                    {{range $xData}}
+                    <td>
+                        <span>
+                            {{.}}
+
+                        </span>
+
+
+                    </td>
+                    {{strings.Repeat 3 "<td></td>" | markdownify }}
+
+                    {{ end }}
+
+                </tr>
+            </thead>
+
+            <tbody>
+                {{range $i,$v:=$yData}}
+
+
+                <tr>
+                    <td>
+                        <span>
+                            {{$v}}
+
+                        </span>
+                    </td>
+                    <!-- {{strings.Repeat (mul (len $xData) 4) "<td class='contributions-bg-0'></td>" | markdownify }} -->
+                    {{range $i2,$v2:=$xData}}
+                        <td class='contributions-bg-0'></td>
+                        <td class='contributions-bg-0'></td>
+                        <td class='contributions-bg-0'></td>
+                        <td class='contributions-bg-0'></td>
+                    {{ end }}
+
+                </tr>
+
+                {{ end }}
+
+
+
+                <!-- {{range $i,$v:=$JSON2.contributions}}
+                    <td>
+
+                    </td>
+                    <tr>
+
+                        {{range .days}}
+                        <td class="contributions-bg-{{.count}}">
+                      
+                        </td>
+                    {{ end }}
+                </tr>
+
+
+                    {{ end }} -->
+
+            </tbody>
+
+
+        </table>
 
     </div>
 </div>
