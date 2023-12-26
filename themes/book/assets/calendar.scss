@@ -20,8 +20,10 @@
         opacity: 1;
       }
     }
-    .fc-day-today  {
-      color: aliceblue;
+    .fc-day-today{
+      font-weight: bold;
+      background: var(--color-light);
+      border-radius: 3px;
       
     }
     .fc-h-event {

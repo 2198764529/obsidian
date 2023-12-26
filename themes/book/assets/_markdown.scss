@@ -1,7 +1,6 @@
 @import "variables";
 
 .markdown {
-
   > :first-child {
     margin-top: 0; // 移除页面开头的顶部间距
   }
@@ -12,35 +11,30 @@
   h4,
   h5,
   h6 {
-    font-weight: normal; // 设置标题字体粗细
-    margin-top: 1.5em; // 设置标题顶部间距
-    margin-bottom: $padding-16; // 设置标题底部间距
+    font-weight:bold; // 设置标题字体粗细
+    line-height: $line-height; // 设置标题底部间距
     a.anchor {
       opacity: 0; // 设置锚链接透明度
       font-size: 0.75em; // 设置锚链接字体大小
       vertical-align: middle; // 垂直居中
       text-decoration: none; // 移除文本装饰
       color: var(--color-light); // 设置颜色
-  }
+    }
 
     &:hover a.anchor,
     a.anchor:focus {
       opacity: initial; // 设置锚链接悬停时的透明度
     }
-    code{
-      color: white;
-    }
-    a{
+   
+    a {
       font-size: 1em;
-      
     }
-
   }
 
- 
-  a{
+  a {
     font-size: 0.65em;
- 
+    font-weight: bold;
+
   }
   b,
   optgroup,
@@ -48,21 +42,15 @@
     font-weight: bolder; // 设置更加粗细的字体
   }
 
-
   img {
     max-width: 65%; // 图像最大宽度
-    margin: 5% 16%; // 外边距
+    margin: 2% 16%; // 外边距
     height: auto; // 图像高度自适应
+    border-radius: 5px; // 边框圆角
+
   }
 
-  code {
-    font-size: 1.2em; // 字体大小
-    color: var(--color-light); // 设置关键词和强调字体颜色
-    .hljs-keyword,.hljs-strong{
-      color: var(--color-light); // 设置关键词和强调字体颜色
 
-    }
-  }
 
   pre {
     padding: $padding-16; // 代码块内边距
@@ -72,27 +60,36 @@
     background: var(--code-bg); // 背景色
 
     code {
-      padding:0;
+      padding: 0;
       font-size: 0.75em; // 字体大小
-      font-family: 'Courier New', Courier, monospace;
+      font-family: "Courier New", Courier, monospace;
+      line-height: $line-height;
       color: white;
-      span{
+      span {
         word-wrap: break-word; // 单词折行
-
       }
     }
   }
-  pre:focus,pre:active {
+  pre:focus,
+  pre:active {
     outline: none; // 移除焦点时的外框
   }
-  p {
+  >p {
     word-wrap: break-word; // 段落文字折行
+    line-height: $line-height;
+    code {
+      font-size: 1.1em; // 字体大小
+      font-weight: bold;
+      color: var(--color-light); // 设置关键词和强调字体颜色
+      
+    }
   }
 
   blockquote {
-    background-color: var(--card-bg);
+    background-color: var(--body-background);
     color: var(--color-light);
-    border-radius: $border-radius;
+    border-radius: 3px;
+    border-left: 8px solid var(--color-light);
     margin: $padding-16 0; // 设置块引用外边距
     padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); // 块引用内边距
 
@@ -135,16 +132,21 @@
     word-wrap: break-word; // 列表文字折行
     counter-reset: custom-counter; /* 重置计数器 */
     list-style-type: none; /* 去除默认的有序列表样式 */
+    li{
+      list-style: none;
+      line-height: $line-height;
+    }
   }
-  ol>li{
-    list-style: none;
+  ol > li {
     counter-increment: custom-counter; /* 计数器递增 */
-    &::before{
-      content:counter(custom-counter)".";
+    &::before {
+      content: counter(custom-counter) ".";
       border-radius: 50%;
-      text-align:center;
+      text-align: left;
+      color: var(--color-light);
+      font-weight: bolder;
       float: left;
-      padding-right: 5px;
+      padding-right: 15px;
     }
   }
   dl {

@@ -70,7 +70,8 @@ aside nav ul {
   }
 
   a:hover {
-    opacity: 0.5;
+    color: var(--color-light);
+    font-weight: bold;
   }
 
   ul {
@@ -144,6 +145,7 @@ ul.pagination {
 
   a.active {
     color: var(--color-light); /* 活动链接文本颜色 */
+    font-weight: bold;
   }
 
   input.toggle + label + ul {
@@ -181,7 +183,7 @@ body[dir="rtl"] .book-menu {
   > a,
   > span,
   > label {
-    font-weight: bolder;
+    font-weight: bold;
   }
 
   > ul {

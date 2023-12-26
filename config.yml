@@ -15,7 +15,6 @@ frontmatter:
     - datetimeCreate
   lastmod:
     - datetimeUpdate
- 
 markup:
   defaultMarkdownHandler: "goldmark"
 
@@ -30,6 +29,7 @@ markup:
     endLevel: 6
 
 params:
+  buildDate: "2023-02-25" 
   BookToCMax: 4
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
