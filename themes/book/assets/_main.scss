@@ -344,9 +344,10 @@ body[dir="rtl"] .book-menu {
 
   .book-menu {
     visibility: hidden;
-    margin-inline-start: -$menu-width;
-    font-size: $font-size-base;
+      margin-inline-start: -$menu-width;
+      font-size: $font-size-base;
     z-index: 1;
+  
     nav#TableOfContents {
       display: none;
     }
@@ -371,6 +372,7 @@ body[dir="rtl"] .book-menu {
   #menu-control:checked ~ main {
     .book-menu {
       visibility: initial;
+      margin-inline-start: -$menu-width;
     }
 
     .book-menu .book-menu-content {

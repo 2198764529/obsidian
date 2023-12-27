@@ -63,7 +63,6 @@
       padding: 0;
       font-size: 0.75em; // 字体大小
       font-family: "Courier New", Courier, monospace;
-      line-height: $line-height;
       color: white;
       span {
         word-wrap: break-word; // 单词折行
@@ -195,6 +194,8 @@
       margin-top: 0; // 移除顶部间距
     }
   }
+
+  
 }
 
 .markdown-inner {

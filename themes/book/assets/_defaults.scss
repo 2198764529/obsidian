@@ -18,7 +18,7 @@ $container-max-width: 80rem !default;
 $border-radius: 18px;
 $line-height:35px;
 $header-height: 3.5rem !default;
-$menu-width: 14rem !default;
+$menu-width: 15rem - 1 !default;
 $toc-width: 16rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
