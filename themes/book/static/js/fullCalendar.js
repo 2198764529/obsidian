@@ -53,9 +53,10 @@ function calendarRender() {
       // },
      
     });
-
+    console.log('ddd');
     calendar.render();
   });
   
 }
 
+calendarRender();

@@ -9,17 +9,17 @@ async function updateDateTimeByElementClass(elementClass) {
     const targetTimestamp = parseInt(element.dataset.unix); // 从元素中获取时间字符串,转时间戳
     const currentTimestamp = Math.floor(Date.now() / 1000); // 当前时间戳，单位为秒
     const timestampDifference = currentTimestamp - targetTimestamp;
+    const date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
+    const month = date.getMonth() + 1; // 月份从0开始
+    const day = date.getDate();
+    const hour  = date.getHours();
+    const minutes = date.getMinutes();
+    const period = getTimePeriod(hour);
     if (elementClass == "nowDate") {
       // 现在, month月day日 period
-      const date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
-      const month = date.getMonth() + 1; // 月份从0开始
-      const day = date.getDate();
-      const hour = date.getHours();
-      const minutes = date.getMinutes();
-      const period = getTimePeriod(hour);
-      let workStatus = checkWorkStatus(date)
+      
+      let workStatus = checkWorkStatus(date);
       const currentDayOfWeek = date.getDay() + 1;
-
 
       const lastDayOfMonth = new Date(date.getFullYear(), month + 1, 0);
 
@@ -35,54 +35,55 @@ async function updateDateTimeByElementClass(elementClass) {
         "周六到了,日子过得怎么样",
         "周日到了,出去晒晒太阳吧",
       ];
-      if (currentDayOfWeek<2)
-        workStatus = ""
+      if (currentDayOfWeek < 2) workStatus = "";
       let textContent = `${period}好!  现在 ${hour}时${minutes}分 ${workStatus} 本周剩 ${currentDayOfWeek} 天,本月剩 ${daysUntilEndOfMonth} 天`;
 
       element.textContent = textContent;
-    } else if (timestampDifference < 60) {
-      // 不到1分钟，timestampDifference 秒前
-      element.textContent = `${timestampDifference} 秒前`;
-    } else if (timestampDifference < 3600) {
-      // 不到1小时， minutes 小时前
-      const minutes = Math.floor(timestampDifference / 60);
-      element.textContent = `${minutes} 分钟前`;
-    } else if (timestampDifference < 86400) {
-      // 不到24小时，显示 hours 小时前
-      const hours = Math.floor(timestampDifference / 3600);
-      const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
-      const hour = date.getHours();
-      
+    }else{
 
+      if(timestampDifference < 0){
+        element.textContent = `待办`;
+        if (timestampDifference > -86400 ) {
+          element.textContent = `明天`;
+        }
+        else if (timestampDifference > -86400 * 2) {
+          element.textContent = `后天`;
+        }
 
-      element.textContent = `${hour} 小时前`;
-      if (hour==0)
-          element.textContent = `今天`;
-    } else if (timestampDifference < 31536000) {
-      // 不到1年，显示month-day period
-      const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
-      const month = date.getMonth() + 1; // 月份从0开始
-      const day = date.getDate();
-      const hour = date.getHours();
-      const period = getTimePeriod(hour);
-      element.textContent = `${month}月${day}日`;
-      if (timestampDifference<86400*2)
-      {
-        element.textContent = `昨天`;
       }
-      if (hour!=0)
-            element.textContent += `${period}`;
-    } else {
-      // 大于1年，显示year-month-day period
-      const date = new Date(targetTimestamp * 1000);
-      const year = date.getFullYear();
-      const month = date.getMonth() + 1;
-      const day = date.getDate();
-      const hour = date.getHours();
-      const period = getTimePeriod(hour);
-
-      element.textContent = `${year}年${month}月${day}日${period}`;
-    }
+      else if (timestampDifference < 60) {
+        // 不到1分钟，timestampDifference 秒前
+        element.textContent = `${timestampDifference} 秒前`;
+      } else if (timestampDifference < 3600) {
+        // 不到1小时， minutes 小时前
+        const minutes = Math.floor(timestampDifference / 60);
+        element.textContent = `${minutes} 分钟前`;
+      } else if (timestampDifference < 86400) {
+        // 不到24小时，显示 hours 小时前
+        const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
+        const hour = date.getHours();
+  
+        element.textContent = `${hour} 小时前`;
+        if (hour == 0) element.textContent = `今天`;
+      } else if (timestampDifference < 31536000) {
+       
+        element.textContent = `${month}月${day}日`;
+        if (timestampDifference < 86400 * 2) {
+          element.textContent = `昨天`;
+        }
+        if (hour != 0) element.textContent += `${period}`;
+      } else {
+        // 大于1年，显示year-month-day period
+        const date = new Date(targetTimestamp * 1000);
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const hour = date.getHours();
+        const period = getTimePeriod(hour);
+  
+        element.textContent = `${year}年${month}月${day}日${period}`;
+      }
+    } 
   }
 
   function getTimePeriod(hour) {
@@ -153,12 +154,11 @@ async function updateDateTimeByElementClass(elementClass) {
   // 初始页面加载时调用一次
   await main();
   console.log("加载");
-
-};
+}
 
 function parseMarkdownToJSON(markdownContent) {
   const result = [];
-  const lines = markdownContent.split('\n');
+  const lines = markdownContent.split("\n");
 
   let currentYear = new Date().getFullYear();
   let currentDate = null;
@@ -166,7 +166,6 @@ function parseMarkdownToJSON(markdownContent) {
 
   const dateRegex = /^###\s+(\d+\.\d+)/;
   const TaskRegex = /^-\s+(.+)/;
-
 
   for (const line of lines) {
     const dateMatch = line.match(dateRegex);
@@ -176,20 +175,19 @@ function parseMarkdownToJSON(markdownContent) {
         result[currentDate] = currentTasks;
       }
       const dateString = dateMatch[1];
-      const [month, day] = dateString.split('.').map(Number);
-      currentDate = `${currentYear}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+      const [month, day] = dateString.split(".").map(Number);
+      currentDate = `${currentYear}-${month.toString().padStart(2, "0")}-${day
+        .toString()
+        .padStart(2, "0")}`;
       currentTasks = [];
     } else if (TaskMatch) {
       result.push({
         title: TaskMatch[1],
         start: currentDate,
         completed: true,
-        
       });
-    } 
+    }
   }
-
-
 
   return result;
 }

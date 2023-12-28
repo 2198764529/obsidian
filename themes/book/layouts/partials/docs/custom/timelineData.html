@@ -26,6 +26,7 @@
     {{ $pagesDictByLastmod = $pagesDictByLastmod | merge (dict .Key .) }}
 {{ end }}
 {{$pagesByPublishDate :=.Site.RegularPages.GroupByPublishDate "2006-01-02"}}
+{{$pagesByPublishDate}}
 {{ $pagesDictByPublishDate := dict }}
 {{ range $pagesByPublishDate }}
     {{ $pagesDictByPublishDate = $pagesDictByPublishDate | merge (dict .Key .) }}
