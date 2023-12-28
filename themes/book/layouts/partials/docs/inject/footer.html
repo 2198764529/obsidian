@@ -72,8 +72,6 @@
   
 </style>
 <script>
-  console.log('ok');
-  let plantumlPrefix = "language-mindmap";
   let elements = document.querySelectorAll(".language-mindmap,.language-uml");
   const bodyStyles = getComputedStyle(document.body);
   const bodyFontColor = bodyStyles.getPropertyValue('--body-font-color').trim();
@@ -97,7 +95,7 @@
       let iframe = document.createElement("embed");
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
       console.log(el_innerText)
-      let url = 'http://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
+      let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
       console.log(url);
       iframe.src = url;
       iframe.style.display = "inline";
