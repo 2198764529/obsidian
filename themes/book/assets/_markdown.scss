@@ -11,7 +11,7 @@
   h4,
   h5,
   h6 {
-    font-weight:bold; // 设置标题字体粗细
+    font-weight: bold; // 设置标题字体粗细
     line-height: $line-height; // 设置标题底部间距
     a.anchor {
       opacity: 0; // 设置锚链接透明度
@@ -25,7 +25,7 @@
     a.anchor:focus {
       opacity: initial; // 设置锚链接悬停时的透明度
     }
-   
+
     a {
       font-size: 1em;
     }
@@ -34,7 +34,6 @@
   a {
     font-size: 0.65em;
     font-weight: bold;
-
   }
   b,
   optgroup,
@@ -43,45 +42,63 @@
   }
 
   img {
-    max-width: 65%; // 图像最大宽度
-    margin: 2% 16%; // 外边距
-    height: auto; // 图像高度自适应
-    border-radius: 5px; // 边框圆角
 
+    border-radius: 5px; // 边框圆角
   }
 
-
-
   pre {
-    padding: $padding-16; // 代码块内边距
-    border-radius: 5px; // 边框圆角
-    overflow-x: auto; // 横向滚动
-    white-space: pre-wrap; // 换行
-    background: var(--code-bg); // 背景色
-
     code {
-      padding: 0;
       font-size: 0.75em; // 字体大小
       font-family: "Courier New", Courier, monospace;
+      line-height: $line-height;
+      white-space: pre-wrap; // 换行
+      overflow-x: auto; // 横向滚动
+      padding: $padding-16; // 代码块内边距
+      border-radius: 5px; // 边框圆角
+      background: var(--code-bg); // 背景色
+      display: block;
       color: white;
       span {
         word-wrap: break-word; // 单词折行
       }
+    }
+    code.language-gallery,
+    code.language-mindmap,
+    code.language-uml {
+      line-height: 0;
+      padding: 0;
+      background: 0;
+    }
+    
+  }
+  .picGallery{
+    div{
+      display:inline;
+      margin: 1px;
+    }
+    img{
+      width: 30%;
+      height:300px;
     }
   }
   pre:focus,
   pre:active {
     outline: none; // 移除焦点时的外框
   }
-  >p {
+  > p {
     word-wrap: break-word; // 段落文字折行
     line-height: $line-height;
     code {
       font-size: 1.1em; // 字体大小
       font-weight: bold;
       color: var(--color-light); // 设置关键词和强调字体颜色
-      
     }
+    >img{
+      max-width: 65%; // 图像最大宽度
+      margin: 2% 16%; // 外边距
+      height: auto; // 图像高度自适应
+    }
+ 
   }
 
   blockquote {
@@ -131,7 +148,7 @@
     word-wrap: break-word; // 列表文字折行
     counter-reset: custom-counter; /* 重置计数器 */
     list-style-type: none; /* 去除默认的有序列表样式 */
-    li{
+    li {
       list-style: none;
       line-height: $line-height;
     }
@@ -194,8 +211,6 @@
       margin-top: 0; // 移除顶部间距
     }
   }
-
-  
 }
 
 .markdown-inner {

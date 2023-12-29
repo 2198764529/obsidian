@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/测试专用.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/测试专用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/网站收藏.md",
+                "file": "content/posts/测试专用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/网站收藏.md"
+                "file": "content/posts/测试专用.md"
               }
             }
           }
@@ -151,6 +151,8 @@
   "active": "22b9d11070e6d641",
   "lastOpenFiles": [
     "content/posts/理论知识/计算机网络.md",
+    "themes/book/layouts/gallery",
+    "content/posts/理论知识/五笔输入法.md",
     "content/posts/测试专用.md",
     "content/posts/网站收藏.md",
     "content/posts/技术记录.md",
@@ -188,14 +190,11 @@
     "content/data/myData.json",
     "data/myData.json",
     "themes/book/layouts/partials/docs/custom/myData.html",
-    "themes/book/layouts/partials/docs/custom/calendar.html",
     "content/posts/理论知识/运输层-Q&A.md",
     "content/posts/工具技术/正则表达式.md",
     "content/posts/工具技术/markDown 语法.md",
     "content/posts/工具技术/git操作.md",
     "content/posts/杂思/_index.md",
-    "content/posts/理论知识/_index.md",
-    "content/posts/工具技术/_index.md",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"

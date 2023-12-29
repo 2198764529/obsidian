@@ -12,12 +12,12 @@ async function updateDateTimeByElementClass(elementClass) {
     const date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
     const month = date.getMonth() + 1; // 月份从0开始
     const day = date.getDate();
-    const hour  = date.getHours();
+    const hour = date.getHours();
     const minutes = date.getMinutes();
     const period = getTimePeriod(hour);
     if (elementClass == "nowDate") {
       // 现在, month月day日 period
-      
+
       let workStatus = checkWorkStatus(date);
       const currentDayOfWeek = date.getDay() + 1;
 
@@ -39,19 +39,15 @@ async function updateDateTimeByElementClass(elementClass) {
       let textContent = `${period}好!  现在 ${hour}时${minutes}分 ${workStatus} 本周剩 ${currentDayOfWeek} 天,本月剩 ${daysUntilEndOfMonth} 天`;
 
       element.textContent = textContent;
-    }else{
-
-      if(timestampDifference < 0){
+    } else {
+      if (timestampDifference < 0) {
         element.textContent = `待办`;
-        if (timestampDifference > -86400 ) {
+        if (timestampDifference > -86400) {
           element.textContent = `明天`;
-        }
-        else if (timestampDifference > -86400 * 2) {
+        } else if (timestampDifference > -86400 * 2) {
           element.textContent = `后天`;
         }
-
-      }
-      else if (timestampDifference < 60) {
+      } else if (timestampDifference < 60) {
         // 不到1分钟，timestampDifference 秒前
         element.textContent = `${timestampDifference} 秒前`;
       } else if (timestampDifference < 3600) {
@@ -62,11 +58,10 @@ async function updateDateTimeByElementClass(elementClass) {
         // 不到24小时，显示 hours 小时前
         const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
         const hour = date.getHours();
-  
+
         element.textContent = `${hour} 小时前`;
         if (hour == 0) element.textContent = `今天`;
       } else if (timestampDifference < 31536000) {
-       
         element.textContent = `${month}月${day}日`;
         if (timestampDifference < 86400 * 2) {
           element.textContent = `昨天`;
@@ -80,10 +75,10 @@ async function updateDateTimeByElementClass(elementClass) {
         const day = date.getDate();
         const hour = date.getHours();
         const period = getTimePeriod(hour);
-  
+
         element.textContent = `${year}年${month}月${day}日${period}`;
       }
-    } 
+    }
   }
 
   function getTimePeriod(hour) {
@@ -153,7 +148,6 @@ async function updateDateTimeByElementClass(elementClass) {
 
   // 初始页面加载时调用一次
   await main();
-  console.log("加载");
 }
 
 function parseMarkdownToJSON(markdownContent) {

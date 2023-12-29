@@ -81,7 +81,7 @@
   css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
   Array.from(elements).forEach(
     (el) => {
-      el.parentElement.style.background = cardBG;
+   
       let el_innerText = el.innerText;
       if (el.dataset.lang=="mindmap")
       {
@@ -91,12 +91,9 @@
         });
       }
       
-      console.log(el_innerText);
       let iframe = document.createElement("embed");
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
-      console.log(el_innerText)
       let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
-      console.log(url);
       iframe.src = url;
       iframe.style.display = "inline";
       el.innerHTML = iframe.outerHTML;
@@ -119,10 +116,26 @@
     }
   );
 </script>
-<style>
-  svg.markmap {
-    width: 100%;
-    height: 100%;
-  }
-</style>
+
+{{ end }}
+
+{{ if (.Params.gallery) }}
+<script>
+  elements = document.querySelectorAll(".language-gallery");
+  console.log(elements);
+  Array.from(elements).forEach(
+    (el) => {
+      let imgList =  el.textContent.split("\n");
+      console.log(imgList);
+      el.parentNode.insertAdjacentHTML('beforebegin',`<div class="picGallery"></div>`);
+      let picGallery = el.parentNode.previousSibling
+      imgList.forEach((img) =>{
+        if(img)
+        picGallery.insertAdjacentHTML('beforeend',`<div><img src="${img}" data-lazy-src="${img}"></div>`)
+      }
+      )
+    }
+  );
+</script>
+
 {{ end }}
