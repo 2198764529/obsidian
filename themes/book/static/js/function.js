@@ -9,75 +9,48 @@ async function updateDateTimeByElementClass(elementClass) {
     const targetTimestamp = parseInt(element.dataset.unix); // 从元素中获取时间字符串,转时间戳
     const currentTimestamp = Math.floor(Date.now() / 1000); // 当前时间戳，单位为秒
     const timestampDifference = currentTimestamp - targetTimestamp;
-    const date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
-    const month = date.getMonth() + 1; // 月份从0开始
-    const day = date.getDate();
-    const hour = date.getHours();
-    const minutes = date.getMinutes();
+    const t_date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
+    const c_date = new Date(currentTimestamp * 1000); // 将时间戳转换为毫秒
+    const year = t_date.getFullYear();
+    const month = t_date.getMonth() + 1; // 月份从0开始
+    const day = t_date.getDate();
+    const hour = t_date.getHours();
+    const minutes = t_date.getMinutes();
     const period = getTimePeriod(hour);
-    if (elementClass == "nowDate") {
-      // 现在, month月day日 period
-
-      let workStatus = checkWorkStatus(date);
-      const currentDayOfWeek = date.getDay() + 1;
-
-      const lastDayOfMonth = new Date(date.getFullYear(), month + 1, 0);
-
-      // 计算还有多少天剩余在本月
-      const daysUntilEndOfMonth = lastDayOfMonth.getDate() - date.getDate();
-      // 根据某一天来判断提示语
-      const tips_dayofweek = [
-        "周一到了, 周末休息好了吗?",
-        "周二到了, 思考一下工作怎么做吧",
-        "周三到了, 日子一下子就过去了",
-        "周四到了, 疯狂星期四!!",
-        "周五到了,明天就周末了,想好今天做什么了吗",
-        "周六到了,日子过得怎么样",
-        "周日到了,出去晒晒太阳吧",
-      ];
-      if (currentDayOfWeek < 2) workStatus = "";
-      let textContent = `${period}好!  现在 ${hour}时${minutes}分 ${workStatus} 本周剩 ${currentDayOfWeek} 天,本月剩 ${daysUntilEndOfMonth} 天`;
-
-      element.textContent = textContent;
-    } else {
+    const timeDict = {
+      "1_min":60,
+      "1_hour":3600,
+      "24_hour":86400,
+      "1_year":31536000,
+    }
+    if (c_date.getFullYear() - t_date.getFullYear() == 0) {//本年内判断
       if (timestampDifference < 0) {
         element.textContent = `待办`;
-        if (timestampDifference > -86400) {
+        if (timestampDifference > -timeDict['24_hour']) {
           element.textContent = `明天`;
-        } else if (timestampDifference > -86400 * 2) {
+        } else if (timestampDifference > -timeDict['24_hour'] * 2) {
           element.textContent = `后天`;
         }
-      } else if (timestampDifference < 60) {
+      } else if (timestampDifference < timeDict['1_min']) {
         // 不到1分钟，timestampDifference 秒前
         element.textContent = `${timestampDifference} 秒前`;
-      } else if (timestampDifference < 3600) {
+      } else if (timestampDifference < timeDict['1_hour']) {
         // 不到1小时， minutes 小时前
-        const minutes = Math.floor(timestampDifference / 60);
+        const minutes = Math.floor(timestampDifference / timeDict['1_min']);
         element.textContent = `${minutes} 分钟前`;
-      } else if (timestampDifference < 86400) {
+      } else if (timestampDifference < timeDict['24_hour']) {
         // 不到24小时，显示 hours 小时前
-        const date = new Date(targetTimestamp * 1000); // 将时间戳转换为毫秒
-        const hour = date.getHours();
-
         element.textContent = `${hour} 小时前`;
         if (hour == 0) element.textContent = `今天`;
-      } else if (timestampDifference < 31536000) {
+      } else if (timestampDifference < timeDict['1_year']) {
         element.textContent = `${month}月${day}日`;
-        if (timestampDifference < 86400 * 2) {
+        if (timestampDifference < timeDict['24_hour'] * 2) {
           element.textContent = `昨天`;
         }
         if (hour != 0) element.textContent += `${period}`;
-      } else {
-        // 大于1年，显示year-month-day period
-        const date = new Date(targetTimestamp * 1000);
-        const year = date.getFullYear();
-        const month = date.getMonth() + 1;
-        const day = date.getDate();
-        const hour = date.getHours();
-        const period = getTimePeriod(hour);
-
-        element.textContent = `${year}年${month}月${day}日${period}`;
       }
+    }else{
+      element.textContent = `${year}年${month}月${day}日`;
     }
   }
 
