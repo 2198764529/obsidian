@@ -1,42 +1,75 @@
-{{ $JSON := getJSON
-"https://api.github.com/repos/2198764529/obsidian/commits?per_page=2000" }} {{
-$JSON2 := getJSON "https://skyline.github.com/2198764529/2023.json" }}
-{{$LastItem := index $JSON 0}} {{$LastItemTime :=(time.AsTime
-$LastItem.commit.author.date)}}
+{{ $JSON := getJSON "https://api.github.com/repos/2198764529/obsidian/commits?per_page=2000" }}
+{{$LastItem := index $JSON 0}} 
+{{$LastItemTime := (time.AsTime $LastItem.commit.author.date)}}
+
 <div class="ios_card">
     <h4>
+        <!-- 获取当前日期的第几天 -->
         <span>{{$dayOfyear := int (now.Format "002")}}</span>
     </h4>
 
-    <h4>
-        📄{{ .Site.RegularPages | len }} {{ $totalWordCount := 0 }} {{ range
-        .Site.RegularPages }} {{ with .Content }} {{ $wordCount := printf "%s" . |
-        len }} {{ $totalWordCount = add $totalWordCount $wordCount }} {{ end }} {{
-        end }} 🔤{{ $totalWordCount}}
-    </h4>
-    <h4>
-        {{ $latestLastMod:=time.Now}} {{ range .Site.RegularPages }} {{ if
-        .Lastmod.After $latestLastMod }} {{ $latestLastMod = .Lastmod }} {{ end }}
-        {{ end }} {{ if $latestLastMod.After $LastItemTime }}
-        <!-- 如果站点的最后更改时间晚于作者的最后提交日期，显示提醒消息 -->
-        上次提交在
-        <span class="AuthorDate" data-unix="{{ $LastItemTime.Unix }}"> </span>
-        , 请勿忘记提交 {{ end }}
+    {{$xData := slice "一" "二" "三" "四" "五" "六" "七" "八" "九" "十" "十一" "十二"}}
+    <!--
+        一、1、3、5、7、8、10、12 每月31天，4、6、9、11为30天。
+        二、2月正常为28天，如果为闰年，则多一天为29天。
+        正如我们所说的顺口溜：一三五七八十腊，三十一天永不差。 
+    -->
+    {{$yData := slice "一" "二" "三" "四" "五" "六" "日"}}
 
-    </h4>
-    <el-steps :space="200" :active="1" finish-status="success">
-        <el-step title="已完成"></el-step>
-        <el-step title="进行中"></el-step>
-        <el-step title="步骤 3"></el-step>
-      </el-steps>
     <div class="heatmap-container">
         <table class="heatmap">
-            {{$xData := slice "一" "二" "三" "四" "五" "六" "七" "八" "九" "十" "十一" "十二"}}
-            <!-- 一、1、3、5、7、8、10、12 每月31天，4、6、9、11为30天。
-            二、2月正常为28天，如果为闰年，则多一天为29天。
-            正如我们所说的顺口溜：一三五七八十腊，三十一天永不差。 
-        -->
-            {{$yData := slice "一" "二" "三" "四" "五" "六" "日"}}
+            <thead>
+                <tr>
+                    <td></td>
+                    <!-- 渲染表头，显示星期几 -->
+                    {{range $yData}}
+                    <td>
+                        <span> {{.}} </span>
+                    </td>
+                    {{ end }}
+                </tr>
+            </thead>
+
+            <tbody>
+                {{$countNum2:= 0}}
+                {{$tdNum := 0}}
+                {{range $i,$v:=( getJSON "https://skyline.github.com/2198764529/2023.json").contributions}}
+                    {{$month :=int (div .week 4)}}
+                    {{$flag1 := eq (mod .week 4) 0}}
+                    {{$flag2 := lt $month 13}}
+                    {{$flag3 := gt $tdNum 28}}
+
+                    <tr>
+                        {{ if and $flag1 $flag2}}
+                        <td>
+                            <!-- 重置列数并显示月份 -->
+                            <span>
+                                {{$tdNum = 0}}
+                                {{index $xData $month}}
+                            </span>
+                        </td>
+                        {{ else }}
+                        <td></td>
+                        {{ end }}
+                        {{$countNum := mul (int .week) 7}}
+
+                        {{range .days}}
+                        {{$contributionsbgNum := int .count}} 
+                        {{if gt .count 4}}{{$contributionsbgNum = 4}} {{ end }} 
+                        
+                        {{$countNum = add $countNum 1}}
+                        <td class="contributions-bg-{{$contributionsbgNum}}">
+                        </td>
+                        
+                        {{$tdNum =add $tdNum 1}}
+                        {{ end }}
+                    </tr>
+                {{ end }}
+            </tbody>
+        </table>
+        
+        <!-- 重复渲染表格，用于显示另一年的贡献数据 -->
+        <table class="heatmap">
             <thead>
                 <tr>
                     <td></td>
@@ -44,22 +77,16 @@ $LastItem.commit.author.date)}}
                     <td>
                         <span> {{.}} </span>
                     </td>
-
                     {{ end }}
                 </tr>
             </thead>
 
             <tbody>
-                {{$bigMonths := slice 1 3 5 7 8 10 12}} {{$countNum := 1}}
                 {{$countNum2:= 0}}
                 {{$tdNum := 0}}
-
-                {{range $i,$v:=$JSON2.contributions}}
+                {{range $i,$v:=( getJSON "https://skyline.github.com/2198764529/2024.json").contributions}}
                     {{$month :=int (div .week 4)}}
                     {{$flag1 := eq (mod .week 4) 0}}
-                    {{if in $month $bigMonths}}
-                    {{$flag1 = 1}}
-                    {{ end }}
                     {{$flag2 := lt $month 13}}
                     {{$flag3 := gt $tdNum 28}}
 
@@ -70,8 +97,6 @@ $LastItem.commit.author.date)}}
                                 {{$tdNum = 0}}
                                 {{index $xData $month}}
                             </span>
-                            
-                            <!-- {{.week}} -->
                         </td>
                         {{ else }}
                         <td></td>
@@ -79,18 +104,16 @@ $LastItem.commit.author.date)}}
                         {{$countNum := mul (int .week) 7}}
 
                         {{range .days}}
-
-                        {{$contributionsbgNum := int .count}} {{if gt .count 4}}{{$contributionsbgNum = 4}} {{ end }} 
+                        {{$contributionsbgNum := int .count}} 
+                        {{if gt .count 4}}{{$contributionsbgNum = 4}} {{ end }} 
+                        
                         {{$countNum = add $countNum 1}}
                         <td class="contributions-bg-{{$contributionsbgNum}} {{if eq $dayOfyear $countNum}}today{{ end }}">
                         </td>
                         
                         {{$tdNum =add $tdNum 1}}
-
                         {{ end }}
-
                     </tr>
-
                 {{ end }}
             </tbody>
         </table>

@@ -47,11 +47,9 @@ $bg-gray:#f5f5f7;
   --bg-book-menu:white;
   --body-font-color: #141e1b ;
   --code-bg:#141e1b;
-  --icon-filter: none;
+  --bg-contributions-0:#ebedf0;
 
-  --hint-color-info: #6bf;
-  --hint-color-warning: #fd6;
-  --hint-color-danger: #f66;
+
 }
 
 @mixin theme-dark {
@@ -69,10 +67,6 @@ $bg-gray:#f5f5f7;
   --body-background: #343a40;
   --body-font-color: #e9ecef;
 
-  --icon-filter: brightness(0) invert(1);
+  --bg-contributions-0:#161b22;
 
-  --hint-color-info: #6bf;
-  --hint-color-warning: #fd6;
-  --hint-color-danger: #f66;
-  --link-code:"💫";
 }
