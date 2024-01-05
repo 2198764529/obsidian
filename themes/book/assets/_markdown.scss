@@ -42,7 +42,6 @@
   }
 
   img {
-
     border-radius: 5px; // 边框圆角
   }
 
@@ -69,15 +68,18 @@
       padding: 0;
       background: 0;
     }
-    
   }
-  .picGallery{
-    div{
-      display:inline;
+  .picGallery {
+    div {
+      display: inline-block;
       margin: 1px;
-    }
-    img{
       width: 30%;
+     
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
   pre:focus,
@@ -92,12 +94,11 @@
       font-weight: bold;
       color: var(--color-light); // 设置关键词和强调字体颜色
     }
-    >img{
+    > img {
       max-width: 65%; // 图像最大宽度
       margin: 2% 16%; // 外边距
       height: auto; // 图像高度自适应
     }
- 
   }
 
   blockquote {
