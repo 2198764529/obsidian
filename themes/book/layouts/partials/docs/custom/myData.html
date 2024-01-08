@@ -5,7 +5,8 @@
 <div class="ios_card">
     <h4>
         <!-- 获取当前日期的第几天 -->
-        <span>{{$dayOfyear := int (now.Format "002")}}</span>
+        {{now}}
+        <span>{{$dayOfyear := int (trim (now.Format "__2") " ")}}</span>
     </h4>
 
     {{$xData := slice "一" "二" "三" "四" "五" "六" "七" "八" "九" "十" "十一" "十二"}}

@@ -40,7 +40,7 @@ h5 {
 
 /* 设置链接样式 */
 a {
-  text-decoration:none; /* 去掉下划线 */
+  text-decoration: none; /* 去掉下划线 */
   color: var(--color-light);
 }
 
@@ -118,12 +118,11 @@ ul.pagination {
 .book-menu {
   flex: 0 0 $menu-width; /* 不扩展，固定宽度 */
   font-size: $font-size-14;
-  margin: $magin;
+  margin-right: $magin;
 
   .book-menu-content {
     margin: $magin 0;
 
-   
     width: $menu-width;
     padding: 20px;
     &::-webkit-scrollbar {
@@ -132,7 +131,7 @@ ul.pagination {
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-light); /* 滚动条颜色 */
     }
-  
+
     @include fixed; /* 固定定位 */
   }
 
@@ -193,12 +192,10 @@ body[dir="rtl"] .book-menu {
 
 /* 设置页面样式 */
 .book-page {
-
   min-width: $body-min-width;
-  
-  
+
   flex-grow: 1;
-  .ios_card{
+  .ios_card {
     margin-bottom: 20px;
   }
 }
@@ -210,7 +207,6 @@ body[dir="rtl"] .book-menu {
 
 /* 设置页头样式 */
 .book-header {
-  
   margin-bottom: $padding-16;
 
   label {
@@ -222,7 +218,7 @@ body[dir="rtl"] .book-menu {
     height: 1.5em;
     width: 1.5em;
   }
-  small{
+  small {
     opacity: 0.3;
   }
 }
@@ -316,7 +312,7 @@ body[dir="rtl"] .book-menu {
   .book-icon {
     height: 1em;
     width: 1em;
-    margin-inline-end: .5em;
+    margin-inline-end: 0.5em;
   }
 
   ul {
@@ -344,10 +340,10 @@ body[dir="rtl"] .book-menu {
 
   .book-menu {
     visibility: hidden;
-      margin-inline-start: -$menu-width;
-      font-size: $font-size-base;
+    margin: 0;
+    margin-inline-start: -$menu-width;
+    font-size: $font-size-base;
     z-index: 1;
-  
     nav#TableOfContents {
       display: none;
     }
@@ -361,13 +357,11 @@ body[dir="rtl"] .book-menu {
     background-color: inherit !important;
     padding: 0 !important;
     box-shadow: none !important;
-    label{
+    label {
       display: block;
-
     }
   }
 
-  
   /* 设置菜单开关被选中时的样式 */
   #menu-control:checked ~ main {
     .book-menu {
@@ -378,7 +372,6 @@ body[dir="rtl"] .book-menu {
     .book-menu .book-menu-content {
       transform: translateX($menu-width);
       box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
-      
     }
 
     .book-page {
@@ -387,14 +380,13 @@ body[dir="rtl"] .book-menu {
 
     .book-menu-overlay {
       display: block;
-      height:100vh;
+      height: 100vh;
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
     }
-    
   }
 
   /* 设置目录开关获得焦点时的轮廓样式 */
@@ -405,10 +397,9 @@ body[dir="rtl"] .book-menu {
   /* 设置目录开关被选中时的样式 */
   #toc-control:checked ~ main {
     .book-header {
-      
-      aside,label{
+      aside,
+      label {
         display: block;
-
       }
     }
   }
@@ -426,11 +417,8 @@ body[dir="rtl"] .book-menu {
   .book-menu .book-menu-content,
   .book-toc .book-toc-content {
     padding: $padding-16 * 2 $padding-16;
-
   }
-  nav#TableOfContents ul{
+  nav#TableOfContents ul {
     padding-inline-start: None;
   }
 }
-
-

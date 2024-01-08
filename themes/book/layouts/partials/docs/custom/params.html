@@ -125,3 +125,27 @@
 </script>
 
 {{ end }}
+{{ if (.Params.galleryMovies) }}
+<script>
+  elements = document.querySelectorAll(".language-galleryMovies");
+  console.log(elements);
+  Array.from(elements).forEach(
+    (el) => {
+      let Movies =  el.textContent.split("\n");
+      
+      el.parentNode.insertAdjacentHTML('beforebegin',`<div class="picGallery"></div>`);
+      let picGallery = el.parentNode.previousSibling
+      Movies.forEach((Movie) =>{
+          let data = Movie.split(" ");
+          if(data.length>1){
+            if (data.length==2)
+            picGallery.insertAdjacentHTML('beforeend',`<div><a href="${data[2]}"><img src="${data[1]}" data-lazy-src="${data[1]}"></a><h3>${data[0]}</h3></div>`)
+        
+        }
+      }
+      )
+    }
+  );
+</script>
+
+{{ end }}
