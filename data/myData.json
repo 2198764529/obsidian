@@ -1,20 +1,62 @@
 [
   {
     "date": "2024-12-31",
-    "events": ["牙齿问题,有牙结石,要去医院","准备跳槽,好好复习","锻炼身体,早睡早起","计网(待补)，数据结构(待补)"]
+    "events": [
+      "牙齿问题,有牙结石,要去医院",
+      "准备跳槽,好好复习",
+      "锻炼身体,早睡早起",
+      "计网(待补)，数据结构(待补)"
+    ]
   },
   {
-    "date": "2024-01-09",
+    "date": "2024-01-12",
+    "sleepTime": ["23", "8"],
+    "sad": 1,
+    "events": []
+  },
+  {
+    "date": "2024-01-14",
+    "sleepTime": ["23", "8"],
+    "events": []
+  },
+  {
+    "date": "2024-01-13",
+    "sleepTime": ["4", "11"],
+    "events": [],
+    "drinkWater": 2
+  },
+  {
+    "date": "2024-01-12",
+    "sleepTime": ["23", "8"],
+    "events": [],
+    "sad": 1,
+    "drinkWater": 2
+  },
+  {
+    "date": "2024-01-11",
+    "sleepTime": ["23", "8"],
+    "events": ["计网,ARP协议"],
+    "drinkWater": 2
+  },
+  {
+    "date": "2024-01-10",
     "sleepTime": ["3", "8"],
     "events": [],
     "sad": 1,
-    "drinkWater": 2.0
+    "drinkWater": 2
+  },
+  {
+    "date": "2024-01-09",
+    "sleepTime": ["23", "8"],
+    "events": [],
+    "drinkWater": 2
   },
   {
     "date": "2024-01-07",
     "sleepTime": ["23", "8"],
+    "Cook": "2香菇青菜包+2烧麦;冬瓜+排骨",
     "events": [],
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
   {
     "date": "2024-01-08",
@@ -41,26 +83,26 @@
     "date": "2024-01-05",
     "sleepTime": ["4", "8"],
     "events": [],
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
   {
     "date": "2024-01-04",
     "sleepTime": ["0", "8"],
     "events": ["修改function.js, 时间更新函数bug修复"],
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
   {
     "date": "2024-01-03",
     "sleepTime": ["23", "8"],
     "events": [],
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
 
   {
     "date": "2024-01-02",
     "sleepTime": ["4", "8"],
     "events": [],
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
   {
     "date": "2024-01-01",
@@ -82,7 +124,7 @@
     "date": "2023-12-29",
     "sleepTime": ["3", "8"],
     "events": ["计网(待补)，数据结构(待补)", "我的书单功能(待补)"],
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
   {
     "date": "2023-12-28",
@@ -125,28 +167,28 @@
     "date": "2023-12-22",
     "sleepTime": ["3", "7"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": ["计网(待补)，数据结构(待补)", "github 热力图"]
   },
   {
     "date": "2023-12-21",
     "sleepTime": ["23", "7"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": ["计网(待补)，数据结构", "键位清单修改"]
   },
   {
     "date": "2023-12-20",
     "sleepTime": ["23", "8"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": ["计网，数据结构(补充)", "188购买了ltao.top域名"]
   },
   {
     "date": "2023-12-19",
     "sleepTime": ["3", "8"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": [
       "计网，数据结构(这天熬夜，没有去做)",
       "首页修改卡片化布局",
@@ -158,7 +200,7 @@
     "sleepTime": ["0", "9"],
 
     "drinkWater": 1.0,
-    "sad": 2.0,
+    "sad": 2,
     "events": ["计网，数据结构", "同步键位修改", "严重迟到.下次注意"]
   },
   {
@@ -178,32 +220,32 @@
     "sleepTime": ["3", "9"],
 
     "drinkWater": 1.0,
-    "sad": 2.0
+    "sad": 2
   },
   {
     "date": "2023-12-14",
     "sleepTime": ["1", "8"],
 
-    "sad": 2.0
+    "sad": 2
   },
   {
     "date": "2023-12-13",
     "sleepTime": ["2", "8"],
 
-    "sad": 2.0
+    "sad": 2
   },
   {
     "date": "2023-12-12",
     "sleepTime": ["0", "8"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": ["申请社保卡(支付宝)"]
   },
   {
     "date": "2023-12-11",
     "sleepTime": ["0", "8"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": ["颜色板", "引用结构优化"]
   },
   {
@@ -220,7 +262,7 @@
     "date": "2023-12-08",
     "sleepTime": ["23", "7"],
 
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["办理社保卡", "关于我的(创建)", "首页美化(添加创建文档)"]
   },
@@ -229,7 +271,7 @@
     "sleepTime": ["23", "8"],
 
     "Cook": "燕麦粥\t",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["复查出牙龈炎", "滚动条美化、Data展示、颜色美化"]
   },
@@ -238,7 +280,7 @@
     "sleepTime": ["2", "8"],
 
     "Cook": "八宝粥",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["日历美化", "markDown格式美化"]
   },
@@ -247,7 +289,7 @@
     "sleepTime": ["23", "7"],
 
     "Cook": "燕麦粥",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
     "sad": 1.0,
     "events": ["timeline美化、日历美化"]
   },
@@ -281,7 +323,7 @@
     "date": "2023-11-30",
     "sleepTime": ["0", "7"],
 
-    "sad": 2.0,
+    "sad": 2,
     "events": [
       "美年大健康体检(补牙720下周四固定，右侧有一颗肾结石，多喝水少坐)"
     ]
@@ -308,7 +350,7 @@
     "sleepTime": ["12", "7"],
 
     "Cook": "快餐",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["更新python 方法参考", "更新hugo 方法参考"]
   },
@@ -341,7 +383,7 @@
     "sleepTime": ["2", "7"],
 
     "Cook": "快餐",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["从快倒闭的时光相册里下载照片", "再次更新changeKey.ahk"]
   },
@@ -397,14 +439,14 @@
     "sleepTime": ["1", "7"],
 
     "Cook": "快餐",
-    "drinkWater": 2.0
+    "drinkWater": 2
   },
   {
     "date": "2023-11-15",
     "sleepTime": ["0", "7"],
 
     "Cook": "快餐",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["看udp和tcp 视频", "下载阿里云盘的电影"]
   },
@@ -421,7 +463,7 @@
     "sleepTime": ["23", "7"],
 
     "Cook": "五香干+猪肉",
-    "drinkWater": 2.0,
+    "drinkWater": 2,
 
     "events": ["半小时午休"]
   },
@@ -457,7 +499,7 @@
     "date": "2023-11-08",
     "sleepTime": ["0", "7"],
 
-    "drinkWater": 2.0,
+    "drinkWater": 2,
     "sad": 1.0,
     "events": ["新增myData.csv", "HttpCanary抓包微信支付和美团共享单车"]
   },

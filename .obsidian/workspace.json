@@ -10,16 +10,45 @@
           {
             "id": "07ffe1d76399a7fb",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/测试专用.md",
+                "file": "content/posts/理论知识/计算机网络.md",
+                "mode": "source",
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "349410b5cd109878",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/网站收藏.md",
+                "mode": "source",
+                "source": true
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d0325eee3ec9cc21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/杂思/23年去深圳计划.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/测试专用.md",
+                "file": "content/posts/杂思/23年去深圳计划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/测试专用.md",
+                "file": "content/posts/杂思/23年去深圳计划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/测试专用.md"
+                "file": "content/posts/杂思/23年去深圳计划.md"
               }
             }
           }
@@ -148,15 +177,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "07ffe1d76399a7fb",
+  "active": "d0325eee3ec9cc21",
   "lastOpenFiles": [
-    "content/posts/杂思/数据展示.md",
-    "content/posts/杂思/我的图库.md",
-    "themes/book/static/favicon.ico",
+    "content/posts/杂思/个人存储方案.md",
+    "content/posts/杂思/信息参考.md",
     "content/posts/测试专用.md",
     "content/posts/网站收藏.md",
-    "content/posts/技术记录.md",
+    "content/posts/个人/关于做事.md",
+    "content/posts/个人/关于我.md",
+    "content/posts/个人/关于睡觉.md",
+    "content/posts/个人/关于篮球.md",
+    "content/posts/个人/目标.md",
+    "content/posts/个人/兴起.md",
+    "content/posts/个人/修身.md",
+    "content/posts/个人/清单.md",
+    "content/posts/杂思/养猫.md",
     "content/posts/理论知识/计算机网络.md",
+    "content/posts/杂思/23年去深圳计划.md",
+    "content/posts/杂思/我的图库.md",
+    "content/posts/杂思/数据展示.md",
+    "themes/book/static/favicon.ico",
+    "content/posts/技术记录.md",
     "themes/book/static/plugs/mermaid.js",
     "themes/book/static/plugs/cdn.jsdelivr.net_npm_mermaid@10_dist_mermaid-d06ecb0d.js",
     "themes/book/static/plugs/plantuml-encoder.min.js",
@@ -181,20 +222,9 @@
     "themes/book/static/assert/img",
     "themes/book/static/assert",
     "content/posts/工具技术/Hugo 方法参考.md",
-    "content/posts/杂思/23年去深圳计划.md",
     "content/posts/杂思/22年过年运动记账.md",
     "content/posts/工具技术/Python 方法参考.md",
     "content/posts/歌词/晚风.md",
-    "content/posts/杂思/丁仲礼与柴静【碳排放】.md",
-    "content/posts/杂思/个人存储方案.md",
-    "content/posts/杂思/信息参考.md",
-    "content/posts/杂思/emjoy.md",
-    "content/posts/个人/清单.md",
-    "content/posts/理论知识/应用层-Q&A.md",
-    "content/posts/理论知识/运输层-Q&A.md",
-    "content/posts/工具技术/正则表达式.md",
-    "content/posts/工具技术/markDown 语法.md",
-    "content/posts/工具技术/git操作.md",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
