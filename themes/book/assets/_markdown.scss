@@ -20,7 +20,7 @@
       font-size: 0.75em; // 设置锚链接字体大小
       vertical-align: middle; // 垂直居中
       text-decoration: none; // 移除文本装饰
-      color: var(--color-light); // 设置颜色
+      // color: var(--color-light); // 设置颜色
     }
 
     &:hover a.anchor,
@@ -30,12 +30,13 @@
 
     a {
       font-size: 1em;
+      color: var(--body-font-color);
     }
   }
 
   a {
     font-size: 0.65em;
-    font-weight: bold;
+    // font-weight: bold;
   }
   b,
   optgroup,
@@ -169,8 +170,7 @@
       content: counter(custom-counter) ".";
       border-radius: 50%;
       text-align: left;
-      color: var(--color-light);
-      font-weight: bolder;
+      // font-weight: bolder;
       float: left;
       padding-right: 15px;
     }

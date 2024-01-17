@@ -49,7 +49,7 @@
 
                 {{ with index $pagesDictByLastmod ($date.Format "2006-01-02") }}
                 <div class="timeline-content md_update">
-                    <h4>*8
+                    <h4>
                         更新了 {{ range . }}
                         <a class="MDtitle" href="{{ .RelPermalink }}"> 📄{{ .Title }} </a>
                         {{ end }}
