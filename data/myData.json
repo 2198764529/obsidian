@@ -10,6 +10,12 @@
     ]
   },
   {
+    "date": "2024-01-18",
+    "drinkWater": 2,
+    "sleepTime": ["23", "7"],
+    "events": []
+  },
+  {
     "date": "2024-01-17",
     "drinkWater": 2,
     "sleepTime": ["22", "7"],

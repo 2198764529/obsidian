@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/个人/清单.md",
+                "file": "content/posts/杂思/我的图库.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/个人/清单.md",
+                "file": "content/posts/杂思/我的图库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/个人/清单.md",
+                "file": "content/posts/杂思/我的图库.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/个人/清单.md"
+                "file": "content/posts/杂思/我的图库.md"
               }
             }
           }
@@ -179,13 +179,15 @@
   },
   "active": "2082f185a82641c6",
   "lastOpenFiles": [
+    "content/posts/杂思/信息参考.md",
+    "content/posts/杂思/养猫.md",
+    "content/posts/个人/清单.md",
     "content/posts/个人/兴起.md",
     "content/posts/个人/修身.md",
     "content/posts/理论知识/计算机网络.md",
     "content/posts/个人/关于做事.md",
     "content/posts/个人/关于我.md",
     "content/posts/个人/关于睡觉.md",
-    "content/posts/个人/清单.md",
     "content/posts/个人/目标.md",
     "data/github-recovery-codes.txt",
     "data/github-recovery-codes.json",
@@ -195,12 +197,10 @@
     "content/posts/杂思/个人存储方案.md",
     "content/posts/杂思/23年去深圳计划.md",
     "content/posts/杂思/22年过年运动记账.md",
-    "content/posts/杂思/养猫.md",
     "content/posts/杂思/emjoy.md",
     "content/posts/测试专用.md",
     "content/posts/工具技术/git操作.md",
     "content/posts/网站收藏.md",
-    "content/posts/杂思/信息参考.md",
     "content/posts/个人/关于篮球.md",
     "content/posts/杂思/我的图库.md",
     "themes/book/static/favicon.ico",
