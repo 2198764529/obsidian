@@ -1,10 +1,10 @@
 ---
 weight: 2
 bookCollapseSection: true
-title: _index
+title: 个人
 id: b6421c3216
 datetimeCreate: 2023-09-25 14:40:52
-datetimeUpdate: 2024-01-17 11:33:19
+datetimeUpdate: 2024-01-23 10:09:09
 ---
 写，就是为了记住。
 
