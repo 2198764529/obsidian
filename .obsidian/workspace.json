@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/杂思/数据展示.md",
+                "file": "content/posts/理论知识/计算机网络.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/杂思/数据展示.md",
+                "file": "content/posts/理论知识/计算机网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/杂思/数据展示.md",
+                "file": "content/posts/理论知识/计算机网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/杂思/数据展示.md"
+                "file": "content/posts/理论知识/计算机网络.md"
               }
             }
           }
@@ -203,6 +203,7 @@
   },
   "active": "73a68582bd809742",
   "lastOpenFiles": [
+    "content/posts/杂思/数据展示.md",
     "content/posts/个人/修身.md",
     "content/posts/个人/清单.md",
     "content/posts/个人/兴起.md",
@@ -218,7 +219,6 @@
     "p3-sdbk2-media.byteimg.com",
     "content/posts/测试专用.md",
     "content/posts/个人/_index.md",
-    "content/posts/杂思/数据展示.md",
     "content/posts/杂思/信息参考.md",
     "content/posts/理论知识/数据结构和算法.md",
     "content/posts/杂思/23年去深圳计划.md",

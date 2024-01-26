@@ -10,8 +10,34 @@
     ]
   },
   {
+    "date": "2024-01-26",
+    "sleepTime": ["23", "3"],
+    "sad": 1,
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-01-25",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-01-24",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 1,
+    "events": []
+  },
+  {
+    "date": "2024-01-23",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": ["计网，子网掩码"]
+  },
+  {
     "date": "2024-01-22",
     "sleepTime": ["23", "7"],
+    "drinkWater": 2,
     "events": []
   },
   {
