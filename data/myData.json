@@ -10,6 +10,72 @@
     ]
   },
   {
+    "date": "2024-02-06",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": ["也"]
+  },
+  {
+    "date": "2024-02-05",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-02-04",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": ["两只猫绝育", "搬家"]
+  },
+  {
+    "date": "2024-02-03",
+    "sleepTime": ["2", "7"],
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-02-02",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-02-01",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "sad": 1,
+    "events": []
+  },
+  {
+    "date": "2024-01-31",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-01-30",
+    "sleepTime": ["23", "7"],
+    "drinkWater": 2,
+    "events": []
+  },
+  {
+    "date": "2024-01-29",
+    "sleepTime": ["6", "8"],
+    "sad": 1,
+    "drinkWater": 1,
+    "events": ["坪洲 1350 华南公寓的房子"]
+  },
+  {
+    "date": "2024-01-28",
+    "sleepTime": ["1", "7"],
+    "events": ["看好的房子，房东不准养猫，放弃", "宝安中心逛商场"]
+  },
+  {
+    "date": "2024-01-27",
+    "sleepTime": ["23", "7"],
+    "events": []
+  },
+  {
     "date": "2024-01-26",
     "sleepTime": ["23", "3"],
     "sad": 1,
@@ -43,7 +109,7 @@
   {
     "date": "2024-01-21",
     "sleepTime": ["23", "7"],
-    "events": ["计网,IP地址分类","礼物挑选"]
+    "events": ["计网,IP地址分类", "礼物挑选"]
   },
 
   {
