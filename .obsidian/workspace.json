@@ -65,7 +65,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md",
+                "file": "content/posts/个人/关于篮球.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md",
+                "file": "content/posts/个人/关于篮球.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md",
+                "file": "content/posts/个人/关于篮球.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/理论知识/数据结构和算法.md"
+                "file": "content/posts/个人/关于篮球.md"
               }
             }
           }
@@ -203,6 +203,8 @@
   },
   "active": "73a68582bd809742",
   "lastOpenFiles": [
+    "content/posts/工具技术/维基百科.md",
+    "content/posts/理论知识/数据结构和算法.md",
     "content/posts/理论知识/计算机网络.md",
     "content/posts/歌词/晚风.md",
     "content/posts/个人/关于篮球.md",
@@ -230,10 +232,8 @@
     "Pasted image 20240123110917.png",
     "Pasted image 20240123110912.png",
     "content/posts/理论知识/数学知识.md",
-    "p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde/f85508813b5a4fad9a0d313d67f3fd0d~tplv-xv4ileqgde-image.image.md",
     "p3-sdbk2-media.byteimg.com/tos-cn-i-xv4ileqgde",
     "p3-sdbk2-media.byteimg.com",
-    "content/posts/杂思/信息参考.md",
     "data/github-recovery-codes.txt",
     "data/github-recovery-codes.json",
     "themes/book/static/favicon.ico",
