@@ -3,8 +3,8 @@
 #calendar {
     .fc-col-header-cell-cushion{
         color: var(--body-font-color);
-        opacity: 0.3;
-        font-size: 12px;
+        // opacity: 0.3;
+        font-size: 16px;
     }
     padding: 10px;
     .fc-daygrid-day-number{
@@ -22,9 +22,14 @@
     }
     .fc-day-today{
       font-weight: bold;
-      background: var(--color-light);
+      // background: var(--color-light);
       border-radius: 3px;
       
+    }
+    .fc-toolbar-title{
+      font-size: 22px;
+      color:  var(--color-light);
+
     }
     .fc-h-event {
       border: none;
