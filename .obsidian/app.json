@@ -7,5 +7,6 @@
   "newFileFolderPath": "themes/book/static/assert/img",
   "useMarkdownLinks": true,
   "newLinkFormat": "shortest",
-  "livePreview": false
+  "livePreview": false,
+  "promptDelete": false
 }

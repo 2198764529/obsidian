@@ -1,0 +1,62 @@
+{{ define "main" }}
+<article class="markdown">
+  <div class="m-container">
+    {{$headerImg :=.Params.headerImg}}
+    {{$name :=.Params.name}}
+    <div class="banner" style="background-image: url('/images/personal/bg/Shenzhen_Observatory2021.jpg');">
+
+    </div>
+    <div class="header">
+      <div class="right-section">
+        <div>
+          {{.Params.name}}
+        </div>
+        <div>
+          <img src="{{$headerImg}}" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      {{ range (split .Content "@@@")}}
+
+      <div class="row">
+        <div class="left">
+          <img src="{{$headerImg}}" alt="">
+        </div>
+        <div class="right">
+          <div class="name">
+            {{$name}}
+
+          </div>
+          <div>
+            {{ . | markdownify}}
+          </div>
+        </div>
+      </div>
+
+      {{end}}
+      <script>
+        // 获取所有的 <d> 标签
+        const dElements = document.querySelectorAll('d');
+
+        // 遍历每个 <d> 标签
+        dElements.forEach((dElement) => {
+          // 添加 Lastmod 类
+          dElement.classList.add('Lastmod');
+          // 设置 data-unix 属性的值为 1
+          dElement.dataset.unix = Date.parse(dElement.textContent) / 1000;
+        });
+
+      </script>
+    </div>
+
+
+  </div>
+
+
+</article>
+{{ end }}
+
+{{ define "toc" }}
+{{ partial "docs/toc" . }}
+{{ end }}
