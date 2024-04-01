@@ -1,8 +1,10 @@
 <div class="ios_card">
   <p>
+    好记性不如烂笔头
     Power by <a href="https://gohugo.io">Hugo</a>
     {{$buildData := time.AsTime (.Site.Param "buildDate")}}
     {{$siteAge := div (sub now.Unix $buildData.Unix) 86400 }}
+    
     已运行 {{$siteAge}}天
   </p>
 

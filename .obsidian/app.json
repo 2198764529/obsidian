@@ -1,7 +1,7 @@
 {
   "tabSize": 3,
   "showLineNumber": true,
-  "attachmentFolderPath": "assert/img",
+  "attachmentFolderPath": "content/images",
   "newFileLocation": "folder",
   "alwaysUpdateLinks": true,
   "newFileFolderPath": "themes/book/static/assert/img",
