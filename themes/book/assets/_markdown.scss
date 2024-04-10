@@ -167,7 +167,7 @@
   ol > li {
     counter-increment: custom-counter; /* 计数器递增 */
     &::before {
-      content: counter(custom-counter) ".";
+      // content: counter(custom-counter) ".";
       border-radius: 50%;
       text-align: left;
       // font-weight: bolder;
