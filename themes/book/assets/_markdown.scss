@@ -57,7 +57,8 @@
       padding: $padding-16; // 代码块内边距
       border-radius: 5px; // 边框圆角
       background: var(--code-bg); // 背景色
-      display: block;
+      display: inline-block;
+      min-width: 600px;
       color: white;
       span {
         word-wrap: break-word; // 单词折行

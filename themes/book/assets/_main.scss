@@ -93,8 +93,8 @@ ul.pagination {
 
 /* 设置容器样式 */
 .container {
-  max-width: $container-max-width; /* 最大宽度 */
-  margin: $magin; /* 水平居中 */
+  // max-width: $container-max-width; /* 最大宽度 */
+  margin: $magin ; /* 水平居中 */
 }
 
 /* 设置图标样式 */
@@ -193,7 +193,7 @@ body[dir="rtl"] .book-menu {
 /* 设置页面样式 */
 .book-page {
   min-width: $body-min-width;
-
+  max-width: 70em;
   flex-grow: 1;
   .ios_card {
     margin-bottom: 20px;
