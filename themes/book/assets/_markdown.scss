@@ -13,30 +13,29 @@
   h4,
   h5,
   h6 {
-    // font-weight: bold; // 设置标题字体粗细
-    // line-height: $line-height; // 设置标题底部间距
-    a.anchor {
-      opacity: 0; // 设置锚链接透明度
-      font-size: 0.75em; // 设置锚链接字体大小
-      vertical-align: middle; // 垂直居中
-      text-decoration: none; // 移除文本装饰
-      // color: var(--color-light); // 设置颜色
-    }
 
-    &:hover a.anchor,
-    a.anchor:focus {
-      opacity: initial; // 设置锚链接悬停时的透明度
-    }
+    // a.anchor {
+    //   opacity: 0; // 设置锚链接透明度
+    //   // font-size: 0.75em; // 设置锚链接字体大小
+    //   vertical-align: middle; // 垂直居中
+    //   // text-decoration: none; // 移除文本装饰
+    //   // color: var(--color-light); // 设置颜色
+    // }
+
+    // &:hover a.anchor,
+    // a.anchor:focus {
+    //   opacity: initial; // 设置锚链接悬停时的透明度
+    // }
 
     a {
-      font-size: 1em;
-      // color: var(--body-font-color);
+      font-size: 1.1em;
+      color: var(--body-font-color);
+    font-weight: bold;
     }
   }
 
   a {
     font-size: 0.65em;
-    // font-weight: bold;
   }
   b,
   optgroup,
@@ -49,6 +48,7 @@
   }
 
   pre {
+    background: none !important;
     code {
       font-size: 0.75em; // 字体大小
       // font-family: "Courier New", Courier, monospace;
@@ -76,14 +76,6 @@
       display: inline-block;
       margin: 1px;
       width: 30%;
-      // &:active {
-      //   display: block;
-      //   width: 100%;
-      //   height: 100%;
-      //   img {
-      //     height: auto;
-      //   }
-      // }
     }
     img {
       width: 100%;
@@ -138,20 +130,17 @@
 
     tr th,
     tr td {
-      padding: $padding-8 $padding-16; // 单元格内边距
-      // border: $padding-1 solid var(--gray-200); // 单元格边框
+      padding: 12px; // 单元格内边距
+      border-bottom: $padding-1 solid var(--gray-200); // 单元格边框
     }
 
-    tr:nth-child(2n) {
-      background: var(--gray-100); // 奇数行背景色
-    }
   }
 
   hr {
     height: $padding-1; // 水平线高度
     border: none; // 移除边框
     background: var(--gray-200); // 背景颜色
-  }    
+  }
 
   ul,
   ol {

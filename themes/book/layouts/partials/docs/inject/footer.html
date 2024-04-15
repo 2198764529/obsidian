@@ -1,3 +1,7 @@
+<div id="viewer-container"></div>
+
+
+
 <script>
   // 在页面加载时执行的 JavaScript 代码
   window.onload = function () {
@@ -11,7 +15,11 @@
     updateDateTimeByElementClass("date");
     // 更新具有 "date" 类名的元素的时间戳
     updateDateTimeByElementClass("Lastmod");
+    // 用 Viewer.js 图片放大查看
+    const gallery = new Viewer(document.getElementsByTagName('article')[0]);
   }; 
 </script>
+
+
 {{ partial "docs/custom/params" . }}
 
