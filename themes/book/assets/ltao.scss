@@ -1,6 +1,6 @@
 
 // 仿ios 卡片 
-.ios_card {
+.card {
     // border-radius: $border-radius;
     // background-color:var(--card-bg);
     // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
@@ -20,24 +20,6 @@
   from { width: 0; }
   to { width: 15em; }
 }
-// /* 光标闪啊闪 */
-// @keyframes blink-caret {
-//   from, to { box-shadow: 1px 0 0 0 transparent; }
-//   50% { box-shadow: 1px 0 0 0; }
-// }
-// 渐变字体颜色
-.gradient-text {
-    font-weight: bold;
-    background: linear-gradient(90deg, black, #fff);
-    background-size: 200% 200%;
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    animation: gradientText 5s linear infinite;
-  }
-// 分散两端对齐
-.justify_startAndEnd{
-    text-align-last:justify;
-	text-align:justify;
-	text-justify:distribute-all-lines; // 这行必加，兼容ie浏览器
+small{
+  opacity: .3;
 }

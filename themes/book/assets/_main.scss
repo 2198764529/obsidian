@@ -119,7 +119,7 @@ ul.pagination {
   flex: 0 0 $menu-width; /* 不扩展，固定宽度 */
   font-size: $font-size-14;
   margin-right: $magin;
-
+  height: 100vh;
   .book-menu-content {
     margin: $magin 0;
 
@@ -187,6 +187,8 @@ body[dir="rtl"] .book-menu {
 
   > ul {
     padding-inline-start: 0;
+    font-size: 1.1em;
+
   }
 }
 
@@ -195,14 +197,15 @@ body[dir="rtl"] .book-menu {
   min-width: $body-min-width;
   max-width: 70em;
   flex-grow: 1;
-  .ios_card {
+  .card {
     margin-bottom: 20px;
   }
 }
 
 /* 设置文章样式 */
 .book-post {
-  margin-bottom: $padding-8;
+  margin-bottom: 2rem;
+  border-bottom: $padding-1 solid var(--gray-200);
 }
 
 /* 设置页头样式 */
@@ -291,7 +294,7 @@ body[dir="rtl"] .book-menu {
 /* 设置页脚样式 */
 .book-footer {
   padding-top: $padding-16;
-  font-size: $font-size-14;
+  // font-size: $font-size-14;
 
   img {
     height: 1em;

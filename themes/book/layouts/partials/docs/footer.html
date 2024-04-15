@@ -1,11 +1,21 @@
-<div class="ios_card">
+<div class="card">
   <p>
-    好记性不如烂笔头
-    Power by <a href="https://gohugo.io">Hugo</a>
-    {{$buildData := time.AsTime (.Site.Param "buildDate")}}
-    {{$siteAge := div (sub now.Unix $buildData.Unix) 86400 }}
+    <span>
+      <small> Power by</small>
+      <a href="https://gohugo.io">Hugo</a> {{ hugo.Version }}
+
+    </span>
     
-    已运行 {{$siteAge}}天
+
+    <span>
+      <small> 运行时间: </small>
+      {{$buildData := time.AsTime (.Site.Param "buildDate")}}
+      {{$siteAge := div (sub now.Unix $buildData.Unix) 86400 }}
+      {{$siteAge}}天
+
+    </span>
+
   </p>
+
 
 </div>

@@ -12,7 +12,7 @@
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu ">
-      <div class="book-menu-content ios_card">
+      <div class="book-menu-content card">
         {{ template "menu" . }} <!-- Left menu Content -->
 
         {{ template "toc" . }}
@@ -22,7 +22,7 @@
     </aside>
 
     <div class="book-page">
-      <header class="book-header ios_card">
+      <header class="book-header card">
         {{ template "header" . }} <!-- Mobile layout header -->
       </header>
 
@@ -72,7 +72,7 @@
 
 {{ define "main" }}
 
-<article class="markdown ios_card">
+<article class="markdown card">
   {{- .Content -}}
 </article>
 {{ end }}

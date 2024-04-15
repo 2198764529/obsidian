@@ -2,7 +2,7 @@
 {{$LastItem := index $JSON 0}} 
 {{$LastItemTime := (time.AsTime $LastItem.commit.author.date)}}
 
-<div class="ios_card">
+<div class="card">
     <h4>
         <!-- 获取当前日期的第几天 -->
         <span>{{$dayOfyear := int (trim (now.Format "__2") " ")}}</span>

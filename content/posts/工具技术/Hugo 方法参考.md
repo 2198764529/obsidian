@@ -2,7 +2,7 @@
 title: Hugo 方法参考
 id: a01b727778
 datetimeCreate: 2023-11-27 11:04:45
-datetimeUpdate: 2024-04-15 14:56:44
+datetimeUpdate: 2024-04-15 16:31:25
 ---
 
 
@@ -42,7 +42,7 @@ datetimeUpdate: 2024-04-15 14:56:44
 ##### printf使用fmt.Printf语法格式化字符串。
 
 ```go
-{{ printf "你好，%s！" "世界" }}
+{{ printf "%s.%sk" (cast.ToString $num ) (cast.ToString $num2 ) }}
 ``` 
 ##### urlize将字符串转换为适合URL的格式。
 

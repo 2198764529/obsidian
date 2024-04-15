@@ -4,13 +4,24 @@
   <a href="{{.RelPermalink}}">
     {{partial "docs/title.html" .}} 
   </a>
-    <small class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}">
-    </small>
+
+    <span>
+    
+      <small class="ios_boder">
+        最近更新:
+      </small>
+      <span class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}"></span>
   
+      </span>
+   <span>
+    
     <small class="ios_boder">
-      {{ .Content | countwords}}字
-  
+      文章字数:
     </small>
+    {{ .Content | countwords}}
+
+    </span>
+
   
 </div>
 

@@ -1,35 +1,40 @@
 <div class="flex align-center justify-between">
-
-
   <h3>
-    <a href="{{.RelPermalink}}">
-      {{partial "docs/title.html" .}}
-    </a>
     {{ if .IsHome }}
-   
-  
     <span>
-      📄{{ .Site.RegularPages | len }} {{ $totalWordCount := 0 }} {{ range
-      .Site.RegularPages }} {{ with .Content }} {{ $wordCount := printf "%s" . |
-      len }} {{ $totalWordCount = add $totalWordCount $wordCount }} {{ end }} {{
-      end }} 🔤{{ $totalWordCount}}
+      
+      <small> 最近更新时间: </small>
+      {{ time.Format "2006-01-02 15:04" .Site.LastChange }}
     </span>
+    <span>
+      
+      <small> 文章数: </small>
+      {{ .Site.RegularPages | len }}
+    </span>
+    <span>
+      
+      <small> 总字数: </small>
+      {{ $totalWordCount := 0 }} 
+      {{ range .Site.RegularPages }} 
+        {{ with .Content }} 
+        {{ $totalWordCount = add $totalWordCount ( . | countwords) }} 
+        {{ end }} 
+      {{ end }} 
+      {{ $num := div  $totalWordCount 1000 }}
+      {{ $num2 := sub $totalWordCount (mul $num 1000) }}
+      {{ printf "%s.%sk" (cast.ToString $num ) (cast.ToString $num2 ) }}
+
+    </span>
+
     {{ else }}
-    <small class="Lastmod" data-unix="{{ .Lastmod.Unix }}">
-    </small>
 
-    <small>
-      {{ .Content | countwords}}字
+    {{ partial "docs/post-meta" . }}
 
-    </small>
     {{ end }}
-
   </h3>
 
-
-
   <label for="menu-control">
-    <img src="{{ "svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
+    <img src="{{ " svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
   </label>
   <!-- <label for="toc-control">
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
