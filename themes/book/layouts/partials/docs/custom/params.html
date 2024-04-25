@@ -2,17 +2,20 @@
 {{ if (.Params.plantuml) }}
 <!-- PlantUML -->
 <script src="/plugs/plantuml-encoder.min.js"></script>
-<div id="css_plantuml"  style="display: none;">
+<style id="css_plantuml"  style="display: none;">
   mindmapDiagram{
-    BackGroundColor none
+    BackGroundColor _mindmapBackgroundColor
     node {
+      BackGroundColor none
       FontColor _FontColor
       LineColor _LineColor
+      LineStyle 4
+      LineThickness 0.5
     }
     arrow {
       LineColor _LineColor
       LineStyle 4
-      LineThickness 0.5
+      LineThickness 0.3
     }
   }
   componentDiagram{
@@ -35,13 +38,13 @@
       LineColor _LineColor
     }
   }
-  node {
+  {{/*  node {
       BackGroundColor none
       FontColor _FontColor
       LineColor _LineColor
-  }
+  }  */}}
   
-</div>
+</style>
 <script>
   let elements = document.querySelectorAll(".language-mindmap,.language-uml");
   const bodyStyles = getComputedStyle(document.body);
@@ -49,6 +52,7 @@
   const bodyBGColor = bodyStyles.getPropertyValue('--body-background').trim();
   const cardBG = bodyStyles.getPropertyValue('--card-bg').trim();
   let css_plantuml = document.getElementById("css_plantuml").innerHTML;
+  console.log(css_plantuml)
   css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
   Array.from(elements).forEach(
     (el) => {
@@ -56,12 +60,16 @@
       let el_innerText = el.innerText;
       if (el.dataset.lang=="mindmap")
       {
-        el_innerText=el_innerText.trim().replace(/^\t*/gm, function(match) {
+        el_innerText = el_innerText.trim().replace(/^\t*/gm, function(match) {
           // 使用 repeat 方法生成相同数量的星号
-          return '\t'.repeat(match.length)+"* ";
+          return '*'.repeat(match.length + 1)+" ";
+        }).replace(/\* (\[|_)/gm, function(x){
+          console.log(x);
+          return x.replace(" ", "")
+        
         });
       }
-      
+      console.log(el_innerText)
       let iframe = document.createElement("embed");
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
       let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
@@ -76,36 +84,7 @@
 {{ end }}
 
 
-{{ if (.Params.mermaid) }}
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({
-    securityLevel: 'loose',
-    theme: 'dark',
-  });
-  Array.from(document.getElementsByClassName("language-mermaid")).forEach(
-    (el) => {
-      el.parentElement.outerHTML = `<div class="mermaid">${el.innerText}</div>`;
-    }
-  );
-</script>
 
-{{ end }}
-
-{{ if (.Params.markmap) }}
-<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-<script>
-
-  Array.from(document.getElementsByClassName("language-markmap")).forEach(
-    (el) => {
-      console.log(el);
-      
-      el.innerHTML = `<div class="markmap">${el.innerText}</div>`;
-    }
-  );
-</script>
-
-{{ end }}
 
 {{ if (.Params.gallery) }}
 <script>
