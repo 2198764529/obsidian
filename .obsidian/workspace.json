@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/个人/清单.md",
                 "mode": "source",
                 "source": true
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md",
+                "file": "content/posts/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/理论知识/计算机网络.md"
+                "file": "content/posts/个人/清单.md"
               }
             }
           }
@@ -179,13 +179,13 @@
   },
   "active": "2d05098295d826b8",
   "lastOpenFiles": [
+    "content/posts/理论知识/计算机网络.md",
     "content/posts/工具技术/维基百科.md",
     "content/posts/个人/兴起.md",
     "content/posts/个人/修身.md",
     "content/posts/个人/关于我.md",
     "content/posts/个人/清单.md",
     "content/posts/工具技术/Hugo 方法参考.md",
-    "content/posts/理论知识/计算机网络.md",
     "content/posts/理论知识/_index.md",
     "content/posts/杂思/_index.md",
     "content/posts/工具技术/_index.md",
