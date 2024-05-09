@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>理论知识 on 李枫的地</title>
+    <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</link>
+    <description>Recent content in 理论知识 on 李枫的地</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>计算机网络</title>
+      <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Tue, 24 Oct 2023 17:01:08 +0800</pubDate>
+      <guid>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+      <description>概览图&#xD;网络层&#xD;_ 设计思路&#xD;简单灵活的,无连接的,尽最大努力交付的数据报服务&#xD;IP\nInternet Protocol\n网际协议&#xD;[#FFBBCC] 配套协议&#xD;ARP\nAddress Resolution Protocol\n地址解析协议(IP-&amp;gt;MAC)&#xD;ICMP\nInternet Control Message Protocol\n控制报文协议&#xD;IGMP\nInternet Group Management Protocol\n网际租管理协议&#xD;[#FFBBCC] IP 地址编址&#xD;历史发展阶段, 分类的IP地址&amp;gt;&amp;gt;子网的划分&amp;gt;&amp;gt;构成超网&#xD;构成&#xD;{&amp;lt;网络号&amp;gt;,&amp;lt;主机号&amp;gt;}&#xD;分类&#xD;A 类,{ &amp;lt;网络号(开头为0),8位&amp;gt;,&amp;lt;主机号,24位&amp;gt;}&#xD;B 类,{ &amp;lt;网络号(开头为10),16位&amp;gt;,&amp;lt;主机号,16位&amp;gt;}&#xD;C 类,{ &amp;lt;网络号(开头为110),24位&amp;gt;,&amp;lt;主机号,8位&amp;gt;}&#xD;D 类,开头为1110,多播地址&#xD;E 类,保留为今后使用&#xD;ARP\nAddress Resolution Protocol\n地址解析协议&#xD;功能:用IP地址找到局域网内的对应硬件地址&#xD;关键词:ARP cache, 广播, 局域网&#xD;过程:广播问局域网内主机对应IP的MAC地址,\n匹配主机单播回应 应用层&#xD;应用层协议是为了各应用进程需要不同的通信规则而存在的, 也是要依赖运输层所提供的基本通信服务。&#xA;概念&#xD;应用层主要包括以下内容&#xA;域名系统 DNS WWW 和 HTTP 协议 电子邮件的相关协议，SMTP 协议和 POP3 协议、IMAP 协议 域名系统 DNS&#xD;DNS 的作用是将域名转为IP地址，具体的过程是应用进程调用 resolver（解析程序），发送包含待解析的域名的 DNS 请求报文，通过 UDP 进行再包装发送到本地域名服务器，本地域名服务器搜索以后，把对应的 IP 地址放在回答报文返回。</description>
+    </item>
+    <item>
+      <title>数据结构和算法</title>
+      <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Tue, 28 Nov 2023 15:39:22 +0800</pubDate>
+      <guid>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/</guid>
+      <description>参考&#xD;https://www.cs.usfca.edu/~galles/visualization/Algorithms&#xA;https://algo.itcharge.cn&#xA;https://www.hello-algo.com&#xA;https://pdai.tech/md/algorithm/alg-basic-overview.html&#xA;https://www.runoob.com/w3cnote/ten-sorting-algorithm.html&#xA;https://www.runoob.com/w3cnote/selection-sort.html&#xA;排序算法&#xD;冒泡排序&#xA;两两比较, 符合规则就换, 接着滑动窗口往后移动&#xA;选择排序&#xA;每次选最大的(无序区)放到最后(有序区)&#xA;插入排序&#xA;每次选的元素插入到有序区,类似打牌时的排序&#xA;在第五步排序的过程。程序运行到当前位置，已排好的子表中包含了 “17，26，54，77，93”五个数据。我们想让31插入该子表中。第一次，31和93比较，93要移到 31右边。同理，77和54也要移位。遇到26时，移动步骤停止，31被插入到此处。此时我们就有了 一个含6个数据项的已排好的子表&#xA;快速排序&#xA;归并排序&#xA;堆排序&#xA;桶排序&#xA;计数排序&#xA;基数排序&#xA;树&#xD;完美二叉树(满二叉树)&#xD;所有节点都是满的&#xA;完满二叉树&#xD;只有叶子节点未满，且叶子节点尽量靠左填充。&#xA;平衡二叉树&#xD;任何两个子树高度差小于2</description>
+    </item>
+    <item>
+      <title>数学知识</title>
+      <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Tue, 23 Jan 2024 10:52:39 +0800</pubDate>
+      <guid>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</guid>
+      <description>等比数列公式&#xD;进制转换&#xD;十进制转二进制&#xD;十进制数转换为二进制数时，由于整数和小数的转换方法不同，所以先将十进制数的整数部分和小数部分分别转换后，再加以合并。&#xA;十进制整数转换为二进制整数采用&amp;quot;除2取余，逆序排列&amp;quot;法。具体做法是：用2整除十进制整数，可以得到一个商和余数；再用2去除商，又会得到一个商和余数，如此进行，直到商为0时为止，然后把先得到的余数作为二进制数的低位有效位，后得到的余数作为二进制数的高位有效位，依次排列起来。&#xA;二进制转十进制&#xD;要从右到左用二进制的每个数去乘以2的相应次方，或者把二进制数首先写成加权系数展开式，然后按十进制加法规则求和。这种做法称为&amp;quot;按权相加&amp;quot;法。&#xA;二进制数1000110转成十进制数可以看作这样：&#xA;数字中共有三个1 即第一位一个，第二位一个，第六位一个，然后对应十进制数即2的1次方+2的2次方+2的6次方， 即1000110=64+0+0+0+4+2+0=70</description>
+    </item>
+    <item>
+      <title>五笔输入法</title>
+      <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</link>
+      <pubDate>Fri, 29 Dec 2023 10:45:37 +0800</pubDate>
+      <guid>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
+      <description> 笔画&#xA;笔画是指汉字书写时不间断的一次连续写成的一个线条 字根&#xA;笔画交叉复合而成的固定结构,是构成汉字的最基本单位 不符规律的键位&#xD;横&#xD;G[五]&#xD;F[二]&#xD;D[古]&#xD;S[木丁西]&#xD;A[工]&#xD;竖&#xD;</description>
+    </item>
+    <item>
+      <title>应用层-Q&amp;A</title>
+      <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/</link>
+      <pubDate>Thu, 21 Sep 2023 14:55:31 +0800</pubDate>
+      <guid>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%BA%94%E7%94%A8%E5%B1%82-qa/</guid>
+      <description>应用层是指电脑上各种应用软件进程通过何种应用层协议来使用网络提供的通信服务&#xA;域名系统DNS是什么&#xD;域名系统是指 Internet 中用于把主机名字转换成IP的系统&#xA;为啥 IP 数据包不使用域名而是用 IP 地址呢&#xD;因为 IP 地址的长度是固定的32位或者固定的128位，而域名的长度是可变的&#xA;域名服务器DNS使用频率非常高，如何解决域名服务器可能出现的故障问题呢&#xD;域名服务器DNS被设计成联机分布式数据系统，采用B/S架构, 大多域名在本地进行解析,少量解析需要通过互联网.&#xA;域名到IP地址的解析过程是怎么样的呢&#xD;当应用需要将域名转 IP 地址时, 应用就调用解析程序( resolver ), 把待解析的域名放在 DNS 请求报文中, 以 UDP 方式发送给本地域名服务器,本地服务查找域名之后, 把对应的 IP 地址发送给应用主机.&#xA;域名是怎么组成的呢&#xD;早期是无层次的名字空间, 后来因为用户数量急剧增加, 管理这个域名集合空间非常困难, 互联网才用了层次树状结构的命名方法, 任何在互联网上的主机或者路由器, 都有一个唯一层次结构的名字(即域名)，域名由标号和点组成，如 www.baidu.com ，其中com为顶层域名，baidu为二级域名，www为三级域名。&#xA;互联网域名空间是一个倒过来的树状结构，最上面的是根，根下面的第一层是顶级域名，第二层是二级域名，第三层是三级域名，以此类推，最后一层是叶子节点，也就是这主机名字。&#xA;域名中的标号是怎么规定的呢&#xD;由英文字母和数字组成，不区分大小写，每个标号不超过63个字符（为记忆最好不要超过12个字符）。&#xA;前面提到域名服务器是联机分布式数据系统，那么它是如何分布管理的呢&#xD;域名服务器采用分区的方法来管理，因为这样相比起按照域名来划分，会使域名服务器的数量太多，使域名系统的运行效率降低。&#xA;区（zone）是指域名服务器负责的范围。&#xA;域名服务器之间的解析过程是怎么样的呢？&#xD;主机向本地域名服务器查询基本采用递归查询。&#xA;本地域名服务器想根域名服务器采用迭代查询。&#xA;文件传输协议有哪些？&#xD;文件传输协议包括两种FTP和TFTP协议，FTP基于TCP支持文件传输和交互，而TFTP基于UDP支持文件传输不能交互。&#xA;TELNET 是什么协议？&#xD;TELNET 是一个基于TCP的简单远程终端协议，用于远程登录另一台主机。&#xA;WWW 、HTTP、HTML 是指什么？两者有什么关系 ？&#xD;WWW（World Wide Web）是一个基于HTTP协议的、分布式的、超文本的信息存储系统。&#xA;HTTP （HyperText Transfer Protocol）是一个无状态的、基于TCP的应用层协议。&#xA;URL 的格式？URL 是否区分大小写?&#xD;&amp;lt;协议&amp;gt;://&amp;lt;主机&amp;gt;:&amp;lt;端口&amp;gt;/&amp;lt;路径&amp;gt;</description>
+    </item>
+    <item>
+      <title>运输层-Q&amp;A</title>
+      <link>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/</link>
+      <pubDate>Thu, 21 Sep 2023 14:56:31 +0800</pubDate>
+      <guid>http://localhost:80/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%BF%90%E8%BE%93%E5%B1%82-qa/</guid>
+      <description>运输层是干啥的？为啥会有运输层&#xD;运输层是为进程与进程之间通信服务用的，规定了进程与进程之间应该以何种协议进行传输数据。&#xA;如果没有运输层，通信数据的传输将不可靠稳定，从而影响整个网络的通信速度质量。&#xA;运输层包括哪些协议内容？这些协议内容有哪些异同点？&#xD;运输层主要包括TCP【传输控制协议】协议和UDP【用户数据报协议】协议。&#xA;不同点：&#xA;UDP 不需要建立连接直接发送数据包，TCP需要进行三次握手再发送数据 UDP支持一对一、一对多、多对一、多对多的相互通信，TCP支持一对一的点对点通信 UDP不保证数据传输能顺利抵达目的，TCP通过一些内部协议来保证数据传输的一定抵达目的 TCP 协议的三次握手四次挥手过程是怎么样的？&#xD;三次握手是指客户端和服务端之间建立连接的过程，而四次挥手则是两者释放连接的过程。&#xA;第一次握手：客户向服务端主动发送信号【SYN】，具体内容为我已经准备好同步了，如果你要开始与同步，发送一个确认码ack给我（Acknowledge number，值我发送的随机码+1），代表你真的收到我发的东西了。</description>
+    </item>
+  </channel>
+</rss>

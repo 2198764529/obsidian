@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>   on 李枫的地</title>
+    <link>http://localhost:80/posts/</link>
+    <description>Recent content in    on 李枫的地</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/posts/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

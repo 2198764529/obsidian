@@ -3,10 +3,9 @@
 <!-- PlantUML -->
 <script src="/plugs/plantuml-encoder.min.js"></script>
 <style id="css_plantuml"  style="display: none;">
-  mindmapDiagram{
-    BackGroundColor _mindmapBackgroundColor
+  mindmapDiagram {
     node {
-      BackGroundColor none
+    BackgroundColor _dBackgroundColor
       FontColor _FontColor
       LineColor _LineColor
       LineStyle 4
@@ -18,7 +17,7 @@
       LineThickness 0.3
     }
   }
-  componentDiagram{
+  componentDiagram {
     node {
       FontColor _FontColor
       LineColor _LineColor
@@ -29,7 +28,7 @@
   }
   document {
     width 100%
-    BackGroundColor none
+    BackgroundColor _dBackgroundColor
     node {
       FontColor _FontColor
       LineColor _LineColor
@@ -38,11 +37,7 @@
       LineColor _LineColor
     }
   }
-  {{/*  node {
-      BackGroundColor none
-      FontColor _FontColor
-      LineColor _LineColor
-  }  */}}
+
   
 </style>
 <script>
@@ -52,8 +47,7 @@
   const bodyBGColor = bodyStyles.getPropertyValue('--body-background').trim();
   const cardBG = bodyStyles.getPropertyValue('--card-bg').trim();
   let css_plantuml = document.getElementById("css_plantuml").innerHTML;
-  console.log(css_plantuml)
-  css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor);
+  css_plantuml = css_plantuml.replace(/_LineColor/g,bodyFontColor,).replace(/_FontColor/g,bodyFontColor).replace(/_dBackgroundColor/g,bodyBGColor);
   Array.from(elements).forEach(
     (el) => {
    
@@ -64,13 +58,12 @@
           // 使用 repeat 方法生成相同数量的星号
           return '*'.repeat(match.length + 1)+" ";
         }).replace(/\* (\[|_)/gm, function(x){
-          console.log(x);
           return x.replace(" ", "")
         
         });
       }
-      console.log(el_innerText)
       let iframe = document.createElement("embed");
+      console.log(css_plantuml);
       el_innerText = `@start${el.dataset.lang} \n<style>${css_plantuml}</style>\n`+`${el_innerText}\n@end${el.dataset.lang}`;
       let url = 'https://www.plantuml.com/plantuml/svg/~1' + plantumlEncoder.encode(el_innerText);
       iframe.src = url;
