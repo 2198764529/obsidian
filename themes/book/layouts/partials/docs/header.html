@@ -1,6 +1,5 @@
-<div class="flex align-center justify-between">
-  <h3>
     {{ if .IsHome }}
+<div class="card">
     <span>
       
       <small> 最近更新时间: </small>
@@ -25,13 +24,12 @@
       {{ printf "%s.%sk" (cast.ToString $num ) (cast.ToString $num2 ) }}
 
     </span>
-
+</div>
     {{ else }}
 
-    {{ partial "docs/post-meta" . }}
+    {{ partial "docs/post-header" . }}
 
     {{ end }}
-  </h3>
 
   <label for="menu-control">
     <img src="{{ " svg/menu.svg" | relURL }}" class="book-icon" alt="Menu" />
@@ -41,4 +39,4 @@
     <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
     {{ end }}
   </label> -->
-</div>
+

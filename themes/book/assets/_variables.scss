@@ -1,3 +1,73 @@
 /* You can override SASS variables here. */
 
-// @import "plugins/dark";
+$padding-1: 1px !default;
+$padding-4: 0.25rem !default;
+$padding-8: 0.5rem !default;
+$padding-16: 1rem !default;
+
+$font-size-base: 16px !default;
+$font-size-12: 0.75rem !default;
+$font-size-14: 0.875rem !default;
+$font-size-16: 1rem !default;
+
+
+$body-font-weight: normal !default;
+$padding:20px;
+$magin:15px;
+$body-min-width: 20rem !default;
+$container-max-width: 90rem !default;
+$border-radius: 18px;
+$line-height:35px; // 标准行间距
+$header-height: 3.5rem !default;
+$menu-width: 15rem - 1 !default;
+$toc-width: 16rem !default;
+
+$mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
+$letter-color: linear-gradient(45deg, #f25953 12.5%, #fbfaf5 12.5%, #fbfaf5 25%, #5590d6 25%, #5590d6 37.5%, #fbfaf5 37.5%, #fbfaf5 50%, #f25953 50%, #f25953 62.5%, #fbfaf5 62.5%, #fbfaf5 75%, #5590d6 75%, #5590d6 87.5%, #fbfaf5 87.5%, #fbfaf5 100%);
+
+$hint-colors: (
+  info: #6bf,
+  warning: #fd6,
+  danger: #f66,
+  
+) !default;
+$bg-gray:#f5f5f7;
+// Themes
+@mixin theme-light {
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-500: #adb5bd;
+
+  --color-link: #0055bb;
+  --color-visited-link: #8440f1;
+
+  --color-light: #15559a      ;
+  --card-bg: white   ;
+  --card-bg2: #d0dfe6 ;
+  --body-background: #f5f5f7    ;
+  --bg-book-menu:white;
+  --body-font-color: #141e1b ;
+  --code-bg:#141e1b;
+  --bg-contributions-0:#ebedf0;
+
+
+}
+
+@mixin theme-dark {
+  --gray-100: rgba(255, 255, 255, 0.1);
+  --gray-200: rgba(255, 255, 255, 0.2);
+  --gray-500: rgba(255, 255, 255, 0.5);
+
+  --color-link: #84b2ff;
+  --color-visited-link: #b88dff;
+
+  --color-light: #39d353  ;
+  --card-bg: black;
+  --card-bg2: #293c4a ;
+  --code-bg: #272822;
+  --body-background: #343a40;
+  --body-font-color: #e9ecef;
+
+  --bg-contributions-0:#161b22;
+
+}

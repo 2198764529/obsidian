@@ -1,14 +1,10 @@
 {{ define "main" }}
-<div class="card">
+<div class="card post-list">
 
   {{ range sort .Paginator.Pages }}
-  <article class="markdown book-post">
-    <h3>
-      {{ partial "docs/post-meta" . }}
+      {{ partial "docs/post-header" . }}
 
-    </h3>
    
-  </article>
   {{ end }}
 
   {{ template "_internal/pagination.html" . }}

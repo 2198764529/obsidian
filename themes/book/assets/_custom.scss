@@ -2,6 +2,31 @@
 
 // @import "plugins/numbered";
 // 渐变
+
+// ----------------------- other -----------------------
+
+// 仿ios 卡片 
+.card {
+  // border-radius: $border-radius;
+  // background-color:var(--card-bg);
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  padding: $padding;
+}
+// 正在输入效果
+
+.typing {
+  width: 15em;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 3.5s steps(15, end), blink-caret .75s step-end infinite;
+  overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+from { width: 0; }
+to { width: 15em; }
+}
+
 @keyframes gradientText {
   0% {
     background-position: 0% 50%;
@@ -13,5 +38,287 @@
     background-position: 0% 50%;
   }
 }
+// ----------------------- other -----------------------
+
+// ----------------------- calendar -----------------------
+
+#calendar {
+  .fc-col-header-cell-cushion{
+      color: var(--body-font-color);
+      // opacity: 0.3;
+      font-size: 16px;
+  }
+  padding: 10px;
+  .fc-daygrid-day-number{
+    color: var(--body-font-color);
+    font-size: large;
+    margin-right: auto;
+    small{
+      opacity: 0.3;
+      font-size: 12px;
+    }
+    small.festivals{
+      color: var(--color-light);
+      opacity: 1;
+    }
+  }
+  .fc-day-today{
+    font-weight: bold;
+    // background: var(--color-light);
+    border-radius: 3px;
+    
+  }
+  .fc-toolbar-title{
+    font-size: 22px;
+    color:  var(--color-light);
+
+  }
+  .fc-h-event {
+    border: none;
+    .fc-event-title {
+      font-size: 10pt;
+      white-space: normal; /* 允许文本自动换行 */
+    }
+    .fc-button{
+      background: var(--body-background);
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+  }
+  td,
+  th {
+    border: none;
+    text-align: left;
+  }
+  button{
+    border: none;
+    background: none;
+    color: var(--body-font-color);
+    opacity: 0.3;
+  }
+ 
 
 
+}
+// ----------------------- calendar -----------------------
+
+// ----------------------- heatmap -----------------------
+.heatmap {
+  span {
+    font-size: 12px;
+    width: 25px !important;
+    height: 15px !important;
+  }
+  td {
+    width: 25px !important;
+    height: 15px !important;
+  }
+  margin: 0;
+  tbody {
+    position: relative;
+    td span{
+      float: left;
+    }
+    .today {
+      border: 1px solid red;
+    }
+  }
+  td {
+    font-size: 10px;
+  }
+}
+.heatmap-container{
+    display: flex;
+}
+.contributions-bg-0 {
+  background-color: var(--bg-contributions-0);
+}
+.contributions-bg-1 {
+  background-color: #0e4429;
+}
+.contributions-bg-2 {
+  background-color: #006d32;
+}
+.contributions-bg-3 {
+  background-color: #26a641;
+}
+.contributions-bg-4 {
+  background-color: #39d353;
+}
+// ----------------------- heatmap -----------------------
+
+
+
+
+
+// ----------------------- moments -----------------------
+
+.m-container {
+  display: flex;
+  flex-direction: column;
+  // height: 100vh;
+  .banner{
+      width:100%;
+      height: 300px;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  .header{
+      .right-section{
+          float: right;
+          padding-right: 50px;
+          padding-bottom: 70px;
+          margin-top: -40px;
+          div{
+              display: inline;
+              img{
+                  height: 64px;
+              }
+          }
+      }
+  }
+  .content{
+      .row{
+          display: flex;
+          margin-bottom: 20px;
+          .left{
+              display: block;
+              // width: 20%;
+              padding: 0 20px;
+              img{
+                  height: 64px;
+
+              }
+          }
+          .right{
+              display: block;
+              width: 80%;
+              height: 100%;
+              .name{
+                  color: #3170a7 ;
+              }
+              t{
+                  display: block;
+                  margin: 20px 0;
+              }
+              d{
+                  color:darkgrey;
+              }
+          }
+      }
+  }
+}
+// ----------------------- moments -----------------------
+
+// ----------------------- timeline -----------------------
+
+$primary: #3f51b5;
+$dark-primary: #303f9f;
+$light-primary: #c5cae9;
+$text: #ffffff;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent: #ff4081;
+
+.hero-table {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.timeline {
+  .timeline-container {
+    border-left: 1px dashed #e4f3fd;
+  }
+}
+
+.timeline-item {
+  width: 100%;
+  padding: 0 20px;
+  .timeline-title {
+	opacity: 0.8;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 15px;
+      width: 6px;
+      height: 6px;
+      border: 3px solid var(--color-light);
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
+
+  .timeline-content {
+    margin: 5px;
+    padding: 10px;
+    h4 {
+      margin: 0;
+    }
+    .MDtitle {
+      color: var(--color-light);
+    }
+  }
+
+}
+
+.timeline-card {
+  padding: 0 !important;
+
+  p {
+    padding: 0 20px;
+  }
+
+  a {
+    margin-left: 20px;
+  }
+}
+
+blockquote {
+  margin-top: 30px;
+  color: $secondary-text;
+  border-left-color: $primary;
+  padding: 0 20px;
+}
+
+.Tag {
+  background: $accent;
+  display: inline-block;
+  padding: 5px;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+}
+// ----------------------- timeline -----------------------
+
+// ----------------------- mermaid -----------------------
+
+.mermaid{
+  .cluster rect{
+      fill: none !important;;
+      stroke-width:0!important;
+  }
+  background-color: var(--code-bg);
+  border-radius: $border-radius;
+  margin-bottom: $magin;
+}
+// ----------------------- mermaid -----------------------
+
+// ----------------------- highcharts -----------------------
+
+.highcharts-figure{
+  div,rect,g,text{
+      color: var(--body-font-color);
+  color: var(--body-font-color)!important;
+  }
+  .highcharts-background{
+      fill: none;
+  }
+  
+
+
+}
+// ----------------------- highcharts -----------------------

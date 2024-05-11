@@ -2,8 +2,8 @@
   "accentColor": "",
   "theme": "system",
   "baseFontSize": 12,
-  "interfaceFontFamily": "",
-  "textFontFamily": "Cascadia Code",
+  "interfaceFontFamily": "Arial Black",
+  "textFontFamily": "Arial Black",
   "translucency": false,
   "nativeMenus": true
 }

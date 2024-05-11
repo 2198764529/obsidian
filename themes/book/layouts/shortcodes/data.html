@@ -1,5 +1,6 @@
 {{$fName := .Get `fName`}}
 {{$fNameData := split $fName "." }}
+{{$jsonk := .Get `k` }}
 {{$f := ""}}
 {{if in $fNameData "json"}}
   {{ $f = index $.Site.Data (index $fNameData 0)}}
@@ -8,10 +9,15 @@
 {{else if in $fNameData "csv"}}
     {{ $f = getCSV "," "content/data/" $fName}}
 {{end}}
-{{ $firstOne := first 1 $f}}
+
 
 <table>
-    {{ with index $firstOne 0 }}
+  {{ if $jsonk }}
+ {{$f = index $f $jsonk}}
+
+{{ end }}
+ {{ $firstOne := first 2 $f}}
+ {{ with index $firstOne 0 }}
     <tr>
       {{ range $k, $v := . }}
         <td>{{ $k }}</td>
