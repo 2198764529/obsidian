@@ -265,12 +265,12 @@ body[dir="rtl"] .book-menu {
   }
   /* 设置文章样式 */
   .post-header {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
     display: flex;
 
     .post-title{
-      min-width: 300px;
-      // margin-right: 400px;
+      min-width: 200px;
+      margin-right: 100px;
     }
   }
   
