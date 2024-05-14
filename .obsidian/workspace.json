@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/杂思/毛泽东为啥有“李自成情结”.md",
+                "file": "content/posts/杂思/为什么.md",
                 "mode": "source",
                 "source": true
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/杂思/毛泽东为啥有“李自成情结”.md",
+                "file": "content/posts/杂思/为什么.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/杂思/毛泽东为啥有“李自成情结”.md",
+                "file": "content/posts/杂思/为什么.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/杂思/毛泽东为啥有“李自成情结”.md"
+                "file": "content/posts/杂思/为什么.md"
               }
             }
           }
@@ -180,6 +180,8 @@
   "active": "2d05098295d826b8",
   "lastOpenFiles": [
     "content/posts/杂思/数据展示.md",
+    "content/posts/杂思/测试专用.md",
+    "content/posts/杂思/第二台笔记本选购.md",
     "content/posts/杂思/毛泽东为啥有“李自成情结”.md",
     "data/result.csv",
     "content/posts/杂思/为什么.md",
@@ -218,9 +220,7 @@
     "content/posts/个人/修身.md",
     "content/posts/工具技术/Hugo 方法参考.md",
     "content/posts/杂思/_index.md",
-    "content/posts/杂思/测试专用.md",
     "content/posts/杂思/颜色板.md",
-    "content/posts/杂思/第二台笔记本选购.md",
     "content/posts/工具技术/Python 方法参考.md",
     "content/posts/理论知识/数学知识.md",
     "content/posts/理论知识/五笔输入法.md",
