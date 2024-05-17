@@ -1,9 +1,9 @@
 {
   "accentColor": "",
   "theme": "system",
-  "baseFontSize": 12,
+  "baseFontSize": 16,
   "interfaceFontFamily": "Arial Black",
-  "textFontFamily": "Arial Black",
+  "textFontFamily": "Microsoft YaHei",
   "translucency": false,
   "nativeMenus": true
 }
