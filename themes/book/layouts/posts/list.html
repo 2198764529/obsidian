@@ -1,8 +1,13 @@
 {{ define "main" }}
-<div class="card post-list">
+<div class="post-list">
 
   {{ range sort .Paginator.Pages }}
-      {{ partial "docs/post-header" . }}
+
+
+   <div class="card">
+    {{ partial "docs/post-header" . }}
+    
+   </div>
 
    
   {{ end }}

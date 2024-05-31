@@ -37,8 +37,8 @@ body {
   img {
     vertical-align: baseline; /* 垂直对齐方式 */
   }
-  span small{
-    opacity: .3;
+  span small {
+    opacity: 0.3;
   }
 }
 
@@ -164,9 +164,21 @@ ul.pagination {
       padding-inline-start: $padding-16; /* 缩进 */
     }
   }
-  #TableOfContents >ul{
-    margin-top: 50px;
-    border-top: 2px solid var(--body-font-color);
+  #TableOfContents {
+    > ul {
+      margin-top: 50px;
+      border-top: 2px solid var(--body-font-color);
+      > li > ul {
+        padding-inline-start: 0;
+        > li > ul {
+          padding-inline-start: 0;
+        }
+      }
+    }
+
+    a.active {
+      color: var(--color-light) !important;
+    }
   }
   /* 设置搜索样式 */
   .book-search {
@@ -250,6 +262,14 @@ body[dir="rtl"] .book-menu {
   .book-header {
     margin-bottom: $padding-16;
 
+    padding: 20px !important;
+    >div{
+      display: inline-block;
+    }
+    .right{
+      height: 100%;
+      float: right;
+    }
     label {
       line-height: 0;
       display: none;
@@ -266,15 +286,12 @@ body[dir="rtl"] .book-menu {
   /* 设置文章样式 */
   .post-header {
     // margin-bottom: 2rem;
-    display: flex;
+    // display: flex;
 
-    .post-title{
-      min-width: 200px;
-      margin-right: 100px;
+    .post-title {
+      margin-bottom: 20px;
     }
   }
-  
-
 }
 
 /* 设置目录样式 */
@@ -370,7 +387,7 @@ body[dir="rtl"] .book-menu {
     padding: 0 !important;
     box-shadow: none !important;
     label {
-      display: block;
+      display: inline !important;
     }
   }
 
@@ -384,6 +401,9 @@ body[dir="rtl"] .book-menu {
     .book-menu .book-menu-content {
       transform: translateX($menu-width);
       box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
+      background: var(--body-background);
+      margin: 0;
+      width: 20rem;
     }
 
     .book-page {

@@ -32,6 +32,7 @@ img {
 pre {
   background: none !important;
   code {
+
     font-size: 0.75em; // 字体大小
     // font-family: "Courier New", Courier, monospace;
     white-space: pre-wrap; // 换行
@@ -40,7 +41,6 @@ pre {
     border-radius: 5px; // 边框圆角
     background: var(--code-bg); // 背景色
     display: inline-block;
-    min-width: 600px;
     color: white;
     span {
       word-wrap: break-word; // 单词折行
