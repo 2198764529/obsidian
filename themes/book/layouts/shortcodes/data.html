@@ -1,6 +1,11 @@
+{{$SLICE_TYPE := "[]interface {}"}}
+{{$MAP_TYPE := "map[string]interface {}"}}
+	
 {{$fName := .Get `fName`}}
 {{$fNameData := split $fName "." }}
-{{$jsonk := .Get `k` }}
+{{$jsonk := .Get `index_key` }}
+{{$hide_keys := .Get `hide_keys` }}
+{{$hide_keys = split $hide_keys "/" }}
 {{$f := ""}}
 {{if in $fNameData "json"}}
   {{ $f = index $.Site.Data (index $fNameData 0)}}
@@ -9,32 +14,72 @@
 {{else if in $fNameData "csv"}}
     {{ $f = getCSV "," "content/data/" $fName}}
 {{end}}
-
+{{ if $jsonk }}
+      {{range split $jsonk "/"}}
+    {{$f = index $f .}}
+    {{ end }}
+{{ end }}
 
 <table>
-  {{ if $jsonk }}
- {{$f = index $f $jsonk}}
 
-{{ end }}
- {{ $firstOne := first 2 $f}}
- {{ with index $firstOne 0 }}
+
+
+{{$f_type := printf "%T" $f }}
+
+
+{{$row := 0}}
+
+{{range $k,$v :=$f}}
+  {{if eq $row 0}}
     <tr>
-      {{ range $k, $v := . }}
-        <td>{{ $k }}</td>
-      {{ end }}
+    <td>row</td>
+    {{ range $k2,$v2 := $v }}
+          {{if not (in $hide_keys $k2)}}
+            {{$v2_type := printf "%T" $v2}}
+            {{if eq $v2_type $MAP_TYPE}}
+              {{range $k3,$v3 := $v2}}
+                {{if not (in $hide_keys $k3)}}
+                  <td>{{$k3}}</td>
+                {{end}}
+              {{end}}
+            {{else}}
+              <td>
+                  {{$k2}}
+              </td>
+            {{end}}
+          {{end}}
+        {{ end }}
     </tr>
-  {{ end }}
-    {{range $k,$v :=$f}}
-        <tr>
-            {{range $k2,$v2 := $v}}
+  {{end}}
+
+  <tr>
+    <td>{{$row}}</td>
+      {{range $k2,$v2 := $v}}
+            {{if not (in $hide_keys $k2)}}
+              {{$v2_type := printf "%T" $v2}}
+              {{if eq $v2_type $MAP_TYPE}}
+                {{range $k3,$v3 := $v2}}
+                  {{if not (in $hide_keys $k3)}}
+                  <td>
+                      <small>
+                        {{$v3}}
+                      </small>
+                    </td>
+                  {{end}}
+                {{end}}
+              {{else}}
                 <td>
                   <small>
                     {{$v2}}
-
                   </small>
                 </td>
+              {{end}}
             {{end}}
-        </tr>
-    {{end}}
-    
+
+            
+      {{end}}
+  </tr>
+  {{$row = add $row 1}}
+
+{{end}}
 </table>

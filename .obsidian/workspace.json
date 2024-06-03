@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/工具技术/Hugo 参考.md",
+                "file": "content/posts/杂思/数据展示.md",
                 "mode": "source",
                 "source": true
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/工具技术/Hugo 参考.md",
+                "file": "content/posts/杂思/数据展示.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/工具技术/Hugo 参考.md",
+                "file": "content/posts/杂思/数据展示.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/工具技术/Hugo 参考.md"
+                "file": "content/posts/杂思/数据展示.md"
               }
             }
           }
@@ -179,8 +179,11 @@
   },
   "active": "2d05098295d826b8",
   "lastOpenFiles": [
-    "content/posts/理论知识/计算机网络.md",
+    "content/posts/工具技术/网站收藏.md",
+    "content/posts/工具技术/维基百科.md",
+    "content/posts/杂思/数据展示.md",
     "content/posts/工具技术/Hugo 参考.md",
+    "content/posts/理论知识/计算机网络.md",
     "content/posts/工具技术/Python 方法参考.md",
     "content/posts/理论知识/数学知识.md",
     "content/posts/理论知识/五笔输入法.md",
@@ -197,12 +200,9 @@
     "content/posts/杂思/为什么.md",
     "content/posts/杂思/毛泽东为啥有“李自成情结”.md",
     "content/posts/理论知识/数据结构和算法.md",
-    "content/posts/工具技术/网站收藏.md",
     "content/posts/工具技术/_index.md",
     "content/posts/工具技术/正则表达式.md",
     "content/posts/工具技术/markDown 语法.md",
-    "content/posts/工具技术/维基百科.md",
-    "content/posts/杂思/数据展示.md",
     "content/posts/杂思/_index.md",
     "themes/book/static/data/m.json",
     "data/result.csv",

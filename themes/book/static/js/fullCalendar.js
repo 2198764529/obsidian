@@ -4,7 +4,6 @@ function calendarRender() {
     fetch("/data/myData.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         for (var i in data) {
           var item = data[i];
           for (var i2 in item["events"]) {
