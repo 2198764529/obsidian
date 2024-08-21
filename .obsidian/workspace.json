@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/工具技术/markDown 语法.md",
+                "file": "content/posts/工具技术/设计语言.md",
                 "mode": "source",
                 "source": true
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/工具技术/markDown 语法.md",
+                "file": "content/posts/工具技术/设计语言.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/工具技术/markDown 语法.md",
+                "file": "content/posts/工具技术/设计语言.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,18 +147,9 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "9ae23946fd3a66b2",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "content/posts/工具技术/markDown 语法.md"
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -179,12 +170,15 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/posts/工具技术/网站收藏.md",
+    "content/posts/工具技术/git操作.md",
+    "content/posts/工具技术/维基百科.md",
+    "content/posts/工具技术/markDown 语法.md",
     "content/posts/理论知识/数据结构和算法.md",
     "content/posts/理论知识/计算机网络.md",
     "content/posts/理论知识/数学知识.md",
     "content/posts/理论知识/五笔输入法.md",
     "content/posts/工具技术/正则表达式.md",
-    "content/posts/工具技术/网站收藏.md",
     "content/posts/工具技术/设计语言.md",
     "content/posts/工具技术/技术记录.md",
     "content/posts/个人/修身.md",
@@ -197,14 +191,11 @@
     "content/posts/工具技术/Hugo 参考.md",
     "content/posts/杂思/随记.md",
     "content/posts/杂思/数据展示.md",
-    "content/posts/工具技术/markDown 语法.md",
-    "content/posts/工具技术/维基百科.md",
     "content/posts/工具技术/_index.md",
     "content/posts/理论知识/应用层-Q&A.md",
     "content/posts/理论知识/运输层-Q&A.md",
     "content/posts/杂思/测试专用.md",
     "content/posts/杂思/文摘.md",
-    "content/posts/杂思/颜色板.md",
     "themes/book/static/data/m.json",
     "data/result.csv",
     "data/myMuiscs.json",
