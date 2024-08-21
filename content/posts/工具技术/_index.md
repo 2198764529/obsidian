@@ -1,10 +1,9 @@
 ---
 weight: 2
-bookCollapseSection: true
 title: 技术
 id: efcf5c5f63
 datetimeCreate: 2023-09-25 14:40:52
-datetimeUpdate: 2024-05-10 15:47:14
+datetimeUpdate: 2024-08-21 18:13:27
 ---
 写，就是为了记住。
 

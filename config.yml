@@ -38,7 +38,7 @@ params:
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
-  BookToC: true
+  BookToC: false
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be logo.png
@@ -72,6 +72,7 @@ params:
   # Configure the date format used on the pages
   # - In git information
   # - In blog posts
+  # 日期格式
   BookDateFormat: {"minute":"4分钟前","hour":'3小时前',"month":'1-2',"year":"2006-01-02 15:05"}
   
   # BookDateFormat: "2006-01-02 15:04"

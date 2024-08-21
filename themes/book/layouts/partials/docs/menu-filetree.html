@@ -1,56 +1,54 @@
-{{ $bookSection := default "docs" .Site.Params.BookSection  }}
-{{ if eq $bookSection "*" }}
-  {{ $bookSection = "/" }}{{/* Backward compatibility */}}
-{{ end }}
+{{/*  
+  左侧目录导航
+  位置: left
+*/}}
 
+{{ $bookSection := default "docs" .Site.Params.BookSection }}
+
+{{ if eq $bookSection "*" }}{{ $bookSection = "/" }}{{ end }}
+
+{{/* 从根遍历 Post */}}
 {{ with .Site.GetPage $bookSection }}
   {{ template "book-section-children" (dict "Section" . "CurrentPage" $) }}
-
 {{ end }}
 
-{{ define "book-section-children" }}{{/* (dict "Section" .Section "CurrentPage" .CurrentPage) */}}
+{{/* book-page-link 模板，递归返回对应的元素 */}}
+{{ define "book-section-children" }}
   <ul>
-    {{ range (where .Section.Pages "Params.bookhidden" "ne" true) }}
+    {{/* 隐藏具有 "Params.bookhidden" 的页面 */}}
+    {{$rangePages := where .Section.Pages "Params.bookhidden" "ne" true}}
+    {{ range $rangePages }}
+      {{/* 分支元素 */}}
       {{ if .IsSection }}
-        <li {{- if .Params.BookFlatSection }} class="book-section-flat" {{ end -}}>
-          {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
-          {{ template "book-section-children" (dict "Section" . "CurrentPage" $.CurrentPage) }}
-        </li>
+      <li {{- if .Params.BookFlatSection }} class="book-section-flat" {{ end -}}>
+        {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+        {{ template "book-section-children" (dict "Section" . "CurrentPage" $.CurrentPage) }}
+      </li>
+      {{/* 非分支元素 */}}
       {{ else if and .IsPage .Content }}
-        <li>
-          {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
-        </li>
+      <li>
+        {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+      </li>
       {{ end }}
     {{ end }}
-
   </ul>
-
 {{ end }}
 
-{{ define "book-page-link" }}{{/* (dict "Page" .Page "CurrentPage" .CurrentPage) */}}
-  {{ $current := eq .CurrentPage .Page }}
-
-  {{ if .Page.Params.BookCollapseSection }}
-    <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" {{ if .Page.IsAncestor .CurrentPage }}checked{{ end }}/>
+{{/* book-page-link 模板，返回对应的链接 */}}
+{{ define "book-page-link" }}
+  {{/* 分支链接 */}}
+  {{ if .Page.IsSection }} 
+    <input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" checked>
     <label for="section-{{ md5 .Page }}" class="flex justify-between">
-      <a {{ if .Page.Content }}href="{{ .Page.RelPermalink }}"{{ else }}role="button"{{ end }} class="{{ if $current }}active{{ end }}">
+      <a href="{{ .Page.RelPermalink }}" role="button">
         {{- partial "docs/title" .Page -}}
-        {{ .IsMenuCurrent }}
       </a>
     </label>
-  {{ else if .Page.Params.BookHref }}
-    <a href="{{ .Page.Params.BookHref }}" class="{{ if $current }}active{{ end }}" target="_blank" rel="noopener">
+  {{/* 非分支链接 */}}
+  {{ else if .Page.IsPage }}
+    <a href="{{ .Page.RelPermalink }}" 
+       class="{{ if eq .CurrentPage .Page }}active{{ end }}">
       {{- partial "docs/title" .Page -}}
     </a>
-  {{ else if .Page.Content }}
-    <a href="{{ .Page.RelPermalink }}" class="{{ if $current }}active{{ end }}">
-      {{- partial "docs/title" .Page -}}
-   
-    </a>
-  {{ else }}
-    <span>{{- partial "docs/title" .Page -}}</span>
   {{ end }}
- 
 {{ end }}
-
-
