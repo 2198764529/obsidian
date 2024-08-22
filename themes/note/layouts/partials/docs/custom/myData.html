@@ -1,0 +1,8 @@
+<div id="myData" class="card" >
+    {{ $readme := readFile "README.md" }}
+    {{ $readmeContent := index (split $readme  "---") 2 }}
+    
+    {{ $readmeContent | markdownify}}
+
+
+</div>

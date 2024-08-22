@@ -82,7 +82,7 @@ ul.pagination {
 }
 
 /* 设置品牌标识样式 */
-.book-brand {
+.book-logo {
   margin-top: 0;
   margin-bottom: $padding-16;
 
@@ -284,11 +284,11 @@ body[dir="rtl"] .book-menu {
     }
   }
   /* 设置文章样式 */
-  .post-header {
+  .note-header {
     // margin-bottom: 2rem;
     // display: flex;
 
-    .post-title {
+    .note-title {
       margin-bottom: 20px;
     }
   }

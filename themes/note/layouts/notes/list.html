@@ -1,11 +1,11 @@
 {{ define "main" }}
-<div class="post-list">
+<div class="note-list">
 
   {{ range sort .Paginator.Pages }}
 
 
    <div class="card">
-    {{ partial "docs/post-header" . }}
+    {{ partial "docs/note-header" . }}
     
    </div>
 

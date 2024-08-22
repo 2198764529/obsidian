@@ -7,7 +7,7 @@
 
 {{ if eq $bookSection "*" }}{{ $bookSection = "/" }}{{ end }}
 
-{{/* 从根遍历 Post */}}
+{{/* 从根遍历 note */}}
 {{ with .Site.GetPage $bookSection }}
   {{ template "book-section-children" (dict "Section" . "CurrentPage" $) }}
 {{ end }}
