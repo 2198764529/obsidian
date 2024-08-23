@@ -21,6 +21,10 @@
   animation: typing 3.5s steps(15, end), blink-caret .75s step-end infinite;
   overflow: hidden;
 }
+.myFont{
+  font-family: 'Dancing Script', cursive;
+font-size: 39px;
+}
 /* 打印效果 */
 @keyframes typing {
 from { width: 0; }

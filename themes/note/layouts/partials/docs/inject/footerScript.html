@@ -1,0 +1,48 @@
+{{/*  <div id="viewer-container"></div>  */}}
+{{/*  
+   底部脚本引入
+  */}}
+<script>
+  // 在页面加载时执行的 JavaScript 代码
+  window.onload = function () {
+    // 更新具有 "LastChange" 类名的元素的时间戳
+    updateDateTimeByElementClass("LastChange");
+    // 更新具有 "AuthorDate" 类名的元素的时间戳
+    updateDateTimeByElementClass("AuthorDate");
+    // 更新具有 "nowDate" 类名的元素的时间戳
+    updateDateTimeByElementClass("nowDate");
+    // 更新具有 "date" 类名的元素的时间戳
+    updateDateTimeByElementClass("date");
+    // 更新具有 "Lastmod" 类名的元素的时间戳
+    updateDateTimeByElementClass("Lastmod");
+      
+  }; 
+</script>
+
+{{- if .IsHome -}}
+{{/* 日历相关脚本引入 */}}
+<script src="js/fullCalendar.js"></script>
+<!-- 引入 fullcalendar.io  -->
+<script src="/plugs/fullcalendar.js"></script>
+<!-- 引入 FullCalendar 的中文语言包 -->
+<script src="/plugs/fullcalendar-zh-cn.js"></script>
+<!-- lunar 插件 -->
+<script src="/plugs/lunar.min.js"></script>
+{{- end -}}
+
+{{/* PlantUML 相关脚本引入 */}}
+<script src="{{ `/plugs/plantuml-encoder.min.js` | relURL }}"></script>
+<script src="{{ `js/plantuml.js` | relURL }}"></script>
+
+<!-- 多图片 相关脚本和样式引入-->
+{{/*  <!-- viewer 插件和样式引入 -->
+<script src="{{ `/plugs/viewer.min.js` | relURL }}"></script>
+<link rel="stylesheet" href="{{ `/plugs/viewer.css` | relURL }}">
+<!-- gallery JS 引入 -->
+<script src="{{ `js/gallery.js` | relURL }}"></script>  */}}
+
+<!-- updateDateTimeByElementClass JS 引入 -->
+<script src="{{ `js/updateDateTimeByElementClass.js` | relURL }}"></script>
+
+<!-- TableOfContents JS 引入 -->
+<script src="{{ `js/TableOfContents.js` | relURL }}"></script>

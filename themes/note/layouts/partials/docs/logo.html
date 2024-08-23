@@ -1,8 +1,7 @@
 <h2 class="book-logo">
-  <a class="flex align-center" href="{{ cond (not .Site.Home.File) .Sites.First.Home.RelPermalink .Site.Home.RelPermalink }}">
-    {{- with .Site.Params.BookLogo -}}
-    <img src="{{ . | relURL }}" alt="Logo" />
-    {{- end -}}
-    <span class=" typing">{{ .Site.Title }} </span>
-  </a>
+    <a class="myFont" href="{{ cond (not .Site.Home.File) .Sites.First.Home.RelPermalink .Site.Home.RelPermalink }}">
+
+      {{ .Site.Title }} 
+     </a>
+
 </h2>

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,14 +118,31 @@
                 "useHierarchy": true
               }
             }
+          },
+          {
+            "id": "1bf6687374ffee4f",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6fe4aa8dedee2084",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/notes/工具技术/网站收藏.md"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -141,37 +158,42 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
-    "themes/note/layouts/partials/docs/note-header.html",
-    "themes/note/layouts/notes/single.html",
-    "themes/note/layouts/notes/list.html",
-    "themes/note/layouts/notes",
-    "themes/note/layouts/note/single.html",
-    "themes/note/layouts/note/list.html",
-    "themes/note/layouts/note",
-    "themes/note/exampleSite/content.en/docs/example/collapsed/3rd-level/4th-level.md",
-    "themes/note/exampleSite/content.en/docs/example/collapsed/3rd-level/_index.md",
-    "themes/note/exampleSite/resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
-    "themes/note/exampleSite/resources/_gen/assets/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
-    "themes/note/exampleSite/content.en/docs/example/table-of-contents/_index.md",
-    "themes/note/exampleSite/content.en/docs/example/table-of-contents/without-toc.md",
-    "themes/note/exampleSite/content.en/docs/example/table-of-contents/with-toc.md",
-    "themes/note/exampleSite/content.en/docs/example/collapsed/_index.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/section/_index.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/section/first-page.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/section/second-page.md",
-    "themes/note/exampleSite/content.en/docs/example/collapsed/3rd-level",
-    "themes/note/layouts/partials/docs/inject/toc-after.html",
-    "themes/note/exampleSite/content.en/docs/example/_index.md",
-    "themes/note/exampleSite/content.en/docs/example/hidden.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/_index.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/tabs.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/katex.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/expand.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/mermaid.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/hints.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/columns.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/buttons.md",
-    "themes/note/exampleSite/content.en/docs/shortcodes/details.md",
+    "themes/note/static/data/A35A2450",
+    "themes/note/static/data/A6F82450",
+    "themes/note/static/data/myData - 副本.csv",
+    "themes/note/static/data/81082450",
+    "themes/note/static/data/00B72450",
+    "themes/note/static/data/myData (1).csv",
+    "themes/note/static/data/DE011450",
+    "themes/note/static/data/F4701450",
+    "content/notes/理论知识/计算机网络.md",
+    "content/notes/理论知识/五笔输入法.md",
+    "content/notes/杂思/_index.md",
+    "content/notes/杂思/颜色板.md",
+    "content/notes/杂思/文摘.md",
+    "content/notes/杂思/为什么.md",
+    "content/notes/杂思/测试专用.md",
+    "content/notes/杂思/数据展示.md",
+    "content/notes/理论知识/数学知识.md",
+    "content/notes/理论知识/日志.md",
+    "content/notes/杂思/第二台笔记本选购.md",
+    "content/notes/理论知识/考公.md",
+    "themes/note/layouts/partials/docs/inject/footerScript.html",
+    "themes/note/static/js/TableOfContents.js",
+    "themes/note/static/js/updateDateTimeByElementClass.js",
+    "content/notes/杂思/随记.md",
+    "content/notes/杂思/我的图库.md",
+    "content/notes/杂思/emjoy.md",
+    "content/notes/_index.md",
+    "content/notes/杂思/博客文摘.md",
+    "content/posts/杂思/颜色板.md",
+    "content/posts/杂思/随记.md",
+    "content/posts/杂思/第二台笔记本选购.md",
+    "content/posts/杂思/测试专用.md",
+    "content/posts/杂思/文摘.md",
+    "content/posts/杂思/我的图库.md",
+    "content/posts/杂思/数据展示.md",
+    "content/posts/杂思/为什么.md",
     "themes/note/static/assert/img/testImg.jpg",
     "themes/note/static/assert/img/Pasted image 20231226174440.png",
     "themes/note/static/assert/img/Pasted image 20231226174334.png",
@@ -181,11 +203,6 @@
     "themes/note/static/assert/img/MinimalistScenery04 1.jpg",
     "themes/note/static/assert/img/Pasted image 20231226174344.png",
     "themes/note/static/assert/img/IMG_20230128_162005 1.jpg",
-    "themes/note/exampleSite/content.en/posts/_index.md",
-    "themes/note/exampleSite/content.en/posts/migrate-from-jekyll.md",
-    "themes/note/exampleSite/content.en/posts/creating-a-new-theme.md",
-    "themes/note/exampleSite/content.en/posts/hugoisforlovers.md",
-    "themes/note/exampleSite/content.en/menu/index.md",
     "themes/note/static/svg/translate.svg",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",

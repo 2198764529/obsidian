@@ -2,7 +2,7 @@
 title: README
 id: 9c03e105ac
 datetimeCreate: 2023-09-25 20:47:24
-datetimeUpdate: 2024-08-22 17:55:00
+datetimeUpdate: 2024-08-23 10:54:03
 ---
 ### 介绍
 
@@ -19,7 +19,7 @@ winget install Hugo.Hugo
 
 ### 运行hugo
 ```
-hugo server -p 80
+hugo server -p 80 --navigateToChanged  --disableFastRender
 ```
 
 
