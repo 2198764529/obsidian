@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/杂思/测试专用.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6eb79656be7417cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,90 +133,83 @@
             }
           },
           {
-            "id": "1bf6687374ffee4f",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
-            "id": "6fe4aa8dedee2084",
+            "id": "f1b6847facb3fcbe",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md"
+                "file": "content/notes/个人/清单.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "f68f4441b9280aa9",
+  "active": "6eb79656be7417cc",
   "lastOpenFiles": [
-    "themes/note/static/data/A35A2450",
-    "themes/note/static/data/A6F82450",
-    "themes/note/static/data/myData - 副本.csv",
-    "themes/note/static/data/81082450",
-    "themes/note/static/data/00B72450",
-    "themes/note/static/data/myData (1).csv",
-    "themes/note/static/data/DE011450",
-    "themes/note/static/data/F4701450",
-    "content/notes/理论知识/计算机网络.md",
-    "content/notes/理论知识/五笔输入法.md",
-    "content/notes/杂思/_index.md",
-    "content/notes/杂思/颜色板.md",
-    "content/notes/杂思/文摘.md",
-    "content/notes/杂思/为什么.md",
-    "content/notes/杂思/测试专用.md",
-    "content/notes/杂思/数据展示.md",
-    "content/notes/理论知识/数学知识.md",
+    "content/notes/工具技术/git操作.md",
+    "content/notes/个人/清单.md",
+    "content/notes/工具技术/网站收藏.md",
+    "content/notes/工具技术/设计语言.md",
+    "content/notes/工具技术/技术记录.md",
+    "content/notes/个人/兴起.md",
+    "content/notes/个人/关于我.md",
+    "content/notes/工具技术/维基百科.md",
+    "content/notes/工具技术/正则表达式.md",
+    "content/notes/工具技术/Hugo 参考.md",
     "content/notes/理论知识/日志.md",
-    "content/notes/杂思/第二台笔记本选购.md",
-    "content/notes/理论知识/考公.md",
-    "themes/note/layouts/partials/docs/inject/footerScript.html",
-    "themes/note/static/js/TableOfContents.js",
-    "themes/note/static/js/updateDateTimeByElementClass.js",
     "content/notes/杂思/随记.md",
+    "content/notes/杂思/数据展示.md",
+    "content/notes/杂思/测试专用.md",
+    "content/notes/理论知识/应用层-Q&A.md",
+    "content/notes/理论知识/五笔输入法.md",
+    "content/notes/理论知识/数据结构和算法.md",
+    "content/notes/杂思/_index.md",
+    "content/notes/杂思/为什么.md",
+    "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/杂思/我的图库.md",
-    "content/notes/杂思/emjoy.md",
-    "content/notes/_index.md",
+    "content/notes/杂思/文摘.md",
     "content/notes/杂思/博客文摘.md",
-    "content/posts/杂思/颜色板.md",
-    "content/posts/杂思/随记.md",
-    "content/posts/杂思/第二台笔记本选购.md",
-    "content/posts/杂思/测试专用.md",
-    "content/posts/杂思/文摘.md",
-    "content/posts/杂思/我的图库.md",
-    "content/posts/杂思/数据展示.md",
-    "content/posts/杂思/为什么.md",
-    "themes/note/static/assert/img/testImg.jpg",
-    "themes/note/static/assert/img/Pasted image 20231226174440.png",
-    "themes/note/static/assert/img/Pasted image 20231226174334.png",
-    "themes/note/static/assert/img/Pasted image 20231226174436.png",
-    "themes/note/static/assert/img/Pasted image 20231226174510.png",
-    "themes/note/static/assert/img/Pasted image 20231226174348.png",
-    "themes/note/static/assert/img/MinimalistScenery04 1.jpg",
-    "themes/note/static/assert/img/Pasted image 20231226174344.png",
-    "themes/note/static/assert/img/IMG_20230128_162005 1.jpg",
-    "themes/note/static/svg/translate.svg",
+    "content/notes/个人/关于篮球.md",
+    "archetypes/default.md",
+    "archetypes",
+    "public/svg/translate.svg",
+    "public/svg/toc.svg",
+    "public/svg/menu.svg",
+    "public/svg/edit.svg",
+    "public/svg/calendar.svg",
+    "public/svg",
+    "public/plugs/vue.js",
+    "public/plugs/viewer.min.js",
+    "public/plugs/viewer.css",
+    "public/plugs/plantuml-encoder.min.js",
+    "public/plugs/mermaid.min.js",
+    "public/notes/杂思/index.xml",
+    "public/notes/理论知识/index.xml",
+    "public/notes/工具技术/index.xml",
+    "public/images/personal/study/selectionSort.png",
+    "public/images/personal/study/insertSort2.png",
+    "public/images/personal/study/insertSort.png",
+    "public/images/personal/study/d862cee765be33d0327662b8f8169dd.png",
+    "public/images/personal/study/bubbleSort.png",
+    "content/notes/工具技术/_index.md",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
