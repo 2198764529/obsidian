@@ -1,7 +1,5 @@
-{{/*  <div id="viewer-container"></div>  */}}
-{{/*  
-   底部脚本引入
-  */}}
+<div id="viewer-container"></div>
+<!-- 底部脚本引入 -->
 <script>
   // 在页面加载时执行的 JavaScript 代码
   window.onload = function () {
@@ -15,34 +13,56 @@
     updateDateTimeByElementClass("date");
     // 更新具有 "Lastmod" 类名的元素的时间戳
     updateDateTimeByElementClass("Lastmod");
-      
-  }; 
+  };
 </script>
 
-{{- if .IsHome -}}
-{{/* 日历相关脚本引入 */}}
-<script src="js/fullCalendar.js"></script>
-<!-- 引入 fullcalendar.io  -->
-<script src="/plugs/fullcalendar.js"></script>
-<!-- 引入 FullCalendar 的中文语言包 -->
-<script src="/plugs/fullcalendar-zh-cn.js"></script>
-<!-- lunar 插件 -->
-<script src="/plugs/lunar.min.js"></script>
+{{- if .IsHome -}} 
+  {{/* 日历相关脚本引入 */}}
+  <!-- 数据文件引入 -->
+<script>
+  window.myData = {{ resources.Get `data/myData.csv` | unmarshal }};
+
+</script>
+  <!-- 引入 fullcalendar.io plugs/fullcalendar.js -->
+  <script src="{{ $js := resources.Get `js/fullCalendar.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+
+  <script src="{{ $js := resources.Get `plugs/fullcalendar.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+
+  <!-- 引入 FullCalendar 的中文语言包 plugs/fullcalendar-zh-cn.js -->
+  <script src="{{ $js := resources.Get `plugs/fullcalendar-zh-cn.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+  <!-- lunar 插件 -->
+  <script src="{{ $js := resources.Get `plugs/lunar.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 {{- end -}}
 
+
 {{/* PlantUML 相关脚本引入 */}}
-<script src="{{ `/plugs/plantuml-encoder.min.js` | relURL }}"></script>
-<script src="{{ `js/plantuml.js` | relURL }}"></script>
+<script src="{{ $js := resources.Get `plugs/plantuml-encoder.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+<script src="{{ $js := resources.Get `js/plantuml.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 
 <!-- 多图片 相关脚本和样式引入-->
-{{/*  <!-- viewer 插件和样式引入 -->
-<script src="{{ `/plugs/viewer.min.js` | relURL }}"></script>
-<link rel="stylesheet" href="{{ `/plugs/viewer.css` | relURL }}">
+ <!-- viewer 插件和样式引入 -->
+<!-- <script src="{{ $js := resources.Get `plugs/viewer.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+<link src="{{ $js := resources.Get `plugs/viewer.css` | minify | fingerprint }}{{ $js.Permalink }}"></link> -->
 <!-- gallery JS 引入 -->
-<script src="{{ `js/gallery.js` | relURL }}"></script>  */}}
+<!-- <script src="{{ $js := resources.Get `js/gallery.js` | minify | fingerprint }}{{ $js.Permalink }}"></script> -->
 
 <!-- updateDateTimeByElementClass JS 引入 -->
-<script src="{{ `js/updateDateTimeByElementClass.js` | relURL }}"></script>
+<script src="{{ $js := resources.Get `js/updateDateTimeByElementClass.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 
 <!-- TableOfContents JS 引入 -->
-<script src="{{ `js/TableOfContents.js` | relURL }}"></script>
+<script src="{{ $js := resources.Get `js/TableOfContents.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+
+<!-- 引入 highlight.js -->
+<script src="{{ $js := resources.Get `plugs/highlight.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+
+<!-- 引入 papaparse.js -->
+<!-- <script src="{{ $js := resources.Get `plugs/papaparse.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script> -->
+
+<!-- Search.js -->
+{{- if default true .Site.Params.BookSearch -}}
+{{- $searchJSFile := printf "%s.search.js" .Language.Lang }}
+{{- $searchJS := resources.Get "js/search.js" | resources.ExecuteAsTemplate $searchJSFile . | resources.Minify |
+resources.Fingerprint }}
+<script defer src="{{ `flexsearch.min.js` | relURL }}"></script>
+<script defer src="{{ $searchJS.RelPermalink }}" {{ template "integrity" $searchJS }}></script>
+{{ end -}}

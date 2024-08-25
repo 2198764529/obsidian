@@ -252,7 +252,6 @@ body[dir="rtl"] .book-menu {
 /* 设置页面样式 */
 .book-page {
   min-width: $body-min-width;
-  // max-width: 70em;
   flex-grow: 1;
   .card {
     margin-bottom: 20px;
@@ -449,6 +448,10 @@ body[dir="rtl"] .book-menu {
   .book-toc .book-toc-content {
     padding: $padding-16 * 2 $padding-16;
   }
+  .book-page{
+    max-width: 60em;
+  }
+
   nav#TableOfContents ul {
     padding-inline-start: None;
   }

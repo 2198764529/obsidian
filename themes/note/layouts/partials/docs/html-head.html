@@ -9,7 +9,7 @@
 
 <title>{{ partial "docs/html-head-title" . }}</title>
 
-{{- $manifest := resources.Get "manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
+{{- $manifest := resources.Get "data/manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
 <link rel="manifest" href="{{ $manifest.RelPermalink }}">
 <link rel="icon" href="{{ .Params.BookFavicon | default `favicon.png` | relURL }}">
 
@@ -19,20 +19,13 @@
 {{- end -}}
 
 <!-- Theme stylesheet, you can customize scss by creating `assets/custom.scss` in your website -->
-{{- $styles := resources.Get "book.scss" | resources.ExecuteAsTemplate "book.scss" . | resources.ToCSS |
+{{- $styles := resources.Get "scss/book.scss" | resources.ExecuteAsTemplate "book.scss" . | resources.ToCSS |
 resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template `integrity` $styles }}>
 
-{{- if default true .Site.Params.BookSearch -}}
-{{- $searchJSFile := printf "%s.search.js" .Language.Lang }}
-{{- $searchJS := resources.Get "search.js" | resources.ExecuteAsTemplate $searchJSFile . | resources.Minify |
-resources.Fingerprint }}
-<script defer src="{{ `flexsearch.min.js` | relURL }}"></script>
-<script defer src="{{ $searchJS.RelPermalink }}" {{ template "integrity" $searchJS }}></script>
-{{ end -}}
 
 {{- if .Site.Params.BookServiceWorker -}}
-{{- $swJS := resources.Get "sw-register.js" | resources.ExecuteAsTemplate "sw.js" . | resources.Minify |
+{{- $swJS := resources.Get "js/sw-register.js" | resources.ExecuteAsTemplate "sw.js" . | resources.Minify |
 resources.Fingerprint }}
 <script defer src="{{ $swJS.RelPermalink }}" {{ template "integrity" $swJS }}></script>
 {{ end -}}
@@ -47,11 +40,4 @@ integrity="{{ .Data.Integrity }}" crossorigin="anonymous"
 {{- end -}}
 {{- end -}}
 
-<!-- 引入 function.js -->
-<script src="/js/function.js"></script>
 
-<!-- 引入 highlight -->
-<script src="/plugs/highlight.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>

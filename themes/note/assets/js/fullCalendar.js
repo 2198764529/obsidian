@@ -5,48 +5,23 @@ function calendarRender() {
   });
   // 通过 fetch 函数获取数据文件,并调用初始化日历组件
   function getMyData() {
-    const config = {
-      header: true,
-      dynamicTyping: true,
-      skipEmptyLines: true,
-      complete: function (results) {
-        results.data.forEach((row, row_index) => {
-          if (row.date == null) {
-            row.date = "w";
-          }
-          if (typeof row.events === "string") {
-            row.events = row.events.split(",");
-          }
-        });
-      },
-    };
     // 获取明天的日期
     const today = new Date();
     const tomorrow = `${today.getFullYear()}-${String(
       today.getMonth() + 1
     ).padStart(2, "0")}-${String(today.getDate() + 1).padStart(2, "0")}`;
     const lastdayOfThisyear = `${today.getFullYear()}-12-31`;
-    fetch("/data/myData.csv")
-      .then((response) => response.text())
-      .then((v) => Papa.parse(v, config).data)
-      .then((data) => {
-        console.log(data);
-        // 创建日历组件并渲染
-        getCalendar(
-          // 构造事件数据
-          data.flatMap((item) =>
-            item.events
-              ? item.events.map((event) => ({
-                  title: event,
-                  start: item.date === lastdayOfThisyear ? tomorrow : item.date,
-                }))
-              : []
-          )
-        ).render();
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    console.log(typeof data);
+    getCalendar(
+      // 构造事件数据
+      data.slice(1).flatMap((item) =>
+        item[1].split(",").map((event) => ({
+          title: event,
+          start: item[0] === lastdayOfThisyear ? tomorrow : item[0],
+        }))
+      )
+    ).render();
+
   }
   // 创建日历组件
   function getCalendar(events) {

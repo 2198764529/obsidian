@@ -1,7 +1,7 @@
 'use strict';
 
 {{ $searchDataFile := printf "%s.search-data.json" .Language.Lang }}
-{{ $searchData := resources.Get "search-data.json" | resources.ExecuteAsTemplate $searchDataFile . | resources.Minify | resources.Fingerprint }}
+{{ $searchData := resources.Get "data/search-data.json" | resources.ExecuteAsTemplate $searchDataFile . | resources.Minify | resources.Fingerprint }}
 {{ $searchConfig := i18n "bookSearchConfig" | default "{}" }}
 
 (function () {
