@@ -6,31 +6,32 @@
 <meta http-equiv="Refresh" content="0; url='{{ . }}'" />
 {{- end -}}
 
-
+{{/*  文档标题  */}}
 <title>{{ partial "docs/html-head-title" . }}</title>
 
-{{- $manifest := resources.Get "data/manifest.json" | resources.ExecuteAsTemplate "manifest.json" . }}
-<link rel="manifest" href="{{ $manifest.RelPermalink }}">
-<link rel="icon" href="{{ .Params.BookFavicon | default `favicon.png` | relURL }}">
+{{/*  manifest.json 引入  */}}
+<link rel="manifest" src="{{ $link := resources.Get `data/manifest.json`  }}{{ $link.RelPermalink }}">
+{{/* favicon 图标引入 */}}
+<link rel="icon" src="{{ $link := resources.Get `img/favicon/favicon.ico`  }}{{ $link.Permalink }}">
 
+{{/*  多语言  */}}
 {{- range .Translations }}
 <link rel="alternate" hreflang="{{ default .Language.Lang .Site.LanguageCode }}" href="{{ .Permalink }}"
   title="{{ partial ` docs\title` . }}">
 {{- end -}}
 
-<!-- Theme stylesheet, you can customize scss by creating `assets/custom.scss` in your website -->
-{{- $styles := resources.Get "scss/book.scss" | resources.ExecuteAsTemplate "book.scss" . | resources.ToCSS |
-resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template `integrity` $styles }}>
 
+{{/*  book.scss 引入 */}}
+{{- $link := resources.Get `scss/book.scss` | resources.ExecuteAsTemplate `scss/book.scss` . | resources.ToCSS| minify | fingerprint }}
+<link rel="stylesheet" href="{{ $link.RelPermalink }}" {{ template `integrity` $link }}>
 
+{{/*  BookServiceWorker 搜索  */}}
 {{- if .Site.Params.BookServiceWorker -}}
-{{- $swJS := resources.Get "js/sw-register.js" | resources.ExecuteAsTemplate "sw.js" . | resources.Minify |
+{{- $swJS := resources.Get "js/sw-register.js" | resources.ExecuteAsTemplate "js/sw.js" . | resources.Minify |
 resources.Fingerprint }}
-<script defer src="{{ $swJS.RelPermalink }}" {{ template "integrity" $swJS }}></script>
+<script defer src="{{ $swJS.RelPermalink }}" {{ template `integrity` $swJS }}></script>
 {{ end -}}
 
-{{- template "_internal/google_analytics.html" . -}}
 
 
 
@@ -39,5 +40,3 @@ resources.Fingerprint }}
 integrity="{{ .Data.Integrity }}" crossorigin="anonymous"
 {{- end -}}
 {{- end -}}
-
-

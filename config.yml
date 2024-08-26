@@ -42,8 +42,6 @@ params:
   # 目录开关
   BookToC: false
 
-  # 笔记 Logo 路径
-  # BookLogo: /logo.png
 
   # 笔记文件夹
   BookSection: "/notes"

@@ -11,18 +11,31 @@ function calendarRender() {
       today.getMonth() + 1
     ).padStart(2, "0")}-${String(today.getDate() + 1).padStart(2, "0")}`;
     const lastdayOfThisyear = `${today.getFullYear()}-12-31`;
-    const data = window.myData;
-    console.log(typeof data);
-    getCalendar(
-      // 构造事件数据
-      data.slice(1).flatMap((item) =>
-        item[1].split(",").map((event) => ({
-          title: event,
-          start: item[0] === lastdayOfThisyear ? tomorrow : item[0],
-        }))
-      )
-    ).render();
+    const config = {
+      header: true,
+      dynamicTyping: true,
+      skipEmptyLines: true,
+    };
+    var data = window.myDataLink;
 
+    fetch("/data/my/myData.csv")
+      .then((response) => response.text())
+      .then((v) => Papa.parse(v, config).data)
+      .then((data) => {
+        const row_keys = Object.keys(data[0]);
+        // 构造事件数据
+        data = data.flatMap((item) =>
+          item[row_keys[1]].split(",").map((event) => ({
+            title: event,
+            start: item.date === lastdayOfThisyear ? tomorrow : item.date,
+          }))
+        );
+        // 创建日历组件并渲染数据
+        getCalendar(data).render();
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
   }
   // 创建日历组件
   function getCalendar(events) {
@@ -49,6 +62,9 @@ function calendarRender() {
         };
       },
     });
+  }
+  function parseCsv(csvString) {
+    return csvString.split("\n").map((line) => line.split(","));
   }
 }
 

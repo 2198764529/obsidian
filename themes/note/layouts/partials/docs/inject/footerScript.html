@@ -15,12 +15,13 @@
     updateDateTimeByElementClass("Lastmod");
   };
 </script>
-
+{{/*  主页相关脚本引入  */}}
 {{- if .IsHome -}} 
   {{/* 日历相关脚本引入 */}}
   <!-- 数据文件引入 -->
-<script>
-  window.myData = {{ resources.Get `data/my/myData.csv` | unmarshal }};
+  {{ $link := resources.Get `data/my/myData.csv` }}
+  <script>
+  window.myDataLink = "{{ $link.Permalink }}";
 
 </script>
   <!-- 引入 fullcalendar.io plugs/fullcalendar.js -->
@@ -41,10 +42,10 @@
 
 <!-- 多图片 相关脚本和样式引入-->
  <!-- viewer 插件和样式引入 -->
-<!-- <script src="{{ $js := resources.Get `plugs/viewer.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
-<link src="{{ $js := resources.Get `plugs/viewer.css` | minify | fingerprint }}{{ $js.Permalink }}"></link> -->
+<script src="{{ $js := resources.Get `plugs/viewer.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+<link src="{{ $link := resources.Get `plugs/viewer.css` | minify | fingerprint }}{{ $link.Permalink }}">
 <!-- gallery JS 引入 -->
-<!-- <script src="{{ $js := resources.Get `js/gallery.js` | minify | fingerprint }}{{ $js.Permalink }}"></script> -->
+<script src="{{ $js := resources.Get `js/gallery.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 
 <!-- updateDateTimeByElementClass JS 引入 -->
 <script src="{{ $js := resources.Get `js/updateDateTimeByElementClass.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
@@ -55,14 +56,11 @@
 <!-- 引入 highlight.js -->
 <script src="{{ $js := resources.Get `plugs/highlight.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 
-<!-- 引入 papaparse.js -->
-<!-- <script src="{{ $js := resources.Get `plugs/papaparse.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script> -->
+<!-- 引入 highlight.js -->
+<script src="{{ $js := resources.Get `plugs/highlight.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 
-<!-- Search.js -->
-{{- if default true .Site.Params.BookSearch -}}
+<!-- 引入 papaparse.min.js -->
+<script src="{{ $js := resources.Get `plugs/papaparse.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 {{- $searchJSFile := printf "%s.search.js" .Language.Lang }}
-{{- $searchJS := resources.Get "js/search.js" | resources.ExecuteAsTemplate $searchJSFile . | resources.Minify |
-resources.Fingerprint }}
-<script defer src="{{ `flexsearch.min.js` | relURL }}"></script>
-<script defer src="{{ $searchJS.RelPermalink }}" {{ template "integrity" $searchJS }}></script>
-{{ end -}}
+{{- $searchJS := resources.Get "js/search.js" | resources.ExecuteAsTemplate $searchJSFile . | resources.Minify | resources.Fingerprint }}
+<script defer src="{{ $searchJS.RelPermalink }}" {{ template `integrity` $searchJS }}></script>

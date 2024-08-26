@@ -33,7 +33,8 @@
 </div>
 <div class="right">
   <label for="menu-control">
-  <img src='{{ "svg/menu.svg" | relURL }}' class="book-icon" alt="Menu" />
+  <img src='{{ $link := resources.Get `svg/menu.svg` | relURL }}' class="book-icon" alt="Menu" />
+
 </label>
 </div>
 {{ end }}
