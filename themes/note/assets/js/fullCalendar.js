@@ -23,6 +23,7 @@ function calendarRender() {
       .then((v) => Papa.parse(v, config).data)
       .then((data) => {
         const row_keys = Object.keys(data[0]);
+        console.log(data)
         // 构造事件数据
         data = data.flatMap((item) =>
           item[row_keys[1]].split(",").map((event) => ({
@@ -30,7 +31,6 @@ function calendarRender() {
             start: item.date === lastdayOfThisyear ? tomorrow : item.date,
           }))
         );
-        console.log(data)
         // 创建日历组件并渲染数据
         getCalendar(data).render();
       })
