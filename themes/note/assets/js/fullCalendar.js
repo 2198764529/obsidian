@@ -11,6 +11,7 @@ function calendarRender() {
       today.getMonth() + 1
     ).padStart(2, "0")}-${String(today.getDate() + 1).padStart(2, "0")}`;
     const lastdayOfThisyear = `${today.getFullYear()}-12-31`;
+    const data = window.myData;
     console.log(typeof data);
     getCalendar(
       // 构造事件数据
