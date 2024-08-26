@@ -30,6 +30,7 @@ function calendarRender() {
             start: item.date === lastdayOfThisyear ? tomorrow : item.date,
           }))
         );
+        console.log(data)
         // 创建日历组件并渲染数据
         getCalendar(data).render();
       })
