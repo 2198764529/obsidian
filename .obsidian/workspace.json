@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/理论知识/力扣/系统攻略.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/理论知识/力扣/系统攻略.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/理论知识/力扣/系统攻略.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/理论知识/力扣/系统攻略.md"
+                "file": "content/notes/工具技术/网站收藏.md"
               }
             }
           }
@@ -158,6 +158,7 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/理论知识/力扣/系统攻略.md",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
     "themes/note/assets/img/favicon/favicon.png",
@@ -178,7 +179,6 @@
     "themes/note/assets/katex/fonts/KaTeX_Typewriter-Regular.woff",
     "themes/note/assets/katex/fonts/KaTeX_Typewriter-Regular.ttf",
     "themes/note/assets/katex/fonts/KaTeX_Size4-Regular.woff2",
-    "themes/note/assets/katex/fonts/KaTeX_Size4-Regular.woff",
     "content/notes/理论知识/408/运输层-Q&A.md",
     "content/notes/理论知识/408/应用层-Q&A.md",
     "content/notes/理论知识/408/计算机网络.md",
@@ -186,7 +186,6 @@
     "content/notes/理论知识/408/_index.md",
     "content/notes/理论知识/力扣/_index.md",
     "content/notes/理论知识/计算机网络.md",
-    "content/notes/理论知识/力扣/系统攻略.md",
     "content/notes/理论知识/_index.md",
     "tree.md",
     "content/notes/工具技术/网站收藏.md",
