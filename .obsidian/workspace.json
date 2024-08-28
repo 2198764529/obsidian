@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md"
+                "file": "content/notes/个人/清单.md"
               }
             }
           }
@@ -142,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,6 +159,7 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/工具技术/网站收藏.md",
     "content/notes/理论知识/力扣/系统攻略.md",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
@@ -188,7 +190,6 @@
     "content/notes/理论知识/计算机网络.md",
     "content/notes/理论知识/_index.md",
     "tree.md",
-    "content/notes/工具技术/网站收藏.md",
     "content/notes/理论知识/五笔输入法.md",
     "content/notes/杂思/_index.md",
     "content/notes/杂思/颜色板.md",
