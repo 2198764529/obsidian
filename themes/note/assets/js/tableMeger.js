@@ -16,17 +16,13 @@ function tableMeger() {
                 for (let i = rowIndex + 1; i < rows.length; i++) {
 
                     const nextRowCell = rows[i].querySelectorAll('td')[cellIndex];
-                    // console.log(text,rowspanCount,nextRowCell,rows[i],cellIndex)
                     
                     if (nextRowCell==undefined || nextRowCell.textContent.trim() === '') {
-                        console.log(text,rowspanCount)
                         rowspanCount++;
                     } else {
                         break; // 如果下一行不为空，停止检查
                     }
                 }
-                // console.log(text,rowspanCount)
-                
                 // 如果找到匹配项，设置 rowspan
                 if (rowspanCount > 1) {
                     cell.rowSpan = rowspanCount;

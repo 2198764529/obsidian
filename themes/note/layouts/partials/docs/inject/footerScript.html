@@ -15,6 +15,7 @@
     updateDateTimeByElementClass("Lastmod");
   };
 </script>
+
 {{/*  主页相关脚本引入  */}}
 {{- if .IsHome -}} 
   {{/* 日历相关脚本引入 */}}
@@ -58,6 +59,11 @@
 
 <!-- 引入 tableMeger.js -->
 <script src="{{ $js := resources.Get `js/tableMeger.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+
+{{- if eq .Title  "色彩学"}}
+<!-- 引入 colorShow.js -->
+<script src="{{ $js := resources.Get `js/colorShow.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+{{- end -}}
 
 <!-- 引入 papaparse.min.js -->
 <script src="{{ $js := resources.Get `plugs/papaparse.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>

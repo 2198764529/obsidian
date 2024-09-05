@@ -3,6 +3,7 @@ function calendarRender() {
   document.addEventListener("DOMContentLoaded", function () {
     getMyData();
   });
+
   // 通过 fetch 函数获取数据文件,并调用初始化日历组件
   function getMyData() {
     // 获取明天的日期
@@ -16,8 +17,7 @@ function calendarRender() {
       dynamicTyping: true,
       skipEmptyLines: true,
     };
-    var data = window.myDataLink;
-
+    // var data = window.myDataLink;
     fetch("/data/my/myData.csv")
       .then((response) => response.text())
       .then((v) => Papa.parse(v, config).data)
@@ -37,6 +37,7 @@ function calendarRender() {
         console.error("Error fetching data:", error);
       });
   }
+
   // 创建日历组件
   function getCalendar(events) {
     return new FullCalendar.Calendar(document.getElementById("calendar"), {

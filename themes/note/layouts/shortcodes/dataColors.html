@@ -1,24 +1,3 @@
-{{$fName := .Get `fName`}}
-{{$fNameData := split $fName "." }}
-{{$f := ""}}
-{{if in $fNameData "json"}}
-  {{ $f = index $.Site.Data (index $fNameData 0)}}
-{{else if in $fNameData "csv"}}
-    {{ $f = getCSV "," "content/data/" $fName}}
-{{end}}
-{{ $firstOne := first 1 $f}}
-{{range $k,$v :=$f}}
-    <div>
-  
-      <div style="background-color: {{$v.hex}};margin: 10px;">
-        {{range $k2,$v2 := $v}}
-        <span>
-          {{$v2}}
+{{$filePath := .Get `filePath`}}
 
-        </span>    
-        {{end}}
-      </div>
-    </div>
-   
-      
-{{end}}
+<div class="colorList" data-filePath="{{$filePath}}"></div>
