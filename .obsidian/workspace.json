@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/杂思/_index.md",
+                "file": "content/notes/杂思/博客文摘.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/杂思/_index.md",
+                "file": "content/notes/杂思/博客文摘.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/杂思/_index.md",
+                "file": "content/notes/杂思/博客文摘.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/杂思/_index.md"
+                "file": "content/notes/杂思/博客文摘.md"
               }
             }
           }
@@ -159,6 +159,14 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/杂思/测试专用.md",
+    "content/notes/杂思/第二台笔记本选购.md",
+    "content/notes/杂思/数据展示.md",
+    "content/notes/杂思/随记.md",
+    "content/notes/杂思/为什么.md",
+    "content/notes/杂思/文摘.md",
+    "content/notes/杂思/博客文摘.md",
+    "content/notes/杂思/_index.md",
     "content/notes/个人/_index.md",
     "content/notes/个人/修身.md",
     "content/notes/个人/兴起.md",
@@ -171,17 +179,13 @@
     "themes/note/assets/data/my/colors.json",
     "themes/note/assets/js/colorShow.js",
     "content/notes/工具技术/技术记录.md",
-    "content/notes/杂思/数据展示.md",
     "themes/note/assets/js/colorWheel.js",
-    "content/notes/杂思/文摘.md",
-    "content/notes/杂思/博客文摘.md",
     "themes/note/layouts/shortcodes/colorWheel.htm",
     "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/plantuml.md",
     "content/notes/理论知识/408/计算机网络.md",
     "content/images/Pasted image 20240904172026.png",
     "content/notes/理论知识/408/数据结构和算法.md",
-    "content/notes/杂思/测试专用.md",
     "content/notes/工具技术/网站收藏.md",
     "themes/note/assets/js/tableMeger.js",
     "content/notes/理论知识/408/应用层-Q&A.md",
@@ -189,11 +193,7 @@
     "content/notes/理论知识/编程语言/_index.md",
     "content/notes/理论知识/力扣/_index.md",
     "content/notes/理论知识/编程语言",
-    "content/notes/杂思/第二台笔记本选购.md",
-    "content/notes/杂思/随记.md",
-    "content/notes/杂思/为什么.md",
     "content/notes/理论知识/考公.md",
-    "content/notes/理论知识/力扣/系统攻略.md",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
     "themes/note/assets/img/favicon/favicon.png",
