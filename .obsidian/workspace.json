@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/_index.md",
+                "file": "content/notes/杂思/_index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/_index.md",
+                "file": "content/notes/杂思/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/_index.md",
+                "file": "content/notes/杂思/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/_index.md"
+                "file": "content/notes/杂思/_index.md"
               }
             }
           }
@@ -159,12 +159,12 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/个人/_index.md",
     "content/notes/个人/修身.md",
     "content/notes/个人/兴起.md",
     "content/notes/个人/清单.md",
     "content/notes/个人/关于我.md",
     "content/notes/个人/关于篮球.md",
-    "content/notes/个人/_index.md",
     "content/notes/工具技术/色彩学.md",
     "themes/note/assets/data/site/colors.json",
     "themes/note/assets/data/site",
