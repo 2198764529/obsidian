@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/理论知识/编程语言/python-flask.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/理论知识/编程语言/python-flask.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/理论知识/编程语言/python-flask.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/理论知识/编程语言/python-flask.md"
+                "file": "content/notes/理论知识/408/计算机网络.md"
               }
             }
           }
@@ -159,8 +159,9 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/理论知识/编程语言/python-Flask&Django.md",
     "content/notes/理论知识/编程语言/Python.md",
-    "content/notes/理论知识/编程语言/python-flask.md",
+    "README.md",
     "content/notes/个人/清单.md",
     "content/notes/杂思/博客文摘.md",
     "content/notes/杂思/测试专用.md",
@@ -192,7 +193,6 @@
     "themes/note/assets/js/tableMeger.js",
     "content/notes/理论知识/408/应用层-Q&A.md",
     "content/notes/理论知识/编程语言/_index.md",
-    "content/notes/理论知识/力扣/_index.md",
     "content/notes/理论知识/编程语言",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
