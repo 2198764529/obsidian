@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/杂思/博客文摘.md",
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/杂思/博客文摘.md",
+                "file": "content/notes/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/杂思/博客文摘.md",
+                "file": "content/notes/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/杂思/博客文摘.md"
+                "file": "content/notes/个人/清单.md"
               }
             }
           }
@@ -159,13 +159,13 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/杂思/博客文摘.md",
     "content/notes/杂思/测试专用.md",
     "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/杂思/数据展示.md",
     "content/notes/杂思/随记.md",
     "content/notes/杂思/为什么.md",
     "content/notes/杂思/文摘.md",
-    "content/notes/杂思/博客文摘.md",
     "content/notes/杂思/_index.md",
     "content/notes/个人/_index.md",
     "content/notes/个人/修身.md",
