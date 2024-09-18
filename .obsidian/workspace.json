@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md",
+                "file": "content/notes/个人/兴起.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md",
+                "file": "content/notes/个人/兴起.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md",
+                "file": "content/notes/个人/兴起.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md"
+                "file": "content/notes/个人/兴起.md"
               }
             }
           }
@@ -159,6 +159,7 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/理论知识/408/计算机网络.md",
     "content/notes/理论知识/编程语言/python-Flask&Django.md",
     "content/notes/理论知识/编程语言/Python.md",
     "README.md",
@@ -186,7 +187,6 @@
     "themes/note/layouts/shortcodes/colorWheel.htm",
     "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/plantuml.md",
-    "content/notes/理论知识/408/计算机网络.md",
     "content/images/Pasted image 20240904172026.png",
     "content/notes/理论知识/408/数据结构和算法.md",
     "content/notes/工具技术/网站收藏.md",
