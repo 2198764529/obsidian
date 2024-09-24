@@ -16,17 +16,17 @@ frontmatter:
     - datetimeCreate
   lastmod:
     - datetimeUpdate
-markup:
-  defaultMarkdownHandler: "goldmark"
-  markup.highlight:
-    codeFences: true
-  goldmark:
-    renderer:
-      unsafe: true
-      hardWraps: true
-  tableOfContents:
-    startLevel: 1
-    endLevel: 6
+# markup:
+#   defaultMarkdownHandler: "goldmark"
+#   markup.highlight:
+#     codeFences: true
+#   goldmark:
+#     renderer:
+#       unsafe: true
+#       hardWraps: true
+#   tableOfContents:
+#     startLevel: 1
+#     endLevel: 6
 
 # 自定义参数
 params:
