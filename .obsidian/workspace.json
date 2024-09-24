@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/清单.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6eb79656be7417cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/notes/个人/修身.md",
+                "file": "content/notes/工具技术/色彩学.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#B60023",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/修身.md",
+                "file": "content/notes/工具技术/色彩学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/修身.md",
+                "file": "content/notes/工具技术/色彩学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/修身.md"
+                "file": "content/notes/工具技术/色彩学.md"
               }
             }
           }
@@ -161,34 +149,34 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6eb79656be7417cc",
+  "active": "abc51f3040424b5a",
   "lastOpenFiles": [
-    "content/notes/个人/兴起.md",
-    "content/notes/工具技术/色彩学.md",
-    "content/notes/个人/修身.md",
-    "content/notes/个人/关于篮球.md",
-    "content/notes/个人/清单.md",
-    "content/notes/工具技术/技术记录.md",
-    "content/notes/工具技术/Hugo 参考.md",
-    "content/notes/工具技术/维基百科.md",
-    "content/notes/工具技术/git操作.md",
-    "content/notes/杂思/测试专用.md",
-    "content/notes/工具技术/未命名.md",
-    "content/notes/工具技术/网站收藏.md",
     "content/notes/工具技术/设计语言.md",
-    "content/notes/个人/关于我.md",
+    "content/notes/工具技术/维基百科.md",
+    "content/notes/个人/清单.md",
+    "content/notes/工具技术/色彩学.md",
+    "content/notes/杂思/数据展示.md",
+    "content/notes/杂思/测试专用.md",
+    "content/notes/个人/计划.md",
+    "content/notes/个人/兴起.md",
+    "content/notes/个人/修身.md",
+    "content/notes/工具技术/技术记录.md",
+    "content/notes/工具技术/网站收藏.md",
+    "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/正则表达式.md",
+    "content/notes/工具技术/Hugo 参考.md",
+    "content/notes/工具技术/markDown 语法.md",
+    "content/_index.md",
+    "content/notes/_index.md",
+    "content/notes/个人/关于篮球.md",
+    "content/notes/工具技术/git操作.md",
+    "content/notes/个人/关于我.md",
     "content/notes/工具技术/_index.md",
     "content/notes/理论知识/编程语言/python-Flask&Django.md",
     "content/notes/理论知识/编程语言/Python.md",
     "content/notes/理论知识/408/计算机网络.md",
     "content/notes/理论知识/408/数据结构和算法.md",
     "content/notes/理论知识/408/应用层-Q&A.md",
-    "content/notes/理论知识/408/运输层-Q&A.md",
-    "content/notes/理论知识/编程语言/_index.md",
-    "content/notes/杂思/_index.md",
-    "content/notes/理论知识/_index.md",
-    "content/notes/理论知识/408/_index.md",
     "themes/note/assets/data/site/colors.json",
     "themes/note/assets/data/site",
     "resources/_gen/assets/scss/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
