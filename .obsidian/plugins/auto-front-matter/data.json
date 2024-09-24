@@ -1,7 +1,7 @@
 {
   "auto": true,
   "isReorderRequired": true,
-  "isTitleRequired": false,
+  "isTitleRequired": true,
   "isIdRequired": true,
   "isDatetimeCreateRequired": true,
   "isDatetimeUpdateRequired": true

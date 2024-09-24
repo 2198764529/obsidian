@@ -2,8 +2,10 @@
   "accentColor": "",
   "theme": "system",
   "baseFontSize": 16,
-  "interfaceFontFamily": "Arial Black",
+  "interfaceFontFamily": "Arial Black,Times New Roman",
   "textFontFamily": "Microsoft YaHei",
   "translucency": false,
-  "nativeMenus": true
+  "nativeMenus": true,
+  "cssTheme": "Things",
+  "showViewHeader": false
 }

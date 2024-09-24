@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/兴起.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/兴起.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/兴起.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/兴起.md"
+                "file": "content/notes/工具技术/网站收藏.md"
               }
             }
           }
@@ -152,23 +152,28 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
+      "templater-obsidian:Templater": true,
+      "switcher:打开快速切换": true,
+      "graph:查看关系图谱": true,
+      "canvas:新建白板": true,
+      "daily-notes:打开/创建今天的日记": true,
+      "templates:插入模板": true,
       "command-palette:打开命令面板": false
     }
   },
   "active": "6eb79656be7417cc",
   "lastOpenFiles": [
     "content/notes/个人/修身.md",
-    "content/notes/个人/兴起.md",
-    "content/notes/工具技术/_index.md",
+    "content/notes/个人/关于我.md",
+    "content/notes/工具技术/网站收藏.md",
+    "content/notes/工具技术/设计语言.md",
+    "content/notes/工具技术/色彩学.md",
     "content/notes/工具技术/技术记录.md",
+    "content/notes/个人/兴起.md",
     "content/notes/个人/清单.md",
+    "content/notes/个人/关于篮球.md",
+    "content/notes/工具技术/_index.md",
     "content/notes/理论知识/编程语言/python-Flask&Django.md",
     "content/notes/理论知识/编程语言/Python.md",
     "content/notes/理论知识/408/计算机网络.md",
@@ -180,8 +185,6 @@
     "content/notes/理论知识/_index.md",
     "content/notes/理论知识/408/_index.md",
     "content/notes/个人/_index.md",
-    "content/notes/个人/关于篮球.md",
-    "content/notes/个人/关于我.md",
     "content/notes/工具技术/git操作.md",
     "themes/note/assets/data/site/colors.json",
     "themes/note/assets/data/site",
@@ -205,11 +208,8 @@
     "themes/note/assets/img/svg/translate.svg",
     "content/notes/理论知识/力扣/系统攻略.md",
     "content/notes/理论知识/力扣/_index.md",
-    "content/notes/工具技术/色彩学.md",
     "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/plantuml.md",
-    "content/notes/工具技术/网站收藏.md",
-    "content/notes/工具技术/维基百科.md",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
