@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/杂思/测试专用.md",
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           },
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/修身.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/修身.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md",
+                "file": "content/notes/个人/修身.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,17 +138,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/工具技术/网站收藏.md"
+                "file": "content/notes/个人/修身.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 493.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,15 +163,21 @@
   },
   "active": "6eb79656be7417cc",
   "lastOpenFiles": [
+    "content/notes/个人/兴起.md",
+    "content/notes/工具技术/色彩学.md",
     "content/notes/个人/修身.md",
-    "content/notes/个人/关于我.md",
+    "content/notes/个人/关于篮球.md",
+    "content/notes/个人/清单.md",
+    "content/notes/工具技术/技术记录.md",
+    "content/notes/工具技术/Hugo 参考.md",
+    "content/notes/工具技术/维基百科.md",
+    "content/notes/工具技术/git操作.md",
+    "content/notes/杂思/测试专用.md",
+    "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/网站收藏.md",
     "content/notes/工具技术/设计语言.md",
-    "content/notes/工具技术/色彩学.md",
-    "content/notes/工具技术/技术记录.md",
-    "content/notes/个人/兴起.md",
-    "content/notes/个人/清单.md",
-    "content/notes/个人/关于篮球.md",
+    "content/notes/个人/关于我.md",
+    "content/notes/工具技术/正则表达式.md",
     "content/notes/工具技术/_index.md",
     "content/notes/理论知识/编程语言/python-Flask&Django.md",
     "content/notes/理论知识/编程语言/Python.md",
@@ -184,8 +189,6 @@
     "content/notes/杂思/_index.md",
     "content/notes/理论知识/_index.md",
     "content/notes/理论知识/408/_index.md",
-    "content/notes/个人/_index.md",
-    "content/notes/工具技术/git操作.md",
     "themes/note/assets/data/site/colors.json",
     "themes/note/assets/data/site",
     "resources/_gen/assets/scss/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
@@ -206,10 +209,6 @@
     "themes/note/assets/img/test/MinimalistScenery04 1.jpg",
     "themes/note/assets/img/test/IMG_20230128_162005 1.jpg",
     "themes/note/assets/img/svg/translate.svg",
-    "content/notes/理论知识/力扣/系统攻略.md",
-    "content/notes/理论知识/力扣/_index.md",
-    "content/notes/工具技术/未命名.md",
-    "content/notes/工具技术/plantuml.md",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
