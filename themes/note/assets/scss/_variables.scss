@@ -14,12 +14,12 @@ $font-size-16: 1rem !default;
 $body-font-weight: normal !default;
 $padding:20px;
 $magin:15px;
-$body-min-width: 20rem !default;
+$body-min-width: 30rem !default;
 $container-max-width: 90rem !default;
 $border-radius: 18px;
 $line-height:35px; // 标准行间距
 $header-height: 3.5rem !default;
-$menu-width: 15rem - 1 !default;
+$menu-width: 15rem !default;
 $toc-width: 16rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
