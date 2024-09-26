@@ -1,4 +1,5 @@
+{{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
 {{ partial "docs/inject/toc-before" . }}
 {{ .TableOfContents }}
 {{ partial "docs/inject/toc-after" . }}
-
+{{ end }}

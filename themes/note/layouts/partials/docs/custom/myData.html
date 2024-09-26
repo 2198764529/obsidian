@@ -1,4 +1,4 @@
-<div id="myData" class="card" >
+<div id="myData" class="card markdown" >
     {{ $readme := readFile "README.md" }}
     {{ $readmeContent := index (split $readme  "---") 2 }}
     

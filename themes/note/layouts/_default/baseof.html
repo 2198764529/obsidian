@@ -1,92 +1,58 @@
 <!DOCTYPE html>
-<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default " ltr"
-  .Site.Language.LanguageDirection }}">
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}"
+  dir="{{ default `ltr` .Site.Language.LanguageDirection }}">
 
 <head>
   {{ partial "docs/html-head" . }}
   {{ partial "docs/inject/head" . }}
 </head>
 
-<body dir="{{ default " ltr" .Site.Language.LanguageDirection }}">
+<body dir="{{ default `ltr` .Site.Language.LanguageDirection }}">
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
-    <aside class="book-menu ">
-      <div class="book-menu-content card">
-        {{ template "menu" . }} <!-- Left menu Content -->
-
-        {{ template "toc" . }}
-
-        {{ template "footer" . }} <!-- Footer under page content -->
-
-      </div>
-
-    </aside>
-
-    <div class="book-page">
-      
-        {{ template "header" . }} <!-- Mobile layout header -->
-
-      {{ partial "docs/inject/content-before" . }}
-      {{ template "main" . }} <!-- Page Content -->
-      {{ partial "docs/inject/content-after" . }}
-
-      <footer class="book-footer">
-        {{/*  引入所有脚本  */}}
-        {{ partial "docs/inject/footerScript" . }}
-      </footer>
-
-      {{ template "comments" . }} <!-- Comments block -->
-
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-
+    {{ template "note-page" . }}
+    {{ template "note-menu" . }} 
   </main>
-
-  {{ partial "docs/inject/body" . }}
 </body>
-
 </html>
 
-{{ define "menu" }}
-{{ partial "docs/menu" . }}
-{{ end }}
-
-{{ define "header" }}
-{{ partial "docs/header" . }}
-
-{{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-<aside class="hidden clearfix">
-  {{ template "toc" . }}
+{{/* 右侧的导航栏 */}}
+{{ define "note-menu" }}
+<aside class="book-menu">
+  <div class="book-menu-content card">
+    {{ partial "docs/menu" . }}
+    {{ partial "docs/toc" . }}
+    {{ partial "docs/footer" . }}
+  </div>
 </aside>
+<footer class="book-footer">
+  {{/* 引入所有脚本 */}}
+  {{ partial "docs/inject/footerScript" . }}
+</footer>
 {{ end }}
+
+{{/* 主页面的导航栏 */}}
+{{ define "note-page" }}
+<div class="book-page">
+  {{ partial "docs/header" . }}
+  {{ partial "docs/inject/content-before" . }}
+  {{ template "page-content" . }} 
+  {{ partial "docs/inject/content-after" . }}
+
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+</div>
+
+
 {{ end }}
 
 
-
-{{ define "main" }}
-
+{{/*  主要内容  */}}
+{{ define "page-content" }}
 <article class="markdown card">
+  {{ partial "docs/toc" . }}
   {{- .Content -}}
 </article>
 {{ end }}
 
-{{ define "footer" }}
-{{ partial "docs/footer" . }}
-{{ end }}
 
-{{ define "comments" }}
-{{ if and .Content (default true (default .Site.Params.BookComments .Params.BookComments)) }}
-<div class="book-comments">
-  {{- partial "docs/comments" . -}}
-</div>
-{{ end }}
-{{ end }}
-
-{{ define "toc" }}
-{{ partial "docs/toc" . }}
-{{ end }}
-
-{{ define "mermaid" }}
-{{ partial "docs/mermaid" . }}
-{{ end }}

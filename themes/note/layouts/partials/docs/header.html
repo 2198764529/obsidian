@@ -1,42 +1,44 @@
 <header class="book-header card">
-{{ if .IsHome }}
-<div class="card">
-  <span>
 
-    <small> 最近更新时间: </small>
-    {{ time.Format "2006-01-02 15:04" .Site.LastChange }}
-  </span>
-  <span>
-
-    <small> 文章数: </small>
-    {{ .Site.RegularPages | len }}
-  </span>
-  <span>
-
-    <small> 总字数: </small>
-    {{ $totalWordCount := 0 }}
-    {{ range .Site.RegularPages }}
-    {{ with .Content }}
-    {{ $totalWordCount = add $totalWordCount ( . | countwords) }}
-    {{ end }}
-    {{ end }}
-    {{ $num := div $totalWordCount 1000 }}
-    {{ $num2 := sub $totalWordCount (mul $num 1000) }}
-    {{ printf "%s.%sk" (cast.ToString $num ) (cast.ToString $num2 ) }}
-
-  </span>
-</div>
-{{ else }}
 <div class="left">
-  {{ partial "docs/note-header" . }}
-
+  {{ if .IsHome }}
+    {{ template "indexHeader" . }}
+  {{ else }}
+    {{ partial "docs/note-header" . }}
+  {{ end }}
 </div>
 <div class="right">
   <label for="menu-control">
-  <img src='{{ $link := resources.Get `svg/menu.svg` | relURL }}' class="book-icon" alt="Menu" />
-
+  <img src="{{ $link := resources.Get `img/svg/menu.svg`  }}{{ $link.Permalink }}" class="book-icon" alt="Menu" />
 </label>
 </div>
-{{ end }}
 </header>
 
+{{/*  首页 Header  */}}
+{{ define "indexHeader" }}
+<div>
+  <span>
+    <small> 最近更新时间: </small>
+    {{ time.Format "2006-01-02 15:04" .Site.LastChange }}
+  </span>
+  <p>
+    <span>
+      <small> 文章数: </small>
+      {{ .Site.RegularPages | len }}
+    </span>
+    <span>
+      <small> 总字数: </small>
+      {{ $totalWordCount := 0 }}
+      {{ range .Site.RegularPages }}
+        {{ with .Content }}
+        {{ $totalWordCount = add $totalWordCount ( . | countwords) }}
+        {{ end }}
+      {{ end }}
+      {{ $num := div $totalWordCount 1000 }}
+      {{ $num2 := sub $totalWordCount (mul $num 1000) }}
+      {{ printf "%s.%sk" (cast.ToString $num ) (cast.ToString $num2 ) }}
+    </span>
+  </p>
+
+</div>
+{{ end }}

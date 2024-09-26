@@ -1,212 +1,206 @@
 @import "variables";
-
 .markdown {
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    
+  // 彩虹配色:红、橙、黄、绿、青、蓝、紫
+  h1 {  
+    color: #DC143C;
+  }  
+  h2 {  
+    color: #FF8C00;
+  }  
+  h3 {  
+    color: #FFD700;	
+  }  
+  h4 {  
+    color: #00FF7F;	
+  }  
+  h5 {  
+    color: #00FFFF; 
+  }  
+  h6 {  
+    color: #1E90FF; 
+  }
+  h7 {  
+    color: #7B68EE; 
+  }
   a {
-    font-size: 1.1em;
-    color: var(--body-font-color);
-    font-weight: bold;
-  }
-}
-
-a {
-  font-size: 0.8em;
-  &:hover{
-    text-decoration-line: underline;
-  }
-}
-
-
-img {
-  border-radius: 5px; // 边框圆角
-}
-
-pre {
-  background: none !important;
-  code {
-
-    font-size: 0.75em; // 字体大小
-    // font-family: "Courier New", Courier, monospace;
-    white-space: pre-wrap; // 换行
-    overflow-x: auto; // 横向滚动
-    padding: $padding-16; // 代码块内边距
-    border-radius: 5px; // 边框圆角
-    background: var(--code-bg); // 背景色
-    display: inline-block;
-    color: white;
-    span {
-      word-wrap: break-word; // 单词折行
+    font-size: 0.8em;
+    &:hover {
+      text-decoration-line: underline;
     }
   }
-  code.language-gallery,
-  code.language-mindmap,
-  code.language-uml {
-    line-height: 0;
-    padding: 0;
-    background: 0;
-  }
-  &:focus,
-  &:active {
-    outline: none; // 移除焦点时的外框
-  }
 
-}
-.picGallery {
-  div {
-    display: inline-block;
-    margin: 1px;
-    width: 30%;
-  }
   img {
-    width: 100%;
-    height: 20vh;
-    object-fit: fill;
-  }
-}
-
-> p {
-  word-wrap: break-word; // 段落文字折行
-  line-height: $line-height - 10;
-  margin: 0;
-
-  > img {
-    max-width: 65%; // 图像最大宽度
-    margin: 2% 16%; // 外边距
-    height: auto; // 图像高度自适应
-  }
-}
-code {
-  font-size: 1.2em; // 字体大小
-  // background-color: var(--color-light);
-  // font-weight: bold;
-  // color: var(--color-light); // 设置关键词和强调字体颜色
-}
-blockquote {
-  background-color: var(--body-background);
-  // color: var(--color-light);
-  border-radius: 3px;
-  border-left: 2px solid var(--color-light);
-  margin: $padding-16 0; // 设置块引用外边距
-  padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); // 块引用内边距
-
-  :first-child {
-    margin-top: 0; // 移除第一个块引用的顶部间距
-  }
-  :last-child {
-    margin-bottom: 0; // 移除最后一个块引用的底部间距
-  }
-}
-
-table {
-  overflow: auto; // 横向滚动
-  display: block; // 块级元素
-  border-spacing: 0; // 表格间距
-  border-collapse: collapse; // 合并边框
-  margin-top: $padding-16; // 表格顶部间距
-  margin-bottom: $padding-16; // 表格底部间距
-
-  tr th,
-  tr td {
-    padding: 12px; // 单元格内边距
-  }
-  tr{
-    border-bottom: $padding-1 solid var(--gray-200); // 单元格边框
-
+    border-radius: 5px; // 边框圆角
   }
 
-}
-
-hr {
-  height: $padding-1; // 水平线高度
-  border: none; // 移除边框
-  background: var(--gray-200); // 背景颜色
-}
-
-ul,
-ol {
-  padding-inline-start: 2em; // 列表内边距
-  word-wrap: break-word; // 列表文字折行
-  // counter-reset: custom-counter; /* 重置计数器 */
-  // list-style-type: none; /* 去除默认的有序列表样式 */
-  li {
-    // list-style: none;
-    line-height: $line-height;
+  pre {
+    background: none !important;
+    code {
+      width: 100%; /* 容器宽度 */
+      overflow-x: auto; // 横向滚动
+      font-size: 0.75em; // 字体大小
+      white-space: pre-wrap; // 换行
+      padding: $padding-16; // 代码块内边距
+      border-radius: 5px; // 边框圆角
+      background: var(--code-bg); // 背景色
+      display: inline-block;
+      color: white;
+      span {
+        word-wrap: break-word; // 单词折行
+      }
+    }
+    code.language-gallery,
+    code.language-mindmap,
+    code.language-uml {
+      line-height: 0;
+      padding: 0;
+      background: 0;
+    }
+    &:focus,
+    &:active {
+      outline: none; // 移除焦点时的外框
+    }
   }
-}
-ol > li {
-  counter-increment: custom-counter; /* 计数器递增 */
-  &::before {
-    // content: counter(custom-counter) ".";
-    border-radius: 50%;
-    text-align: left;
-    // font-weight: bolder;
-    // float: left;
-    padding-right: 15px;
-  }
-}
-dl {
-  dt {
-    font-weight: bolder; // 设置更加粗细的字体
-    margin-top: $padding-16; // 标题顶部间距
+  .picGallery {
+    div {
+      display: inline-block;
+      margin: 1px;
+      width: 30%;
+    }
+    img {
+      width: 100%;
+      height: 20vh;
+      object-fit: fill;
+    }
   }
 
-  dd {
-    margin-inline-start: 0; // 段落内边距
-    margin-bottom: $padding-16; // 段落底部间距
-  }
-}
-
-.highlight table tr {
-  td:nth-child(1) pre {
+  > p {
+    word-wrap: break-word; // 段落文字折行
+    line-height: $line-height - 10;
     margin: 0;
-    padding-inline-end: 0;
-  }
-  td:nth-child(2) pre {
-    margin: 0;
-    padding-inline-start: 0;
-  }
-}
 
-details {
-  padding: $padding-16; // 内容块内边距
-  border: $padding-1 solid var(--gray-200); // 内容块边框
-  border-radius: $border-radius; // 边框圆角
-
-  summary {
-    line-height: 1; // 摘要行高
-    padding: $padding-16; // 摘要内边距
-    margin: -$padding-16; // 移除摘要顶部间距
-    cursor: pointer; // 设置鼠标指针为手型
+    > img {
+      max-width: 65%; // 图像最大宽度
+      margin: 2% 16%; // 外边距
+      height: auto; // 图像高度自适应
+    }
   }
 
-  &[open] summary {
-    margin-bottom: 0; // 打开状态下移除底部间距
-  }
-}
+  blockquote {
+    background-color: var(--body-background);
+    // color: var(--color-light);
+    border-radius: 3px;
+    border-left: 2px solid var(--color-light);
+    margin: $padding-16 0; // 设置块引用外边距
+    padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); // 块引用内边距
 
-figure {
-  margin: $padding-16 0; // 图片块外边距
-  figcaption p {
-    margin-top: 0; // 移除顶部间距
+    :first-child {
+      margin-top: 0; // 移除第一个块引用的顶部间距
+    }
+    :last-child {
+      margin-bottom: 0; // 移除最后一个块引用的底部间距
+    }
   }
-}
+
+  table {
+    overflow: auto; // 横向滚动
+    display: block; // 块级元素
+    border-spacing: 0; // 表格间距
+    border-collapse: collapse; // 合并边框
+    margin-top: $padding-16; // 表格顶部间距
+    margin-bottom: $padding-16; // 表格底部间距
+
+    tr th,
+    tr td {
+      padding: 12px; // 单元格内边距
+    }
+    tr {
+      border-bottom: $padding-1 solid var(--gray-200); // 单元格边框
+    }
+  }
+
+  hr {
+    height: $padding-1; // 水平线高度
+    border: none; // 移除边框
+    background: var(--gray-200); // 背景颜色
+  }
+
+  ul,
+  ol {
+    padding-inline-start: 2em; // 列表内边距
+    word-wrap: break-word; // 列表文字折行
+    // counter-reset: custom-counter; /* 重置计数器 */
+    // list-style-type: none; /* 去除默认的有序列表样式 */
+    li {
+      // list-style: none;
+      line-height: $line-height;
+    }
+  }
+  ol > li {
+    counter-increment: custom-counter; /* 计数器递增 */
+    &::before {
+      // content: counter(custom-counter) ".";
+      border-radius: 50%;
+      text-align: left;
+      // font-weight: bolder;
+      // float: left;
+      padding-right: 15px;
+    }
+  }
+  dl {
+    dt {
+      font-weight: bolder; // 设置更加粗细的字体
+      margin-top: $padding-16; // 标题顶部间距
+    }
+
+    dd {
+      margin-inline-start: 0; // 段落内边距
+      margin-bottom: $padding-16; // 段落底部间距
+    }
+  }
+
+  .highlight table tr {
+    td:nth-child(1) pre {
+      margin: 0;
+      padding-inline-end: 0;
+    }
+    td:nth-child(2) pre {
+      margin: 0;
+      padding-inline-start: 0;
+    }
+  }
+
+  details {
+    padding: $padding-16; // 内容块内边距
+    border: $padding-1 solid var(--gray-200); // 内容块边框
+    border-radius: $border-radius; // 边框圆角
+
+    summary {
+      line-height: 1; // 摘要行高
+      padding: $padding-16; // 摘要内边距
+      margin: -$padding-16; // 移除摘要顶部间距
+      cursor: pointer; // 设置鼠标指针为手型
+    }
+
+    &[open] summary {
+      margin-bottom: 0; // 打开状态下移除底部间距
+    }
+  }
+
+  figure {
+    margin: $padding-16 0; // 图片块外边距
+    figcaption p {
+      margin-top: 0; // 移除顶部间距
+    }
+  }
 }
 
 .markdown-inner {
-> :first-child {
-  margin-top: 0; // 移除内部Markdown内容顶部间距
-}
-> :last-child {
-  margin-bottom: 0; // 移除内部Markdown内容底部间距
-}
-
-
+  > :first-child {
+    margin-top: 0; // 移除内部Markdown内容顶部间距
+  }
+  > :last-child {
+    margin-bottom: 0; // 移除内部Markdown内容底部间距
+  }
 }

@@ -1,12 +1,11 @@
-<div class="card">
+<div class="footer">
   <p>
     <span>
       <small> Power by</small>
       <a href="https://gohugo.io">Hugo</a> {{ hugo.Version }}
-
     </span>
-    
-
+  </p>
+  <p>
     <span>
       <small> 运行时间: </small>
       {{$buildData := time.AsTime (.Site.Param "buildDate")}}
@@ -14,8 +13,5 @@
       {{$siteAge}}天
 
     </span>
-
   </p>
-
-
 </div>

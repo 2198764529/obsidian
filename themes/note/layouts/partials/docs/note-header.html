@@ -1,39 +1,22 @@
 <div class="note-header">
   <div class="note-title">
     <a href="{{.RelPermalink}}">
-
       {{partial "docs/title.html" .}}
     </a>
-
   </div>
-
   <div class="note-meta">
-
-
     <span>
-
-      <small class="ios_boder">
-        最近更新:
-      </small>
-      <span class="Lastmod ios_boder" data-unix="{{ .Lastmod.Unix }}"></span>
-
+      <small>最近更新:</small>
+      <span class="Lastmod" data-unix="{{ .Lastmod.Unix }}"></span>
     </span>
     <span>
-
-      <small class="ios_boder">
-        {{if .IsNode}}
-        文章数:
-      </small>
-      {{len .Pages}}
-      {{else}}
-
-      文章字数:
-      </small>
-      {{ .Content | countwords}}
-      {{end}}
-
+        {{if .IsNode}} 
+            <small>笔记数:</small>
+            {{len .Pages}}
+        {{else}}
+            <small>笔记字数:</small>
+            {{ .Content | countwords}}
+        {{end}}
     </span>
-
-
   </div>
 </div>

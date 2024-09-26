@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/工具技术/色彩学.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#B60023",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/工具技术/色彩学.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/工具技术/色彩学.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/工具技术/色彩学.md"
+                "file": "content/notes/理论知识/408/计算机网络.md"
               }
             }
           }
@@ -149,18 +148,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "abc51f3040424b5a",
+  "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
-    "content/notes/工具技术/设计语言.md",
-    "content/notes/工具技术/维基百科.md",
-    "content/notes/个人/清单.md",
+    "themes/note/assets/js/scroll-hidde-menu.js",
+    "themes/note/assets/plugs/scroll-hidde-menu.js",
     "content/notes/工具技术/色彩学.md",
-    "content/notes/杂思/数据展示.md",
+    "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/杂思/测试专用.md",
+    "content/notes/杂思/数据展示.md",
+    "content/notes/杂思/为什么.md",
+    "content/notes/杂思/随记.md",
+    "content/notes/工具技术/技术记录.md",
     "content/notes/个人/计划.md",
     "content/notes/个人/兴起.md",
+    "content/notes/工具技术/设计语言.md",
     "content/notes/个人/修身.md",
-    "content/notes/工具技术/技术记录.md",
+    "content/notes/个人/清单.md",
+    "content/notes/工具技术/git操作.md",
+    "content/notes/工具技术/维基百科.md",
     "content/notes/工具技术/网站收藏.md",
     "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/正则表达式.md",
@@ -169,14 +174,9 @@
     "content/_index.md",
     "content/notes/_index.md",
     "content/notes/个人/关于篮球.md",
-    "content/notes/工具技术/git操作.md",
     "content/notes/个人/关于我.md",
     "content/notes/工具技术/_index.md",
     "content/notes/理论知识/编程语言/python-Flask&Django.md",
-    "content/notes/理论知识/编程语言/Python.md",
-    "content/notes/理论知识/408/计算机网络.md",
-    "content/notes/理论知识/408/数据结构和算法.md",
-    "content/notes/理论知识/408/应用层-Q&A.md",
     "themes/note/assets/data/site/colors.json",
     "themes/note/assets/data/site",
     "resources/_gen/assets/scss/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
@@ -186,7 +186,6 @@
     "resources/_gen/assets/scss/scss",
     "resources/_gen/assets/scss",
     "resources/_gen/assets",
-    "resources/_gen",
     "themes/note/assets/img/test/testImg.jpg",
     "themes/note/assets/img/test/Pasted image 20231226174510.png",
     "themes/note/assets/img/test/Pasted image 20231226174440.png",
