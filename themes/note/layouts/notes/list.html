@@ -1,17 +1,10 @@
-{{ define "main" }}
+{{ define "page-content" }}
 <div class="note-list">
-
   {{ range sort .Paginator.Pages }}
-
-
    <div class="card">
     {{ partial "docs/note-header" . }}
-    
    </div>
-
-   
   {{ end }}
-
   {{ template "_internal/pagination.html" . }}
 </div>
 

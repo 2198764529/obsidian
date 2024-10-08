@@ -70,5 +70,5 @@
 {{- $searchJSFile := printf "%s.search.js" .Language.Lang }}
 {{- $searchJS := resources.Get "js/search.js" | resources.ExecuteAsTemplate $searchJSFile . | resources.Minify | resources.Fingerprint }}
 <script defer src="{{ $searchJS.RelPermalink }}" {{ template `integrity` $searchJS }}></script>
-
-<script src="{{ $js := resources.Get `js/scroll-hidde-menu.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+<!-- 引入 scroll-hidde.min.js -->
+{{/*  <script src="{{ $js := resources.Get `js/scroll-hidde-menu.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>  */}}

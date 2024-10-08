@@ -1,4 +1,4 @@
 <h{{ .Level }} id="{{ .Anchor | safeURL }}">
-  
-  {{ .Text | safeHTML }}
+  {{/*  {{strings.Repeat .Level "#"}}  */}}
+   {{ .Text | safeHTML }}
 </h{{ .Level }}>

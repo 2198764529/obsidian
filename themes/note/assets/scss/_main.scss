@@ -45,7 +45,7 @@ html {
     /* 设置页面样式 */
     .book-page {
       min-width: $body-min-width;
-      flex-grow: 1;
+      flex-grow: 2;
       .markdown {
         transition: 0.2s ease-in-out;
         transition-property: transform, margin, opacity, visibility;
@@ -386,9 +386,7 @@ body[dir="rtl"] .book-menu {
   .book-toc .book-toc-content {
     padding: $padding-16 * 2 $padding-16;
   }
-  .book-page {
-    max-width: 60em;
-  }
+
 
   nav#TableOfContents ul {
     padding-inline-start: None;

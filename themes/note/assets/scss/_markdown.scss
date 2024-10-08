@@ -37,7 +37,9 @@
   pre {
     background: none !important;
     code {
-      width: 100%; /* 容器宽度 */
+      width: fit-content;
+      padding-inline-start: 2em; // 列表内边距
+      padding-inline-end: 2em; // 列表内边距
       overflow-x: auto; // 横向滚动
       font-size: 0.75em; // 字体大小
       white-space: pre-wrap; // 换行
@@ -126,21 +128,48 @@
     background: var(--gray-200); // 背景颜色
   }
 
-  ul,
-  ol {
-    padding-inline-start: 2em; // 列表内边距
+  >ul,
+  >ol {
+    padding: 20px; // 代码块内边距
+
     word-wrap: break-word; // 列表文字折行
-    // counter-reset: custom-counter; /* 重置计数器 */
-    // list-style-type: none; /* 去除默认的有序列表样式 */
+    background: var(--code-bg); // 背景色
+    border-radius: 3px;
+    width: fit-content;
+    counter-reset: custom-counter; /* 重置计数器 */
     li {
       // list-style: none;
       line-height: $line-height;
     }
   }
-  ol > li {
+  ul,ol {  
+    // padding-left: 0; /* 移除默认的左内边距 */  
+    list-style-type: none; /* 去除默认的有序列表样式 */
+  }  
+  
+  ul li {  
+    position: relative; /* 为伪元素定位 */  
+    padding-left: 20px; /* 为标记留出空间 */  
+    margin-bottom: 10px; /* 添加列表项之间的间距 */  
+  }  
+
+  ul li::before {  
+    content: "\2022"; /* 使用Unicode字符表示圆点 */  
+    position: absolute; /* 绝对定位 */  
+    left: 0; /* 对齐到列表项的左侧 */  
+    top: 0em; /* 稍微调整垂直位置 */  
+  }  
+  
+  ul li::before {  
+    color: #FF8C00; /* 设置标记的颜色 */  
+    font-size: 1.2em; /* 设置标记的大小 */  
+
+  }  
+  ol li {
     counter-increment: custom-counter; /* 计数器递增 */
     &::before {
-      // content: counter(custom-counter) ".";
+      content: counter(custom-counter) ".";
+      color: #FF8C00; /* 设置标记的颜色 */  
       border-radius: 50%;
       text-align: left;
       // font-weight: bolder;

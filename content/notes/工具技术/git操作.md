@@ -1,14 +1,58 @@
 ---
 title: git操作
-id: 063576171e
-datetimeCreate: 2023-09-28 22:06:37
-datetimeUpdate: 2024-09-24 17:00:09
+id: ddbf9fb705
+datetimeCreate: 2023-10-10 16:14:27
+datetimeUpdate: 2024-10-08 17:48:17
 ---
+### 示意图
+
+```uml
+cloud Remote
+cloud Repository
+cloud Index
+cloud Workspace
+
+Remote -> Repository : fetch/clone
+Remote <- Repository : push
+Repository <- Index : commit
+Index <-- Workspace : add
+Repository -> Workspace : checkout
+Remote --> Workspace : pull
+```
+- Workspace：工作区
+- Index / Stage：暂存区
+- Repository：本地仓库区
+- Remote：远程仓库区
 ### git 常用命令
 
 #### 查看信息
 ##### git show: 查看 commit 详细信息
+
+```git
+git show <commit_id>
+```
+
+- --name-only: 只显示名称
+- --name-status: 仅显示名称和状态。
+- --oneline：只显示一行, 包括提交的哈希值和提交信息的第一行
+- --stat：显示统计信息(修改行数、新增行数和删除行数)
+- --relative-date：显示相对日期(默认绝对日期)
+- 
+- --format=`format`：`format` 可以是 oneline、short、full、fuller、email、raw 或 format:`format`
+- --pretty=format：同上--format=`format`
+- --patch 或 -p：显示每个提交的差异
+- --color 或 --no-color：是否使用颜色
+- --date=`format`：`format` 可以是 relative（相对日期）、iso（ISO 8601 格式）、rfc（RFC 2822 格式）或自定义的日期格式字符串
+
 ##### git help: 显示 Git 相关的帮助信息
+
+```git
+git help <command>
+```
+
+- -a: 显示所有 Git 命令列表(--all)
+- -g: 显示手册页面(--guide)
+- -c: 显示所有配置变量的名称和简短描述(--config)
 ##### git status: 显示工作目录和暂存区的相关信息
 ##### git diff: 显示工作区和暂存区的差异
 ##### git log: 列出所有提交日志信息

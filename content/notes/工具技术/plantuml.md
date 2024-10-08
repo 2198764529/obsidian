@@ -2,7 +2,7 @@
 title: plantuml
 id: e73cf6dd8d
 datetimeCreate: 2024-09-05 11:36:55
-datetimeUpdate: 2024-09-05 12:13:28
+datetimeUpdate: 2024-10-08 15:11:57
 ---
 
 ### mindmap
@@ -22,3 +22,26 @@ def bubbleSort(arr):
 -- 左
 ```
 
+```uml
+actor actor
+agent agent
+artifact artifact
+boundary boundary
+card card
+cloud cloud
+component component
+control control
+database database
+entity entity
+file file
+folder folder
+frame frame
+interface  interface
+node node
+package package
+queue queue
+stack stack
+rectangle rectangle
+storage storage
+usecase usecase
+```
