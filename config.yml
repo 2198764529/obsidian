@@ -24,9 +24,8 @@ markup:
 #     renderer:
 #       unsafe: true
 #       hardWraps: true
-#   tableOfContents:
-#     startLevel: 1
-#     endLevel: 6
+  tableOfContents:
+    startLevel: 3
 
 # 自定义参数
 params:
