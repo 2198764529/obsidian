@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "content/notes/个人/兴起.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "content/notes/个人/兴起.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "content/notes/个人/兴起.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/清单.md"
+                "file": "content/notes/个人/兴起.md"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 231.5
+    "width": 231.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,6 +152,13 @@
   },
   "active": "f68f4441b9280aa9",
   "lastOpenFiles": [
+    "content/notes/个人/清单.md",
+    "content/notes/工具技术/技术记录.md",
+    "content/notes/工具技术/色彩学.md",
+    "content/notes/工具技术/设计语言.md",
+    "content/notes/工具技术/网站收藏.md",
+    "content/notes/个人/兴起.md",
+    "content/notes/个人/修身.md",
     "content/notes/理论知识/编程语言/Django.md",
     "content/notes/理论知识/编程语言/Python.md",
     "content/notes/理论知识/编程语言/Redis.md",
@@ -158,14 +166,9 @@
     "content/notes/理论知识/编程语言/_index.md",
     "content/notes/工具技术/未命名.md",
     "content/notes/工具技术/维基百科.md",
-    "content/notes/工具技术/网站收藏.md",
     "content/notes/工具技术/正则表达式.md",
     "content/notes/工具技术/Hugo 参考.md",
-    "content/notes/工具技术/色彩学.md",
     "content/notes/工具技术/_index.md",
-    "content/notes/个人/修身.md",
-    "content/notes/个人/兴起.md",
-    "content/notes/个人/清单.md",
     "content/notes/个人/关于我.md",
     "content/notes/个人/计划.md",
     "content/notes/个人/关于篮球.md",
@@ -175,8 +178,6 @@
     "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/理论知识/408/应用层-Q&A.md",
     "content/notes/理论知识/408/计算机网络.md",
-    "content/notes/工具技术/Python 方法参考.md",
-    "content/notes/工具技术/设计语言.md",
     "themes/note/assets/js/scroll-hidde-menu.js",
     "themes/note/assets/plugs/scroll-hidde-menu.js",
     "themes/note/assets/data/site/colors.json",

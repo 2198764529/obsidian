@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/notes/理论知识/408/计算机网络.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "content/_index.md",
+            "file": "content/notes/理论知识/408/计算机网络.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "content/_index.md",
+            "file": "content/notes/理论知识/408/计算机网络.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "content/_index.md"
+            "file": "content/notes/理论知识/408/计算机网络.md"
           }
         }
       }
@@ -123,6 +123,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "remotely-secure:Remotely Sync": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -133,8 +134,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "f44437a64c1987cf",
+  "active": "7fbfd7601e8d165c",
   "lastOpenFiles": [
+    "content/notes/工具技术/_index.md",
+    "content/notes/个人/清单.md",
+    "content/_index.md",
     "README.md",
     "content/posts/个人/关于做事.md",
     "content/posts/计算机网络/自问自答/运输层.md",
@@ -166,9 +170,6 @@
     "/content/posts/目标",
     "content/posts/兴起/_index.md",
     "content/posts/个人/关于篮球.md",
-    "个人/关于睡觉.md",
-    "个人/关于做事.md",
-    "个人/目标.md",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/总结",
     "工作 & 学习/计算机网络/自问自答"

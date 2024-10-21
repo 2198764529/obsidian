@@ -7,7 +7,7 @@
   "newFileFolderPath": "themes/book/static/assert/img",
   "useMarkdownLinks": true,
   "newLinkFormat": "shortest",
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false,
   "showInlineTitle": true,
   "readableLineLength": false,
@@ -16,5 +16,6 @@
   "foldIndent": false,
   "foldHeading": false,
   "showIndentGuide": false,
-  "spellcheck": false
+  "spellcheck": false,
+  "mobileQuickRibbonItem": "command-palette:打开命令面板"
 }

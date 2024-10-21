@@ -12,7 +12,8 @@
 {{/*  manifest.json 引入  */}}
 <link rel="manifest" src="{{ $link := resources.Get `data/manifest.json`  }}{{ $link.RelPermalink }}">
 {{/* favicon 图标引入 */}}
-<link rel="icon" src="{{ $link := resources.Get `img/favicon/favicon.ico`  }}{{ $link.Permalink }}">
+
+<link rel="icon" src="{{ $link := resources.Get `img/favicon/favicon.ico`  }}{{ $link.RelPermalink }}">
 
 {{/*  多语言  */}}
 {{- range .Translations }}
