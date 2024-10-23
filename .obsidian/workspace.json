@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/理论知识/数据库/Redis.md",
+                "file": "content/notes/理论知识/数据库/_index.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/理论知识/数据库/Redis.md",
+                "file": "content/notes/理论知识/数据库/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/理论知识/数据库/Redis.md",
+                "file": "content/notes/理论知识/数据库/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/理论知识/数据库/Redis.md"
+                "file": "content/notes/理论知识/数据库/_index.md"
               }
             }
           }
@@ -161,15 +161,15 @@
   },
   "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
-    "content/notes/理论知识/考公.md",
+    "content/notes/理论知识/数据库/Redis.md",
     "content/notes/理论知识/数据库/_index.md",
+    "content/notes/理论知识/_index.md",
+    "content/notes/理论知识/考公.md",
     "content/notes/理论知识/力扣/_index.md",
     "content/notes/理论知识/力扣/系统攻略.md",
     "content/notes/理论知识/编程语言/Python.md",
     "content/notes/理论知识/编程语言/Django.md",
     "content/notes/理论知识/编程语言/_index.md",
-    "content/notes/理论知识/_index.md",
-    "content/notes/理论知识/数据库/Redis.md",
     "content/notes/工具技术/Hugo 参考.md",
     "content/notes/理论知识/数据库/Drawing 2024-10-23 15.31.52.excalidraw.md",
     "未命名.md",
