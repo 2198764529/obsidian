@@ -4,5 +4,9 @@
   "templater-obsidian",
   "auto-front-matter",
   "remotely-secure",
-  "obsidian-theme-design-utilities"
+  "obsidian-excalidraw-plugin",
+  "obsidian-plantuml",
+  "any-block",
+  "file-tree-alternative",
+  "heatmap-calendar"
 ]

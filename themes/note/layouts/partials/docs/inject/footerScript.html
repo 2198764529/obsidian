@@ -36,10 +36,11 @@
   <script src="{{ $js := resources.Get `plugs/lunar.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 {{- end -}}
 
-
+{{- if .Params.render -}} 
 {{/* PlantUML 相关脚本引入 */}}
 <script src="{{ $js := resources.Get `plugs/plantuml-encoder.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 <script src="{{ $js := resources.Get `js/plantuml.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+{{- end -}}
 
 <!-- 多图片 相关脚本和样式引入-->
  <!-- viewer 插件和样式引入 -->

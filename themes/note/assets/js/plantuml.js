@@ -40,7 +40,7 @@ function plantuml() {
     let iframe = document.createElement("embed");
     el_innerText = `@start${lang} \n${getCssPlantuml()}\n${el_innerText}\n@end${lang}`;
     el_innerText = plantumlEncoder.encode(el_innerText);
-    iframe.src = `https://www.plantuml.com/plantuml/svg/~1${el_innerText}`;
+    iframe.src = `https://www.plantuml.com/plantuml/png/~1${el_innerText}`;
     iframe.style.display = "inline";
     el.innerHTML = iframe.outerHTML;
   }

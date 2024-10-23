@@ -37,20 +37,20 @@
   pre {
     background: none !important;
     code {
-      width: fit-content;
-      padding-inline-start: 2em; // 列表内边距
-      padding-inline-end: 2em; // 列表内边距
-      overflow-x: auto; // 横向滚动
-      font-size: 0.75em; // 字体大小
-      white-space: pre-wrap; // 换行
-      padding: $padding-16; // 代码块内边距
-      border-radius: 5px; // 边框圆角
-      background: var(--code-bg); // 背景色
-      display: inline-block;
-      color: white;
-      span {
-        word-wrap: break-word; // 单词折行
-      }
+      // width: fit-content;
+      // padding-inline-start: 2em; // 列表内边距
+      // padding-inline-end: 2em; // 列表内边距
+      // overflow-x: auto; // 横向滚动
+      // font-size: 0.75em; // 字体大小
+      // white-space: pre-wrap; // 换行
+      // padding: $padding-16; // 代码块内边距
+      // border-radius: 5px; // 边框圆角
+      // background: var(--code-bg); // 背景色
+      // display: inline-block;
+      // color: white;
+      // span {
+      //   word-wrap: break-word; // 单词折行
+      // }
     }
     code.language-gallery,
     code.language-mindmap,

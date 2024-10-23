@@ -9,12 +9,12 @@ disablePathToLower: true
 enableGitInfo: true
 
 # Needed for mermaid/katex shortcodes
-# markup:
-#   goldmark:
-#     renderer:
-#       unsafe: true
-#   tableOfContents:
-#     startLevel: 0
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 0
 
 # Multi-lingual mode config
 # There are different options to translate files
