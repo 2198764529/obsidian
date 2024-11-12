@@ -3,10 +3,8 @@
   "table-editor-obsidian",
   "templater-obsidian",
   "auto-front-matter",
-  "remotely-secure",
   "obsidian-excalidraw-plugin",
   "obsidian-plantuml",
   "any-block",
-  "file-tree-alternative",
-  "heatmap-calendar"
+  "remotely-save"
 ]

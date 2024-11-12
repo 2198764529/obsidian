@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/理论知识/数据库/_index.md",
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -64,14 +64,6 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "82a8d4d67d7bce42",
-            "type": "leaf",
-            "state": {
-              "type": "file-tree-view",
-              "state": {}
-            }
           }
         ]
       }
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/理论知识/数据库/_index.md",
+                "file": "content/notes/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/理论知识/数据库/_index.md",
+                "file": "content/notes/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/理论知识/数据库/_index.md"
+                "file": "content/notes/个人/清单.md"
               }
             }
           }
@@ -153,50 +145,49 @@
       "canvas:新建白板": true,
       "daily-notes:打开/创建今天的日记": true,
       "templates:插入模板": true,
-      "remotely-secure:Remotely Sync": true,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "obsidian-excalidraw-plugin:新建绘图文件": true,
+      "remotely-save:Remotely Save": false
     }
   },
   "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
-    "content/notes/理论知识/数据库/Redis.md",
-    "content/notes/理论知识/数据库/_index.md",
-    "content/notes/理论知识/_index.md",
-    "content/notes/理论知识/考公.md",
-    "content/notes/理论知识/力扣/_index.md",
-    "content/notes/理论知识/力扣/系统攻略.md",
+    "content/notes/个人/计划.md",
+    "content/notes/个人/关于我.md",
+    "content/notes/个人/关于篮球.md",
+    "content/notes/个人/支出计算.md",
+    "content/notes/个人/修身.md",
+    "content/notes/个人/兴起.md",
+    "content/notes/项目/产品天梯.md",
+    "content/notes/项目/_index.md",
+    "content/notes/杂思/_index.md",
+    "content/notes/理论知识/408/计算机网络.md",
+    "content/notes/项目",
+    "content/notes/工具技术/未命名.md",
+    "content/notes/工具技术/git操作.md",
     "content/notes/理论知识/编程语言/Python.md",
     "content/notes/理论知识/编程语言/Django.md",
-    "content/notes/理论知识/编程语言/_index.md",
-    "content/notes/工具技术/Hugo 参考.md",
-    "content/notes/理论知识/数据库/Drawing 2024-10-23 15.31.52.excalidraw.md",
-    "未命名.md",
-    "content/notes/杂思/我的图库.md",
     "content/notes/理论知识/编程语言/Redis.md",
+    "content/notes/理论知识/力扣/_index.md",
+    "content/notes/理论知识/数据库/_index.md",
+    "content/notes/理论知识/考公.md",
+    "content/notes/杂思/随记.md",
+    "content/notes/杂思/我的图库.md",
     "content/notes/杂思/文摘.md",
+    "content/notes/杂思/为什么.md",
+    "content/notes/杂思/数据展示.md",
+    "content/notes/杂思/第二台笔记本选购.md",
+    "content/notes/杂思/测试专用.md",
+    "content/notes/杂思/博客文摘.md",
     "content/images/post",
-    "Excalidraw/Drawing 2024-10-23 15.11.01.excalidraw.md",
     "Excalidraw",
     "content/notes/理论知识/数据库",
-    "content/notes/理论知识/408/计算机网络.md",
-    "content/notes/工具技术/设计语言.md",
-    "content/notes/个人/兴起.md",
-    "content/notes/个人/清单.md",
-    "content/notes/工具技术/技术记录.md",
-    "content/notes/工具技术/色彩学.md",
-    "content/notes/工具技术/网站收藏.md",
-    "content/notes/个人/修身.md",
-    "content/notes/工具技术/git操作.md",
-    "content/notes/工具技术/未命名.md",
     "themes/note/assets/js/scroll-hidde-menu.js",
     "themes/note/assets/plugs/scroll-hidde-menu.js",
     "themes/note/assets/data/site/colors.json",
     "themes/note/assets/data/site",
     "resources/_gen/assets/scss/scss/book.scss_e129fe35b8d0a70789c8a08429469073.json",
     "resources/_gen/assets/scss/scss/book.scss_e129fe35b8d0a70789c8a08429469073.content",
-    "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
     "themes/note/assets/img/test/testImg.jpg",
     "themes/note/assets/img/test/Pasted image 20231226174510.png",
     "themes/note/assets/img/test/Pasted image 20231226174440.png",
