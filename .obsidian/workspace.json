@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "README.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/清单.md"
+                "file": "README.md"
               }
             }
           }
@@ -139,7 +139,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "templater-obsidian:Templater": true,
       "switcher:打开快速切换": true,
       "graph:查看关系图谱": true,
       "canvas:新建白板": true,
@@ -152,12 +151,13 @@
   },
   "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
+    "content/notes/个人/兴起.md",
+    "content/notes/个人/清单.md",
     "content/notes/个人/计划.md",
     "content/notes/个人/关于我.md",
     "content/notes/个人/关于篮球.md",
     "content/notes/个人/支出计算.md",
     "content/notes/个人/修身.md",
-    "content/notes/个人/兴起.md",
     "content/notes/项目/产品天梯.md",
     "content/notes/项目/_index.md",
     "content/notes/杂思/_index.md",
@@ -178,7 +178,6 @@
     "content/notes/杂思/数据展示.md",
     "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/杂思/测试专用.md",
-    "content/notes/杂思/博客文摘.md",
     "content/images/post",
     "Excalidraw",
     "content/notes/理论知识/数据库",
