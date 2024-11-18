@@ -1,2 +1,0 @@
-function gallery(){const e=document.querySelectorAll(".language-gallery");Array.from(e).forEach(e=>{const t=e.textContent.trim().split(`
-`);e.parentNode.insertAdjacentHTML("beforebegin",`<div class="picGallery"></div>`);const n=e.parentNode.previousSibling;t.forEach(e=>{e&&n.insertAdjacentHTML("beforeend",`<div><img src="${e.trim()}" data-lazy-src="${e.trim()}"></div>`)})});const t=new Viewer(document.getElementsByTagName("article")[0])}gallery()

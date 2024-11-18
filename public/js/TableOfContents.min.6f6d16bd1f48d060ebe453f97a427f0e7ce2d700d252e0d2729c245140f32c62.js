@@ -1,1 +1,0 @@
-function TableOfContents(){let e=document.querySelectorAll("#TableOfContents a");window.addEventListener("scroll",()=>{const t=window.scrollY;for(const n of e){const s=n.getAttribute("href").substring(1),o=document.getElementById(s);o.offsetTop<=t?n.classList.add("active"):n.classList.remove("active")}})}TableOfContents()
