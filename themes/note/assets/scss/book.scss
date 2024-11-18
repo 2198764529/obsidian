@@ -1,13 +1,25 @@
 @import "defaults";
 @import "variables";
-@import "themes/{{ default `light` .Site.Params.BookTheme }}";
 @import "normalize";
+@import "global";
 @import "utils";
 @import "main";
 @import "fonts";
 @import "print";
 @import "markdown";
 @import "shortcodes";
+@import "nav";
 
 // Custom defined styles
 @import "custom";
+
+
+:root {
+    @include theme-light;
+  }
+  
+@media (prefers-color-scheme: dark) {
+:root {
+    @include theme-dark;
+}
+}

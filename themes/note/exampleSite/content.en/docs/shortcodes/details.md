@@ -1,3 +1,7 @@
+---
+id: "4086882507"
+datetimeCreate: 2024-11-16 20:31:53
+---
 # Details
 
 Details shortcode is a helper for `details` html5 element. It is going to replace `expand` shortcode.

@@ -1,3 +1,7 @@
+---
+id: 5f4e3e3f5a
+datetimeCreate: 2024-11-16 20:31:55
+---
 +++
 title = "Getting Started with Hugo"
 description = ""

@@ -1,3 +1,7 @@
+---
+id: e7719d2a3d
+datetimeCreate: 2024-11-16 20:31:56
+---
 +++
 title = "(Hu)go Template Primer"
 description = ""

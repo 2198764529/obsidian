@@ -1,3 +1,7 @@
+---
+id: 8ff61e2878
+datetimeCreate: 2024-11-16 20:32:14
+---
 # Hugo Book Theme
 
 [![Hugo](https://img.shields.io/badge/hugo-0.79-blue.svg)](https://gohugo.io)

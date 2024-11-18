@@ -1,3 +1,7 @@
+---
+id: 466486fd64
+datetimeCreate: 2024-11-16 20:31:53
+---
 # Columns
 
 Columns help organize shorter pieces of content horizontally for readability.

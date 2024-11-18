@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="zh-cn"
+  dir="ltr">
+
+<head>
+	<meta name="generator" content="Hugo 0.132.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>好记性不如烂笔头 | 流笔</title>
+
+
+<link rel="manifest" src="/data/manifest.json">
+
+<link rel="shortcut icon" src="/img/favicon/favicon.ico">
+
+
+<link rel="stylesheet" href="/scss/book.scss" integrity="" crossorigin="anonymous">
+
+
+<script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<div class="book-page">
+  <header class="book-header card">
+
+<div class="left">
+  
+    
+<div>
+  <span>
+    <small> 最近更新时间: </small>
+    2024-11-12 17:19
+  </span>
+  <p>
+    <span>
+      <small> 文章数: </small>
+      42
+    </span>
+    <span>
+      <small> 总字数: </small>
+      
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+      
+      
+      70.849k
+    </span>
+  </p>
+
+</div>
+
+  
+</div>
+<div class="right">
+  <label for="menu-control">
+  <img src="http://localhost:80/img/svg/menu.svg" class="book-icon" alt="Menu" />
+</label>
+</div>
+</header>
+
+
+
+
+  
+  
+<main aria-role="main">
+ 
+  <div id="calendar" class="card" ></div>
+
+
+
+
+  <div id="myData" class="card markdown" >
+    
+    
+    
+    <h3 id="介绍">
+  
+   介绍
+</h3>
+<p>这是一个用于记录技术文档、个人心得、个人收藏的笔记本，创立于 23 年 7 月。
+笔记本的名字叫做 流笔， 意为流动不止的笔，即希望多动笔不要让笔停下来。</p>
+<h3 id="安装hugo">
+  
+   安装hugo
+</h3>
+<pre tabindex="0"><code>winget install Hugo.Hugo
+</code></pre><h3 id="运行hugo">
+  
+   运行hugo
+</h3>
+<pre tabindex="0"><code>hugo server -p 80 --navigateToChanged  --disableFastRender
+</code></pre><h3 id="项目结构">
+  
+   项目结构
+</h3>
+<pre tabindex="0"><code>C:.
+│  .gitmodules
+│  .hugo_build.lock
+│  config.yml
+│  README.md
+│  tree.md
+│  未命名.md
+│
+├─.github
+│  └─workflows
+│          build.yml
+│
+├─.obsidian
+│  │  app.json
+│  │  appearance.json
+│  │  canvas.json
+│  │  community-plugins.json
+│  │  core-plugins-migration.json
+│  │  core-plugins.json
+│  │  graph.json
+│  │  hotkeys.json
+│  │  templates.json
+│  │  text-generator.json
+│  │  types.json
+│  │  workspace-mobile.json
+│  │  workspace.json
+│  │
+│  ├─plugins
+│  │  ├─auto-front-matter
+│  │  │      data.json
+│  │  │      main.js
+│  │  │      manifest.json
+│  │  │
+│  │  ├─cmdr
+│  │  │      main.js
+│  │  │      manifest.json
+│  │  │      styles.css
+│  │  │
+│  │  ├─obsidian-excalidraw-plugin
+│  │  │      data.json
+│  │  │      main.js
+│  │  │      manifest.json
+│  │  │      styles.css
+│  │  │
+│  │  ├─obsidian-git
+│  │  │      data.json
+│  │  │      main.js
+│  │  │      manifest.json
+│  │  │      styles.css
+│  │  │
+│  │  ├─remotely-save
+│  │  │      .gitignore
+│  │  │      data.json
+│  │  │      main.js
+│  │  │      manifest.json
+│  │  │      styles.css
+│  │  │
+│  │  └─table-editor-obsidian
+│  │          data.json
+│  │          main.js
+│  │          manifest.json
+│  │          styles.css
+│  │
+│  ├─snippets
+│  └─themes
+│      ├─Atom
+│      │      manifest.json
+│      │      theme.css
+│      │
+│      ├─Minimal
+│      │      manifest.json
+│      │      theme.css
+│      │
+│      └─Things
+│              manifest.json
+│              theme.css
+│
+├─archetypes
+│      default.md
+│
+├─content
+│  │  _index.md
+│  │
+│  ├─images
+│  │  ├─img
+│  │  │      china.png
+│  │  │
+│  │  └─personal
+│  │      ├─bg
+│  │      │      Shenzhen_Observatory2021.jpg
+│  │      │
+│  │      ├─other
+│  │      │      Pasted image 20240401181601.png
+│  │      │
+│  │      └─study
+│  │              bubbleSort.png
+│  │              d862cee765be33d0327662b8f8169dd.png
+│  │              insertSort.png
+│  │              insertSort2.png
+│  │              selectionSort.png
+│  │
+│  ├─moments
+│  │      lfeng.md
+│  │      中国.md
+│  │
+│  └─notes
+│      │  _index.md
+│      │
+│      ├─个人
+│      │      _index.md
+│      │      修身.md
+│      │      关于我.md
+│      │      关于篮球.md
+│      │      兴起.md
+│      │      支出计算.md
+│      │      清单.md
+│      │      计划.md
+│      │
+│      ├─工具技术
+│      │      git操作.md
+│      │      Hugo 参考.md
+│      │      markDown 语法.md
+│      │      plantuml.md
+│      │      Python 方法参考.md
+│      │      _index.md
+│      │      技术记录.md
+│      │      正则表达式.md
+│      │      维基百科.md
+│      │      网站收藏.md
+│      │      色彩学.md
+│      │      设计语言.md
+│      │
+│      ├─杂思
+│      │      emjoy.md
+│      │      _index.md
+│      │      为什么.md
+│      │      博客文摘.md
+│      │      我的图库.md
+│      │      数据展示.md
+│      │      文摘.md
+│      │      测试专用.md
+│      │      第二台笔记本选购.md
+│      │      随记.md
+│      │
+│      ├─理论知识
+│      │  │  _index.md
+│      │  │  五笔输入法.md
+│      │  │  数学知识.md
+│      │  │  考公.md
+│      │  │
+│      │  ├─408
+│      │  │      _index.md
+│      │  │      应用层-Q&amp;A.md
+│      │  │      数据结构和算法.md
+│      │  │      计算机网络.md
+│      │  │      运输层-Q&amp;A.md
+│      │  │
+│      │  ├─力扣
+│      │  │      _index.md
+│      │  │      系统攻略.md
+│      │  │
+│      │  ├─数据库
+│      │  │      Redis.md
+│      │  │      _index.md
+│      │  │
+│      │  └─编程语言
+│      │          Django.md
+│      │          Python.md
+│      │          Redis.md
+│      │          _index.md
+│      │
+│      └─项目
+│              _index.md
+│              产品天梯.md
+│
+├─data
+│      colors.json
+│      myData.json
+│      myMuiscs.json
+│
+├─Excalidraw
+│      Drawing 2024-10-23 15.11.01.excalidraw.md
+│
+└─themes
+    └─note
+        │  go.mod
+        │  README.md
+        │  theme.toml
+        │
+        ├─archetypes
+        │      docs.md
+        │      posts.md
+        │
+        ├─assets
+        │  ├─data
+        │  │  │  manifest.json
+        │  │  │  mermaid.json
+        │  │  │  myData.csv
+        │  │  │  search-data.json
+        │  │  │
+        │  │  ├─my
+        │  │  │      m.json
+        │  │  │      myData - 副本.csv
+        │  │  │      myData.csv
+        │  │  │      myData.json
+        │  │  │
+        │  │  └─site
+        │  │          colors.json
+        │  │
+        │  ├─fonts
+        │  │      PingFang-SC-Regular.ttf
+        │  │      roboto-mono-v13-latin-regular.woff
+        │  │      roboto-mono-v13-latin-regular.woff2
+        │  │      roboto-v27-latin-700.woff
+        │  │      roboto-v27-latin-700.woff2
+        │  │      roboto-v27-latin-regular.woff
+        │  │      roboto-v27-latin-regular.woff2
+        │  │
+        │  ├─img
+        │  │  ├─favicon
+        │  │  │      favicon.ico
+        │  │  │      favicon.png
+        │  │  │
+        │  │  ├─svg
+        │  │  │      calendar.svg
+        │  │  │      edit.svg
+        │  │  │      menu.svg
+        │  │  │      toc.svg
+        │  │  │      translate.svg
+        │  │  │
+        │  │  └─test
+        │  │          IMG_20230128_162005 1.jpg
+        │  │          MinimalistScenery04 1.jpg
+        │  │          Pasted image 20231226174334.png
+        │  │          Pasted image 20231226174344.png
+        │  │          Pasted image 20231226174348.png
+        │  │          Pasted image 20231226174436.png
+        │  │          Pasted image 20231226174440.png
+        │  │          Pasted image 20231226174510.png
+        │  │          testImg.jpg
+        │  │
+        │  ├─js
+        │  │      clipboard.js
+        │  │      colorShow.js
+        │  │      fullCalendar.js
+        │  │      gallery.js
+        │  │      menu-reset.js
+        │  │      plantuml.js
+        │  │      scroll-hidde-menu.js
+        │  │      search.js
+        │  │      sw-register.js
+        │  │      sw.js
+        │  │      tableMeger.js
+        │  │      TableOfContents.js
+        │  │      updateDateTimeByElementClass.js
+        │  │
+        │  ├─katex
+        │  │  │  auto-render.min.js
+        │  │  │  katex.min.css
+        │  │  │  katex.min.js
+        │  │  │
+        │  │  └─fonts
+        │  │          KaTeX_AMS-Regular.ttf
+        │  │          KaTeX_AMS-Regular.woff
+        │  │          KaTeX_AMS-Regular.woff2
+        │  │          KaTeX_Caligraphic-Bold.ttf
+        │  │          KaTeX_Caligraphic-Bold.woff
+        │  │          KaTeX_Caligraphic-Bold.woff2
+        │  │          KaTeX_Caligraphic-Regular.ttf
+        │  │          KaTeX_Caligraphic-Regular.woff
+        │  │          KaTeX_Caligraphic-Regular.woff2
+        │  │          KaTeX_Fraktur-Bold.ttf
+        │  │          KaTeX_Fraktur-Bold.woff
+        │  │          KaTeX_Fraktur-Bold.woff2
+        │  │          KaTeX_Fraktur-Regular.ttf
+        │  │          KaTeX_Fraktur-Regular.woff
+        │  │          KaTeX_Fraktur-Regular.woff2
+        │  │          KaTeX_Main-Bold.ttf
+        │  │          KaTeX_Main-Bold.woff
+        │  │          KaTeX_Main-Bold.woff2
+        │  │          KaTeX_Main-BoldItalic.ttf
+        │  │          KaTeX_Main-BoldItalic.woff
+        │  │          KaTeX_Main-BoldItalic.woff2
+        │  │          KaTeX_Main-Italic.ttf
+        │  │          KaTeX_Main-Italic.woff
+        │  │          KaTeX_Main-Italic.woff2
+        │  │          KaTeX_Main-Regular.ttf
+        │  │          KaTeX_Main-Regular.woff
+        │  │          KaTeX_Main-Regular.woff2
+        │  │          KaTeX_Math-BoldItalic.ttf
+        │  │          KaTeX_Math-BoldItalic.woff
+        │  │          KaTeX_Math-BoldItalic.woff2
+        │  │          KaTeX_Math-Italic.ttf
+        │  │          KaTeX_Math-Italic.woff
+        │  │          KaTeX_Math-Italic.woff2
+        │  │          KaTeX_SansSerif-Bold.ttf
+        │  │          KaTeX_SansSerif-Bold.woff
+        │  │          KaTeX_SansSerif-Bold.woff2
+        │  │          KaTeX_SansSerif-Italic.ttf
+        │  │          KaTeX_SansSerif-Italic.woff
+        │  │          KaTeX_SansSerif-Italic.woff2
+        │  │          KaTeX_SansSerif-Regular.ttf
+        │  │          KaTeX_SansSerif-Regular.woff
+        │  │          KaTeX_SansSerif-Regular.woff2
+        │  │          KaTeX_Script-Regular.ttf
+        │  │          KaTeX_Script-Regular.woff
+        │  │          KaTeX_Script-Regular.woff2
+        │  │          KaTeX_Size1-Regular.ttf
+        │  │          KaTeX_Size1-Regular.woff
+        │  │          KaTeX_Size1-Regular.woff2
+        │  │          KaTeX_Size2-Regular.ttf
+        │  │          KaTeX_Size2-Regular.woff
+        │  │          KaTeX_Size2-Regular.woff2
+        │  │          KaTeX_Size3-Regular.ttf
+        │  │          KaTeX_Size3-Regular.woff
+        │  │          KaTeX_Size3-Regular.woff2
+        │  │          KaTeX_Size4-Regular.ttf
+        │  │          KaTeX_Size4-Regular.woff
+        │  │          KaTeX_Size4-Regular.woff2
+        │  │          KaTeX_Typewriter-Regular.ttf
+        │  │          KaTeX_Typewriter-Regular.woff
+        │  │          KaTeX_Typewriter-Regular.woff2
+        │  │
+        │  ├─plugins
+        │  │      highcharts.js
+        │  │      mermaid.min.js
+        │  │      plantuml-encoder.min.js
+        │  │      _numbered.scss
+        │  │      _scrollbars.scss
+        │  │
+        │  ├─plugs
+        │  │      element-ui.css
+        │  │      element-ui.js
+        │  │      flexsearch.min.js
+        │  │      fullcalendar-zh-cn.js
+        │  │      fullcalendar.js
+        │  │      highcharts.js
+        │  │      highlight.min.js
+        │  │      lunar.min.js
+        │  │      mermaid.js
+        │  │      mermaid.min.js
+        │  │      papaparse.min.js
+        │  │      plantuml-encoder.min.js
+        │  │      viewer.css
+        │  │      viewer.min.js
+        │  │      vue.js
+        │  │
+        │  └─scss
+        │          book.scss
+        │          normalize.css
+        │          _custom.scss
+        │          _defaults.scss
+        │          _fonts.scss
+        │          _main.scss
+        │          _markdown.scss
+        │          _print.scss
+        │          _shortcodes.scss
+        │          _utils.scss
+        │          _variables.scss
+        │
+        ├─exampleSite
+        │  │  config.toml
+        │  │  config.yaml
+        │  │
+        │  └─content.en
+        │      │  _index.md
+        │      │
+        │      ├─docs
+        │      │  ├─example
+        │      │  │  │  hidden.md
+        │      │  │  │  _index.md
+        │      │  │  │
+        │      │  │  ├─collapsed
+        │      │  │  │  │  _index.md
+        │      │  │  │  │
+        │      │  │  │  └─3rd-level
+        │      │  │  │          4th-level.md
+        │      │  │  │          _index.md
+        │      │  │  │
+        │      │  │  └─table-of-contents
+        │      │  │          with-toc.md
+        │      │  │          without-toc.md
+        │      │  │          _index.md
+        │      │  │
+        │      │  └─shortcodes
+        │      │      │  buttons.md
+        │      │      │  columns.md
+        │      │      │  details.md
+        │      │      │  expand.md
+        │      │      │  hints.md
+        │      │      │  katex.md
+        │      │      │  mermaid.md
+        │      │      │  tabs.md
+        │      │      │  _index.md
+        │      │      │
+        │      │      └─section
+        │      │              first-page.md
+        │      │              second-page.md
+        │      │              _index.md
+        │      │
+        │      ├─menu
+        │      │      index.md
+        │      │
+        │      └─posts
+        │              creating-a-new-theme.md
+        │              goisforlovers.md
+        │              hugoisforlovers.md
+        │              migrate-from-jekyll.md
+        │              _index.md
+        │
+        ├─i18n
+        │      am.yaml
+        │      bn.yaml
+        │      cn.yaml
+        │      cs.yaml
+        │      de.yaml
+        │      en.yaml
+        │      es.yaml
+        │      fa.yaml
+        │      fr.yaml
+        │      it.yaml
+        │      ja.yaml
+        │      jp.yaml
+        │      ko.yaml
+        │      nb.yaml
+        │      pt.yaml
+        │      ru.yaml
+        │      sv.yaml
+        │      tr.yaml
+        │      uk.yaml
+        │      zh-TW.yaml
+        │      zh.yaml
+        │
+        ├─images
+        │      screenshot.png
+        │      tn.png
+        │
+        └─layouts
+            │  404.html
+            │
+            ├─moments
+            │      single.html
+            │
+            ├─notes
+            │      list.html
+            │      single.html
+            │
+            ├─partials
+            │  └─docs
+            │      │  comments.html
+            │      │  footer.html
+            │      │  header.html
+            │      │  html-head-title.html
+            │      │  html-head.html
+            │      │  languages.html
+            │      │  logo.html
+            │      │  menu-bundle.html
+            │      │  menu-filetree.html
+            │      │  menu-hugo.html
+            │      │  menu.html
+            │      │  note-header.html
+            │      │  search.html
+            │      │  taxonomy.html
+            │      │  title.html
+            │      │  toc.html
+            │      │
+            │      ├─custom
+            │      │      calendar.html
+            │      │      myData.html
+            │      │      timeline.html
+            │      │
+            │      └─inject
+            │              body.html
+            │              content-after.html
+            │              content-before.html
+            │              footerScript.html
+            │              head.html
+            │              menu-after.html
+            │              menu-before.html
+            │              toc-after.html
+            │              toc-before.html
+            │
+            ├─shortcodes
+            │      button.html
+            │      colorWheel.htm
+            │      columns.html
+            │      data.html
+            │      dataColors.html
+            │      details.html
+            │      expand.html
+            │      hint.html
+            │      katex.html
+            │      section.html
+            │      tab.html
+            │      tabs.html
+            │      totalwordcount.html
+            │
+            ├─taxonomy
+            │      list.html
+            │      taxonomy.html
+            │
+            └─_default
+                │  baseof.html
+                │  index.html
+                │  list.html
+                │  single.html
+                │
+                └─_markup
+                        render-heading.html
+                        render-image.html
+                        render-link.html
+</code></pre>
+
+
+</div>
+
+
+</main>
+ 
+  
+
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+</div>
+
+
+
+    
+<aside class="book-menu">
+  <div class="book-menu-content card">
+    <nav>
+<h2 class="book-logo">
+    <a class="myFont" href="/">
+
+      流笔 
+     </a>
+
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="在 0 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-3e0eff0dc3b842a6af5f4c12573c8cbb" class="toggle" checked>
+    <label for="section-3e0eff0dc3b842a6af5f4c12573c8cbb" class="flex justify-between">
+      <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/" role="button">技术</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/" 
+       class="">git操作</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/" 
+       class="">Hugo 参考</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/" 
+       class="">markDown 语法</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/" 
+       class="">plantuml</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/" 
+       class="">python 方法参考</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/" 
+       class="">技术记录</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/" 
+       class="">色彩学</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/" 
+       class="">设计语言</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/" 
+       class="">网站收藏</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/" 
+       class="">维基百科</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" 
+       class="">正则表达式</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-ccf7a5afe4c6b54e947e40730b86e6d9" class="toggle" checked>
+    <label for="section-ccf7a5afe4c6b54e947e40730b86e6d9" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" role="button">理论知识</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-378fdacb30399599e27ba3885be0260d" class="toggle" checked>
+    <label for="section-378fdacb30399599e27ba3885be0260d" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" role="button">编程语言</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/" 
+       class="">Django</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" 
+       class="">Python</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/" 
+       class="">Redis</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-76ffc67007f7f883705c3aa64566e52a" class="toggle" checked>
+    <label for="section-76ffc67007f7f883705c3aa64566e52a" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/" role="button">理论知识</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" 
+       class="">计算机网络</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" 
+       class="">数据结构和算法</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E5%BA%94%E7%94%A8%E5%B1%82-qa/" 
+       class="">应用层-Q&amp;A</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%BF%90%E8%BE%93%E5%B1%82-qa/" 
+       class="">运输层-Q&amp;A</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-4eef090d8100d7fd44e36c3f338b8b72" class="toggle" checked>
+    <label for="section-4eef090d8100d7fd44e36c3f338b8b72" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%8A%9B%E6%89%A3/" role="button">力扣</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%8A%9B%E6%89%A3/%E7%B3%BB%E7%BB%9F%E6%94%BB%E7%95%A5/" 
+       class="">系统攻略</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-6f4e43b51a1ad2b2bb4956e01f9f1600" class="toggle" checked>
+    <label for="section-6f4e43b51a1ad2b2bb4956e01f9f1600" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/" role="button">数据库</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" 
+       class="">Redis</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" 
+       class="">数学知识</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/" 
+       class="">五笔输入法</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var t,e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop),console.log("1")}),t=document.getElementsByClassName("book-menu-overlay"),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+    
+
+<nav id="TableOfContents"></nav>
+
+
+
+    <div class="footer">
+  <p>
+    <span>
+      <small> Power by</small>
+      <a href="https://gohugo.io">Hugo</a> 0.132.0
+    </span>
+  </p>
+  <p>
+    <span>
+      <small> 运行时间: </small>
+      
+      
+      630天
+
+    </span>
+  </p>
+</div>
+  </div>
+</aside>
+<footer class="book-footer">
+  
+  <div id="viewer-container"></div>
+
+<script>
+  
+  window.onload = function () {
+    
+    updateDateTimeByElementClass("LastChange");
+    
+    updateDateTimeByElementClass("AuthorDate");
+    
+    updateDateTimeByElementClass("nowDate");
+    
+    updateDateTimeByElementClass("date");
+    
+    updateDateTimeByElementClass("Lastmod");
+  };
+</script>
+
+
+  
+  
+  <script>
+  window.myDataLink = "http:\/\/localhost:80\/data\/my\/myData.csv";
+
+</script>
+  
+  <script src="http://localhost:80/js/fullCalendar.min.0f863f1f74bd308f665a9254e495477c1dfcd2759008aa0bda1f78fbe1fdaaeb.js"></script>
+
+  <script src="http://localhost:80/plugs/fullcalendar.min.2b5744abbe8606b58a0cb0a16d853fe94beebb8463f67a33c2db613b7d09d1b9.js"></script>
+
+  
+  <script src="http://localhost:80/plugs/fullcalendar-zh-cn.min.546a6c1e9658b9b31591f3ea3646eaa0b187b8bf3a7b0e8e48b22649b9a5256e.js"></script>
+  
+  <script src="http://localhost:80/plugs/lunar.min.min.74a54977563e1fc07d97c467694ca87879af81f9cb3fde9a0f6a3da9fb941b95.js"></script>
+ 
+<script src="http://localhost:80/plugs/viewer.min.min.aab181323824026cd966bd782bd1e95408a30cd32d34872e630d8f102aa1ecd5.js"></script>
+<link src="http://localhost:80/plugs/viewer.min.5a4aef2c7d7afc31356e0ff2523716614f3deca0315d05acc309ef2261dee5cf.css">
+
+<script src="http://localhost:80/js/gallery.min.f2a7f843aad3dcaa02559f2b00543afd308b2526e7a2fa05ac30d48a769856a8.js"></script>
+
+
+<script src="http://localhost:80/js/updateDateTimeByElementClass.min.4779b9844c0d0cfe30c2960bd935a7eb3344cef539051bc55238b195720b8425.js"></script>
+
+
+<script src="http://localhost:80/js/TableOfContents.min.6f6d16bd1f48d060ebe453f97a427f0e7ce2d700d252e0d2729c245140f32c62.js"></script>
+
+
+<script src="http://localhost:80/plugs/highlight.min.min.a82cdbc9cc13bd52c02f1240a91db2db70cb34e3cf650c4db41906b3b109fa9d.js"></script>
+
+
+<script src="http://localhost:80/js/tableMeger.min.5c5a29d480acf715487edc1cbcba78d3039e9d36dfcff927216dd4288863b536.js"></script>
+<script src="http://localhost:80/plugs/papaparse.min.min.9a67d553028aa2c0894e5272104dd8053bbc04bdd75941e66d51fc0b903f1cea.js"></script>
+<script defer src="/zh-cn.search.min.42f616c39d6c8985876feae2f6708f149d917908519830a4283a19939ac948d1.js" integrity="sha256-QvYWw51siYWHb&#43;ri9nCPFJ2ReQhRmDCkKDoZk5rJSNE=" crossorigin="anonymous"></script>
+
+
+
+</footer>
+ 
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

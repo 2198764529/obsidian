@@ -1,6 +1,5 @@
 ---
 weight: 2
-bookhidden: true
 title: 个人
 id: b6421c3216
 datetimeCreate: 2023-09-25 14:40:52

@@ -1,6 +1,7 @@
 ---
+date:
+  "{ .Date }": 
 title: "{{ .Name | humanize | title }}"
-date: {{ .Date }}
-# bookComments: false
-# bookSearchExclude: false
+id: a00dc6185d
+datetimeCreate: 2024-11-16 20:32:09
 ---

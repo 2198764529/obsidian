@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>理论知识 on 流笔</title>
+    <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</link>
+    <description>Recent content in 理论知识 on 流笔</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/</link>
+      <pubDate>Sun, 11 Aug 2024 19:37:42 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E8%80%83%E5%85%AC/</guid>
+      <description>&#xD;总题量与分值&#xD;行测-90分-90题-100分&#xD;言表-15道-13分&#xD;数关-15道-18分&#xD;判推-40道-42分&#xD;常识-15道-9分&#xD;资分-15道-18分&#xD;申论-3小时-5题-100分 行测&#xD;言表&#xD;主题词&#xD;中心题&#xD;标题题&#xD;细节题&#xD;方法&#xD;关联词(找重点)-转折重点折后,因果在果后,条件是重点,并列是概括&#xD;主题词-排除无主题词选项&#xD;文构-总分在前,分总在后,总分总在中&#xD;避陷阱-无中生有,偷换概念,偷换逻辑,不符文意&#xD;非主题词&#xD;排序题&#xD;首-下定义,背景引入&#xD;中-代词,关联词,逻辑&#xD;尾,结论&#xD;句空题&#xD;首-概括,引入&#xD;中,承上启下&#xD;尾,结论&#xD;词空题&#xD;词义-侧重,搭配,程度,褒贬&#xD;语境-转折,因果,并列&#x9;</description>
+    </item>
+    <item>
+      <title>数学知识</title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Tue, 23 Jan 2024 10:52:39 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/</guid>
+      <description>等比数列公式&#xD;进制转换&#xD;十进制转二进制&#xD;十进制数转换为二进制数时，由于整数和小数的转换方法不同，所以先将十进制数的整数部分和小数部分分别转换后，再加以合并。&#xA;十进制整数转换为二进制整数采用&amp;quot;除2取余，逆序排列&amp;quot;法。具体做法是：用2整除十进制整数，可以得到一个商和余数；再用2去除商，又会得到一个商和余数，如此进行，直到商为0时为止，然后把先得到的余数作为二进制数的低位有效位，后得到的余数作为二进制数的高位有效位，依次排列起来。&#xA;二进制转十进制&#xD;要从右到左用二进制的每个数去乘以2的相应次方，或者把二进制数首先写成加权系数展开式，然后按十进制加法规则求和。这种做法称为&amp;quot;按权相加&amp;quot;法。&#xA;二进制数1000110转成十进制数可以看作这样：&#xA;数字中共有三个1 即第一位一个，第二位一个，第六位一个，然后对应十进制数即2的1次方+2的2次方+2的6次方， 即1000110=64+0+0+0+4+2+0=70</description>
+    </item>
+    <item>
+      <title>五笔输入法</title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</link>
+      <pubDate>Fri, 29 Dec 2023 10:45:37 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/</guid>
+      <description> 笔画 笔画是指汉字书写时不间断的一次连续写成的一个线条 字根 笔画交叉复合而成的固定结构,是构成汉字的最基本单位 不符规律的键位 横 G[五] F[二] D[古] S[木丁西] A[工] 竖 </description>
+    </item>
+  </channel>
+</rss>

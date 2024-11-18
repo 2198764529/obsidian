@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程语言 on 流笔</title>
+    <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+    <description>Recent content in 编程语言 on 流笔</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Django</title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/</link>
+      <pubDate>Thu, 12 Sep 2024 16:23:49 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/</guid>
+      <description>架构图&#xD;card &amp;#34;Brown（浏览器）&amp;#34; as Brown&#xD;card &amp;#34;Urls（路由）&amp;#34; as Urls&#xD;card &amp;#34;View（视图）&amp;#34; as View&#xD;card &amp;#34;Model（模型）&amp;#34; as Model&#xD;card &amp;#34;Template（模板）&amp;#34; as Template&#xD;database &amp;#34;database（数据库）&amp;#34; as database&#xD;Brown --&amp;gt; Urls: 发送请求&#xD;Urls --&amp;gt; View: 路由分发&#xD;View &amp;lt;--&amp;gt; Model: 操作数据/返回结果&#xD;View &amp;lt;--&amp;gt; Template:调用模板&#xD;Model &amp;lt;--&amp;gt; database: ORM&#xD;Template --&amp;gt; Brown: 返回响应 备注:&#xA;ORM: object relation mapping MVT架构层&#xD;Model 模型层&#xD;from django.db import models class Person(models.Model): first_name = models.CharField(max_length=30) last_name = models.CharField(max_length=30) 模型&#xD;模型操作&#xD;以下模型操作创建、删除、更改、保存， 读取操作属于 QuerySet 那部分</description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/</link>
+      <pubDate>Fri, 30 Aug 2024 15:21:56 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/</guid>
+      <description>概念类&#xD;什么是 闭包/装饰器?&#xD;闭包 装饰器 本质 嵌套返回函数的函数 用于扩展修改类或方法的闭包 特征 嵌套的函数,内部函数使用外部函数的参数,返回内部函数 闭包特征 + 参数传入为被装饰函数 目的 使得内部函数可以访问外部函数的变量 不修改函数本身，修改或扩展函数功能 缺点 可能会造成额外的内存占用 闭包的缺点 应用场景 数据封装;工厂函数;函调函数;延迟计算;装饰器;缓存结果 记录日志;统计时间;访问控制;参数验证;重试机制 理解闭包的应用场景&#xD;# 闭包示例代码合集 # 1. 数据封装 def counter(): # count 变量被封装在闭包内，外部无法直接访问 count = 0 def increment(): # 使用 nonlocal 关键字，闭包可以修改外部函数的变量 nonlocal count count += 1 return count return increment # 创建一个闭包实例，并多次调用它 counter_func = counter() print(counter_func()) # 输出: 1 print(counter_func()) # 输出: 2 # 2. 工厂函数 def make_multiplier(factor): # multiplier 函数捕获了外部的 factor 变量 def multiplier(x): return x * factor return multiplier # 创建不同的乘数函数 double = make_multiplier(2) triple = make_multiplier(3) print(double(5)) # 输出: 10 print(triple(5)) # 输出: 15 # 3.</description>
+    </item>
+    <item>
+      <title>Redis</title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/</link>
+      <pubDate>Thu, 17 Oct 2024 15:48:15 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/</guid>
+      <description>Redis 简介&#xD;一个开源的、</description>
+    </item>
+  </channel>
+</rss>

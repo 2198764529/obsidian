@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on 流笔</title>
+    <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on 流笔</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Redis</title>
+      <link>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/</link>
+      <pubDate>Wed, 23 Oct 2024 14:56:36 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/</guid>
+      <description>Redis 简介&#xD;Redis 是目前最受欢迎的 NoSQL 数据库, 其具备以下特性&#xA;基于内存运行, 能低延迟高并发 分布式架构, 可以无限扩展 由开源 ANSI C编写, 提供多语言的 API 支持多种数据结构, Key-value 存储系统 Redis 应用场景&#xD;缓存系统, (热点数据, 高频读, 低频写) 计数器、限流器 发布订阅、排行榜 分布式锁、共享 SESSION、 队列 Redis 数据结构&#xD;RedisObject&#xD;字符串-STRING&#xD;整数-INT&#xD;字符串-RAW&#xD;列表-LIST&#xD;双端链表-LINKDIST&#xD;压缩列表-ZIPLIST&#xD;哈希表-HASH&#xD;压缩列表-ZIPLIST&#xD;字典-HT&#xD;集合-SET&#xD;整数集合-INTSET&#xD;字典-HT&#xD;有序集合-ZSET&#xD;压缩列表-ZIPLIST&#xD;跳跃表-SKIPLIST 备注：后面的是前面的底层实现&#xA;字符串-STRING&#xD;字符串-STRING是二进制安全的字符串, 意味着不仅可以存储字符串, 还能存储图片、视频等多种类型， 最大长度支持 512M&#xA;字符串-STRING&#xD;相关命令&#xD;GET/MGET&#xD;SET/SETEX/MSET/MSETNX&#xD;INCR/DECR&#xD;GETSET&#xD;DEL 列表-LIST&#xD;该类型是一个插入顺序排序的字符串集合, 基于双链表实现。&#xA;列表-LIST&#xD;相关命令&#xD;LPUSH/LPUSHX/LPOP/RPUSH/RPUSHX/RPOP/LINSERT/LSET&#xD;LINDEX/LRANGE&#xD;LLEN/LTRIM 哈希表-HASH&#xD;该类型是由k-v组成的map。其中，k-v都是字符串类型的。</description>
+    </item>
+  </channel>
+</rss>

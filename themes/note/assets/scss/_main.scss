@@ -59,7 +59,8 @@ html {
       .book-header {
         margin-bottom: $padding-16;
 
-        padding: 20px !important;
+        padding: 20px;
+        margin-top: 44px;
         > div {
           display: inline-block;
         }

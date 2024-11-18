@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>项目 on 流笔</title>
+    <link>http://localhost:80/notes/%E9%A1%B9%E7%9B%AE/</link>
+    <description>Recent content in 项目 on 流笔</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/notes/%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:80/notes/%E9%A1%B9%E7%9B%AE/%E4%BA%A7%E5%93%81%E5%A4%A9%E6%A2%AF/</link>
+      <pubDate>Tue, 12 Nov 2024 16:23:42 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E9%A1%B9%E7%9B%AE/%E4%BA%A7%E5%93%81%E5%A4%A9%E6%A2%AF/</guid>
+      <description>&#xD;步骤&#xD;配置项目环境: django + redis 获取产品数据 参考&#xD;scrpay-redis项目: https://www.cnblogs.com/gltou/p/16424854.html </description>
+    </item>
+  </channel>
+</rss>

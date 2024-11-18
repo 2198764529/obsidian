@@ -1,3 +1,7 @@
+---
+id: f39c4ae368
+datetimeCreate: 2024-11-16 20:31:54
+---
 # Expand
 
 Expand shortcode can help to decrease clutter on screen by hiding part of text. Expand content by clicking on it.

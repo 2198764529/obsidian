@@ -1,10 +1,6 @@
 ---
-title: "{{ .Name | humanize | title }}"
 weight: 1
-# bookFlatSection: false
-# bookToc: true
-# bookHidden: false
-# bookCollapseSection: false
-# bookComments: false
-# bookSearchExclude: false
+title: "{{ .Name | humanize | title }}"
+id: a09c93f0af
+datetimeCreate: 2024-11-16 20:32:10
 ---

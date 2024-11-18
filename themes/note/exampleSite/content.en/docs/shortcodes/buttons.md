@@ -1,3 +1,7 @@
+---
+id: 82b148adaa
+datetimeCreate: 2024-11-16 20:31:53
+---
 # Buttons
 
 Buttons are styled links that can lead to local page or external link.

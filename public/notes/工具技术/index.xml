@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术 on 流笔</title>
+    <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/</link>
+    <description>Recent content in 技术 on 流笔</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git操作</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Tue, 10 Oct 2023 16:14:27 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/</guid>
+      <description>示意图&#xD;cloud Remote&#xD;cloud Repository&#xD;cloud Index&#xD;cloud Workspace&#xD;Remote -&amp;gt; Repository : fetch/clone&#xD;Remote &amp;lt;- Repository : push&#xD;Repository &amp;lt;- Index : commit&#xD;Index &amp;lt;-- Workspace : add&#xD;Repository -&amp;gt; Workspace : checkout&#xD;Remote --&amp;gt; Workspace : pull Workspace：工作区 Index / Stage：暂存区 Repository：本地仓库区 Remote：远程仓库区 git 常用命令&#xD;查看信息&#xD;git show: 查看 commit 详细信息&#xD;git show &amp;lt;commit_id&amp;gt; &amp;lt;option&amp;gt; --stat: 仅显示更改统计信息，而不显示实际的文件差异。 --name-only: 仅显示已更改的文件名，而不显示实际的文件差异。 --name-status: 显示已更改的文件名及其更改状态（例如，新建、修改或删除）。 --pretty=&amp;lt;format&amp;gt;: 自定义输出格式，例如 %h 表示提交哈希值，%an 表示作者名字等。 --abbrev-commit: 使用缩写形式的提交哈希值。 --no-patch: 不显示文件差异，只显示提交信息。 --cc: 在输出中包含相关提交者的电子邮件地址。 --encoding=&amp;lt;encoding&amp;gt;: 指定输出编码。 --notes[=&amp;lt;ref&amp;gt;]: 显示与提交相关的注释。 --raw: 以原始格式显示提交信息。 --binary: 将二进制文件视为已更改，即使它们没有实际更改。 --textconv: 使用指定的文本转换器处理差异。 --ignore-space-at-eol: 忽略行尾空格的差异。 --ignore-space-change: 忽略空白字符更改的差异。 --ignore-all-space: 忽略所有空白字符的差异。 --ignore-cr-at-eol: 忽略行尾回车符的差异。 --ignore-blank-lines: 忽略空行的差异。 --patience: 使用 patience diff 算法进行比较。 --histogram: 显示每个文件的更改次数直方图。 --unified=&amp;lt;n&amp;gt;: 设置合并差异的上下文行数，默认为3。 --indent-heuristic: 启用启发式缩进检测。 --no-indent-heuristic: 禁用启发式缩进检测。 --pickaxe-all: 当执行 git log -S&amp;lt;string&amp;gt; 时，查找包含该字符串的所有提交。 --pickaxe-regex: 当执行 git log -S&amp;lt;regex&amp;gt; 时，查找包含匹配正则表达式的提交。 --pickaxe-index: 当执行 git log -S&amp;lt;string&amp;gt; 时，仅查找索引中包含该字符串的提交。 --pickaxe-refs: 当执行 git log -S&amp;lt;string&amp;gt; 时，仅查找引用中包含该字符串的提交。 --pickaxe-ignore-refs: 当执行 git log -S&amp;lt;string&amp;gt; 时，忽略包含该字符串的引用。 --pickaxe-break: 当执行 git log -S&amp;lt;string&amp;gt; 时，在找到第一个匹配项后停止搜索。 --pickaxe-continue: 当执行 git log -S&amp;lt;string&amp;gt; 时，继续搜索其他匹配项。 --pickaxe-trust-flags: 当执行 git log -S&amp;lt;string&amp;gt; 时，根据文件的标志（如已删除或已移动）跳过某些文件。 git help: 显示 Git 命令的帮助信息&#xD;git help &amp;lt;command&amp;gt; &amp;lt;option&amp;gt; --all 或 -a: 显示所有可用的 Git 命令的帮助信息。 --guide 或 -g: 显示 Git 指南，这是一份详细的教程，介绍如何使用 Git 进行版本控制。 --info 或 -i: 显示有关 Git 配置和操作的信息。 --worktree 或 -w: 显示有关工作树（working tree）的信息。 --html-path: 指定生成 HTML 帮助文档的路径。 --web: 在默认浏览器中打开在线 Git 文档。 --include-deps: 包括依赖项的帮助信息。 --verbose 或 -v: 显示更详细的帮助信息。 --no-browser: 不尝试使用默认浏览器打开在线文档。 --usage 或 -u: 仅显示命令的基本用法。 --help 或 -h: 显示简短的帮助信息。 git status: 显示工作目录和暂存区的相关信息&#xD;git status &amp;lt;option&amp;gt; --short: 以简短的形式显示状态，只显示文件名而不显示详细信息。 --long: 以详细的形式显示状态，包括文件名、更改类型和更改数量。 --branch: 显示当前分支的名称。 --show-stash: 显示有关 stash 的信息（如果有的话）。 --porcelain: 以易于解析的格式输出状态信息，主要用于脚本和程序中。 --untracked-files=&amp;lt;mode&amp;gt;: 控制未跟踪文件的显示方式。可用的模式有 all、normal 和 no。 --ignored: 显示被忽略的文件。 --ignored=matching: 仅显示与指定模式匹配的被忽略文件。 --ignored=excludes: 仅显示被排除在 .</description>
+    </item>
+    <item>
+      <title>Hugo 参考</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</link>
+      <pubDate>Mon, 27 Nov 2023 11:04:45 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/</guid>
+      <description>变量&#xD;.Site&#xD;#️⃣ .AllPages: 所有页面的数组。 #️⃣ .BaseURL: 站点的基本 URL。 #️⃣ .BuildDrafts: 一个布尔值（默认为 false），指示是否构建草稿。 #️⃣ .Config: 站点的配置。 #️⃣ .Copyright: 网站的版权信息。 #️⃣ .Data: 网站的自定义数据。 #️⃣ .DisqusShortname: Disqus 短代码的 shortname。 #️⃣ .GetPage: 获取指定路径的页面。 #️⃣ .GoogleAnalytics: Google Analytics 的跟踪代码。 #️⃣ .Home: 网站的首页信息。 #️⃣ .IsDevelopment: 当前是否处于开发模式。 #️⃣ .IsMultiLingual: 网站是否支持多语言。 #️⃣ .IsServer: 当前是否处于服务器模式。 #️⃣ .Language: 当前网站的语言。 #️⃣ .LanguagePrefix: 语言前缀。 #️⃣ .Languages: 网站支持的语言列表。 #️⃣ .LastChange: 最近一次修改的日期。 #️⃣ .Lastmod: 最后修改的日期。 #️⃣ .MainSections: 主要部分列表。 #️⃣ .Menus: 网站的菜单列表。 #️⃣ .</description>
+    </item>
+    <item>
+      <title>markDown 语法</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Wed, 27 Sep 2023 17:58:41 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/</guid>
+      <description>1. 标题：使用&amp;quot;#&amp;ldquo;字符表示标题，数量代表标题级别，最多支持6级标题。例如：&#xD;# 一级标题&#xD;## 二级标题&#xD;### 三级标题&#xD;...&#xD;###### 六级标题 一级标题&#xD;二级标题&#xD;三级标题&#xD;&amp;hellip;&#xA;六级标题&#xD;2. 段落：段落之间以空行分隔。&#xD;3. 强调：使用&amp;rdquo;*&amp;ldquo;或&amp;rdquo;_&amp;ldquo;将需要强调的文本包围起来。例如：&#xD;*斜体*&#xD;_斜体_&#xD;**粗体**&#xD;__粗体__&#xD;***粗斜体***&#xD;___粗斜体___ 斜体 斜体&#xA;粗体 粗体&#xA;粗斜体 粗斜体&#xA;4. 列表：有序列表以数字和句点开始，无序列表以&amp;rdquo;*&amp;quot;、&amp;quot;+&amp;ldquo;或&amp;rdquo;-&amp;ldquo;开始。例如：&#xD;1. 第一项&#xD;2. 第二项&#xD;3. 第三项&#xD;- 无序列表项1&#xD;- 无序列表项2&#xD;- 嵌套的无序列表项&#xD;- 更深层次的无序列表项&#xD;* 无序列表项A&#xD;* 无序列表项B&#xD;* 嵌套的无序列表项&#xD;* 更深层次的无序列表项&#xD;+ 无序列表项X&#xD;+ 无序列表项Y&#xD;+ 嵌套的无序列表项&#xD;+ 更深层次的无序列表项 第一项 第二项 第三项 无序列表项1 无序列表项2 嵌套的无序列表项 更深层次的无序列表项 无序列表项A 无序列表项B 嵌套的无序列表项 更深层次的无序列表项 无序列表项X 无序列表项Y 嵌套的无序列表项 更深层次的无序列表项 5.</description>
+    </item>
+    <item>
+      <title>plantuml</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/</link>
+      <pubDate>Thu, 05 Sep 2024 11:36:55 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/</guid>
+      <description>&#xD;mindmap&#xD;+ 中&#xD;++ 右&#xD;***:bubbleSort&#xD;&amp;lt;code&amp;gt;&#xD;def bubbleSort(arr): for i in range(1, len(arr)): for j in range(0, len(arr)-i): if arr[j] &amp;gt; arr[j+1]: arr[j], arr[j + 1] = arr[j + 1], arr[j] return arr&#xD;&amp;lt;/code&amp;gt;&#xD;;&#xD;-- 左 actor actor&#xD;agent agent&#xD;artifact artifact&#xD;boundary boundary&#xD;card card&#xD;cloud cloud&#xD;component component&#xD;control control&#xD;database database&#xD;entity entity&#xD;file file&#xD;folder folder&#xD;frame frame&#xD;interface interface&#xD;node node&#xD;package package&#xD;queue queue&#xD;stack stack&#xD;rectangle rectangle&#xD;storage storage&#xD;usecase usecase </description>
+    </item>
+    <item>
+      <title>python 方法参考</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</link>
+      <pubDate>Mon, 27 Nov 2023 16:45:25 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/</guid>
+      <description>以下内容由 ChatGPT 生成, 仅供学习参考&#xA;目录&#xD;文件处理（os、io） 网络编程（socket、urllib） 日期和时间处理（datetime、time） 数学运算（math、random） 字符串处理（re、string） 数据结构（list、tuple、dict、set） 对象编程（class、object） 错误处理（try、except） 文件处理（os、io）&#xD;import os import io #️⃣ os 模块 # 获取和更改当前工作目录 current_directory = os.getcwd() # 返回当前工作目录 os.chdir(&amp;#39;/path/to/directory&amp;#39;) # 改变当前工作目录 # 列出目录内容 contents = os.listdir(&amp;#39;.&amp;#39;) # 列出当前目录中的所有文件和目录 # 创建和删除目录 os.mkdir(&amp;#39;new_directory&amp;#39;) # 创建新目录 os.makedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归创建目录 os.rmdir(&amp;#39;new_directory&amp;#39;) # 删除目录（仅当目录为空时） os.removedirs(&amp;#39;parent/child_directory&amp;#39;) # 递归删除目录 # 删除文件 os.remove(&amp;#39;file.txt&amp;#39;) # 删除文件 os.unlink(&amp;#39;file.txt&amp;#39;) # 删除文件，与 os.remove 功能相同 # 重命名文件或目录 os.rename(&amp;#39;old_name.txt&amp;#39;, &amp;#39;new_name.txt&amp;#39;) # 重命名文件或目录 os.renames(&amp;#39;old_directory&amp;#39;, &amp;#39;new_directory&amp;#39;) # 递归重命名文件或目录 # 文件和目录属性 exists = os.</description>
+    </item>
+    <item>
+      <title>技术记录</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Mon, 09 Oct 2023 17:30:30 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</guid>
+      <description>进制转换&#xD;hugo 添加mermaid作图&#xD;在 footer.html(页面尾部) 添加以下代码,即可启用mermaid作图&#xA;{{ if (.Params.mermaid) }} &amp;lt;!-- MermaidJS support --&amp;gt; &amp;lt;script async src=&amp;#34;https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script&amp;gt; // Replace mermaid pre.code to div Array.from(document.getElementsByClassName(&amp;#34;language-mermaid&amp;#34;)).forEach( (el) =&amp;gt; { el.parentElement.outerHTML = `&amp;lt;div class=&amp;#34;mermaid&amp;#34;&amp;gt;${el.innerText}&amp;lt;/div&amp;gt;`; } ); &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt; /* Set svg to center */ .mermaid svg { display: block; margin: auto; } &amp;lt;/style&amp;gt; {{ end }} 参考&#xA;https://cloud.tencent.com/developer/article/1944123&#xA;https://note.qidong.name/2020/07/mermaid/&#xA;CSS 字体&#xD;在CSS中，font-size属性可以使用多种单位来指定字体大小。以下是一些常见的font-size单位： 😋&#xA;像素（px）：像素是绝对单位，它会直接指定字体的像素大小。例如，font-size: 16px; 将文本字体设置为16像素高。&#xA;磅（pt）：磅是印刷单位，通常用于打印。1磅等于1/72英寸，因此它也可以用于屏幕上的字体大小。例如，font-size: 12pt; 将字体设置为12磅。&#xA;毫米（mm）：毫米是长度单位，也可以用于字体大小。例如，font-size: 5mm; 将字体大小设置为5毫米。</description>
+    </item>
+    <item>
+      <title>色彩学</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/</link>
+      <pubDate>Mon, 11 Dec 2023 18:11:09 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/</guid>
+      <description>总览&#xD;什么叫原色&#xD;原色（primary color）是不能透过其他颜色的混合调配而得出的“基本色”；将不同比例的原色混合，可生成色域内其他任何颜色。 原色是指不能通过其他颜色的混合得到的基础颜色，它们是色彩系统的起点。常见的原色有两种定义：&#xA;光学三原色（RGB）：红（Red）、绿（Green）、蓝（Blue）。这些原色用于光的混合，比如显示器、投影仪等。 颜料三原色（CMY）：青（Cyan）、品红（Magenta）、黄（Yellow）。这是用于印刷和绘画中的颜料混合, 一般用于艺术画画, 这种不在本文讨论范围内. 怎么表示颜色&#xD;一般有两种方式来表示颜色，&#xA;十六进制， 如#FFFFFF、#000000 RGB数值，如rgb(0,0,0)、rgb(255,255,255) 两种进制如何转换？&#xD;RGB实际上是十进制,所以要将十六进制转为十进制即可, 每两位数是一个十六进制, 十六进制中AF=1116 举例：将 #B60023 转成 RGB 格式 过程如下，R值=B6=B(11) * 16 + 6 = 182, G=00=0, B=23=2 * 16+ 3 =35 所以 #B60023 值等于 rgb(182,0,35)&#xA;后面的一种不需要关注, 只需要看光学三原色&#xA;红色-Red：rgb(255,0,0) 绿色-Green：rgb(0,255,0) 蓝色-Blue：rgb(0,0,255) 什么叫间色&#xD;间色是通过两种原色混合而成的，组合之后新增了下面三种颜色&#xA;黄色-Yellow：rgb(255,0,255) 紫色-Purple：rgb(255,0,255) 青色-Cyan：rgb(0,255,255) 什么叫复色&#xD;间色是通过三种颜色混合而成的，除了原色、间色、黑白色以外的所有颜色都是复色. 下面是一些常见的复色&#xA;红色为主色调的：&#xD;粉色-Pink：rgb(255, 192, 203) 金色-Gold：rgb(255, 215, 0) 橙色-Orange：rgb(255, 165, 0) 蓝色为主色调的：&#xD;靛青-Indigo：rgb(75, 0, 130) 绿色为主色调的：&#xD;两色调的：&#xD;橄榄-Olive：rgb(128, 128, 0) 三色调的：&#xD;灰色-Gray：rgb(128,128,128) 银色-Gray：rgb(192,192,192) 黑白色&#xD;黑色和白色是两种特殊的颜色，黑色是什么颜色都没有就是白色，白色是RGB满的复色</description>
+    </item>
+    <item>
+      <title>设计语言</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Fri, 10 May 2024 14:59:45 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/</guid>
+      <description>颜色&#xD;颜色要醒目, 令人舒适&#xA;不同颜色, 代表不同意义 重的亮深, 轻的暗浅&#xA;大小&#xD;字多字小, 字段字大 重的大, 轻的小&#xA;留白&#xD;标志&#xD;下划线: 超链接</description>
+    </item>
+    <item>
+      <title>网站收藏</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</link>
+      <pubDate>Tue, 26 Sep 2023 21:56:59 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/</guid>
+      <description>学习网站&#xD;全历史 https://www.allhistory.com 今日热榜 https://rebang.today 计网 http://home.ustc.edu.cn/~chaf/course/network.html https://www.runoob.com/w3cnote/summary-of-network.html https://www.cainiaoplus.com/ 软件工具&#xD;画图工具 https://handraw.top Chatgpt https://chat.openai.com 科学上网 追云加速 https://www.zhuiyun.shop 一元机场 https://yfh4rrze3snwnnwj.xn--4gq62f52gdss.vip/ 机场推荐 http://www.maomeng.cf kaggle https://www.kaggle.com SMS-activate https://sms-activate.org 内网穿透 https://www.natfrp.com/ autoHotKey https://wyagd001.github.io/v2/docs/ applemusic 推荐 订阅 Apple Music 该选哪个区？——中美坡港台日六大地区全对比（第二版） - 向远公园 | Step Park 建站参考&#xD;hugo https://hugo.aiaide.com/post&#xA;另一个hugo文档 https://gohugobrasil.netlify.app&#xA;Lyricify https://github.com/WXRIW/Lyricify-App&#xA;颜色墙 http://zhongguose.com/#shangengzi&#xA;博客部署&#xA;nameSilo https://www.namesilo.com 阿里云 https://cn.aliyun.com Vercel https://vercel.com jsDelivr * vercel https://cloud.tencent.com/developer/article/1875306 元素生成&#xA;digraph https://zhuanlan.zhihu.com/p/21993254 fullcalendar https://fullcalendar.io/docs Lunar https://6tail.cn/calendar/api.html graphviz https://graphviz.org plantuml https://plantuml.</description>
+    </item>
+    <item>
+      <title>维基百科</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</link>
+      <pubDate>Tue, 28 Nov 2023 17:55:12 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/</guid>
+      <description>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：&#xA;维基百科 API 基本信息&#xD;Endpoint（终端点）： https://en.wikipedia.org/w/api.php （英语维基百科的API终端点，你可以替换 en 为其他语言标识符）&#xA;请求方式： 主要使用HTTP GET请求，但也支持POST请求。&#xA;返回格式： 默认返回JSON格式，也可以选择其他格式，如XML。&#xA;常用维基百科 API 请求参数&#xD;action（动作）： 定义API的行为，常见值包括 query（查询）、parse（解析）、opensearch（开放搜索）等。 format（格式）： 指定返回结果的格式，常见值包括 json 和 xml。 titles（标题）： 指定要查询的页面标题，可以是单个标题或多个标题。 pageid（页面ID）： 指定要查询的页面的ID，与标题二选一使用。 prop（属性）： 查询页面的属性，如 revisions（修订版本）、categories（分类）等。 rvprop（修订版本属性）： 用于指定 revisions 属性的具体内容，如 content（内容）、timestamp（时间戳）等。 redirects（重定向）： 控制是否将重定向页面包含在结果中。 limit（限制）： 用于限制查询结果的数量。 示例：获取页面内容&#xD;https://en.wikipedia.org/w/api.php?action=query&amp;amp;format=json&amp;amp;titles=Python_(programming_language)&amp;amp;prop=revisions&amp;amp;rvprop=content 这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。&#xA;请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在维基百科开发者页面找到。</description>
+    </item>
+    <item>
+      <title>正则表达式</title>
+      <link>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Wed, 27 Sep 2023 18:01:19 +0800</pubDate>
+      <guid>http://localhost:80/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则表达式的所有元字符 正则表达式的所有元字符包括(markdown表格列出来)：&#xA;元字符 描述 . 匹配任意字符（除了换行符） \d 匹配数字字符 \D 匹配非数字字符 \w 匹配单词字符（字母、数字、下划线） \W 匹配非单词字符 \s 匹配空白字符（空格、制表符、换行符等） \S 匹配非空白字符 ^ 匹配字符串的开头 $ 匹配字符串的结尾 * 匹配前面的元素零次或多次 + 匹配前面的元素一次或多次 ? 表示前面的元素是可选的，匹配零次或一次 {n} 表示前面的元素恰好出现 n 次 {n,} 表示前面的元素至少出现 n 次 {n,m} 表示前面的元素出现 n 到 m 次之间 [] 字符集，匹配括号中任意一个字符 [^] 或 [^&amp;hellip;] 否定字符集，匹配除了括号中指定的任意字符之外的其他字符 </description>
+    </item>
+  </channel>
+</rss>

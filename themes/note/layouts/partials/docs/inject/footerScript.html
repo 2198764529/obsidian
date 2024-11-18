@@ -66,6 +66,10 @@
 <script src="{{ $js := resources.Get `js/colorShow.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 {{- end -}}
 
+
+<!-- 引入 nav.js -->
+<script src="{{ $js := resources.Get `js/nav.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
+
 <!-- 引入 papaparse.min.js -->
 <script src="{{ $js := resources.Get `plugs/papaparse.min.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 {{- $searchJSFile := printf "%s.search.js" .Language.Lang }}

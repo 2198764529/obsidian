@@ -1,7 +1,5 @@
 ---
-bookhidden: true
 weight: 2
-bookCollapseSection: true
 title: 项目
 id: 57bf688e2f
 datetimeCreate: 2023-09-25 20:47:24

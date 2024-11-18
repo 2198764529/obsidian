@@ -32,4 +32,4 @@ function gallery() {
 }
 
 // 执行 gallery 函数
-gallery();
+// gallery();

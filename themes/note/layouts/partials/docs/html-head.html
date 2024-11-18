@@ -13,7 +13,10 @@
 <link rel="manifest" src="{{ $link := resources.Get `data/manifest.json`  }}{{ $link.RelPermalink }}">
 {{/* favicon 图标引入 */}}
 <link rel="shortcut icon" src="{{ $link := resources.Get `img/favicon/favicon.ico`  }}{{ $link.RelPermalink }}">
-
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 {{/*  多语言  */}}
 {{- range .Translations }}
 <link rel="alternate" hreflang="{{ default .Language.Lang .Site.LanguageCode }}" href="{{ .Permalink }}"

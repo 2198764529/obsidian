@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-cn"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=80&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>维基百科 | 流笔</title>
+
+
+<link rel="manifest" src="/data/manifest.json">
+
+<link rel="shortcut icon" src="/img/favicon/favicon.ico">
+
+
+<link rel="stylesheet" href="/scss/book.scss" integrity="" crossorigin="anonymous">
+
+
+<script defer src="/js/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<div class="book-page">
+  <header class="book-header card">
+
+<div class="left">
+  
+    <div class="note-header">
+  <div class="note-title">
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/">
+      维基百科
+    </a>
+  </div>
+  <div class="note-meta">
+    <span>
+      <small>最近更新:</small>
+      <span class="Lastmod" data-unix="1728377924"></span>
+    </span>
+    <span>
+        
+            <small>笔记字数:</small>
+            648
+        
+    </span>
+  </div>
+</div>
+  
+</div>
+<div class="right">
+  <label for="menu-control">
+  <img src="http://localhost:80/img/svg/menu.svg" class="book-icon" alt="Menu" />
+</label>
+</div>
+</header>
+
+
+
+
+  
+  
+<article class="markdown card">
+  
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#维基百科-api-基本信息">维基百科 API 基本信息</a></li>
+    <li><a href="#常用维基百科-api-请求参数">常用维基百科 API 请求参数</a></li>
+    <li><a href="#示例获取页面内容">示例：获取页面内容</a></li>
+  </ul>
+</nav>
+
+
+<p>维基百科（Wikipedia）提供了一套API，允许开发者通过HTTP请求来获取和检索维基百科的内容。以下是一些关于维基百科API的基本信息：</p>
+<h3 id="维基百科-api-基本信息">
+  
+   维基百科 API 基本信息
+</h3>
+<ul>
+<li>
+<p><strong>Endpoint（终端点）：</strong> <code>https://en.wikipedia.org/w/api.php</code> （英语维基百科的API终端点，你可以替换 <code>en</code> 为其他语言标识符）</p>
+</li>
+<li>
+<p><strong>请求方式：</strong> 主要使用HTTP GET请求，但也支持POST请求。</p>
+</li>
+<li>
+<p><strong>返回格式：</strong> 默认返回JSON格式，也可以选择其他格式，如XML。</p>
+</li>
+</ul>
+<h3 id="常用维基百科-api-请求参数">
+  
+   常用维基百科 API 请求参数
+</h3>
+<ol>
+<li><strong>action（动作）：</strong> 定义API的行为，常见值包括 <code>query</code>（查询）、<code>parse</code>（解析）、<code>opensearch</code>（开放搜索）等。</li>
+<li><strong>format（格式）：</strong> 指定返回结果的格式，常见值包括 <code>json</code> 和 <code>xml</code>。</li>
+<li><strong>titles（标题）：</strong> 指定要查询的页面标题，可以是单个标题或多个标题。</li>
+<li><strong>pageid（页面ID）：</strong> 指定要查询的页面的ID，与标题二选一使用。</li>
+<li><strong>prop（属性）：</strong> 查询页面的属性，如 <code>revisions</code>（修订版本）、<code>categories</code>（分类）等。</li>
+<li><strong>rvprop（修订版本属性）：</strong> 用于指定 <code>revisions</code> 属性的具体内容，如 <code>content</code>（内容）、<code>timestamp</code>（时间戳）等。</li>
+<li><strong>redirects（重定向）：</strong> 控制是否将重定向页面包含在结果中。</li>
+<li><strong>limit（限制）：</strong> 用于限制查询结果的数量。</li>
+</ol>
+<h3 id="示例获取页面内容">
+  
+   示例：获取页面内容
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>https://en.wikipedia.org/w/api.php?action=query&amp;format=json&amp;titles=Python_(programming_language)&amp;prop=revisions&amp;rvprop=content
+</span></span></code></pre></div><p>这个例子用于获取“Python编程语言”页面的内容。你可以通过修改参数来执行不同的操作和查询其他页面。</p>
+<p>请注意：使用维基百科API时，你可能需要遵循维基百科的使用政策和服务条款。详细的API文档和更多信息可以在<a href="https://www.mediawiki.org/wiki/API:Main_page">维基百科开发者页面</a>找到。</p>
+</article>
+ 
+  
+
+  <label for="menu-control" class="hidden book-menu-overlay"></label>
+</div>
+
+
+
+    
+<aside class="book-menu">
+  <div class="book-menu-content card">
+    <nav>
+<h2 class="book-logo">
+    <a class="myFont" href="/">
+
+      流笔 
+     </a>
+
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="在 0 篇文章中搜索" aria-label="" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-3e0eff0dc3b842a6af5f4c12573c8cbb" class="toggle" checked>
+    <label for="section-3e0eff0dc3b842a6af5f4c12573c8cbb" class="flex justify-between">
+      <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/" role="button">技术</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/git%E6%93%8D%E4%BD%9C/" 
+       class="">git操作</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/hugo-%E5%8F%82%E8%80%83/" 
+       class="">Hugo 参考</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/markdown-%E8%AF%AD%E6%B3%95/" 
+       class="">markDown 语法</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/plantuml/" 
+       class="">plantuml</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/python-%E6%96%B9%E6%B3%95%E5%8F%82%E8%80%83/" 
+       class="">python 方法参考</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/" 
+       class="">技术记录</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%89%B2%E5%BD%A9%E5%AD%A6/" 
+       class="">色彩学</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80/" 
+       class="">设计语言</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/" 
+       class="">网站收藏</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91/" 
+       class="active">维基百科</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E5%B7%A5%E5%85%B7%E6%8A%80%E6%9C%AF/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" 
+       class="">正则表达式</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-ccf7a5afe4c6b54e947e40730b86e6d9" class="toggle" checked>
+    <label for="section-ccf7a5afe4c6b54e947e40730b86e6d9" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/" role="button">理论知识</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-378fdacb30399599e27ba3885be0260d" class="toggle" checked>
+    <label for="section-378fdacb30399599e27ba3885be0260d" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" role="button">编程语言</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/django/" 
+       class="">Django</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/" 
+       class="">Python</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/redis/" 
+       class="">Redis</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-76ffc67007f7f883705c3aa64566e52a" class="toggle" checked>
+    <label for="section-76ffc67007f7f883705c3aa64566e52a" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/" role="button">理论知识</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" 
+       class="">计算机网络</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" 
+       class="">数据结构和算法</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E5%BA%94%E7%94%A8%E5%B1%82-qa/" 
+       class="">应用层-Q&amp;A</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/408/%E8%BF%90%E8%BE%93%E5%B1%82-qa/" 
+       class="">运输层-Q&amp;A</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-4eef090d8100d7fd44e36c3f338b8b72" class="toggle" checked>
+    <label for="section-4eef090d8100d7fd44e36c3f338b8b72" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%8A%9B%E6%89%A3/" role="button">力扣</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E5%8A%9B%E6%89%A3/%E7%B3%BB%E7%BB%9F%E6%94%BB%E7%95%A5/" 
+       class="">系统攻略</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+   
+    <input type="checkbox" id="section-6f4e43b51a1ad2b2bb4956e01f9f1600" class="toggle" checked>
+    <label for="section-6f4e43b51a1ad2b2bb4956e01f9f1600" class="flex justify-between">
+      <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/" role="button">数据库</a>
+    </label>
+  
+  
+
+        
+  <ul>
+    
+    
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/" 
+       class="">Redis</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/" 
+       class="">数学知识</a>
+  
+
+      </li>
+      
+    
+      
+      
+      <li>
+        
+  
+  
+    <a href="/notes/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/%E4%BA%94%E7%AC%94%E8%BE%93%E5%85%A5%E6%B3%95/" 
+       class="">五笔输入法</a>
+  
+
+      </li>
+      
+    
+  </ul>
+
+      </li>
+      
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var t,e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop),console.log("1")}),t=document.getElementsByClassName("book-menu-overlay"),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+    
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#维基百科-api-基本信息">维基百科 API 基本信息</a></li>
+    <li><a href="#常用维基百科-api-请求参数">常用维基百科 API 请求参数</a></li>
+    <li><a href="#示例获取页面内容">示例：获取页面内容</a></li>
+  </ul>
+</nav>
+
+
+
+    <div class="footer">
+  <p>
+    <span>
+      <small> Power by</small>
+      <a href="https://gohugo.io">Hugo</a> 0.132.0
+    </span>
+  </p>
+  <p>
+    <span>
+      <small> 运行时间: </small>
+      
+      
+      630天
+
+    </span>
+  </p>
+</div>
+  </div>
+</aside>
+<footer class="book-footer">
+  
+  <div id="viewer-container"></div>
+
+<script>
+  
+  window.onload = function () {
+    
+    updateDateTimeByElementClass("LastChange");
+    
+    updateDateTimeByElementClass("AuthorDate");
+    
+    updateDateTimeByElementClass("nowDate");
+    
+    updateDateTimeByElementClass("date");
+    
+    updateDateTimeByElementClass("Lastmod");
+  };
+</script>
+
+
+ 
+<script src="http://localhost:80/plugs/viewer.min.min.aab181323824026cd966bd782bd1e95408a30cd32d34872e630d8f102aa1ecd5.js"></script>
+<link src="http://localhost:80/plugs/viewer.min.5a4aef2c7d7afc31356e0ff2523716614f3deca0315d05acc309ef2261dee5cf.css">
+
+<script src="http://localhost:80/js/gallery.min.f2a7f843aad3dcaa02559f2b00543afd308b2526e7a2fa05ac30d48a769856a8.js"></script>
+
+
+<script src="http://localhost:80/js/updateDateTimeByElementClass.min.4779b9844c0d0cfe30c2960bd935a7eb3344cef539051bc55238b195720b8425.js"></script>
+
+
+<script src="http://localhost:80/js/TableOfContents.min.6f6d16bd1f48d060ebe453f97a427f0e7ce2d700d252e0d2729c245140f32c62.js"></script>
+
+
+<script src="http://localhost:80/plugs/highlight.min.min.a82cdbc9cc13bd52c02f1240a91db2db70cb34e3cf650c4db41906b3b109fa9d.js"></script>
+
+
+<script src="http://localhost:80/js/tableMeger.min.5c5a29d480acf715487edc1cbcba78d3039e9d36dfcff927216dd4288863b536.js"></script>
+<script src="http://localhost:80/plugs/papaparse.min.min.9a67d553028aa2c0894e5272104dd8053bbc04bdd75941e66d51fc0b903f1cea.js"></script>
+<script defer src="/zh-cn.search.min.42f616c39d6c8985876feae2f6708f149d917908519830a4283a19939ac948d1.js" integrity="sha256-QvYWw51siYWHb&#43;ri9nCPFJ2ReQhRmDCkKDoZk5rJSNE=" crossorigin="anonymous"></script>
+
+
+
+</footer>
+ 
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

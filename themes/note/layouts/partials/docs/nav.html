@@ -1,0 +1,120 @@
+<nav id="gb-header">
+    <div id="gb-nav">
+        <div id="gb-nav-content">
+            <ul id="gb-nav-content-list">
+                <li class="nav-logo">
+                    <a href="/" role="button">
+                        <img src="{{ $link := resources.Get `img/favicon/favicon.png`  }}{{ $link.RelPermalink }}"
+                            alt="">
+                    </a>
+                </li>
+
+                {{ $bookSection := default "docs" .Site.Params.BookSection }}
+
+                {{ if eq $bookSection "*" }}{{ $bookSection = "/" }}{{ end }}
+                {{ $section := .Site.GetPage "section" $bookSection }}
+
+                {{/* 从根遍历 note */}}
+                {{/* 隐藏具有 "Params.bookhidden" 的页面 */}}
+                {{$rangePages := where $section.Pages "Params.bookhidden" "ne" true}}
+                {{ range $rangePages }}
+                {{/* 分支元素 */}}
+                {{ if .IsSection }}
+                <li class="nav-item nav-section" id="{{.Page.Title}}">
+                    <a id="" href="{{ .Page.RelPermalink }}" role="button">
+                        {{- partial "docs/title" .Page -}}
+                    </a>
+                </li>
+
+
+                <div class="sub-pages-container" id="sub-pages-container-{{.Page.Title}}">
+                    <div class="sub-pages-content">
+
+                        {{ range .Sections }}
+                            <div class="sub-pages">
+                                <ul>
+                                    <li><span>{{.Title}}</span></li>
+                                    {{range .Pages}}
+                                    <li>
+                                        <a href="{{ .Page.RelPermalink }}" role="button">
+                                            {{- partial "docs/title" .Page -}}
+                                        </a>
+                                    </li>
+                                    {{end}}
+                                </ul>
+                            </div>
+                        {{ end }}
+                        <div class="sub-pages">
+                            <ul>
+                                <li><span>{{.Title}}</span></li>
+                                {{range .RegularPages}}
+                                <li>
+                                    <a href="{{ .Page.RelPermalink }}" role="button">
+                                        {{- partial "docs/title" .Page -}}
+                                    </a>
+                                </li>
+                                {{end}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+{{/* book-page-link 模板，递归返回对应的元素 */}}
+{{ define "book-section-children" }}
+{{/* 隐藏具有 "Params.bookhidden" 的页面 */}}
+{{$rangePages := where .Section.Pages "Params.bookhidden" "ne" true}}
+{{ range $rangePages }}
+{{/* 分支元素 */}}
+{{ if .IsSection }}
+<li {{- if .Params.BookFlatSection }} class="book-section-flat" {{ end -}}>
+    {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+    {{ template "book-section-children" (dict "Section" . "CurrentPage" $.CurrentPage) }}
+
+</li>
+{{/* 非分支元素 */}}
+{{/* {{ else if and .IsPage .Content }}
+<li>
+    {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+</li> */}}
+
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{/* book-page-link 模板，返回对应的链接 */}}
+{{ define "book-page-link" }}
+{{/* 分支链接 */}}
+{{ if .Page.IsSection }}
+<input type="checkbox" id="section-{{ md5 .Page }}" class="toggle" checked>
+<label for="section-{{ md5 .Page }}" class="flex justify-between">
+    <a href="{{ .Page.RelPermalink }}" role="button">
+        {{- partial "docs/title" .Page -}}
+    </a>
+</label>
+{{/* 非分支链接 */}}
+{{ else if .Page.IsPage }}
+<a href="{{ .Page.RelPermalink }}" class="{{ if eq .CurrentPage .Page }}active{{ end }}">
+    {{- partial "docs/title" .Page -}}
+</a>
+{{ end }}
+{{ end }}
+
+{{ define "list-sections" }}
+{{ range .Pages }}
+{{ if .IsSection }}
+<h2>{{ .Title }}</h2> <!-- 当前子 Section 标题 -->
+<p>{{ .RelPermalink }}</p> <!-- 当前子 Section 链接 -->
+
+<!-- 递归调用，列出子 Section 的子内容 -->
+{{ template "list-sections" . }}
+{{ end }}
+{{ end }}
+{{ end }}
