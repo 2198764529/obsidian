@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/关于我.md",
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/关于我.md",
+                "file": "content/notes/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/关于我.md",
+                "file": "content/notes/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/关于我.md"
+                "file": "content/notes/个人/清单.md"
               }
             }
           }
@@ -150,15 +150,20 @@
   },
   "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
+    "themes/note/assets/img/favicon/favicon.ico",
+    "themes/note/assets/img/favicon/favicon.png",
+    "themes/note/assets/img/favicon/favicon2.ico",
+    "themes/note/assets/img/favicon/favicon2.png",
+    "content/notes/个人/修身.md",
+    "content/notes/个人/兴起.md",
+    "content/notes/个人/关于我.md",
     "content/notes/个人/清单.md",
     "content/notes/个人/关于篮球.md",
     "content/notes/个人/_index.md",
     "content/notes/工具技术/网站收藏.md",
     "content/notes/工具技术/维基百科.md",
     "content/notes/工具技术/正则表达式.md",
-    "content/notes/个人/兴起.md",
     "content/notes/个人/计划.md",
-    "content/notes/个人/关于我.md",
     "content/notes/工具技术/_index.md",
     "content/notes/杂思/数据展示.md",
     "content/notes/杂思/测试专用.md",
@@ -183,7 +188,6 @@
     "public/404.html",
     "未命名.md",
     "public/sw.js",
-    "public/index.html",
     "public/img/svg/menu.svg",
     "public/images/img/china.png",
     "public/images/personal/study/insertSort.png",
@@ -192,10 +196,6 @@
     "public/images/personal/study/selectionSort.png",
     "public/images/personal/bg/Shenzhen_Observatory2021.jpg",
     "public/images/personal/other/Pasted image 20240401181601.png",
-    "public/images/personal/study/d862cee765be33d0327662b8f8169dd.png",
-    "content/notes/个人/支出计算.md",
-    "content/notes/个人/修身.md",
-    "themes/note/assets/img/test/testImg.jpg",
     "content/posts/计算机网络/画图.canvas",
     "content/posts/工作 & 学习/计算机网络/自问自答/未命名.canvas",
     "工作 & 学习/计算机网络/自问自答/未命名.canvas"
