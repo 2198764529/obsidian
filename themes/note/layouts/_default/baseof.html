@@ -8,25 +8,32 @@
 </head>
 
 <body dir="{{ default `ltr` .Site.Language.LanguageDirection }}">
-
+  {{ partial "docs/loading.html" . }}
+  <nav id="gb-header">
     {{ template "nav" . }}
+  </nav>
   <main class="container flex" id="gb-main">
     {{ template "note-page" . }}
-    {{/*  {{ template "note-menu" . }}   */}}
   </main>
+  <footer id="gb-footer">
+    <div class="center" id="note-footer">
+      {{ partial "docs/footer" . }}
+      {{ partial "docs/inject/footerScript" . }}
+    </div>
+  </footer>
 </body>
+
 </html>
 
 {{/* 右侧的导航栏 */}}
 {{ define "note-menu" }}
-<aside class="book-menu">
-  <div class="book-menu-content card">
+<aside class="note-menu">
+  <div class="note-menu-content card">
     {{ partial "docs/menu" . }}
     {{ partial "docs/toc" . }}
-    {{ partial "docs/footer" . }}
   </div>
 </aside>
-<footer class="book-footer">
+<footer class="note-footer">
   {{/* 引入所有脚本 */}}
   {{ partial "docs/inject/footerScript" . }}
 </footer>
@@ -34,31 +41,30 @@
 
 {{/* 主页面的导航栏 */}}
 {{ define "note-page" }}
-<div class="book-page">
+<div id="note-page" class="center">
   {{ partial "docs/header" . }}
   {{ partial "docs/inject/content-before" . }}
-  {{ template "page-content" . }} 
+  {{ template "page-content" . }}
   {{ partial "docs/inject/content-after" . }}
 
-  <label for="menu-control" class="hidden book-menu-overlay"></label>
+  <label for="menu-control" class="hidden note-menu-overlay"></label>
 </div>
-<footer class="book-footer">
+<footer class="note-footer">
   {{/* 引入所有脚本 */}}
   {{ partial "docs/inject/footerScript" . }}
 </footer>
 {{ end }}
 
 
-{{/*  主要内容  */}}
+{{/* 主要内容 */}}
 {{ define "page-content" }}
 <article class="markdown card">
-  {{ partial "docs/toc" . }}
   {{- .Content -}}
 </article>
 {{ end }}
 
 
-{{/*  导航栏  */}}
+{{/* 导航栏 */}}
 {{ define "nav" }}
-  {{ partial "docs/nav" . }}
+{{ partial "docs/nav" . }}
 {{ end }}

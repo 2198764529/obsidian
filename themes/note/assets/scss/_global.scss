@@ -1,36 +1,46 @@
 a {
-    text-decoration: none; /* 去掉下划线 */
-  color: var(--font-color);
+  text-decoration: none; /* 去掉下划线 */
+  color: var(--colorLink);
+}
 
-  }
-  
-  /* 设置全局 HTML 和 Body 样式 */
+/* 设置全局 HTML 和 Body 样式 */
 html {
   font-size: $font-size-base; /* 设置字体大小 */
   scroll-behavior: smooth; /* 平滑滚动 */
   touch-action: manipulation; /* 触摸行为 */
-  /* 设置图标样式 */
 }
 body {
   min-width: $body-min-width; /* 最小宽度 */
-  color: var(--font-color); /* 文本颜色 */
-  background: var(--body-background); /* 背景颜色 */
+  min-height: 100vh;
+
+  color: var(--bodyFontColor); /* 文本颜色 */
+  background: var(--bodyBackground); /* 背景颜色 */
   letter-spacing: 0.33px; /* 字母间距 */
   font-weight: $body-font-weight; /* 字体粗细 */
   text-rendering: optimizeLegibility; /* 文本渲染优化 */
   -webkit-font-smoothing: antialiased; /* Webkit字体平滑 */
   -moz-osx-font-smoothing: grayscale; /* 操作系统 X 字体平滑 */
-  // color: #f1f1f1; /* 背景颜色 */
-
   box-sizing: border-box;
-
+  * {
+    box-sizing: inherit; /* 继承盒模型 */
+  }
   &::-webkit-scrollbar {
     width: 5px; /* 调整滚动条宽度 */
+    color: #f1f1f1; /* 背景颜色 */
   }
   &::-webkit-scrollbar-thumb {
     background-color: var(--body-font-color); /* 滚动条颜色 */
   }
 }
-.blurPage{
+.blurPage {
   filter: blur(1.5rem);
+}
+
+.center{
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.small-title{
+  font-size: x-small;
+  color: gray;
 }

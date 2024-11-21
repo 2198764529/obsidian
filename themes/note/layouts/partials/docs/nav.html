@@ -1,7 +1,6 @@
-<nav id="gb-header">
     <div id="gb-nav">
         <div id="gb-nav-content">
-            <ul id="gb-nav-content-list">
+            <ul id="gb-nav-content-list" class="center">
                 <li class="nav-logo">
                     <a href="/" role="button">
                         <img src="{{ $link := resources.Get `img/favicon/favicon.png`  }}{{ $link.RelPermalink }}"
@@ -33,7 +32,7 @@
                         {{ range .Sections }}
                             <div class="sub-pages">
                                 <ul>
-                                    <li><span>{{.Title}}</span></li>
+                                    <li class="small-title"><span>{{.Title}}</span></li>
                                     {{range .Pages}}
                                     <li>
                                         <a href="{{ .Page.RelPermalink }}" role="button">
@@ -46,7 +45,7 @@
                         {{ end }}
                         <div class="sub-pages">
                             <ul>
-                                <li><span>{{.Title}}</span></li>
+                                <li class="small-title"><span>{{.Title}}</span></li>
                                 {{range .RegularPages}}
                                 <li>
                                     <a href="{{ .Page.RelPermalink }}" role="button">

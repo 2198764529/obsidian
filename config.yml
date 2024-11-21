@@ -36,7 +36,7 @@ params:
   BookToCMax: 4
 
   # 深色开关：默认浅色，light，dark，auto（基于浏览器系统设置）
-  BookTheme: "auto"
+  BookTheme: "light"
 
   # 目录开关
   BookToC: true

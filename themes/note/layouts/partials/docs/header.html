@@ -1,17 +1,11 @@
-<header class="book-header card">
+<header class="book-header">
 
-<div class="left">
   {{ if .IsHome }}
     {{ template "indexHeader" . }}
   {{ else }}
     {{ partial "docs/note-header" . }}
   {{ end }}
-</div>
-<div class="right">
-  <label for="menu-control">
-  <img src="{{ $link := resources.Get `img/svg/menu.svg`  }}{{ $link.Permalink }}" class="book-icon" alt="Menu" />
-</label>
-</div>
+
 </header>
 
 {{/*  首页 Header  */}}

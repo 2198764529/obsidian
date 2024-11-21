@@ -5,18 +5,14 @@
     </a>
   </div>
   <div class="note-meta">
-    <span>
-      <small>最近更新:</small>
+      <span class="small-title">最近更新:</span>
       <span class="Lastmod" data-unix="{{ .Lastmod.Unix }}"></span>
-    </span>
-    <span>
         {{if .IsNode}} 
-            <small>笔记数:</small>
+        <span class="small-title">笔记数:</span>
             {{len .Pages}}
         {{else}}
-            <small>笔记字数:</small>
+        <span class="small-title">笔记字数:</span>
             {{ .Content | countwords}}
         {{end}}
-    </span>
   </div>
 </div>

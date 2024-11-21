@@ -1,12 +1,12 @@
 @media print {
-  .book-menu,
-  .book-footer,
-  .book-toc {
+  .note-menu,
+  .note-footer,
+  .note-toc {
     display: none;
   }
 
-  .book-header,
-  .book-header aside {
+  .note-header,
+  .note-header aside {
     display: block;
   }
 

@@ -1,6 +1,6 @@
 .markdown {
   // {{< expand "Label" "icon" >}}
-  .book-expand {
+  .note-expand {
     margin-top: $padding-16;
     margin-bottom: $padding-16;
 
@@ -9,24 +9,24 @@
 
     overflow: hidden;
 
-    .book-expand-head {
+    .note-expand-head {
       background: var(--gray-100);
       padding: $padding-8 $padding-16;
       cursor: pointer;
     }
 
-    .book-expand-content {
+    .note-expand-content {
       display: none;
       padding: $padding-16;
     }
 
-    input[type="checkbox"]:checked + .book-expand-content {
+    input[type="checkbox"]:checked + .note-expand-content {
       display: block;
     }
   }
 
   // {{< tabs >}}
-  .book-tabs {
+  .note-tabs {
     margin-top: $padding-16;
     margin-bottom: $padding-16;
 
@@ -45,7 +45,7 @@
       cursor: pointer;
     }
 
-    .book-tabs-content {
+    .note-tabs-content {
       order: 999; //Move content blocks to the end
       width: 100%;
       border-top: $padding-1 solid var(--gray-100);
@@ -56,7 +56,7 @@
     input[type="radio"]:checked + label {
       border-bottom: $padding-1 solid var(--color-link);
     }
-    input[type="radio"]:checked + label + .book-tabs-content {
+    input[type="radio"]:checked + label + .note-tabs-content {
       display: block;
     }
     input[type="radio"]:focus + label {
@@ -65,7 +65,7 @@
   }
 
   // {{< columns >}}
-  .book-columns {
+  .note-columns {
     margin-left: -$padding-16;
     margin-right: -$padding-16;
 
@@ -77,7 +77,7 @@
   }
 
   // {{< button >}}
-  a.book-btn {
+  a.note-btn {
     display: inline-block;
     font-size: $font-size-14;
     color: var(--color-link);
@@ -93,7 +93,7 @@
   }
 
   // {{< hint >}}
-  .book-hint {
+  .note-hint {
     @each $name, $color in $hint-colors {
       &.#{$name} {
         border-color: $color;
