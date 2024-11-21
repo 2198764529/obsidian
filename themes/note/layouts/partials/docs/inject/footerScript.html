@@ -61,10 +61,10 @@
 <!-- 引入 tableMeger.js -->
 <script src="{{ $js := resources.Get `js/tableMeger.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
 
-{{- if eq .Title  "色彩学"}}
+{{/*  {{- if eq .Title  "色彩学"}}
 <!-- 引入 colorShow.js -->
 <script src="{{ $js := resources.Get `js/colorShow.js` | minify | fingerprint }}{{ $js.Permalink }}"></script>
-{{- end -}}
+{{- end -}}  */}}
 
 
 <!-- 引入 nav.js -->
