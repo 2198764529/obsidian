@@ -148,8 +148,10 @@
       "remotely-save:Remotely Save": false
     }
   },
-  "active": "173b388b5f5ef5e5",
+  "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
+    "content/notes/杂思/第二台笔记本选购.md",
+    "content/notes/杂思/关于我.md",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
     "resources/_gen/assets/scss/scss",
@@ -161,13 +163,11 @@
     "themes/note/assets/js/loading.js",
     "themes/note/assets/scss/_loading.scss",
     "themes/note/layouts/partials/docs/loading.html",
-    "themes/note/static/favicon.ico",
     "themes/note/assets/img/favicon/favicon copy.png",
     "themes/note/assets/img/favicon/favicon.png",
     "themes/note/assets/img/favicon/favicon2.png",
     "content/notes/个人/修身.md",
     "content/notes/个人/兴起.md",
-    "content/notes/杂思/关于我.md",
     "content/notes/个人/关于篮球.md",
     "content/notes/个人/_index.md",
     "content/notes/工具技术/网站收藏.md",
@@ -186,7 +186,6 @@
     "content/notes/理论知识/五笔输入法.md",
     "content/notes/杂思/_index.md",
     "content/notes/杂思/博客文摘.md",
-    "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/工具技术/色彩学.md",
     "未命名.md",
     "public/img/svg/menu.svg",
