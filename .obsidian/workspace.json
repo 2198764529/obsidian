@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/关于我.md",
+                "file": "content/notes/杂思/关于我.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/关于我.md",
+                "file": "content/notes/杂思/关于我.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/关于我.md",
+                "file": "content/notes/杂思/关于我.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/关于我.md"
+                "file": "content/notes/杂思/关于我.md"
               }
             }
           }
@@ -150,21 +150,24 @@
   },
   "active": "173b388b5f5ef5e5",
   "lastOpenFiles": [
+    "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
+    "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
+    "resources/_gen/assets/scss/scss",
+    "resources/_gen/assets/scss",
+    "resources/_gen/assets",
+    "resources/_gen",
+    "resources",
     "content/notes/个人/清单.md",
     "themes/note/assets/js/loading.js",
     "themes/note/assets/scss/_loading.scss",
     "themes/note/layouts/partials/docs/loading.html",
     "themes/note/static/favicon.ico",
-    "themes/note/static",
-    "themes/note/assets/img/favicon/favicon.ico",
-    "themes/note/layouts/favicon.ico",
     "themes/note/assets/img/favicon/favicon copy.png",
     "themes/note/assets/img/favicon/favicon.png",
-    "themes/note/assets/img/favicon/favicon2.ico",
     "themes/note/assets/img/favicon/favicon2.png",
     "content/notes/个人/修身.md",
     "content/notes/个人/兴起.md",
-    "content/notes/个人/关于我.md",
+    "content/notes/杂思/关于我.md",
     "content/notes/个人/关于篮球.md",
     "content/notes/个人/_index.md",
     "content/notes/工具技术/网站收藏.md",
@@ -185,8 +188,6 @@
     "content/notes/杂思/博客文摘.md",
     "content/notes/杂思/第二台笔记本选购.md",
     "content/notes/工具技术/色彩学.md",
-    "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
-    "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "未命名.md",
     "public/img/svg/menu.svg",
     "public/images/img/china.png",
