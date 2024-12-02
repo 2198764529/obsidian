@@ -30,6 +30,9 @@
     }
   }
 
+  p>code{
+    color: var(--colorLight);
+  }
   img {
     border-radius: 5px; // 边框圆角
   }
@@ -44,7 +47,7 @@
       white-space: pre-wrap; // 换行
       padding: $padding-16; // 代码块内边距
       border-radius: 5px; // 边框圆角
-      background: var(--code-bg); // 背景色
+      background: var(--codeBG); // 背景色
       color: var(--bodyBackground);
       display: inline-block;
       span {
@@ -76,8 +79,10 @@
     }
   }
 
-  > p {
-    word-wrap: break-word; // 段落文字折行
+  >p {
+    white-space: pre-wrap;
+    width: 100%;
+
     line-height: $line-height - 10;
     margin: 0;
 
@@ -89,10 +94,10 @@
   }
 
   blockquote {
-    background-color: var(--body-background);
+    background-color: var(--bodyBackground);
     // color: var(--color-light);
     border-radius: 3px;
-    border-left: 2px solid var(--color-light);
+    border-left: 2px solid var(--colorLight);
     margin: $padding-16 0; // 设置块引用外边距
     padding: $padding-8 $padding-16 $padding-8 ($padding-16 - $padding-4); // 块引用内边距
 
@@ -115,9 +120,8 @@
     tr th,
     tr td {
       padding: 12px; // 单元格内边距
-    }
-    tr {
-      border-bottom: $padding-1 solid var(--gray-200); // 单元格边框
+      border: $padding-1 dotted var(--bodyFontColor); // 单元格边框
+
     }
   }
 
@@ -130,7 +134,7 @@
   >ul,
   >ol {
     word-wrap: break-word; // 列表文字折行
-    // background: var(--code-bg); // 背景色
+    // background: var(--codeBG); // 背景色
     li {
       // list-style: none;
       line-height: $line-height;

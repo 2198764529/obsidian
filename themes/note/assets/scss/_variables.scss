@@ -36,10 +36,10 @@ $bg-gray:#f5f5f7;
 @mixin theme-light {
   --colorLink: #0055bb;
   --color-visited-link: #8440f1;
-  --color-light: #15559a      ;
-  --card-bg: white   ;
+  --colorLight: #15559a      ;
+  --cardBG: white   ;
   --card-bg2: #d0dfe6 ;
-  --code-bg:#141e1b;
+  --codeBG:#141e1b;
   --bg-book-menu:white;
   --bodyFontColor: #141e1b ;
   --bodyBackground: #f5f5f7    ;
@@ -51,9 +51,9 @@ $bg-gray:#f5f5f7;
 @mixin theme-dark {
   --colorLink: #84b2ff;
   --color-visited-link: #b88dff;
-  --color-light: #FFBF00  ;
-  --card-bg: black;
-  --code-bg: #d0dfe6;
+  --colorLight: #FFBF00  ;
+  --cardBG: black;
+  --codeBG: #d0dfe6;
   --bodyBackground: #181A1B;
   --bodyFontColor: #e9ecef;
   --navBackground:#181A1B;

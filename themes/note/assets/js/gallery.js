@@ -28,8 +28,19 @@ function gallery() {
   });
 
   // 初始化 Viewer.js 插件，将整个文章区域作为图片查看器
-  const viewer = new Viewer(document.getElementsByTagName('article')[0]);
-}
+  // const viewer = new Viewer(document.getElementsByTagName('article')[0]);
+  // 选择所有图片列表容器
+  const galleries = document.querySelectorAll('.picGallery');
 
-// 执行 gallery 函数
-// gallery();
+  // 遍历每个容器并初始化 Viewer.js
+  galleries.forEach((gallery) => {
+    new Viewer(gallery, {
+      navbar: true,  // 显示缩略图导航栏
+      toolbar: true, // 显示工具栏
+      title: true,   // 显示图片标题
+      rotatable: true, // 允许旋转图片
+      zoomable: true  // 允许缩放图片
+    });
+  });
+}
+gallery();

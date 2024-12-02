@@ -16,11 +16,11 @@
 
 
 
-// @media (prefers-color-scheme: light) {
-//   :root {
-//       @include theme-light;
-//   }
-// }
+@media (prefers-color-scheme: light) {
+  :root {
+      @include theme-light;
+  }
+}
 
   
 

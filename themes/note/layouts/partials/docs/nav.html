@@ -1,67 +1,66 @@
-    <div id="gb-nav">
-        <div id="gb-nav-content">
-            <ul id="gb-nav-content-list" class="center">
-                <li class="nav-logo">
-                    <a href="/" role="button">
-                        <img src="{{ $link := resources.Get `img/favicon/favicon.png`  }}{{ $link.RelPermalink }}"
-                            alt="">
-                    </a>
-                </li>
+<div id="gb-nav">
+    <div id="gb-nav-content">
+        <ul id="gb-nav-content-list" class="center">
+            <li class="nav-logo">
+                <a href="/" role="button">
+                    <img src="{{ $link := resources.Get `img/favicon/favicon.png`  }}{{ $link.RelPermalink }}" alt="">
+                </a>
+            </li>
 
-                {{ $bookSection := default "docs" .Site.Params.BookSection }}
+            {{ $bookSection := default "docs" .Site.Params.BookSection }}
 
-                {{ if eq $bookSection "*" }}{{ $bookSection = "/" }}{{ end }}
-                {{ $section := .Site.GetPage "section" $bookSection }}
+            {{ if eq $bookSection "*" }}{{ $bookSection = "/" }}{{ end }}
+            {{ $section := .Site.GetPage "section" $bookSection }}
 
-                {{/* 从根遍历 note */}}
-                {{/* 隐藏具有 "Params.bookhidden" 的页面 */}}
-                {{$rangePages := where $section.Pages "Params.bookhidden" "ne" true}}
-                {{ range $rangePages }}
-                {{/* 分支元素 */}}
-                {{ if .IsSection }}
-                <li class="nav-item nav-section" id="{{.Page.Title}}">
-                    <a id="" href="{{ .Page.RelPermalink }}" role="button">
-                        {{- partial "docs/title" .Page -}}
-                    </a>
-                </li>
+            {{/* 从根遍历 note */}}
+            {{/* 隐藏具有 "Params.bookhidden" 的页面 */}}
+            {{$rangePages := where $section.Pages "Params.bookhidden" "ne" true}}
+            {{ range $rangePages }}
+            {{/* 分支元素 */}}
+            {{ if .IsSection }}
+            <li class="nav-item nav-section" id="{{.Page.Title}}">
+                <a id="" href="{{ .Page.RelPermalink }}" role="button">
+                    {{- partial "docs/title" .Page -}}
+                </a>
+            </li>
 
 
-                <div class="sub-pages-container" id="sub-pages-container-{{.Page.Title}}">
-                    <div class="sub-pages-content">
+            <div class="sub-pages-container" id="sub-pages-container-{{.Page.Title}}">
+                <div class="sub-pages-content">
 
-                        {{ range .Sections }}
-                            <div class="sub-pages">
-                                <ul>
-                                    <li class="small-title"><span>{{.Title}}</span></li>
-                                    {{range .Pages}}
-                                    <li>
-                                        <a href="{{ .Page.RelPermalink }}" role="button">
-                                            {{- partial "docs/title" .Page -}}
-                                        </a>
-                                    </li>
-                                    {{end}}
-                                </ul>
-                            </div>
-                        {{ end }}
-                        <div class="sub-pages">
-                            <ul>
-                                <li class="small-title"><span>{{.Title}}</span></li>
-                                {{range .RegularPages}}
-                                <li>
-                                    <a href="{{ .Page.RelPermalink }}" role="button">
-                                        {{- partial "docs/title" .Page -}}
-                                    </a>
-                                </li>
-                                {{end}}
-                            </ul>
-                        </div>
+                    {{ range .Sections }}
+                    <div class="sub-pages">
+                        <ul>
+                            <li class="small-title"><span>{{.Title}}</span></li>
+                            {{range .Pages}}
+                            <li>
+                                <a href="{{ .Page.RelPermalink }}" role="button">
+                                    {{- partial "docs/title" .Page -}}
+                                </a>
+                            </li>
+                            {{end}}
+                        </ul>
+                    </div>
+                    {{ end }}
+                    <div class="sub-pages">
+                        <ul>
+                            <li class="small-title"><span>{{.Title}}</span></li>
+                            {{range .RegularPages}}
+                            <li>
+                                <a href="{{ .Page.RelPermalink }}" role="button">
+                                    {{- partial "docs/title" .Page -}}
+                                </a>
+                            </li>
+                            {{end}}
+                        </ul>
                     </div>
                 </div>
-                {{ end }}
-                {{ end }}
-            </ul>
-        </div>
+            </div>
+            {{ end }}
+            {{ end }}
+        </ul>
     </div>
+</div>
 </nav>
 
 
