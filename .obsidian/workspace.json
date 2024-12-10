@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md",
+                "file": "content/notes/个人/清单.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md",
+                "file": "content/notes/个人/清单.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md",
+                "file": "content/notes/个人/清单.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/理论知识/408/计算机网络.md"
+                "file": "content/notes/个人/清单.md"
               }
             }
           }
@@ -151,10 +151,10 @@
   },
   "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
+    "content/notes/理论知识/408/计算机网络.md",
     "content/notes/个人/关于我.md",
     "content/notes/工具技术/Python 方法参考.md",
     "content/notes/理论知识/408/应用层-Q&A.md",
-    "content/notes/理论知识/408/计算机网络.md",
     "content/notes/理论知识/408/数据结构和算法.md",
     "content/notes/理论知识/408/运输层-Q&A.md",
     "content/notes/理论知识/编程语言/Python.md",
