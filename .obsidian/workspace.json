@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/notes/个人/清单.md",
+                "file": "content/notes/工具技术/网站收藏.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/notes/个人/清单.md"
+                "file": "content/notes/工具技术/网站收藏.md"
               }
             }
           }
@@ -151,6 +151,9 @@
   },
   "active": "f7f9e94a6092ed66",
   "lastOpenFiles": [
+    "content/notes/工具技术/设计语言.md",
+    "content/notes/工具技术/网站收藏.md",
+    "content/notes/个人/清单.md",
     "content/notes/理论知识/408/计算机网络.md",
     "content/notes/个人/关于我.md",
     "content/notes/工具技术/Python 方法参考.md",
@@ -173,11 +176,8 @@
     "content/notes/杂思/文摘.md",
     "content/notes/杂思/为什么.md",
     "content/notes/杂思/关于我.md",
-    "content/notes/工具技术/网站收藏.md",
     "themes/note/layouts/partials/docs/gb-nav",
-    "content/notes/工具技术/设计语言.md",
     "content/notes/个人/修身.md",
-    "content/notes/工具技术/git操作.md",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.content",
     "resources/_gen/assets/scss/scss/book.scss_6a01b5e912600fd16806f931614ed371.json",
     "resources/_gen/assets/scss/scss",
